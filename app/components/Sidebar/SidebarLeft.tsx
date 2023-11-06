@@ -202,7 +202,7 @@ const SidebarLeft = () => {
               ></path>
             </svg>
           </div>
-          <div className="flex flex-col gap-[12px]">
+          <div className="flex flex-col gap-[4px]">
             <button
               className={`flex gap-3 px-1 py-1 rounded-md items-center hover:bg-[#e4e8eb] ${
                 isDropdownOpen ? "" : "bg-[#deeffa]"
