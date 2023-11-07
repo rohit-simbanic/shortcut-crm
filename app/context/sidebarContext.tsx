@@ -24,7 +24,7 @@ interface SidebarProviderProps {
 }
 
 const SidebarProvider: React.FC<SidebarProviderProps> = ({ children }) => {
-  const [isCollapsed, setCollapse] = useState(true);
+  const [isCollapsed, setCollapse] = useState(false);
 
   const toggleSidebarcollapse = () => {
     setCollapse((prevState) => !prevState);
