@@ -2,10 +2,31 @@
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import ProfiileModal from "../modals/ProfileModal";
+import Dropdown from "../button/HeaderDropDown";
+import CreateButton from "../button/CreateButton";
 
 const Header = () => {
   const [isProfileModalOpen, setIsProfileModalOpen] = useState<boolean>(false);
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
+  useEffect(() => {
+    const handleOutsideClick = (event: MouseEvent) => {
+      const target = event.target as Element;
+      if (isModalOpen && !target.closest(".modal")) {
+        toggleModal();
+      }
+    };
 
+    if (isModalOpen) {
+      document.addEventListener("click", handleOutsideClick);
+    }
+
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, [isModalOpen]);
   return (
     <div className="bg-[#151e2d] py-3">
       <div className="mx-auto flex justify-center sm:justify-between flex-wrap sm:flex-1 py-2 sm:p-0 items-center px-2">
@@ -16,7 +37,10 @@ const Header = () => {
             width={40}
             alt="logo"
           />
-
+          <div className="flex gap-0 items-center">
+            <CreateButton />
+            <Dropdown />
+          </div>
           <div className="relative">
             <span className="absolute inset-y-0 left-4 flex items-center text-gray-400 transition-transform transform scale-100 focus:scale-110 cursor-pointer">
               <svg
@@ -36,9 +60,177 @@ const Header = () => {
             </span>
             <input
               type="text"
-              className="w-56 py-2 px-3 bg-[#b8b8bd] bg-opacity-5 pl-14 rounded-full focus:w-56 sm:focus:w-96 focus:outline-none caret-white text-white transition-all  duration-300 ease-in-out"
+              className=" w-[20rem] py-2 px-3 bg-[#cacad4] bg-opacity-[0.2] pl-14 rounded-md focus:w-[22rem] sm:focus:w-[35rem] focus:outline-none caret-white text-white transition-all  duration-300 ease-in-out"
               placeholder="Type / to search..."
+              onClick={toggleModal}
             />
+            {isModalOpen && (
+              <div className="modal bg-white w-full absolute top-12 z-50 shadow-md rounded-md">
+                <nav className="flex flex-col sm:flex-row overflow-x-auto scrollbar-input">
+                  <button className="text-gray-600 py-4 px-6 hover:text-blue-500 focus:outline-none border-b-2 font-medium border-[#3a95c9] flex items-center gap-2">
+                    <span>Stories</span>
+                    <span className="p-1 bg-[#f1f3f7] rounded-md">26</span>
+                  </button>
+                  <button className="text-gray-600 py-4 px-6 hover:text-blue-500 focus:outline-none flex items-center gap-2">
+                    Epics
+                    <span className="p-1 bg-[#f1f3f7] rounded-md">22</span>
+                  </button>
+                  <button className="text-gray-600 py-4 px-6 hover:text-blue-500 focus:outline-none flex items-center gap-2">
+                    Iterations
+                    <span className="p-1 bg-[#f1f3f7] rounded-md">16</span>
+                  </button>
+                  <button className="text-gray-600 py-4 px-6 hover:text-blue-500 focus:outline-none flex items-center gap-2">
+                    Docs
+                    <span className="p-1 bg-[#f1f3f7] rounded-md">0</span>
+                  </button>
+                </nav>
+                <div className="header border-b-[1px] border-slate-200 flex justify-between px-4"></div>
+                <div className="modal-content min-h-[400px] p-3">
+                  {/* Tab content and tabs go here */}
+                  <span className="text-sm font-normal">Recently Viewed</span>
+                  <ul className="">
+                    <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2">
+                      <div className="flex justify-between gap-3">
+                        <div className="bg-[#fcfae3] p-1 border rounded-lg border-[#f9eec9] h-[30px] w-[30px]">
+                          <svg
+                            width="20"
+                            height="20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#a)">
+                              <path
+                                d="M9.191 2.112a1 1 0 0 1 1.618 0l1.547 2.129a1 1 0 0 0 .829.411l2.564-.05a1 1 0 0 1 .993 1.229l-.648 2.76a1 1 0 0 0 .187.845l1.727 2.202a1 1 0 0 1-.35 1.517l-2.41 1.167a1 1 0 0 0-.546.706l-.536 2.709a1 1 0 0 1-1.45.689L10.47 17.23a1 1 0 0 0-.94 0l-2.245 1.195a1 1 0 0 1-1.451-.688l-.536-2.709a1 1 0 0 0-.545-.706l-2.41-1.167a1 1 0 0 1-.351-1.517l1.727-2.202a1 1 0 0 0 .187-.846l-.648-2.76a1 1 0 0 1 .993-1.228l2.564.05a1 1 0 0 0 .829-.411L9.19 2.112z"
+                                fill="#666"
+                              ></path>
+                            </g>
+                            <defs>
+                              <clipPath id="a">
+                                <path fill="#fff" d="M0 0h20v20H0z"></path>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        <div>
+                          <h4>Create Button - Create Epic</h4>
+                          <span className="py-2 font-sans text-[12px] font-normal">
+                            #1417 •Ready For QA •Updated 7 months ago
+                          </span>
+                        </div>
+                      </div>
+
+                      <button
+                        className="py-1 rounded-[50%] px-1 text-center h-7 w-7 align-middle font-sans text-xs font-bold text-gray-50  transition-all bg-[#a32c3c] hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                        type="button"
+                        data-ripple-light="true"
+                      >
+                        RM
+                      </button>
+                    </li>
+                    <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2">
+                      <div className="flex justify-between gap-3">
+                        <div className="bg-[#fcfae3] p-1 border rounded-lg border-[#f9eec9] h-[30px] w-[30px]">
+                          <svg
+                            width="20"
+                            height="20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#a)">
+                              <path
+                                d="M9.191 2.112a1 1 0 0 1 1.618 0l1.547 2.129a1 1 0 0 0 .829.411l2.564-.05a1 1 0 0 1 .993 1.229l-.648 2.76a1 1 0 0 0 .187.845l1.727 2.202a1 1 0 0 1-.35 1.517l-2.41 1.167a1 1 0 0 0-.546.706l-.536 2.709a1 1 0 0 1-1.45.689L10.47 17.23a1 1 0 0 0-.94 0l-2.245 1.195a1 1 0 0 1-1.451-.688l-.536-2.709a1 1 0 0 0-.545-.706l-2.41-1.167a1 1 0 0 1-.351-1.517l1.727-2.202a1 1 0 0 0 .187-.846l-.648-2.76a1 1 0 0 1 .993-1.228l2.564.05a1 1 0 0 0 .829-.411L9.19 2.112z"
+                                fill="#666"
+                              ></path>
+                            </g>
+                            <defs>
+                              <clipPath id="a">
+                                <path fill="#fff" d="M0 0h20v20H0z"></path>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        <div>
+                          <h4>Create Button - Create Epic</h4>
+                          <span className="py-2 font-sans text-[12px] font-normal">
+                            #1417 •Ready For QA •Updated 7 months ago
+                          </span>
+                        </div>
+                      </div>
+
+                      <button
+                        className="py-1 rounded-[50%] px-1 text-center h-7 w-7 align-middle font-sans text-xs font-bold text-gray-50  transition-all bg-[#a32c3c] hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                        type="button"
+                        data-ripple-light="true"
+                      >
+                        RM
+                      </button>
+                    </li>
+                    <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2">
+                      <div className="flex justify-between gap-3">
+                        <div className="bg-[#fcfae3] p-1 border rounded-lg border-[#f9eec9] h-[30px] w-[30px]">
+                          <svg
+                            width="20"
+                            height="20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#a)">
+                              <path
+                                d="M9.191 2.112a1 1 0 0 1 1.618 0l1.547 2.129a1 1 0 0 0 .829.411l2.564-.05a1 1 0 0 1 .993 1.229l-.648 2.76a1 1 0 0 0 .187.845l1.727 2.202a1 1 0 0 1-.35 1.517l-2.41 1.167a1 1 0 0 0-.546.706l-.536 2.709a1 1 0 0 1-1.45.689L10.47 17.23a1 1 0 0 0-.94 0l-2.245 1.195a1 1 0 0 1-1.451-.688l-.536-2.709a1 1 0 0 0-.545-.706l-2.41-1.167a1 1 0 0 1-.351-1.517l1.727-2.202a1 1 0 0 0 .187-.846l-.648-2.76a1 1 0 0 1 .993-1.228l2.564.05a1 1 0 0 0 .829-.411L9.19 2.112z"
+                                fill="#666"
+                              ></path>
+                            </g>
+                            <defs>
+                              <clipPath id="a">
+                                <path fill="#fff" d="M0 0h20v20H0z"></path>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        <div>
+                          <h4>Create Button - Create Epic</h4>
+                          <span className="py-2 font-sans text-[12px] font-normal">
+                            #1417 •Ready For QA •Updated 7 months ago
+                          </span>
+                        </div>
+                      </div>
+
+                      <button
+                        className="py-1 rounded-[50%] px-1 text-center h-7 w-7 align-middle font-sans text-xs font-bold text-gray-50  transition-all bg-[#a32c3c] hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                        type="button"
+                        data-ripple-light="true"
+                      >
+                        RM
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div className="footer border-t-[1px] border-slate-200 flex justify-between py-4 px-4">
+                  <div className="flex gap-2">
+                    <svg
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height={22}
+                      width={22}
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.793 13.207a1 1 0 0 1 0-1.414l1.586-1.586a1 1 0 0 0 0-1.414L7.793 7.207a1 1 0 0 1 1.414-1.414l3 3a1 1 0 0 1 0 1.414l-3 3a1 1 0 0 1-1.414 0Z"
+                        fill="#666"
+                      ></path>
+                    </svg>
+                    <span className="font-bold text-sm">
+                      Operators & Filters
+                    </span>
+                  </div>
+                  <span className="text-sm font-bold text-[#2d78a4]">
+                    Advanced Story Search
+                  </span>
+                </div>
+              </div>
+            )}
           </div>
           <button
             className="hidden lg:flex select-none items-center gap-3 rounded-lg border border-solid border-1 border-slate-50/10  py-3 px-3 text-center align-middle font-sans text-xs font-bold text-gray-500  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
