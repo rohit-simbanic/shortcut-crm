@@ -3,6 +3,7 @@ import React, { useContext } from "react";
 import FilterItems from "../Filter/FilterItems";
 import { SidebarContext } from "@/app/context/sidebarContext";
 import DefaultTeamModal from "../modals/DefaultTeamModal";
+import WorkFlowModal from "../modals/WorkFlowModal";
 
 function SidebarRight() {
   const {
@@ -12,13 +13,17 @@ function SidebarRight() {
     isTeamOpen,
     toggleTeamOpen,
     setIsTeamOpen,
+    isWorkFlowOpen,
+    toggleWorkFlowOpen,
   } = useContext(SidebarContext);
   console.log("isTeamOpen", isTeamOpen);
   return (
     <>
       <div
         className={`dark:bg-[#2b2c37] ${
-          isOpen ? "px-2 hover:bg-[#eef0f4] hover:cursor-pointer" : "px-6"
+          isOpen
+            ? "px-2 hover:bg-[#eef0f4] hover:cursor-pointer"
+            : " pl-2 pr-[1.1rem]"
         } h-auto items-center z-10 sidebar bg-[#f8f9fb] border-r border-gray-300 transform ${
           isOpen ? "translate-x-0" : "translate-x-[10px]"
         } opacity ${
@@ -128,6 +133,7 @@ function SidebarRight() {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 className="hover:cursor-pointer"
+                onClick={toggleWorkFlowOpen}
               >
                 <path
                   fill-rule="evenodd"
@@ -137,11 +143,12 @@ function SidebarRight() {
                 ></path>
               </svg>
             </div>
+            {isWorkFlowOpen && <WorkFlowModal />}
             <button
               className="flex gap-3 items-center justify-between shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-1 px-3 rounded-[5px] border-[1px] border-[#e4e8eb] bg-[#fff] hover:bg-[#e4e8eb] dark:text-white dark:border-gray-400 dark:hover:bg-black w-full"
               onClick={toggleTeamOpen}
             >
-              Default Team
+              <p className="text-[#686c73] font-medium">Default Team</p>
               <svg
                 width="20"
                 height="20"
@@ -229,7 +236,7 @@ function SidebarRight() {
                         fill="#666"
                       ></path>
                     </svg>{" "}
-                    <p className="text-sm font-bold text-black dark:text-gray-300">
+                    <p className="text-sm font-bold text-[#686c73] dark:text-gray-300">
                       Bitux Board
                     </p>
                   </div>
@@ -248,7 +255,7 @@ function SidebarRight() {
                         fill="#666"
                       ></path>
                     </svg>{" "}
-                    <p className="text-sm font-bold text-black dark:text-gray-300">
+                    <p className="text-sm font-bold text-[#686c73] dark:text-gray-300">
                       Bitux Board
                     </p>
                   </div>
@@ -267,7 +274,7 @@ function SidebarRight() {
                         fill="#666"
                       ></path>
                     </svg>{" "}
-                    <p className="text-sm font-bold text-black dark:text-gray-300">
+                    <p className="text-sm font-bold text-[#686c73] dark:text-gray-300">
                       Bitux Board
                     </p>
                   </div>
@@ -286,7 +293,7 @@ function SidebarRight() {
                         fill="#666"
                       ></path>
                     </svg>{" "}
-                    <p className="text-sm font-bold text-black dark:text-gray-300">
+                    <p className="text-sm font-bold text-[#686c73] dark:text-gray-300">
                       Bitux Board
                     </p>
                   </div>
@@ -305,12 +312,12 @@ function SidebarRight() {
                         fill="#666"
                       ></path>
                     </svg>{" "}
-                    <p className="text-sm font-bold text-black dark:text-gray-300">
+                    <p className="text-sm font-bold text-[#686c73] dark:text-gray-300">
                       Bitux Board
                     </p>
                   </div>
 
-                  <button className="flex justify-center items-center shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-1 px-3 rounded-[5px] border-[1px] border-[#e4e8eb] bg-[#fff] hover:bg-[#f8f9fb] w-full my-5 dark:text-white dark:hover:bg-black dark:border-gray-300">
+                  <button className="flex justify-center text-[#686c73] font-medium items-center shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-1 px-3 rounded-[5px] border-[1px] border-[#e4e8eb] bg-[#fff] hover:bg-[#f8f9fb] w-full my-5 dark:text-white dark:hover:bg-black dark:border-gray-300">
                     Add Quick Filter
                   </button>
                   <div className="flex justify-between items-center mt-8 mb-6">

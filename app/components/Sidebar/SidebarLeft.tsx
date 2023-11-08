@@ -1,6 +1,7 @@
 "use client";
 import { SidebarContext } from "@/app/context/sidebarContext";
 import React, { useContext, useState } from "react";
+import TeamManageModal from "../modals/TeamManageModal";
 
 const SidebarLeft = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -13,8 +14,13 @@ const SidebarLeft = () => {
     setDropdownOpenAlt((prevState) => !prevState);
   };
 
-  const { isCollapsed, toggleSidebarcollapse, setCollapse } =
-    useContext(SidebarContext);
+  const {
+    isCollapsed,
+    toggleSidebarcollapse,
+    setCollapse,
+    isTeamManageOpen,
+    toggleTeamManageOpen,
+  } = useContext(SidebarContext);
   console.log("isCollapsed Left", isCollapsed);
   return (
     <div className="border-r border-gray-300 p-5 relative z-40 bg-[#f8f9fb] dark:bg-black min-h-screen">
@@ -300,7 +306,8 @@ const SidebarLeft = () => {
                   viewBox="0 0 20 20"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="list-text"
+                  className="list-text hover:cursor-pointer"
+                  onClick={toggleTeamManageOpen}
                 >
                   <path
                     fillRule="evenodd"
@@ -311,6 +318,7 @@ const SidebarLeft = () => {
                 </svg>
               </div>
             )}
+            {isTeamManageOpen && <TeamManageModal />}
             <div
               className={`flex flex-col gap-[4px] ${isCollapsed ? "mt-8" : ""}`}
             >
