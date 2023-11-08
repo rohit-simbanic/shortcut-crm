@@ -31,17 +31,19 @@ const Header = () => {
     <div className="bg-[#151e2d] py-3">
       <div className="mx-auto flex justify-center sm:justify-between flex-wrap sm:flex-1 py-2 sm:p-0 items-center px-2">
         <div className="flex gap-2">
-          <Image
-            src={"/header/shortcut-logo-mark-6086c44b85.svg"}
-            height={40}
-            width={40}
-            alt="logo"
-          />
+          <div className="hover:bg-[#363e50] p-2 rounded-md hover:cursor-pointer">
+            <Image
+              src={"/header/shortcut-logo-mark-6086c44b85.svg"}
+              height={30}
+              width={30}
+              alt="logo"
+            />
+          </div>
           <div className="flex gap-0 items-center">
             <CreateButton />
             <Dropdown />
           </div>
-          <div className="relative">
+          <div className="relative flex items-center">
             <span className="absolute inset-y-0 left-4 flex items-center text-gray-400 transition-transform transform scale-100 focus:scale-110 cursor-pointer">
               <svg
                 viewBox="0 0 20 20"
@@ -233,7 +235,7 @@ const Header = () => {
             )}
           </div>
           <button
-            className="hidden lg:flex select-none items-center gap-3 rounded-lg border border-solid border-1 border-slate-50/10  py-3 px-3 text-center align-middle font-sans text-xs font-bold text-gray-500  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            className="hidden lg:flex select-none items-center gap-3 rounded-lg border border-solid border-1 border-slate-50/10  py-1 px-3 text-center align-middle font-sans text-xs font-bold text-gray-500  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             type="button"
             data-ripple-light="true"
           >

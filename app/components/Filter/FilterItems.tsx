@@ -3,7 +3,7 @@ import React from "react";
 const FilterItems = () => {
   return (
     <>
-      <button className="flex gap-3 items-center group relative hover:bg-[#e4e8eb] hover:text-[#1f2532] px-3 py-1 rounded-md w-full dark:text-gray-400">
+      <button className="flex gap-3 items-center group relative hover:bg-[#e4e8eb] hover:text-[#1f2532] pr-3 py-1 rounded-md w-full dark:text-gray-400">
         <div>
           <svg
             height={22}
@@ -22,7 +22,7 @@ const FilterItems = () => {
         </div>
         Teams
       </button>
-      <button className="flex gap-3 items-center group relative hover:bg-[#e4e8eb] hover:text-[#1f2532] px-3 py-1 rounded-md w-full dark:text-gray-400">
+      <button className="flex gap-3 items-center group relative hover:bg-[#e4e8eb] hover:text-[#1f2532] pr-3 py-1 rounded-md w-full dark:text-gray-400">
         <div>
           <svg
             height={22}
@@ -41,7 +41,7 @@ const FilterItems = () => {
         </div>
         Iterations
       </button>
-      <button className="flex gap-3 items-center group relative hover:bg-[#e4e8eb] hover:text-[#1f2532] px-3 py-1 rounded-md w-full dark:text-gray-400">
+      <button className="flex gap-3 items-center group relative hover:bg-[#e4e8eb] hover:text-[#1f2532] pr-3 py-1 rounded-md w-full dark:text-gray-400">
         <div>
           <svg
             height={22}
@@ -60,7 +60,7 @@ const FilterItems = () => {
         </div>
         Priority
       </button>
-      <button className="flex gap-3 items-center group relative hover:bg-[#e4e8eb] hover:text-[#1f2532] px-3 py-1 rounded-md w-full dark:text-gray-400">
+      <button className="flex gap-3 items-center group relative hover:bg-[#e4e8eb] hover:text-[#1f2532] pr-3 py-1 rounded-md w-full dark:text-gray-400">
         <div>
           <svg
             height={22}
@@ -79,7 +79,7 @@ const FilterItems = () => {
         </div>
         Epics
       </button>
-      <button className="flex gap-3 items-center group relative hover:bg-[#e4e8eb] hover:text-[#1f2532] px-3 py-1 rounded-md w-full dark:text-gray-400">
+      <button className="flex gap-3 items-center group relative hover:bg-[#e4e8eb] hover:text-[#1f2532] pr-3 py-1 rounded-md w-full dark:text-gray-400">
         <div>
           <svg
             height={22}

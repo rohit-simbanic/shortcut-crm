@@ -15,7 +15,7 @@ const SidebarLeft = () => {
 
   const { isCollapsed, toggleSidebarcollapse, setCollapse } =
     useContext(SidebarContext);
-  console.log("isCollapsed", isCollapsed);
+  console.log("isCollapsed Left", isCollapsed);
   return (
     <div className="border-r border-gray-300 p-5 relative z-40 bg-[#f8f9fb] dark:bg-black min-h-screen">
       <div
@@ -291,7 +291,7 @@ const SidebarLeft = () => {
             {isCollapsed ? (
               ""
             ) : (
-              <div className="flex justify-between items-center my-6">
+              <div className="flex justify-between items-center mt-6 mb-3">
                 <span className="dark:text-[#828fa3]">Teams</span>
 
                 <svg
@@ -376,7 +376,7 @@ const SidebarLeft = () => {
                 <div
                   id="dropdown-menu"
                   className={`mt-2 ${
-                    isCollapsed ? "ml-[17px]" : "ml-[9px]"
+                    isCollapsed ? "ml-[17px]" : "ml-[12px]"
                   } border-l-[1px] ${
                     isCollapsed ? "h-[70px]" : ""
                   } dark:border-slate-50 list-text`}
@@ -488,8 +488,8 @@ const SidebarLeft = () => {
               {isDropdownOpenAlt && (
                 <div
                   id="dropdown-menu"
-                  className={`mt-2 ml-[9px] ${
-                    isCollapsed ? "ml-[17px]" : "ml-[9px]"
+                  className={`mt-2 ${
+                    isCollapsed ? "ml-[17px]" : "ml-[12px]"
                   } border-l-[1px] ${
                     isCollapsed ? "h-[70px]" : ""
                   } dark:border-slate-50 list-text`}
