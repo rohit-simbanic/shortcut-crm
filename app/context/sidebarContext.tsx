@@ -7,16 +7,19 @@ interface ISidebarContext {
   isTeamOpen: boolean;
   isWorkFlowOpen: boolean;
   isTeamManageOpen: boolean;
+  filterModalOpen: boolean;
   toggleSidebarcollapse: () => void;
   toggleSidebarOpen: () => void;
   toggleTeamOpen: () => void;
   toggleTeamManageOpen: () => void;
   toggleWorkFlowOpen: () => void;
+  toggleFilterModalOpen: () => void;
   setCollapse: (collapsed: boolean) => void;
   setIsOpen: (collapsed: boolean) => void;
   setIsTeamOpen: (collapsed: boolean) => void;
   setIsTeamManageOpen: (collapsed: boolean) => void;
   setIsWorkFlowOpen: (collapsed: boolean) => void;
+  setFilterModalOpen: (collapsed: boolean) => void;
 }
 
 const initialValue: ISidebarContext = {
@@ -25,6 +28,7 @@ const initialValue: ISidebarContext = {
   isTeamOpen: false,
   isWorkFlowOpen: false,
   isTeamManageOpen: false,
+  filterModalOpen: false,
   toggleSidebarcollapse: function (): void {
     throw new Error("Function not implemented.");
   },
@@ -38,6 +42,9 @@ const initialValue: ISidebarContext = {
     throw new Error("Function not implemented.");
   },
   toggleWorkFlowOpen: function (): void {
+    throw new Error("Function not implemented.");
+  },
+  toggleFilterModalOpen: function (): void {
     throw new Error("Function not implemented.");
   },
   setCollapse: function (collapsed: boolean): void {
@@ -55,6 +62,9 @@ const initialValue: ISidebarContext = {
   setIsWorkFlowOpen: function (collapsed: boolean): void {
     throw new Error("Function not implemented.");
   },
+  setFilterModalOpen: function (collapsed: boolean): void {
+    throw new Error("Function not implemented.");
+  },
 };
 
 const SidebarContext = createContext<ISidebarContext>(initialValue);
@@ -69,6 +79,7 @@ const SidebarProvider: React.FC<SidebarProviderProps> = ({ children }) => {
   const [isTeamOpen, setIsTeamOpen] = useState(false);
   const [isTeamManageOpen, setIsTeamManageOpen] = useState(false);
   const [isWorkFlowOpen, setIsWorkFlowOpen] = useState(false);
+  const [filterModalOpen, setFilterModalOpen] = useState(false);
 
   const toggleSidebarcollapse = () => {
     setCollapse((prevState) => !prevState);
@@ -84,6 +95,9 @@ const SidebarProvider: React.FC<SidebarProviderProps> = ({ children }) => {
   };
   const toggleWorkFlowOpen = () => {
     setIsWorkFlowOpen((prevState) => !prevState);
+  };
+  const toggleFilterModalOpen = () => {
+    setFilterModalOpen((prevState) => !prevState);
   };
 
   useEffect(() => {
@@ -119,6 +133,7 @@ const SidebarProvider: React.FC<SidebarProviderProps> = ({ children }) => {
       document.removeEventListener("click", handleOutsideClick);
     };
   }, [isTeamOpen]);
+
   useEffect(() => {
     const handleOutsideClick = (event: MouseEvent) => {
       const target = event.target as Element;
@@ -135,6 +150,23 @@ const SidebarProvider: React.FC<SidebarProviderProps> = ({ children }) => {
       document.removeEventListener("click", handleOutsideClick);
     };
   }, [isTeamManageOpen]);
+
+  useEffect(() => {
+    const handleOutsideClick = (event: MouseEvent) => {
+      const target = event.target as Element;
+      if (filterModalOpen && !target.closest(".modal")) {
+        toggleFilterModalOpen();
+      }
+    };
+
+    if (filterModalOpen) {
+      document.addEventListener("click", handleOutsideClick);
+    }
+
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, [filterModalOpen]);
 
   return (
     <SidebarContext.Provider
@@ -154,6 +186,9 @@ const SidebarProvider: React.FC<SidebarProviderProps> = ({ children }) => {
         isTeamManageOpen,
         toggleTeamManageOpen,
         setIsTeamManageOpen,
+        filterModalOpen,
+        setFilterModalOpen,
+        toggleFilterModalOpen,
       }}
     >
       {children}

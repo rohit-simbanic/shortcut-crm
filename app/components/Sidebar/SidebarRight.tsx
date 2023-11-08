@@ -4,6 +4,7 @@ import FilterItems from "../Filter/FilterItems";
 import { SidebarContext } from "@/app/context/sidebarContext";
 import DefaultTeamModal from "../modals/DefaultTeamModal";
 import WorkFlowModal from "../modals/WorkFlowModal";
+import QuickFilterModal from "../modals/QuickFilterModal";
 
 function SidebarRight() {
   const {
@@ -15,6 +16,9 @@ function SidebarRight() {
     setIsTeamOpen,
     isWorkFlowOpen,
     toggleWorkFlowOpen,
+    filterModalOpen,
+    setFilterModalOpen,
+    toggleFilterModalOpen,
   } = useContext(SidebarContext);
   console.log("isTeamOpen", isTeamOpen);
   return (
@@ -317,9 +321,15 @@ function SidebarRight() {
                     </p>
                   </div>
 
-                  <button className="flex justify-center text-[#686c73] font-medium items-center shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-1 px-3 rounded-[5px] border-[1px] border-[#e4e8eb] bg-[#fff] hover:bg-[#f8f9fb] w-full my-5 dark:text-white dark:hover:bg-black dark:border-gray-300">
+                  <button
+                    className="flex justify-center text-[#686c73] font-medium items-center shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-1 px-3 rounded-[5px] border-[1px] border-[#e4e8eb] bg-[#fff] hover:bg-[#f8f9fb] w-full my-5 dark:text-white dark:hover:bg-black dark:border-gray-300"
+                    onClick={toggleFilterModalOpen}
+                  >
                     Add Quick Filter
                   </button>
+                  {filterModalOpen && (
+                    <QuickFilterModal setFilterModalOpen={setFilterModalOpen} />
+                  )}
                   <div className="flex justify-between items-center mt-8 mb-6">
                     <h2 className="font-bold text-[#686c73]">Filters</h2>
                     <span className="text-[#3A95C9] text-xs">expand all</span>
