@@ -90,7 +90,7 @@ function SidebarRight() {
             {/* reWrite modal  */}
             <div className="flex justify-between items-center my-6">
               <div className="flex gap-3 items-center">
-                <span className="dark:text-white text-sm font-bold">
+                <span className="dark:text-white text-sm font-bold text-[#686c73]">
                   Workflow
                 </span>
                 <svg
@@ -168,7 +168,7 @@ function SidebarRight() {
             <div className=" dark:bg-[#2b2c37] w-full py-4 rounded-xl">
               <div className="flex justify-between items-center my-6">
                 <div className="flex gap-3 items-center">
-                  <span className="dark:text-white font-bold text-sm">
+                  <span className="dark:text-white font-bold text-sm text-[#686c73]">
                     Spaces (4)
                   </span>
                   <svg
@@ -321,7 +321,7 @@ function SidebarRight() {
                     Add Quick Filter
                   </button>
                   <div className="flex justify-between items-center mt-8 mb-6">
-                    <h2 className="font-bold text-[#1f2532]">Filters</h2>
+                    <h2 className="font-bold text-[#686c73]">Filters</h2>
                     <span className="text-[#3A95C9] text-xs">expand all</span>
                   </div>
                   <div className="filter_items">
