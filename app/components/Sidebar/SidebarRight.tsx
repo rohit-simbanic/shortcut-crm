@@ -20,7 +20,7 @@ function SidebarRight() {
     setFilterModalOpen,
     toggleFilterModalOpen,
   } = useContext(SidebarContext);
-  console.log("isTeamOpen", isTeamOpen);
+
   return (
     <>
       <div
@@ -338,47 +338,8 @@ function SidebarRight() {
                     <FilterItems />
                   </div>
                 </div>
-
-                {/* <div className="mx-2  p-4 relative space-x-2 bg-slate-100 dark:bg-[#20212c] flex justify-center items-center rounded-lg">
-                  <Image src={lightIcon} alt="sun indicating light mode" />
-
-                  <Switch
-                    checked={darkSide}
-                    onChange={toggleDarkMode}
-                    className={`${
-                      darkSide ? "bg-[#635fc7]" : "bg-gray-200"
-                    } relative inline-flex h-6 w-11 items-center rounded-full`}
-                  >
-                    <span
-                      className={`${
-                        darkSide ? "translate-x-6" : "translate-x-1"
-                      } inline-block h-4 w-4 transform rounded-full bg-white transition`}
-                    />
-                  </Switch>
-
-                  <Image src={darkIcon} alt="moon indicating dark mode" />
-                </div> */}
               </div>
             </div>
-
-            {/* Sidebar hide/show toggle */}
-            {/* {isSideBarOpen ? (
-            <div
-              onClick={() => toggleSidebar()}
-              className="flex  items-center mt-2  absolute -bottom-5  text-lg font-bold  rounded-r-full hover:text-[#635FC7] cursor-pointer mr-6 mb-8 px-8 py-4 hover:bg-[#635fc71a] dark:hover:bg-white  space-x-2 justify-center  my-4 text-gray-500"
-            >
-              <Image
-                className="min-w-[20px]"
-                src={hideSidebarIcon}
-                alt=" side bar show/hide"
-              />
-              {isSideBarOpen && <p> Hide Sidebar </p>}
-            </div>
-          ) : (
-            <div className="absolute p-5" onClick={() => toggleSidebar()}>
-              <Image src={showSidebarIcon} alt="showSidebarIcon" />
-            </div>
-          )} */}
           </div>
         )}
       </div>

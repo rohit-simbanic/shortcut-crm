@@ -234,13 +234,15 @@ const Header = () => {
               </div>
             )}
           </div>
-          <button
-            className="hidden lg:flex select-none items-center gap-3 rounded-lg border border-solid border-1 border-slate-50/10  py-1 px-3 text-center align-middle font-sans text-xs font-bold text-gray-500  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-            type="button"
-            data-ripple-light="true"
-          >
-            Ctrl + K
-          </button>
+          <div className="flex items-center">
+            <button
+              className="hidden lg:flex select-none gap-3 rounded-lg border border-solid border-1 border-slate-50/10 px-2 py-0 text-center align-middle font-sans text-xs font-bold text-gray-500  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none h-10 items-center"
+              type="button"
+              data-ripple-light="true"
+            >
+              Ctrl + K
+            </button>
+          </div>
         </div>
         <div className="flex gap-2 relative py-3 sm:py-0">
           <button
@@ -260,7 +262,7 @@ const Header = () => {
             </svg>
           </button>
           <button
-            className="hidden lg:flex select-none items-center gap-3 rounded-lg  py-3 px-6 text-center align-middle font-sans text-xs font-bold text-gray-500  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            className="hidden lg:flex select-none items-center gap-3 rounded-lg  py-0 px-2 text-center align-middle font-sans text-xs font-bold text-[#f6f6f6]  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             type="button"
             data-ripple-light="true"
           >
@@ -279,7 +281,7 @@ const Header = () => {
             Help
           </button>
           <button
-            className="hidden lg:flex select-none items-center gap-3 rounded-lg  py-3 px-6 text-center align-middle font-sans text-xs font-bold text-gray-500  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            className="hidden lg:flex select-none items-center gap-3 rounded-lg  py-0 px-2 text-center align-middle font-sans text-xs font-bold text-[#f6f6f6]  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             type="button"
             data-ripple-light="true"
           >
@@ -300,7 +302,7 @@ const Header = () => {
             Activity
           </button>
           <button
-            className="hidden lg:flex select-none items-center gap-3 rounded-lg border border-solid border-1 border-gray-400  py-3 px-3 text-center align-middle font-sans text-xs font-bold text-gray-500  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            className="hidden lg:flex select-none items-center gap-3 rounded-lg border border-solid border-1 border-gray-400  py-1 px-3 text-center align-middle font-sans text-xs font-bold text-[#f6f6f6]  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             type="button"
             data-ripple-light="true"
           >
@@ -319,7 +321,7 @@ const Header = () => {
             Setup Guide
           </button>
           <button
-            className="flex select-none items-center gap-3 rounded-lg  py-3 px-4 text-center align-middle font-sans bg-slate-50/10 text-xs font-bold text-gray-50  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            className="flex select-none items-center gap-3 rounded-lg  py-1 px-4 text-center align-middle font-sans bg-slate-50/10 text-xs font-bold text-gray-50  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             type="button"
             data-ripple-light="true"
           >
@@ -327,7 +329,7 @@ const Header = () => {
           </button>
           <div>
             <button
-              className="py-3 rounded-[50%] px-3 text-center h-12 w-12 align-middle font-sans text-xs font-bold text-gray-50  transition-all bg-[#ccba45] hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+              className="py-3 rounded-[50%] px-3 text-center h-10 flex justify-center items-center w-10 align-middle font-sans text-xs font-bold text-gray-50  transition-all bg-[#ccba45] hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
               type="button"
               data-ripple-light="true"
               onClick={() => setIsProfileModalOpen(!isProfileModalOpen)}
