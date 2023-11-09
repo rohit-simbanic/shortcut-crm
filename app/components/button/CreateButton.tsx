@@ -17,7 +17,7 @@ const CreateButton = () => {
     >
       {(close: React.MouseEventHandler<HTMLButtonElement> | undefined) => (
         <div className="modal">
-          <div className="flex justify-between items-start modal-header">
+          <div className="flex justify-between items-start modal-header px-4">
             <h3 className="font-bold text-lg text-[#1f2532] my-6">
               Create Story
             </h3>
@@ -64,7 +64,7 @@ const CreateButton = () => {
           </div>
 
           <div
-            className="content h-[509px] overflow-y-scroll flex gap-4"
+            className="content h-[509px] overflow-y-scroll flex gap-4 px-4"
             id="style-2"
           >
             <div className="w-[80%]">
@@ -393,7 +393,7 @@ const CreateButton = () => {
                 Relationships..
               </button>
             </div>
-            <div className="w-[20%] pr-2">
+            <div className="w-[20%]">
               <div>
                 <button className="border-[1px] border-gray-200 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
                   <div className="bg-[#cd65b6] h-7 w-7 rounded-[50%] flex items-center justify-center">
@@ -671,7 +671,7 @@ const CreateButton = () => {
               </button>
             </div>
           </div>
-          <div className="footer bg-white border-t-[1px] border-[#e4e8eb] py-4 flex justify-between">
+          <div className="footer bg-white border-t-[1px] border-[#e4e8eb] py-4 flex justify-between px-4">
             <button
               type="button"
               className="border-[1px] border-[#e4e8eb] rounded-md px-3 py-2 shadow hover:shadow-md"
