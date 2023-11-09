@@ -61,6 +61,11 @@ const FilterItems = () => {
     });
   };
 
+  const handleAllExpand = () => {
+    setFilterDropdownOpen((prevState) => !prevState);
+    setFilterDropdownOpenTwo((prevState) => !prevState);
+  };
+
   const toggleDropdownFilter = () => {
     setFilterDropdownOpen((prevState) => !prevState);
   };
@@ -69,6 +74,15 @@ const FilterItems = () => {
   };
   return (
     <>
+      <div className="flex justify-between items-center mt-8 mb-6">
+        <h2 className="font-bold text-[#686c73]">Filters</h2>
+        <span
+          className="text-[#3A95C9] text-xs hover:cursor-pointer"
+          onClick={handleAllExpand}
+        >
+          {!isFilterDropdownOpen ? "expand all" : "collapse all"}
+        </span>
+      </div>
       <button
         className="flex gap-3 items-center text-[#686c73] group relative hover:bg-[#e4e8eb] hover:text-[#1f2532] pr-3 py-1 rounded-md w-full dark:text-gray-400"
         onClick={toggleDropdownFilter}

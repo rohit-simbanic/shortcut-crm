@@ -330,10 +330,7 @@ function SidebarRight() {
                   {filterModalOpen && (
                     <QuickFilterModal setFilterModalOpen={setFilterModalOpen} />
                   )}
-                  <div className="flex justify-between items-center mt-8 mb-6">
-                    <h2 className="font-bold text-[#686c73]">Filters</h2>
-                    <span className="text-[#3A95C9] text-xs">expand all</span>
-                  </div>
+
                   <div className="filter_items">
                     <FilterItems />
                   </div>
