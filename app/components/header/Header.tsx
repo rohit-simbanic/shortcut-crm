@@ -71,7 +71,7 @@ const Header = () => {
               onClick={toggleModal}
             />
             {isModalOpen && (
-              <div className="modal bg-white w-[543px] absolute top-12 z-50 shadow-md rounded-md">
+              <div className="modal bg-white w-[560px] absolute top-12 z-50 shadow-md rounded-md">
                 <nav className="flex flex-col sm:flex-row overflow-x-auto scrollbar-input">
                   <button
                     className={`text-gray-600 py-4 px-6 hover:text-blue-500 focus:outline-none font-medium flex items-center gap-2 ${
