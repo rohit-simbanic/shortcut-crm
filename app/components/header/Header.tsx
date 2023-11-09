@@ -66,7 +66,7 @@ const Header = () => {
             </span>
             <input
               type="text"
-              className=" w-[20rem] py-2 px-3 bg-[#cacad4] bg-opacity-[0.2] pl-14 rounded-md focus:w-[22rem] sm:focus:w-[35rem] focus:outline-none caret-white text-white transition-all  duration-300 ease-in-out"
+              className=" w-[20rem] py-[5px] px-3 bg-[#cacad4] bg-opacity-[0.2] pl-14 rounded-md focus:w-[22rem] sm:focus:w-[35rem] border-[2px] border-transparent focus:outline-none focus:border-blue-400 focus:border-[2px] caret-white text-white transition-all  duration-300 ease-in-out"
               placeholder="Type / to search..."
               onClick={toggleModal}
             />
