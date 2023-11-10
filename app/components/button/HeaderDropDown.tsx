@@ -63,7 +63,7 @@ const Dropdown = () => {
         ref={dropdownMenuRef}
         className={`${
           isDropdownOpen ? "" : "hidden"
-        } origin-top-right absolute left-0 mt-2 w-64 z-[99999] rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5`}
+        } origin-top-right absolute left-0 mt-2 w-64 z-[99999] rounded-md shadow-lg bg-white ring-1 ring-black dark:bg-[#161b26] ring-opacity-5`}
       >
         <div
           className="py-2 p-2"
@@ -90,7 +90,7 @@ const Dropdown = () => {
                   fill="#666"
                 ></path>
               </svg>
-              <span>Create Story</span>
+              <span className="dark:text-[#f6f6f6]">Create Story</span>
             </div>
           </a>
           <a
@@ -112,7 +112,7 @@ const Dropdown = () => {
                   fill="#666"
                 ></path>
               </svg>
-              <span>Create Epic</span>
+              <span className="dark:text-[#f6f6f6]">Create Epic</span>
             </div>
           </a>
           <a
@@ -134,7 +134,7 @@ const Dropdown = () => {
                   fill="#666"
                 ></path>
               </svg>
-              <span>Create Iteration</span>
+              <span className="dark:text-[#f6f6f6]">Create Iteration</span>
             </div>
           </a>
           <a
@@ -156,7 +156,7 @@ const Dropdown = () => {
                   fill="#666"
                 ></path>
               </svg>
-              <span>Create Doc</span>
+              <span className="dark:text-[#f6f6f6]">Create Doc</span>
             </div>
           </a>
           <a
@@ -184,7 +184,7 @@ const Dropdown = () => {
                   </clipPath>
                 </defs>
               </svg>
-              <span>Create Label</span>
+              <span className="dark:text-[#f6f6f6]">Create Label</span>
             </div>
           </a>
           <hr />
@@ -207,7 +207,7 @@ const Dropdown = () => {
                   fill="#666"
                 ></path>
               </svg>
-              <span>Invite User</span>
+              <span className="dark:text-[#f6f6f6]">Invite User</span>
             </div>
           </a>
           <a
@@ -229,7 +229,7 @@ const Dropdown = () => {
                   fill="#666"
                 ></path>
               </svg>
-              <span>Create Team</span>
+              <span className="dark:text-[#f6f6f6]">Create Team</span>
             </div>
           </a>
         </div>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { SidebarProvider } from "./context/sidebarContext";
+import ThemeContextProvider from "./context/themeContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,8 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
-        <SidebarProvider>{children}</SidebarProvider>
+      <body className={`${inter.className} dark:bg-black`}>
+        <ThemeContextProvider>
+          <SidebarProvider>{children}</SidebarProvider>
+        </ThemeContextProvider>
       </body>
     </html>
   );

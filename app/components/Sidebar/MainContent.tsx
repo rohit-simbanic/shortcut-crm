@@ -6,10 +6,12 @@ const MainContent = () => {
       <div>
         <div className="flex justify-between items-center my-6">
           <div className="w-[160px] flex gap-2">
-            <span>Unscheduled</span>
-            <span className="bg-[#f3f3f3] px-[5px] rounded-lg">0</span>
+            <span className="dark:text-gray-200">Unscheduled</span>
+            <span className="bg-[#f3f3f3] px-[5px] rounded-lg dark:bg-[#161b26]">
+              0
+            </span>
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-2 items-center">
             <svg
               height={21}
               width={21}
@@ -40,11 +42,11 @@ const MainContent = () => {
             </svg>
             <input
               type="checkbox"
-              className="border-gray-300 rounded h-5 w-5"
+              className="border-gray-300 rounded h-4 w-4 dark:bg-[#161b26]"
             />
           </div>
         </div>
-        <button className="flex gap-3 items-center justify-between shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-6 px-[60px] rounded-[5px] border-[1px] border-dashed border-[#e4e8eb] hover:bg-[#e4e8eb]">
+        <button className="flex gap-3 items-center justify-between dark:text-gray-400 shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-6 px-[60px] rounded-[5px] border-[1px] border-dashed border-[#e4e8eb] hover:bg-[#e4e8eb]">
           <svg
             height={21}
             width={21}
@@ -65,10 +67,12 @@ const MainContent = () => {
       <div>
         <div className="flex justify-between items-center my-6">
           <div className="w-[160px] flex gap-2">
-            <span>Ready for devel..</span>
-            <span className="bg-[#f3f3f3] px-[5px] rounded-lg">0</span>
+            <span className="dark:text-gray-200">Ready for devel..</span>
+            <span className="bg-[#f3f3f3] px-[5px] rounded-lg dark:bg-[#161b26]">
+              0
+            </span>
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-2 items-center">
             <svg
               height={21}
               width={21}
@@ -99,11 +103,11 @@ const MainContent = () => {
             </svg>
             <input
               type="checkbox"
-              className="border-gray-300 rounded h-5 w-5"
+              className="border-gray-300 rounded h-4 w-4"
             />
           </div>
         </div>
-        <button className="flex gap-3 items-center justify-between shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-6 px-[60px] rounded-[5px] border-[1px] border-dashed border-[#e4e8eb] hover:bg-[#e4e8eb]">
+        <button className="flex gap-3 items-center justify-between dark:text-gray-400 shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-6 px-[60px] rounded-[5px] border-[1px] border-dashed border-[#e4e8eb] hover:bg-[#e4e8eb]">
           <svg
             height={21}
             width={21}
@@ -124,10 +128,12 @@ const MainContent = () => {
       <div>
         <div className="flex justify-between items-center my-6">
           <div className="w-[160px] flex gap-2">
-            <span>In development</span>
-            <span className="bg-[#f3f3f3] px-[5px] rounded-lg">0</span>
+            <span className="dark:text-gray-200">In development</span>
+            <span className="bg-[#f3f3f3] px-[5px] rounded-lg dark:bg-[#161b26]">
+              0
+            </span>
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-2 items-center">
             <svg
               height={21}
               width={21}
@@ -158,11 +164,11 @@ const MainContent = () => {
             </svg>
             <input
               type="checkbox"
-              className="border-gray-300 rounded h-5 w-5"
+              className="border-gray-300 rounded h-4 w-4"
             />
           </div>
         </div>
-        <button className="flex gap-3 items-center justify-between shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-6 px-[60px] rounded-[5px] border-[1px] border-dashed border-[#e4e8eb] hover:bg-[#e4e8eb]">
+        <button className="flex gap-3 items-center justify-between dark:text-gray-400 shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-6 px-[60px] rounded-[5px] border-[1px] border-dashed border-[#e4e8eb] hover:bg-[#e4e8eb]">
           <svg
             height={21}
             width={21}
@@ -183,10 +189,12 @@ const MainContent = () => {
       <div>
         <div className="flex justify-between items-center my-6">
           <div className="w-[160px] flex gap-2">
-            <span>Ready for Review</span>
-            <span className="bg-[#f3f3f3] px-[5px] rounded-lg">0</span>
+            <span className="dark:text-gray-200">Ready for Review</span>
+            <span className="bg-[#f3f3f3] px-[5px] rounded-lg dark:bg-[#161b26]">
+              0
+            </span>
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-2 items-center">
             <svg
               height={21}
               width={21}
@@ -217,11 +225,11 @@ const MainContent = () => {
             </svg>
             <input
               type="checkbox"
-              className="border-gray-300 rounded h-5 w-5"
+              className="border-gray-300 rounded h-4 w-4"
             />
           </div>
         </div>
-        <button className="flex gap-3 items-center justify-between shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-6 px-[60px] rounded-[5px] border-[1px] border-dashed border-[#e4e8eb] hover:bg-[#e4e8eb]">
+        <button className="flex gap-3 items-center justify-between dark:text-gray-400 shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-6 px-[60px] rounded-[5px] border-[1px] border-dashed border-[#e4e8eb] hover:bg-[#e4e8eb]">
           <svg
             height={21}
             width={21}
@@ -242,10 +250,12 @@ const MainContent = () => {
       <div>
         <div className="flex justify-between items-center my-6">
           <div className="w-[160px] flex gap-2">
-            <span>Ready for Deploy</span>
-            <span className="bg-[#f3f3f3] px-[5px] rounded-lg">0</span>
+            <span className="dark:text-gray-200">Ready for Deploy</span>
+            <span className="bg-[#f3f3f3] px-[5px] rounded-lg dark:bg-[#161b26]">
+              0
+            </span>
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-2 items-center">
             <svg
               height={21}
               width={21}
@@ -276,11 +286,11 @@ const MainContent = () => {
             </svg>
             <input
               type="checkbox"
-              className="border-gray-300 rounded h-5 w-5"
+              className="border-gray-300 rounded h-4 w-4"
             />
           </div>
         </div>
-        <button className="flex gap-3 items-center justify-between shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-6 px-[60px] rounded-[5px] border-[1px] border-dashed border-[#e4e8eb] hover:bg-[#e4e8eb]">
+        <button className="flex gap-3 items-center justify-between dark:text-gray-400 shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-6 px-[60px] rounded-[5px] border-[1px] border-dashed border-[#e4e8eb] hover:bg-[#e4e8eb]">
           <svg
             height={21}
             width={21}
@@ -301,10 +311,12 @@ const MainContent = () => {
       <div>
         <div className="flex justify-between items-center my-6">
           <div className="w-[160px] flex gap-2">
-            <span>Completed</span>
-            <span className="bg-[#f3f3f3] px-[5px] rounded-lg">0</span>
+            <span className="dark:text-gray-200">Completed</span>
+            <span className="bg-[#f3f3f3] px-[5px] rounded-lg dark:bg-[#161b26]">
+              0
+            </span>
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-2 items-center">
             <svg
               height={21}
               width={21}
@@ -335,11 +347,11 @@ const MainContent = () => {
             </svg>
             <input
               type="checkbox"
-              className="border-gray-300 rounded h-5 w-5"
+              className="border-gray-300 rounded h-4 w-4"
             />
           </div>
         </div>
-        <button className="flex gap-3 items-center justify-between shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-6 px-[60px] rounded-[5px] border-[1px] border-dashed border-[#e4e8eb] hover:bg-[#e4e8eb]">
+        <button className="flex gap-3 items-center justify-between dark:text-gray-400 shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-6 px-[60px] rounded-[5px] border-[1px] border-dashed border-[#e4e8eb] hover:bg-[#e4e8eb]">
           <svg
             height={21}
             width={21}

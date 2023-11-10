@@ -24,18 +24,18 @@ function SidebarRight() {
   return (
     <>
       <div
-        className={`dark:bg-[#2b2c37] ${
+        className={`dark:bg-black ${
           isOpen
             ? "px-2 hover:bg-[#eef0f4] hover:cursor-pointer"
             : " pl-2 pr-[1.1rem]"
-        } h-auto items-center z-10 sidebar bg-[#f8f9fb] border-r border-gray-300 transform ${
+        } h-auto items-center z-10 sidebar bg-[#f8f9fb] border-r border-gray-300 dark:border-[#283040] transform ${
           isOpen ? "translate-x-0" : "translate-x-[10px]"
         } opacity ${
           isOpen ? "100" : "0"
         } transition-all duration-300 ease-in-out cubic-bezier(0.175, 0.885, 0.32, 1.1)`}
       >
         <div
-          className="h-[24px] w-[24px] bg-[#f8f9fb] dark:bg-slate-200 rounded-[50%] border-[1px] border-[#e4e8eb] absolute top-[11px] right-[-12px] cursor-pointer"
+          className="h-[24px] w-[24px] bg-[#f8f9fb] dark:bg-[#0b101a] rounded-[50%] border-[1px] border-[#e4e8eb] absolute top-[11px] right-[-12px] cursor-pointer"
           onClick={toggleSidebarOpen}
         >
           {isOpen ? (
@@ -149,7 +149,7 @@ function SidebarRight() {
             </div>
             {isWorkFlowOpen && <WorkFlowModal />}
             <button
-              className="flex gap-3 items-center justify-between shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-1 px-3 rounded-[5px] border-[1px] border-[#e4e8eb] bg-[#fff] hover:bg-[#e4e8eb] dark:text-white dark:border-gray-400 dark:hover:bg-black w-full"
+              className="flex gap-3 items-center justify-between shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-1 px-3 rounded-[5px] border-[1px] border-[#e4e8eb] bg-[#fff] hover:bg-[#e4e8eb] dark:text-white dark:border-gray-400 dark:bg-[#161b26] dark:hover:bg-black w-full"
               onClick={toggleTeamOpen}
             >
               <p className="text-[#686c73] font-medium">Default Team</p>
@@ -169,7 +169,7 @@ function SidebarRight() {
               </svg>
             </button>
             {isTeamOpen && <DefaultTeamModal />}
-            <div className=" dark:bg-[#2b2c37] w-full py-4 rounded-xl">
+            <div className=" dark:bg-black w-full py-4 rounded-xl">
               <div className="flex justify-between items-center my-6">
                 <div className="flex gap-3 items-center">
                   <span className="dark:text-white font-bold text-sm text-[#686c73]">
@@ -322,7 +322,7 @@ function SidebarRight() {
                   </div>
 
                   <button
-                    className="flex justify-center text-[#686c73] font-medium items-center shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-1 px-3 rounded-[5px] border-[1px] border-[#e4e8eb] bg-[#fff] hover:bg-[#f8f9fb] w-full my-5 dark:text-white dark:hover:bg-black dark:border-gray-300"
+                    className="flex justify-center text-[#686c73] font-medium items-center shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-1 px-3 rounded-[5px] border-[1px] border-[#e4e8eb] bg-[#fff] hover:bg-[#f8f9fb] w-full my-5 dark:bg-[#161b26] dark:hover:bg-black dark:border-gray-300"
                     onClick={toggleFilterModalOpen}
                   >
                     Add Quick Filter

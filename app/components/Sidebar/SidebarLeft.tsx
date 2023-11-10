@@ -23,9 +23,9 @@ const SidebarLeft = () => {
   } = useContext(SidebarContext);
   console.log("isCollapsed Left", isCollapsed);
   return (
-    <div className="border-r border-gray-300 p-5 relative z-40 bg-[#f8f9fb] dark:bg-black min-h-screen">
+    <div className="border-r border-gray-300 p-5 relative z-40 bg-[#f8f9fb]  dark:border-[#283040] dark:bg-black min-h-screen">
       <div
-        className="h-[24px] w-[24px] bg-[#f8f9fb] dark:bg-slate-200 rounded-[50%] border-[1px] border-[#e4e8eb] absolute top-[11px] right-[-12px] cursor-pointer"
+        className="h-[24px] w-[24px] bg-[#f8f9fb] rounded-[50%] dark:bg-[#0b101a] border-[1px] border-[#e4e8eb] absolute top-[11px] right-[-12px] cursor-pointer"
         onClick={toggleSidebarcollapse}
       >
         {isCollapsed ? (
@@ -385,7 +385,7 @@ const SidebarLeft = () => {
                   id="dropdown-menu"
                   className={`mt-2 ${
                     isCollapsed ? "ml-[17px]" : "ml-[12px]"
-                  } border-l-[1px] ${
+                  } border-l-[1px] dark:border-[#283040] ${
                     isCollapsed ? "h-[70px]" : ""
                   } dark:border-slate-50 list-text`}
                 >
@@ -398,35 +398,35 @@ const SidebarLeft = () => {
                     >
                       <a
                         href="#"
-                        className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md dark:bg-[#828fa3] hover:bg-gray-100"
+                        className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-gray-100"
                         role="menuitem"
                       >
                         Stories
                       </a>
                       <a
                         href="#"
-                        className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md dark:bg-[#828fa3] hover:bg-gray-100"
+                        className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-gray-100"
                         role="menuitem"
                       >
                         Iteration
                       </a>
                       <a
                         href="#"
-                        className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md dark:bg-[#828fa3] hover:bg-gray-100"
+                        className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-gray-100"
                         role="menuitem"
                       >
                         Backlogs
                       </a>
                       <a
                         href="#"
-                        className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md dark:bg-[#828fa3] hover:bg-gray-100"
+                        className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-gray-100"
                         role="menuitem"
                       >
                         Epics
                       </a>
                       <a
                         href="#"
-                        className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md dark:bg-[#828fa3] hover:bg-gray-100"
+                        className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-gray-100"
                         role="menuitem"
                       >
                         Status
@@ -498,7 +498,7 @@ const SidebarLeft = () => {
                   id="dropdown-menu"
                   className={`mt-2 ${
                     isCollapsed ? "ml-[17px]" : "ml-[12px]"
-                  } border-l-[1px] ${
+                  } border-l-[1px] dark:border-[#283040] ${
                     isCollapsed ? "h-[70px]" : ""
                   } dark:border-slate-50 list-text`}
                 >
@@ -511,35 +511,35 @@ const SidebarLeft = () => {
                     >
                       <a
                         href="#"
-                        className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md dark:bg-[#828fa3] hover:bg-gray-100"
+                        className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-gray-100"
                         role="menuitem"
                       >
                         Stories
                       </a>
                       <a
                         href="#"
-                        className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md dark:bg-[#828fa3] hover:bg-gray-100"
+                        className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-gray-100"
                         role="menuitem"
                       >
                         Iteration
                       </a>
                       <a
                         href="#"
-                        className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md dark:bg-[#828fa3] hover:bg-gray-100"
+                        className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-gray-100"
                         role="menuitem"
                       >
                         Backlogs
                       </a>
                       <a
                         href="#"
-                        className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md dark:bg-[#828fa3] hover:bg-gray-100"
+                        className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-gray-100"
                         role="menuitem"
                       >
                         Epics
                       </a>
                       <a
                         href="#"
-                        className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md dark:bg-[#828fa3] hover:bg-gray-100"
+                        className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-gray-100"
                         role="menuitem"
                       >
                         Status

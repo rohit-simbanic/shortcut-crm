@@ -1,6 +1,9 @@
+import { useTheme } from "@/app/context/themeContext";
 import React from "react";
+import { BsMoon, BsSun } from "react-icons/bs";
 
 const ProfiileModal = () => {
+  const { theme, toggleTheme } = useTheme();
   return (
     <div className="bg-black flex flex-col absolute top-16 z-50 right-1 w-[300px] rounded-md p-4">
       <div className="flex justify-between items-center">
@@ -45,6 +48,19 @@ const ProfiileModal = () => {
           ></path>
         </svg>
         <p className="text-md text-white">Preferences</p>
+      </button>
+      <button
+        className="flex items-center gap-2 hover:bg-[#363e50] px-3 py-2 rounded-sm"
+        onClick={toggleTheme}
+      >
+        {theme === "light" ? (
+          <BsSun color="#666666" />
+        ) : (
+          <BsMoon color="#666666" />
+        )}
+        <p className="text-md text-white">
+          {theme === "light" ? "Dark" : "Light"}
+        </p>
       </button>
       <button className="flex items-center gap-2 hover:bg-[#363e50] px-3 py-2 rounded-sm">
         <svg

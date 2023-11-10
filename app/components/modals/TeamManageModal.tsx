@@ -2,11 +2,11 @@ import React from "react";
 
 const TeamManageModal = () => {
   return (
-    <div className="w-[236px] z-[99999] bg-white flex flex-col justify-between fixed top-[21rem] left-[148px] rounded-md shadow-md min-h-[164px] modal">
+    <div className="w-[236px] z-[99999] bg-white dark:bg-[#2d3545] flex flex-col justify-between fixed top-[21rem] left-[148px] rounded-md shadow-md min-h-[164px] modal">
       <div className="px-2">
         <div className="pt-2 relative mx-auto text-gray-600">
           <input
-            className="border-2 border-gray-300 bg-white h-10 px-5 mb-3 w-full rounded-lg text-sm focus:outline-none"
+            className="border-[1px] border-gray-300 bg-white dark:bg-[#2d3545] h-10 px-5 mb-3 w-full rounded-lg text-sm focus:outline-none"
             type="search"
             name="search"
             placeholder="Search"
@@ -27,9 +27,9 @@ const TeamManageModal = () => {
             </svg>
           </button>
         </div>
-        <div className="flex items-center relative">
+        <div className="flex items-center relative ">
           <div className="border-l-[3px] border-[#FF00FF] absolute h-9 -left-2"></div>
-          <div className="space-x-2 bg-[#deeffa] flex items-center px-3 rounded-md duration-500 ease-in-out py-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-white dark:hover:text-[#635fc7] dark:text-white w-full">
+          <div className="space-x-2 bg-[#deeffa] dark:bg-[#485575] flex items-center px-3 rounded-md duration-500 ease-in-out py-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-white dark:hover:text-[#635fc7] dark:text-white w-full">
             <div className="bg-[#FF00FF] h-[25px] w-[25px] rounded-[50%]">
               <svg
                 viewBox="0 0 20 20"
@@ -53,7 +53,7 @@ const TeamManageModal = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#f1f3f7] px-2">
+      <div className="bg-[#f1f3f7] dark:bg-[#2d3545] dark:border-t-[#3f4a5f] border-t-[1px] px-2">
         <div className="flex items-center w-full space-x-2 px-3 mr-8 rounded-md duration-500 ease-in-out py-2 my-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-white dark:hover:text-[#635fc7] dark:text-white">
           <svg
             viewBox="0 0 20 20"
