@@ -324,7 +324,7 @@ const SidebarLeft = () => {
             >
               <button
                 className={`flex justify-center gap-3 px-1 py-1 rounded-md items-center hover:bg-[#e4e8eb] ${
-                  isDropdownOpen ? "" : "bg-[#deeffa]"
+                  isDropdownOpen ? "" : "bg-[#deeffa] dark:bg-[#323c53]"
                 }`}
                 onClick={toggleDropdown}
               >
@@ -437,7 +437,7 @@ const SidebarLeft = () => {
               )}
               <button
                 className={`flex justify-center gap-3 px-1 py-1 rounded-md items-center hover:bg-[#e4e8eb] ${
-                  isDropdownOpenAlt ? "" : "bg-[#deeffa]"
+                  isDropdownOpenAlt ? "" : "bg-[#deeffa] dark:bg-[#323c53]"
                 }`}
                 onClick={toggleDropdownAlt}
               >

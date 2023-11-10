@@ -71,8 +71,8 @@ const Header = () => {
               onClick={toggleModal}
             />
             {isModalOpen && (
-              <div className="modal bg-white w-[560px] absolute top-12 z-50 shadow-md rounded-md">
-                <nav className="flex flex-col sm:flex-row overflow-x-auto scrollbar-input">
+              <div className="modal bg-white w-[560px] absolute top-12 z-50 shadow-md rounded-md dark:bg-[#2d3545]">
+                <nav className="flex flex-col sm:flex-row overflow-x-auto scrollbar-input dark:border-b-[#3f4a5f]">
                   <button
                     className={`text-gray-600 py-4 px-6 hover:text-blue-500 focus:outline-none font-medium flex items-center gap-2 ${
                       activeTab === "stories" &&
@@ -125,7 +125,7 @@ const Header = () => {
                         Recently Viewed
                       </span>
                       <ul>
-                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2">
+                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2 dark:hover:bg-[#161b26]">
                           <div className="flex justify-between gap-3">
                             <div className="bg-[#fcfae3] p-1 border rounded-lg border-[#f9eec9] h-[30px] w-[30px]">
                               <svg
@@ -148,7 +148,9 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4>Create Button - Create Epic</h4>
+                              <h4 className="dark:text-gray-400">
+                                Create Button - Create Epic
+                              </h4>
                               <span className="py-2 font-sans text-[12px] font-normal">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
@@ -163,7 +165,7 @@ const Header = () => {
                             RM
                           </button>
                         </li>
-                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2">
+                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2 dark:hover:bg-[#161b26]">
                           <div className="flex justify-between gap-3">
                             <div className="bg-[#fcfae3] p-1 border rounded-lg border-[#f9eec9] h-[30px] w-[30px]">
                               <svg
@@ -186,7 +188,9 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4>Create Button - Create Epic</h4>
+                              <h4 className="dark:text-gray-400">
+                                Create Button - Create Epic
+                              </h4>
                               <span className="py-2 font-sans text-[12px] font-normal">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
@@ -201,7 +205,7 @@ const Header = () => {
                             RM
                           </button>
                         </li>
-                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2">
+                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2 dark:hover:bg-[#161b26]">
                           <div className="flex justify-between gap-3">
                             <div className="bg-[#fcfae3] p-1 border rounded-lg border-[#f9eec9] h-[30px] w-[30px]">
                               <svg
@@ -224,7 +228,9 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4>Create Button - Create Epic</h4>
+                              <h4 className="dark:text-gray-400">
+                                Create Button - Create Epic
+                              </h4>
                               <span className="py-2 font-sans text-[12px] font-normal">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
@@ -239,7 +245,7 @@ const Header = () => {
                             RM
                           </button>
                         </li>
-                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2">
+                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2 dark:hover:bg-[#161b26]">
                           <div className="flex justify-between gap-3">
                             <div className="bg-[#fcfae3] p-1 border rounded-lg border-[#f9eec9] h-[30px] w-[30px]">
                               <svg
@@ -262,7 +268,9 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4>Create Button - Create Epic</h4>
+                              <h4 className="dark:text-gray-400">
+                                Create Button - Create Epic
+                              </h4>
                               <span className="py-2 font-sans text-[12px] font-normal">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
@@ -277,7 +285,7 @@ const Header = () => {
                             RM
                           </button>
                         </li>
-                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2">
+                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2 dark:hover:bg-[#161b26]">
                           <div className="flex justify-between gap-3">
                             <div className="bg-[#fcfae3] p-1 border rounded-lg border-[#f9eec9] h-[30px] w-[30px]">
                               <svg
@@ -300,7 +308,9 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4>Create Button - Create Epic</h4>
+                              <h4 className="dark:text-gray-400">
+                                Create Button - Create Epic
+                              </h4>
                               <span className="py-2 font-sans text-[12px] font-normal">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
@@ -315,7 +325,7 @@ const Header = () => {
                             RM
                           </button>
                         </li>
-                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2">
+                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2 dark:hover:bg-[#161b26]">
                           <div className="flex justify-between gap-3">
                             <div className="bg-[#fcfae3] p-1 border rounded-lg border-[#f9eec9] h-[30px] w-[30px]">
                               <svg
@@ -338,7 +348,9 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4>Create Button - Create Epic</h4>
+                              <h4 className="dark:text-gray-400">
+                                Create Button - Create Epic
+                              </h4>
                               <span className="py-2 font-sans text-[12px] font-normal">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
@@ -353,7 +365,7 @@ const Header = () => {
                             RM
                           </button>
                         </li>
-                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2">
+                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2 dark:hover:bg-[#161b26]">
                           <div className="flex justify-between gap-3">
                             <div className="bg-[#fcfae3] p-1 border rounded-lg border-[#f9eec9] h-[30px] w-[30px]">
                               <svg
@@ -376,7 +388,9 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4>Create Button - Create Epic</h4>
+                              <h4 className="dark:text-gray-400">
+                                Create Button - Create Epic
+                              </h4>
                               <span className="py-2 font-sans text-[12px] font-normal">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
@@ -391,7 +405,7 @@ const Header = () => {
                             RM
                           </button>
                         </li>
-                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2">
+                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2 dark:hover:bg-[#161b26]">
                           <div className="flex justify-between gap-3">
                             <div className="bg-[#fcfae3] p-1 border rounded-lg border-[#f9eec9] h-[30px] w-[30px]">
                               <svg
@@ -414,7 +428,9 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4>Create Button - Create Epic</h4>
+                              <h4 className="dark:text-gray-400">
+                                Create Button - Create Epic
+                              </h4>
                               <span className="py-2 font-sans text-[12px] font-normal">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
@@ -429,7 +445,7 @@ const Header = () => {
                             RM
                           </button>
                         </li>
-                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2">
+                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2 dark:hover:bg-[#161b26]">
                           <div className="flex justify-between gap-3">
                             <div className="bg-[#fcfae3] p-1 border rounded-lg border-[#f9eec9] h-[30px] w-[30px]">
                               <svg
@@ -452,7 +468,9 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4>Create Button - Create Epic</h4>
+                              <h4 className="dark:text-gray-400">
+                                Create Button - Create Epic
+                              </h4>
                               <span className="py-2 font-sans text-[12px] font-normal">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
@@ -467,7 +485,7 @@ const Header = () => {
                             RM
                           </button>
                         </li>
-                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2">
+                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2 dark:hover:bg-[#161b26]">
                           <div className="flex justify-between gap-3">
                             <div className="bg-[#fcfae3] p-1 border rounded-lg border-[#f9eec9] h-[30px] w-[30px]">
                               <svg
@@ -490,7 +508,9 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4>Create Button - Create Epic</h4>
+                              <h4 className="dark:text-gray-400">
+                                Create Button - Create Epic
+                              </h4>
                               <span className="py-2 font-sans text-[12px] font-normal">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
@@ -505,7 +525,7 @@ const Header = () => {
                             RM
                           </button>
                         </li>
-                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2">
+                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2 dark:hover:bg-[#161b26]">
                           <div className="flex justify-between gap-3">
                             <div className="bg-[#fcfae3] p-1 border rounded-lg border-[#f9eec9] h-[30px] w-[30px]">
                               <svg
@@ -528,7 +548,9 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4>Create Button - Create Epic</h4>
+                              <h4 className="dark:text-gray-400">
+                                Create Button - Create Epic
+                              </h4>
                               <span className="py-2 font-sans text-[12px] font-normal">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
@@ -552,7 +574,7 @@ const Header = () => {
                         Recently Viewed
                       </span>
                       <ul>
-                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2">
+                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2 dark:hover:bg-[#161b26]">
                           <div className="flex justify-between gap-3">
                             <div className="bg-[#fcfae3] p-1 border rounded-lg border-[#f9eec9] h-[30px] w-[30px]">
                               <svg
@@ -575,7 +597,9 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4>Create Button - Create Epic</h4>
+                              <h4 className="dark:text-gray-400">
+                                Create Button - Create Epic
+                              </h4>
                               <span className="py-2 font-sans text-[12px] font-normal">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
@@ -590,7 +614,7 @@ const Header = () => {
                             RM
                           </button>
                         </li>
-                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2">
+                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2 dark:hover:bg-[#161b26]">
                           <div className="flex justify-between gap-3">
                             <div className="bg-[#fcfae3] p-1 border rounded-lg border-[#f9eec9] h-[30px] w-[30px]">
                               <svg
@@ -613,7 +637,9 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4>Create Button - Create Epic</h4>
+                              <h4 className="dark:text-gray-400">
+                                Create Button - Create Epic
+                              </h4>
                               <span className="py-2 font-sans text-[12px] font-normal">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
@@ -628,7 +654,7 @@ const Header = () => {
                             RM
                           </button>
                         </li>
-                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2">
+                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2 dark:hover:bg-[#161b26]">
                           <div className="flex justify-between gap-3">
                             <div className="bg-[#fcfae3] p-1 border rounded-lg border-[#f9eec9] h-[30px] w-[30px]">
                               <svg
@@ -651,7 +677,9 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4>Create Button - Create Epic</h4>
+                              <h4 className="dark:text-gray-400">
+                                Create Button - Create Epic
+                              </h4>
                               <span className="py-2 font-sans text-[12px] font-normal">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
@@ -666,7 +694,7 @@ const Header = () => {
                             RM
                           </button>
                         </li>
-                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2">
+                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2 dark:hover:bg-[#161b26]">
                           <div className="flex justify-between gap-3">
                             <div className="bg-[#fcfae3] p-1 border rounded-lg border-[#f9eec9] h-[30px] w-[30px]">
                               <svg
@@ -689,7 +717,9 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4>Create Button - Create Epic</h4>
+                              <h4 className="dark:text-gray-400">
+                                Create Button - Create Epic
+                              </h4>
                               <span className="py-2 font-sans text-[12px] font-normal">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
@@ -704,7 +734,7 @@ const Header = () => {
                             RM
                           </button>
                         </li>
-                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2">
+                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2 dark:hover:bg-[#161b26]">
                           <div className="flex justify-between gap-3">
                             <div className="bg-[#fcfae3] p-1 border rounded-lg border-[#f9eec9] h-[30px] w-[30px]">
                               <svg
@@ -727,7 +757,9 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4>Create Button - Create Epic</h4>
+                              <h4 className="dark:text-gray-400">
+                                Create Button - Create Epic
+                              </h4>
                               <span className="py-2 font-sans text-[12px] font-normal">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
@@ -742,7 +774,7 @@ const Header = () => {
                             RM
                           </button>
                         </li>
-                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2">
+                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2 dark:hover:bg-[#161b26]">
                           <div className="flex justify-between gap-3">
                             <div className="bg-[#fcfae3] p-1 border rounded-lg border-[#f9eec9] h-[30px] w-[30px]">
                               <svg
@@ -765,7 +797,9 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4>Create Button - Create Epic</h4>
+                              <h4 className="dark:text-gray-400">
+                                Create Button - Create Epic
+                              </h4>
                               <span className="py-2 font-sans text-[12px] font-normal">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
@@ -780,7 +814,7 @@ const Header = () => {
                             RM
                           </button>
                         </li>
-                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2">
+                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2 dark:hover:bg-[#161b26]">
                           <div className="flex justify-between gap-3">
                             <div className="bg-[#fcfae3] p-1 border rounded-lg border-[#f9eec9] h-[30px] w-[30px]">
                               <svg
@@ -803,7 +837,9 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4>Create Button - Create Epic</h4>
+                              <h4 className="dark:text-gray-400">
+                                Create Button - Create Epic
+                              </h4>
                               <span className="py-2 font-sans text-[12px] font-normal">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
@@ -818,7 +854,7 @@ const Header = () => {
                             RM
                           </button>
                         </li>
-                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2">
+                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2 dark:hover:bg-[#161b26]">
                           <div className="flex justify-between gap-3">
                             <div className="bg-[#fcfae3] p-1 border rounded-lg border-[#f9eec9] h-[30px] w-[30px]">
                               <svg
@@ -841,7 +877,9 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4>Create Button - Create Epic</h4>
+                              <h4 className="dark:text-gray-400">
+                                Create Button - Create Epic
+                              </h4>
                               <span className="py-2 font-sans text-[12px] font-normal">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
@@ -856,7 +894,7 @@ const Header = () => {
                             RM
                           </button>
                         </li>
-                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2">
+                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2 dark:hover:bg-[#161b26]">
                           <div className="flex justify-between gap-3">
                             <div className="bg-[#fcfae3] p-1 border rounded-lg border-[#f9eec9] h-[30px] w-[30px]">
                               <svg
@@ -879,7 +917,9 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4>Create Button - Create Epic</h4>
+                              <h4 className="dark:text-gray-400">
+                                Create Button - Create Epic
+                              </h4>
                               <span className="py-2 font-sans text-[12px] font-normal">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
@@ -894,7 +934,7 @@ const Header = () => {
                             RM
                           </button>
                         </li>
-                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2">
+                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2 dark:hover:bg-[#161b26]">
                           <div className="flex justify-between gap-3">
                             <div className="bg-[#fcfae3] p-1 border rounded-lg border-[#f9eec9] h-[30px] w-[30px]">
                               <svg
@@ -917,7 +957,9 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4>Create Button - Create Epic</h4>
+                              <h4 className="dark:text-gray-400">
+                                Create Button - Create Epic
+                              </h4>
                               <span className="py-2 font-sans text-[12px] font-normal">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
@@ -932,7 +974,7 @@ const Header = () => {
                             RM
                           </button>
                         </li>
-                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2">
+                        <li className="px-4 py-2 hover:bg-gray-100 rounded-md cursor-pointer font-bold flex justify-between items-start gap-2 dark:hover:bg-[#161b26]">
                           <div className="flex justify-between gap-3">
                             <div className="bg-[#fcfae3] p-1 border rounded-lg border-[#f9eec9] h-[30px] w-[30px]">
                               <svg
@@ -955,7 +997,9 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4>Create Button - Create Epic</h4>
+                              <h4 className="dark:text-gray-400">
+                                Create Button - Create Epic
+                              </h4>
                               <span className="py-2 font-sans text-[12px] font-normal">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
@@ -1012,7 +1056,7 @@ const Header = () => {
                     </>
                   )}
                 </div>
-                <div className="footer border-t-[1px] border-slate-200 flex justify-between py-4 px-4">
+                <div className="footer border-t-[1px] border-slate-200 dark:border-[#3f4a5f] flex justify-between py-4 px-4">
                   <div className="flex gap-2">
                     <svg
                       viewBox="0 0 20 20"
