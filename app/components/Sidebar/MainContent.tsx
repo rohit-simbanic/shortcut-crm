@@ -7,7 +7,7 @@ import { Container } from "../drag/Container";
 const MainContent = () => {
   return (
     <div
-      className="flex gap-2 justify-start my-4 overflow-x-auto overflow-y-hidden h-[88vh] px-3"
+      className="flex gap-2 justify-start mt-4 overflow-x-auto overflow-y-hidden h-[89vh] px-3"
       id="mainContent"
     >
       <div>
