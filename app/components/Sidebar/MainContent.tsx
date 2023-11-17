@@ -2,7 +2,10 @@ import React from "react";
 
 const MainContent = () => {
   return (
-    <div className="flex gap-2 justify-start my-4 px-5">
+    <div
+      className="flex gap-2 justify-start my-4 overflow-x-auto overflow-y-hidden h-[88vh]"
+      id="mainContent"
+    >
       <div>
         <div className="flex justify-between items-center my-6">
           <div className="w-[160px] flex gap-2">
@@ -353,12 +356,12 @@ const MainContent = () => {
         </div>
 
         <div
-          className="h-[80vh] overflow-y-auto flex flex-col gap-3"
+          className="h-[80vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3"
           id="mainDragBox"
         >
           <div
             draggable="true"
-            className="w-[210px] sm:w-[280px] rounded-md  bg-white  dark:bg-[#2b2c37] shadow-[#364e7e1a] py-6 px-3 shadow-lg dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer"
+            className="w-[210px] sm:w-[288px] rounded-md  bg-white  dark:bg-[#2b2c37] shadow-[#364e7e1a] py-6 px-3 shadow-lg dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer"
           >
             <p className="font-bold tracking-wide">Simbanic Services</p>
             <p className="font-bold text-xs tracking-tighter mt-2 text-gray-500">
@@ -412,7 +415,7 @@ const MainContent = () => {
           </div>
           <div
             draggable="true"
-            className="w-[210px] sm:w-[280px] first:my-5 rounded-md  bg-white  dark:bg-[#2b2c37] shadow-[#364e7e1a] py-6 px-3 shadow-lg dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer"
+            className="w-[210px] sm:w-[288px] first:my-5 rounded-md  bg-white  dark:bg-[#2b2c37] shadow-[#364e7e1a] py-6 px-3 shadow-lg dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer"
           >
             <p className="font-bold tracking-wide">Simbanic Services</p>
             <p className="font-bold text-xs tracking-tighter mt-2 text-gray-500">
@@ -466,7 +469,7 @@ const MainContent = () => {
           </div>
           <div
             draggable="true"
-            className="w-[210px] sm:w-[280px] first:my-5 rounded-md  bg-white  dark:bg-[#2b2c37] shadow-[#364e7e1a] py-6 px-3 shadow-lg dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer"
+            className="w-[210px] sm:w-[288px] first:my-5 rounded-md  bg-white  dark:bg-[#2b2c37] shadow-[#364e7e1a] py-6 px-3 shadow-lg dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer"
           >
             <p className="font-bold tracking-wide">Simbanic Services</p>
             <p className="font-bold text-xs tracking-tighter mt-2 text-gray-500">
@@ -520,7 +523,7 @@ const MainContent = () => {
           </div>
           <div
             draggable="true"
-            className="w-[210px] sm:w-[280px] first:my-5 rounded-md  bg-white  dark:bg-[#2b2c37] shadow-[#364e7e1a] py-6 px-3 shadow-lg dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer"
+            className="w-[210px] sm:w-[288px] first:my-5 rounded-md  bg-white  dark:bg-[#2b2c37] shadow-[#364e7e1a] py-6 px-3 shadow-lg dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer"
           >
             <p className="font-bold tracking-wide">Simbanic Services</p>
             <p className="font-bold text-xs tracking-tighter mt-2 text-gray-500">
@@ -574,7 +577,7 @@ const MainContent = () => {
           </div>
           <div
             draggable="true"
-            className="w-[210px] sm:w-[280px] first:my-5 rounded-md  bg-white  dark:bg-[#2b2c37] shadow-[#364e7e1a] py-6 px-3 shadow-lg dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer"
+            className="w-[210px] sm:w-[288px] first:my-5 rounded-md  bg-white  dark:bg-[#2b2c37] shadow-[#364e7e1a] py-6 px-3 shadow-lg dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer"
           >
             <p className="font-bold tracking-wide">Simbanic Services</p>
             <p className="font-bold text-xs tracking-tighter mt-2 text-gray-500">
@@ -628,7 +631,7 @@ const MainContent = () => {
           </div>
           <div
             draggable="true"
-            className="w-[210px] sm:w-[280px] first:my-5 rounded-md  bg-white  dark:bg-[#2b2c37] shadow-[#364e7e1a] py-6 px-3 shadow-lg dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer"
+            className="w-[210px] sm:w-[288px] first:my-5 rounded-md  bg-white  dark:bg-[#2b2c37] shadow-[#364e7e1a] py-6 px-3 shadow-lg dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer"
           >
             <p className="font-bold tracking-wide">Simbanic Services</p>
             <p className="font-bold text-xs tracking-tighter mt-2 text-gray-500">
@@ -682,7 +685,7 @@ const MainContent = () => {
           </div>
           <div
             draggable="true"
-            className="w-[210px] sm:w-[280px] first:my-5 rounded-md  bg-white  dark:bg-[#2b2c37] shadow-[#364e7e1a] py-6 px-3 shadow-lg dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer"
+            className="w-[210px] sm:w-[288px] first:my-5 rounded-md  bg-white  dark:bg-[#2b2c37] shadow-[#364e7e1a] py-6 px-3 shadow-lg dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer"
           >
             <p className="font-bold tracking-wide">Simbanic Services</p>
             <p className="font-bold text-xs tracking-tighter mt-2 text-gray-500">
@@ -736,7 +739,7 @@ const MainContent = () => {
           </div>
           <div
             draggable="true"
-            className="w-[210px] sm:w-[280px] first:my-5 rounded-md  bg-white  dark:bg-[#2b2c37] shadow-[#364e7e1a] py-6 px-3 shadow-lg dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer"
+            className="w-[210px] sm:w-[288px] first:my-5 rounded-md  bg-white  dark:bg-[#2b2c37] shadow-[#364e7e1a] py-6 px-3 shadow-lg dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer"
           >
             <p className="font-bold tracking-wide">Simbanic Services</p>
             <p className="font-bold text-xs tracking-tighter mt-2 text-gray-500">
@@ -790,7 +793,7 @@ const MainContent = () => {
           </div>
           <div
             draggable="true"
-            className="w-[210px] sm:w-[280px] first:my-5 rounded-md  bg-white  dark:bg-[#2b2c37] shadow-[#364e7e1a] py-6 px-3 shadow-lg dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer"
+            className="w-[210px] sm:w-[288px] first:my-5 rounded-md  bg-white  dark:bg-[#2b2c37] shadow-[#364e7e1a] py-6 px-3 shadow-lg dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer"
           >
             <p className="font-bold tracking-wide">Simbanic Services</p>
             <p className="font-bold text-xs tracking-tighter mt-2 text-gray-500">
@@ -844,7 +847,7 @@ const MainContent = () => {
           </div>
           <div
             draggable="true"
-            className="w-[210px] sm:w-[280px] first:my-5 rounded-md  bg-white  dark:bg-[#2b2c37] shadow-[#364e7e1a] py-6 px-3 shadow-lg dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer"
+            className="w-[210px] sm:w-[288px] first:my-5 rounded-md  bg-white  dark:bg-[#2b2c37] shadow-[#364e7e1a] py-6 px-3 shadow-lg dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer"
           >
             <p className="font-bold tracking-wide">Simbanic Services</p>
             <p className="font-bold text-xs tracking-tighter mt-2 text-gray-500">
@@ -898,7 +901,7 @@ const MainContent = () => {
           </div>
           <div
             draggable="true"
-            className="w-[210px] sm:w-[280px] first:my-5 rounded-md  bg-white  dark:bg-[#2b2c37] shadow-[#364e7e1a] py-6 px-3 shadow-lg dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer"
+            className="w-[210px] sm:w-[288px] first:my-5 rounded-md  bg-white  dark:bg-[#2b2c37] shadow-[#364e7e1a] py-6 px-3 shadow-lg dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer"
           >
             <p className="font-bold tracking-wide">Simbanic Services</p>
             <p className="font-bold text-xs tracking-tighter mt-2 text-gray-500">

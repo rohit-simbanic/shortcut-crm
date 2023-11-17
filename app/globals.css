@@ -4,7 +4,8 @@
 
 html,
 body {
-  height: 100%;
+  height: 100dvh;
+  /* overflow-y: hidden; */
   overflow: hidden;
   background-color: #f8f9fb;
 }
@@ -92,7 +93,7 @@ body {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #c9c7c7;
 }
-#mainDragBox::-webkit-scrollbar-track {
+/* #mainDragBox::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.082);
   border-radius: 10px;
   background-color: #f5f5f5;
@@ -107,4 +108,56 @@ body {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #2c1919;
+} */
+#mainContent::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.082);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+#mainContent::-webkit-scrollbar {
+  width: 8px;
+  height: 10px;
+  background-color: #d3d3d3;
+}
+
+#mainContent::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #d4d4d4;
+}
+
+#leftSidebar::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0px;
+}
+#leftSidebar:hover::-webkit-scrollbar {
+  width: 8px;
+}
+#leftSidebar:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+#sidebarRight::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0px;
+}
+#sidebarRight:hover::-webkit-scrollbar {
+  width: 8px;
+}
+#sidebarRight:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+#mainDragBox::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0px;
+}
+#mainDragBox:hover::-webkit-scrollbar {
+  width: 8px;
+}
+#mainDragBox:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }

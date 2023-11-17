@@ -32,7 +32,7 @@ const Header = () => {
     };
   }, [isModalOpen]);
   return (
-    <div className="bg-[#151e2d] dark:bg-black border-b-[1px] border-black dark:border-[#283040] py-3">
+    <div className="bg-[#151e2d] dark:bg-black border-b-[1px] border-black dark:border-[#283040] sm:py-3">
       <div className="mx-auto flex justify-center sm:justify-between flex-wrap sm:flex-1 py-2 sm:p-0 items-center px-2">
         <div className="flex gap-2">
           <div className="hover:bg-[#363e50] p-2 rounded-md hover:cursor-pointer">
@@ -47,7 +47,7 @@ const Header = () => {
             <CreateButton />
             <Dropdown />
           </div>
-          <div className="relative flex items-center">
+          <div className="relative hidden md:flex items-center">
             <span className="absolute inset-y-0 left-4 flex items-center text-gray-400 transition-transform transform scale-100 focus:scale-110 cursor-pointer">
               <svg
                 viewBox="0 0 20 20"
@@ -1083,7 +1083,7 @@ const Header = () => {
               </div>
             )}
           </div>
-          <div className="flex items-center">
+          <div className="hidden xl:flex items-center">
             <button
               className="hidden lg:flex select-none gap-3 rounded-lg border border-solid border-1 border-slate-50/10 px-2 py-0 text-center align-middle font-sans text-xs font-bold text-gray-500  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none h-10 items-center"
               type="button"
@@ -1093,9 +1093,9 @@ const Header = () => {
             </button>
           </div>
         </div>
-        <div className="flex gap-2 relative py-3 sm:py-0">
+        <div className="flex gap-2 relative py-0 md:py-0">
           <button
-            className="middle none center hidden lg:flex items-center justify-center rounded-lg p-2 font-sans text-xs font-bold transition-all hover:bg-slate-50/10  active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            className="middle none center hidden xl:flex items-center justify-center rounded-lg p-2 font-sans text-xs font-bold transition-all hover:bg-slate-50/10  active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             data-ripple-dark="true"
           >
             <svg
