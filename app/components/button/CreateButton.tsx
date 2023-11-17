@@ -41,7 +41,7 @@ const CreateButton = () => {
             className="content h-[509px] overflow-y-scroll flex gap-4 px-6"
             id="style-2"
           >
-            <div className="w-[80%]">
+            <div className="w-[100%] xs:w-[80%]">
               <h4 className="mb-2 font-medium text-[#444] dark:text-[#f6f6f6]">
                 Story Title
               </h4>
@@ -378,7 +378,7 @@ const CreateButton = () => {
                 Relationships..
               </button>
             </div>
-            <div className="w-[20%]">
+            <div className="w-[100%] xs:w-[20%]">
               <div>
                 <button className="border-[1px] border-gray-200 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
                   <div className="bg-[#cd65b6] h-7 w-7 rounded-[50%] flex items-center justify-center">
