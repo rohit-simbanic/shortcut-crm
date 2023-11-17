@@ -28,7 +28,7 @@ function SidebarRight() {
           isOpen
             ? "px-2 hover:bg-[#eef0f4] hover:cursor-pointer"
             : "pl-4 pr-[1.1rem]"
-        } flex-none items-center relative z-10 sidebar bg-[#f8f9fb] border-r border-gray-300 dark:border-[#283040] transform ${
+        } flex-none items-center relative sidebar bg-[#f8f9fb] border-r border-gray-300 dark:border-[#283040] transform ${
           isOpen ? "translate-x-0" : "translate-x-[0px]"
         } opacity ${
           isOpen ? "100" : "0"
