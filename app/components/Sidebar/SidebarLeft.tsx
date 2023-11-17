@@ -390,11 +390,13 @@ const SidebarLeft = () => {
                       isCollapsed ? "ml-[17px]" : "ml-[12px]"
                     } border-l-[1px] dark:border-[#283040] ${
                       isCollapsed ? "h-[70px]" : ""
-                    } dark:border-slate-50 list-text`}
+                    } dark:border-slate-50 list-text `}
                   >
                     {!isCollapsed && (
                       <div
-                        className="py-0 p-1"
+                        className={`py-0 p-1 dropdown-items ${
+                          isCollapsed ? "collapsed" : ""
+                        }`}
                         role="menu"
                         aria-orientation="vertical"
                         aria-labelledby="dropdown-button"
