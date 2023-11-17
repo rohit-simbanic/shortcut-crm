@@ -273,7 +273,7 @@ const CreateButton = () => {
               </h4>
 
               <hr className="mb-2 dark:border-[#3f4a5f]" />
-              <div className="flex gap-2">
+              <div className="flex gap-2 flex-wrap">
                 <button
                   type="button"
                   className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 shadow hover:shadow-md text-xs flex gap-2 dark:text-[#f6f6f6]"
