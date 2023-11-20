@@ -697,7 +697,6 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                       Jan 25 2023, 7:50 pm
                     </p>
                   </div>
-                  d
                 </div>
               </div>
               <div className="w-[20%] max-lg:w-[100%]">
