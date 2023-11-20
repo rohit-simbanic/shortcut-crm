@@ -1,16 +1,12 @@
+//@ts-nocheck
 import type { Identifier, XYCoord } from "dnd-core";
 import type { FC } from "react";
-import { useRef } from "react";
+import { useContext, useRef } from "react";
 import { useDrag, useDrop } from "react-dnd";
 import { ItemTypes } from "./Types";
-
-const style = {
-  border: "1px dashed gray",
-  padding: "0.5rem 1rem",
-  marginBottom: ".5rem",
-  backgroundColor: "white",
-  cursor: "move",
-};
+import Popup from "reactjs-popup";
+import { SidebarContext } from "@/app/context/sidebarContext";
+import ChangesModal from "../modals/ChangesModal";
 
 export interface CardProps {
   id: any;
@@ -100,62 +96,945 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
 
   const opacity = isDragging ? 0 : 1;
   drag(drop(ref));
+
+  const { isChangesOpen, setIsChangesOpen, toggleChangesModalOpen } =
+    useContext(SidebarContext);
   return (
     <div ref={ref} style={{ opacity }} data-handler-id={handlerId}>
-      <div
-        draggable="true"
-        className="w-[210px] sm:w-[288px] mb-3 rounded-md  bg-white  dark:bg-[#2b2c37] shadow-[#364e7e1a] py-6 px-3 shadow-lg dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer"
-      >
-        <p className="font-bold tracking-wide">Simbanic Services</p>
-        <p className="font-bold text-xs tracking-tighter mt-2 text-gray-500">
-          0 of 2 completed tasks
-        </p>
-        <div className="flex justify-between items-center mt-3">
-          <div className="bg-[#fcfae3] p-1">
-            <svg
-              width="20"
-              height="20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#a)">
-                <path
-                  d="M9.191 2.112a1 1 0 0 1 1.618 0l1.547 2.129a1 1 0 0 0 .829.411l2.564-.05a1 1 0 0 1 .993 1.229l-.648 2.76a1 1 0 0 0 .187.845l1.727 2.202a1 1 0 0 1-.35 1.517l-2.41 1.167a1 1 0 0 0-.546.706l-.536 2.709a1 1 0 0 1-1.45.689L10.47 17.23a1 1 0 0 0-.94 0l-2.245 1.195a1 1 0 0 1-1.451-.688l-.536-2.709a1 1 0 0 0-.545-.706l-2.41-1.167a1 1 0 0 1-.351-1.517l1.727-2.202a1 1 0 0 0 .187-.846l-.648-2.76a1 1 0 0 1 .993-1.228l2.564.05a1 1 0 0 0 .829-.411L9.19 2.112z"
-                  fill="#666"
-                ></path>
-              </g>
-              <defs>
-                <clipPath id="a">
-                  <path fill="#fff" d="M0 0h20v20H0z"></path>
-                </clipPath>
-              </defs>
-            </svg>
-          </div>
-          <div className="flex justify-between items-center gap-2">
-            <div className="w-[25px] h-[25px] rounded-[50%] bg-[#73818b]">
-              <svg
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M10 5.048c0 1.683-1.343 3.047-3 3.047S4 6.731 4 5.048C4 3.364 5.343 2 7 2s3 1.364 3 3.048ZM6.625 9.619C3.518 9.62 1 12.177 1 15.333v1.17C1 17.33 1.66 18 2.473 18h15.172c.748 0 1.355-.616 1.355-1.376v-.148c0-2.104-1.679-3.81-3.75-3.81a3.73 3.73 0 0 0-3.089 1.65c-.473-2.67-2.771-4.697-5.536-4.697Zm8.625 1.524c1.243 0 2.25-1.024 2.25-2.286s-1.007-2.286-2.25-2.286S13 7.595 13 8.857c0 1.263 1.007 2.286 2.25 2.286Z"
-                  fill="#ffffff"
-                ></path>
-              </svg>
+      <Popup
+        trigger={
+          <div
+            draggable="true"
+            className="w-[210px] sm:w-[288px] mb-3 rounded-md  bg-white  dark:bg-[#2b2c37] shadow-[#364e7e1a] py-6 px-3 shadow-lg dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer"
+          >
+            <p className="font-bold tracking-wide">Simbanic Services</p>
+            <p className="font-bold text-xs tracking-tighter mt-2 text-gray-500">
+              0 of 2 completed tasks
+            </p>
+            <div className="flex justify-between items-center mt-3">
+              <div className="bg-[#fcfae3] p-1">
+                <svg
+                  width="20"
+                  height="20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#a)">
+                    <path
+                      d="M9.191 2.112a1 1 0 0 1 1.618 0l1.547 2.129a1 1 0 0 0 .829.411l2.564-.05a1 1 0 0 1 .993 1.229l-.648 2.76a1 1 0 0 0 .187.845l1.727 2.202a1 1 0 0 1-.35 1.517l-2.41 1.167a1 1 0 0 0-.546.706l-.536 2.709a1 1 0 0 1-1.45.689L10.47 17.23a1 1 0 0 0-.94 0l-2.245 1.195a1 1 0 0 1-1.451-.688l-.536-2.709a1 1 0 0 0-.545-.706l-2.41-1.167a1 1 0 0 1-.351-1.517l1.727-2.202a1 1 0 0 0 .187-.846l-.648-2.76a1 1 0 0 1 .993-1.228l2.564.05a1 1 0 0 0 .829-.411L9.19 2.112z"
+                      fill="#666"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#fff" d="M0 0h20v20H0z"></path>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div className="flex justify-between items-center gap-2">
+                <div className="w-[25px] h-[25px] rounded-[50%] bg-[#73818b]">
+                  <svg
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10 5.048c0 1.683-1.343 3.047-3 3.047S4 6.731 4 5.048C4 3.364 5.343 2 7 2s3 1.364 3 3.048ZM6.625 9.619C3.518 9.62 1 12.177 1 15.333v1.17C1 17.33 1.66 18 2.473 18h15.172c.748 0 1.355-.616 1.355-1.376v-.148c0-2.104-1.679-3.81-3.75-3.81a3.73 3.73 0 0 0-3.089 1.65c-.473-2.67-2.771-4.697-5.536-4.697Zm8.625 1.524c1.243 0 2.25-1.024 2.25-2.286s-1.007-2.286-2.25-2.286S13 7.595 13 8.857c0 1.263 1.007 2.286 2.25 2.286Z"
+                      fill="#ffffff"
+                    ></path>
+                  </svg>
+                </div>
+                <button
+                  className="py-1 rounded-[50%] px-1 text-center h-7 w-7 align-middle font-sans text-xs font-bold text-gray-50  transition-all bg-[#ccba45] hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  type="button"
+                  data-ripple-light="true"
+                >
+                  RM
+                </button>
+              </div>
             </div>
-            <button
-              className="py-1 rounded-[50%] px-1 text-center h-7 w-7 align-middle font-sans text-xs font-bold text-gray-50  transition-all bg-[#ccba45] hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-              type="button"
-              data-ripple-light="true"
-            >
-              RM
-            </button>
           </div>
-        </div>
-      </div>
+        }
+        modal
+        nested
+      >
+        {(close: React.MouseEventHandler<HTMLButtonElement> | undefined) => (
+          <div className="modal dark:bg-[#1f2532]">
+            <div className="flex justify-between items-start modal-header px-6">
+              <h1 className="font-bold text-lg text-[#1f2532] dark:text-[#f6f6f6] my-6">
+                Transaction Dashboard
+              </h1>
+              <div className="flex items-center mt-4">
+                <button className="close" onClick={close}>
+                  <svg
+                    fill="#b3b3b3"
+                    width="29px"
+                    height="29px"
+                    viewBox="0 0 1024 1024"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="hover:cursor-pointer hover:text-[#555]"
+                  >
+                    <path d="M697.4 759.2l61.8-61.8L573.8 512l185.4-185.4-61.8-61.8L512 450.2 326.6 264.8l-61.8 61.8L450.2 512 264.8 697.4l61.8 61.8L512 573.8z"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div
+              className="content h-[509px] overflow-y-scroll flex max-lg:flex-col gap-4 px-6"
+              id="style-2"
+            >
+              <div className="w-[80%] max-lg:w-[100%]">
+                <p className="italic text-[#808080] mb-2">
+                  No description given.
+                </p>
+                <button
+                  type="button"
+                  class="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 shadow hover:shadow-md text-xs flex gap-2 dark:text-[#f6f6f6] items-center"
+                >
+                  <span class="text-[#13ae47] font-bold">
+                    <svg
+                      fill="#e3e3e3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="19px"
+                      height="19px"
+                      viewBox="0 0 494.936 494.936"
+                      stroke="#e3e3e3"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        {" "}
+                        <g>
+                          {" "}
+                          <g>
+                            {" "}
+                            <path d="M389.844,182.85c-6.743,0-12.21,5.467-12.21,12.21v222.968c0,23.562-19.174,42.735-42.736,42.735H67.157 c-23.562,0-42.736-19.174-42.736-42.735V150.285c0-23.562,19.174-42.735,42.736-42.735h267.741c6.743,0,12.21-5.467,12.21-12.21 s-5.467-12.21-12.21-12.21H67.157C30.126,83.13,0,113.255,0,150.285v267.743c0,37.029,30.126,67.155,67.157,67.155h267.741 c37.03,0,67.156-30.126,67.156-67.155V195.061C402.054,188.318,396.587,182.85,389.844,182.85z"></path>{" "}
+                            <path d="M483.876,20.791c-14.72-14.72-38.669-14.714-53.377,0L221.352,229.944c-0.28,0.28-3.434,3.559-4.251,5.396l-28.963,65.069 c-2.057,4.619-1.056,10.027,2.521,13.6c2.337,2.336,5.461,3.576,8.639,3.576c1.675,0,3.362-0.346,4.96-1.057l65.07-28.963 c1.83-0.815,5.114-3.97,5.396-4.25L483.876,74.169c7.131-7.131,11.06-16.61,11.06-26.692 C494.936,37.396,491.007,27.915,483.876,20.791z M466.61,56.897L257.457,266.05c-0.035,0.036-0.055,0.078-0.089,0.107 l-33.989,15.131L238.51,247.3c0.03-0.036,0.071-0.055,0.107-0.09L447.765,38.058c5.038-5.039,13.819-5.033,18.846,0.005 c2.518,2.51,3.905,5.855,3.905,9.414C470.516,51.036,469.127,54.38,466.61,56.897z"></path>{" "}
+                          </g>{" "}
+                        </g>{" "}
+                      </g>
+                    </svg>
+                  </span>{" "}
+                  Edit Description
+                </button>
+                <form className="my-2">
+                  <div className="mb-4 w-full bg-gray-50 rounded-lg border border-gray-200 dark:bg-gray-700 dark:border-gray-600">
+                    <div className="flex justify-between items-center py-2 px-3 border-b dark:border-gray-600">
+                      <div className="flex flex-wrap items-center divide-gray-200 sm:divide-x dark:divide-gray-600">
+                        <div className="flex items-center space-x-1 sm:pr-4">
+                          <button
+                            type="button"
+                            className="p-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600"
+                          >
+                            <svg
+                              className="w-5 h-5"
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z"
+                                clip-rule="evenodd"
+                              ></path>
+                            </svg>
+                          </button>
+                          <button
+                            type="button"
+                            className="p-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600"
+                          >
+                            <svg
+                              className="w-5 h-5"
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                clip-rule="evenodd"
+                              ></path>
+                            </svg>
+                          </button>
+                          <button
+                            type="button"
+                            className="p-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600"
+                          >
+                            <svg
+                              className="w-5 h-5"
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
+                                clip-rule="evenodd"
+                              ></path>
+                            </svg>
+                          </button>
+                          <button
+                            type="button"
+                            className="p-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600"
+                          >
+                            <svg
+                              className="w-5 h-5"
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd"
+                              ></path>
+                            </svg>
+                          </button>
+                          <button
+                            type="button"
+                            className="p-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600"
+                          >
+                            <svg
+                              className="w-5 h-5"
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z"
+                                clip-rule="evenodd"
+                              ></path>
+                            </svg>
+                          </button>
+                        </div>
+                        <div className="flex flex-wrap items-center space-x-1 sm:pl-4">
+                          <button
+                            type="button"
+                            className="p-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600"
+                          >
+                            <svg
+                              className="w-5 h-5"
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"
+                              ></path>
+                            </svg>
+                          </button>
+                          <button
+                            type="button"
+                            className="p-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600"
+                          >
+                            <svg
+                              className="w-5 h-5"
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
+                                clip-rule="evenodd"
+                              ></path>
+                            </svg>
+                          </button>
+                          <button
+                            type="button"
+                            className="p-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600"
+                          >
+                            <svg
+                              className="w-5 h-5"
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                                clip-rule="evenodd"
+                              ></path>
+                            </svg>
+                          </button>
+                          <button
+                            type="button"
+                            className="p-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600"
+                          >
+                            <svg
+                              className="w-5 h-5"
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                                clip-rule="evenodd"
+                              ></path>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        data-tooltip-target="tooltip-fullscreen"
+                        class="p-2 text-gray-500 rounded cursor-pointer sm:ml-auto hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600"
+                      >
+                        <svg
+                          class="w-5 h-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 11-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 012 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 010 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 010-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15 13.586V12a1 1 0 011-1z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </button>
+                      <div
+                        id="tooltip-fullscreen"
+                        role="tooltip"
+                        class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700"
+                      >
+                        Show full screen
+                        <div class="tooltip-arrow" data-popper-arrow></div>
+                      </div>
+                    </div>
+                    <div class="py-2 px-4 bg-white rounded-b-lg dark:bg-gray-800">
+                      <label for="editor" class="sr-only">
+                        Publish post
+                      </label>
+                      <textarea
+                        id="editor"
+                        rows="8"
+                        class="block px-0 w-full text-sm text-gray-800 bg-white border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400"
+                        placeholder="Write an article..."
+                        required
+                      ></textarea>
+                    </div>
+                  </div>
+                </form>
+                <h4 className="my-2 font-medium text-[#444] dark:text-[#f6f6f6]">
+                  Tasks
+                </h4>
+
+                <hr className="mb-2 dark:border-[#3f4a5f]" />
+
+                <button
+                  type="button"
+                  className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 shadow hover:shadow-md text-xs dark:text-[#f6f6f6]"
+                >
+                  <span className="text-[#13ae47] font-bold dark:text-[#f6f6f6]">
+                    +
+                  </span>{" "}
+                  Add Task
+                </button>
+                <h4 className="my-2 font-medium text-[#444] dark:text-[#f6f6f6]">
+                  Add To Story
+                </h4>
+
+                <hr className="mb-2 dark:border-[#3f4a5f]" />
+                <div className="flex gap-2 flex-wrap">
+                  <button
+                    type="button"
+                    className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 shadow hover:shadow-md text-xs flex gap-2 dark:text-[#f6f6f6]"
+                  >
+                    <span className="text-[#13ae47] font-bold">
+                      <svg
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height={15}
+                        width={15}
+                      >
+                        <path
+                          d="M8 5a1 1 0 0 0 0 2h4.379a.5.5 0 0 1 .353.854l-.439.439a1 1 0 0 0 1.414 1.414l3-3a1 1 0 0 0 0-1.414l-3-3a1 1 0 1 0-1.414 1.414l.44.44a.5.5 0 0 1-.354.853H8Zm4 10a1 1 0 0 0 0-2H7.621a.5.5 0 0 1-.353-.854l.439-.439a1 1 0 1 0-1.414-1.414l-3 3a1 1 0 0 0 0 1.414l3 3a1 1 0 0 0 1.414-1.414l-.44-.44A.5.5 0 0 1 7.622 15H12Z"
+                          fill="#666"
+                        ></path>
+                      </svg>
+                    </span>{" "}
+                    Relationships..
+                  </button>
+                  <button
+                    type="button"
+                    className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 shadow hover:shadow-md text-xs flex gap-2 dark:text-[#f6f6f6]"
+                  >
+                    <span className="text-[#13ae47] font-bold">
+                      <svg
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height={15}
+                        width={15}
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M15.058 4.942a3.066 3.066 0 0 0-4.335 0L9.277 6.387a1.022 1.022 0 0 1-1.445-1.445l1.445-1.445a5.11 5.11 0 0 1 7.226 7.226l-1.445 1.445a1.022 1.022 0 0 1-1.445-1.445l1.445-1.446a3.066 3.066 0 0 0 0-4.335ZM4.942 15.058a3.066 3.066 0 0 0 4.335 0l1.446-1.445a1.022 1.022 0 1 1 1.445 1.445l-1.445 1.445a5.11 5.11 0 0 1-7.226-7.226l1.445-1.445a1.022 1.022 0 1 1 1.445 1.445l-1.445 1.446a3.066 3.066 0 0 0 0 4.335Zm7.226-5.78a1.022 1.022 0 0 0-1.445-1.446l-2.89 2.89a1.022 1.022 0 0 0 1.444 1.446l2.89-2.89Z"
+                          fill="#666"
+                        ></path>
+                      </svg>
+                    </span>{" "}
+                    Relationships..
+                  </button>
+                  <button
+                    type="button"
+                    className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 shadow hover:shadow-md text-xs flex gap-2 dark:text-[#f6f6f6]"
+                  >
+                    <span className="text-[#13ae47] font-bold">
+                      <svg
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height={15}
+                        width={15}
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M8 4a3 3 0 0 0-3 3v4a5 5 0 0 0 10 0V7a1 1 0 1 1 2 0v4a7 7 0 1 1-14 0V7a5 5 0 0 1 10 0v4a3 3 0 1 1-6 0V7a1 1 0 0 1 2 0v4a1 1 0 1 0 2 0V7a3 3 0 0 0-3-3Z"
+                          fill="#666"
+                        ></path>
+                      </svg>
+                    </span>{" "}
+                    Relationships..
+                  </button>
+                </div>
+                <h4 className="my-2 font-medium text-[#444] dark:text-[#f6f6f6]">
+                  Comments
+                </h4>
+
+                <hr className="mb-2 dark:border-[#3f4a5f]" />
+                <div className="flex justify-between">
+                  <button
+                    type="button"
+                    className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 shadow hover:shadow-md text-xs flex gap-2 dark:text-[#f6f6f6]"
+                  >
+                    <span className="text-[#13ae47] font-bold">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        stroke="#a09292"
+                        height={15}
+                        width={15}
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          {" "}
+                          <path
+                            d="M12 9.5V15.5M12 9.5L10 11.5M12 9.5L14 11.5M8.4 19C5.41766 19 3 16.6044 3 13.6493C3 11.2001 4.8 8.9375 7.5 8.5C8.34694 6.48637 10.3514 5 12.6893 5C15.684 5 18.1317 7.32251 18.3 10.25C19.8893 10.9449 21 12.6503 21 14.4969C21 16.9839 18.9853 19 16.5 19L8.4 19Z"
+                            stroke="#000000"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>{" "}
+                        </g>
+                      </svg>
+                    </span>{" "}
+                    Relationships..
+                  </button>
+                  <button
+                    type="button"
+                    className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 shadow hover:shadow-md text-xs flex gap-2 dark:text-[#f6f6f6]"
+                  >
+                    <span className="text-[#13ae47] font-bold">
+                      <svg
+                        width="15px"
+                        height="15px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          {" "}
+                          <path
+                            d="M12 5V19M12 19L6 13M12 19L18 13"
+                            stroke="#000000"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>{" "}
+                        </g>
+                      </svg>
+                    </span>{" "}
+                    Oldest first...
+                  </button>
+                </div>
+                <div className="flex gap-2 my-4">
+                  <div>
+                    <button
+                      class="py-3 rounded-[50%] px-3 text-center h-10 flex justify-center items-center w-10 align-middle font-sans text-xs font-bold text-gray-50  transition-all bg-[#ccba45] hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                      type="button"
+                      data-ripple-light="true"
+                    >
+                      RM
+                    </button>
+                  </div>
+                  <div className="w-full">
+                    <h3 className="font-bold text-[#1f2532]">Rohit Mondal</h3>
+                    <textarea
+                      id="message"
+                      placeholder="Add a comment..."
+                      rows="2"
+                      class="block p-2.5 w-full text-sm text-gray-900 bg-white rounded resize-none border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    ></textarea>
+                  </div>
+                </div>
+                <h4 className="my-2 font-medium text-[#444] dark:text-[#f6f6f6]">
+                  Story activity
+                </h4>
+
+                <hr className="mb-2 dark:border-[#3f4a5f]" />
+                <div className="relative">
+                  <div className="flex justify-between">
+                    <div className="flex gap-2">
+                      <p className="text-[#444] font-light text-sm">Showing:</p>
+                      <button
+                        type="button"
+                        className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 shadow hover:shadow-md text-xs flex gap-2 dark:text-[#f6f6f6]"
+                        onClick={toggleChangesModalOpen}
+                      >
+                        Important changes only
+                        <span className="text-[#13ae47] font-bold">
+                          <svg
+                            fill="#000000"
+                            width="14px"
+                            height="14px"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                            stroke="#000000"
+                          >
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g
+                              id="SVGRepo_tracerCarrier"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></g>
+                            <g id="SVGRepo_iconCarrier">
+                              <path d="M24 11.305l-7.997 11.39L8 11.305z"></path>
+                            </g>
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                    <button
+                      type="button"
+                      className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 shadow hover:shadow-md text-xs flex gap-2 dark:text-[#f6f6f6]"
+                    >
+                      <span className="text-[#13ae47] font-bold">
+                        <svg
+                          width="15px"
+                          height="15px"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></g>
+                          <g id="SVGRepo_iconCarrier">
+                            {" "}
+                            <path
+                              d="M12 5V19M12 19L6 13M12 19L18 13"
+                              stroke="#000000"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>{" "}
+                          </g>
+                        </svg>
+                      </span>{" "}
+                      Oldest first...
+                    </button>
+                  </div>
+                  {isChangesOpen && <ChangesModal />}
+                </div>
+                <div className="flex gap-2 my-4">
+                  <div>
+                    <button
+                      class="py-3 rounded-[50%] px-3 text-center h-6 flex justify-center items-center w-6 align-middle font-sans text-xs font-bold text-gray-50  transition-all bg-[#2D78A4] hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                      type="button"
+                      data-ripple-light="true"
+                    >
+                      AK
+                    </button>
+                  </div>
+                  <div className="w-full">
+                    <h3 className="text-[#1f2532]">
+                      <strong>Alok Kumar</strong> created this story in{" "}
+                      <strong>Unscheduled</strong>
+                    </h3>
+                    <p className="font-light text-sm text-[#b3b3b3]">
+                      Jan 25 2023, 7:50 pm
+                    </p>
+                  </div>
+                  d
+                </div>
+              </div>
+              <div className="w-[20%] max-lg:w-[100%]">
+                <div>
+                  <button className="border-[1px] border-gray-200 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
+                    <div className="bg-[#cd65b6] h-7 w-7 rounded-[50%] flex items-center justify-center">
+                      <svg
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height={20}
+                        width={20}
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M10 5.048c0 1.683-1.343 3.047-3 3.047S4 6.731 4 5.048C4 3.364 5.343 2 7 2s3 1.364 3 3.048ZM6.625 9.619C3.518 9.62 1 12.177 1 15.333v1.17C1 17.33 1.66 18 2.473 18h15.172c.748 0 1.355-.616 1.355-1.376v-.148c0-2.104-1.679-3.81-3.75-3.81a3.73 3.73 0 0 0-3.089 1.65c-.473-2.67-2.771-4.697-5.536-4.697Zm8.625 1.524c1.243 0 2.25-1.024 2.25-2.286s-1.007-2.286-2.25-2.286S13 7.595 13 8.857c0 1.263 1.007 2.286 2.25 2.286Z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div className="flex flex-col">
+                      <p className="font-light relative -left-[37px] text-xs dark:text-[#f6f6f6]">
+                        Team
+                      </p>
+                      <p className="font-bold text-sm dark:text-[#f6f6f6]">
+                        Backend Team
+                      </p>
+                    </div>
+                  </button>
+                  <button className="border-[1px] border-gray-200 border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
+                    <svg
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height={22}
+                      width={22}
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M1 4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v3H6a1 1 0 1 0 0 2h3v7a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4Zm10 5v3a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v3h2.325a.5.5 0 0 0 .374-.831l-.448-.506a1 1 0 0 1 1.498-1.326l2.656 3a1 1 0 0 1 0 1.326l-2.656 3a1 1 0 1 1-1.498-1.326l.448-.505A.5.5 0 0 0 13.325 9H11Z"
+                        fill="#666"
+                      ></path>
+                    </svg>
+
+                    <div className="flex flex-col">
+                      <p className="font-light relative -left-[37px] text-xs dark:text-[#f6f6f6]">
+                        Team
+                      </p>
+                      <p className="font-bold text-sm dark:text-[#f6f6f6]">
+                        Backend Team
+                      </p>
+                    </div>
+                  </button>
+                  <button className="border-[1px] border-gray-200 border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
+                    <svg
+                      width="20"
+                      height="20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M10.883 1.043a9.001 9.001 0 0 1-1.765 17.914l.193-1.99a7.11 7.11 0 0 0 .776.033 7 7 0 1 0-.776-13.967l-.193-1.99a9.108 9.108 0 0 1 1.764 0zM7.966 3.299l-.58-1.914c-.569.173-1.114.4-1.63.676l.945 1.763c.4-.214.824-.39 1.265-.525zM5.56 4.588 4.29 3.043A9.054 9.054 0 0 0 3.043 4.29l1.545 1.27c.291-.355.617-.68.972-.972zM3.824 6.701l-1.763-.944a8.944 8.944 0 0 0-.676 1.63l1.914.58c.134-.442.31-.866.525-1.266zM1 10c0-.298.014-.592.043-.883l1.99.194a7.11 7.11 0 0 0 0 1.378l-1.99.194A9.108 9.108 0 0 1 1 10zm2.3 2.034-1.915.58c.173.569.4 1.114.676 1.63l1.763-.945c-.214-.4-.39-.824-.525-1.265zm1.288 2.406-1.545 1.27c.374.455.792.873 1.247 1.247l1.27-1.545a7.06 7.06 0 0 1-.972-.972zm2.113 1.736-.944 1.763a8.95 8.95 0 0 0 1.63.676l.58-1.914a6.945 6.945 0 0 1-1.266-.525z"
+                        fill="#666"
+                      ></path>
+                    </svg>
+                    <div className="flex flex-col">
+                      <p className="font-light relative -left-[50px] text-xs dark:text-[#f6f6f6]">
+                        Team
+                      </p>
+                      <p className="font-bold text-sm dark:text-[#f6f6f6]">
+                        State Unscheduled
+                      </p>
+                    </div>
+                  </button>
+                  <button className="border-[1px] border-gray-200 border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      stroke="#a09292"
+                      height="22"
+                      width="22"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        {" "}
+                        <path
+                          d="M12 9.5V15.5M12 9.5L10 11.5M12 9.5L14 11.5M8.4 19C5.41766 19 3 16.6044 3 13.6493C3 11.2001 4.8 8.9375 7.5 8.5C8.34694 6.48637 10.3514 5 12.6893 5C15.684 5 18.1317 7.32251 18.3 10.25C19.8893 10.9449 21 12.6503 21 14.4969C21 16.9839 18.9853 19 16.5 19L8.4 19Z"
+                          stroke="#000000"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>{" "}
+                      </g>
+                    </svg>
+                    <div className="flex flex-col">
+                      <p className="font-light relative -left-[37px] text-xs dark:text-[#f6f6f6]">
+                        Team
+                      </p>
+                      <p className="font-bold text-sm dark:text-[#f6f6f6]">
+                        Backend Team
+                      </p>
+                    </div>
+                  </button>
+                </div>
+                <div className="my-3">
+                  <button className="border-[1px] border-gray-200 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
+                    <svg
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="22"
+                      width="22"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3 6a3 3 0 0 1 3-3h10a1 1 0 0 1 .8 1.6L14.25 8l2.55 3.4A1 1 0 0 1 16 13H6a1 1 0 0 0-1 1v3a1 1 0 1 1-2 0V6Z"
+                        fill="#666"
+                      ></path>
+                    </svg>
+                    <div className="flex flex-col">
+                      <p className="font-light relative -left-[37px] text-xs italic dark:text-[#f6f6f6]">
+                        Epic
+                      </p>
+                      <p className="font-bold text-sm dark:text-[#f6f6f6]">
+                        Backend Team
+                      </p>
+                    </div>
+                  </button>
+                  <button className="border-[1px] border-gray-200 border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
+                    <svg
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="22"
+                      width="22"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M10.5 7H7a3 3 0 1 0 0 6 1 1 0 0 1 0 2A5 5 0 1 1 7 5V3.5a.5.5 0 0 1 .854-.354l3 3A.5.5 0 0 1 10.5 7Zm1.793-1.707A1 1 0 0 1 13 5a5 5 0 1 1 0 10v1.5a.5.5 0 0 1-.854.354l-3-3A.5.5 0 0 1 9.5 13H13a3 3 0 1 0 0-6 1 1 0 0 1-.707-1.707Z"
+                        fill="#666"
+                      ></path>
+                    </svg>
+
+                    <div className="flex flex-col">
+                      <p className="font-light relative -left-[37px] text-xs dark:text-[#f6f6f6]">
+                        Team
+                      </p>
+                      <p className="font-bold text-sm dark:text-[#f6f6f6]">
+                        Backend Team
+                      </p>
+                    </div>
+                  </button>
+                  <button className="border-[1px] border-gray-200 border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
+                    <svg
+                      width="20"
+                      height="20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#a)">
+                        <path
+                          d="M9.191 2.112a1 1 0 0 1 1.618 0l1.547 2.129a1 1 0 0 0 .829.411l2.564-.05a1 1 0 0 1 .993 1.229l-.648 2.76a1 1 0 0 0 .187.845l1.727 2.202a1 1 0 0 1-.35 1.517l-2.41 1.167a1 1 0 0 0-.546.706l-.536 2.709a1 1 0 0 1-1.45.689L10.47 17.23a1 1 0 0 0-.94 0l-2.245 1.195a1 1 0 0 1-1.451-.688l-.536-2.709a1 1 0 0 0-.545-.706l-2.41-1.167a1 1 0 0 1-.351-1.517l1.727-2.202a1 1 0 0 0 .187-.846l-.648-2.76a1 1 0 0 1 .993-1.228l2.564.05a1 1 0 0 0 .829-.411L9.19 2.112z"
+                          fill="#c9a61d"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="a">
+                          <path fill="#fff" d="M0 0h20v20H0z"></path>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <div className="flex flex-col">
+                      <p className="font-light relative -left-[50px] text-xs dark:text-[#f6f6f6]">
+                        Team
+                      </p>
+                      <p className="font-bold text-sm dark:text-[#f6f6f6]">
+                        State Unscheduled
+                      </p>
+                    </div>
+                  </button>
+                </div>
+                <div className="my-3">
+                  <button className="border-[1px] border-gray-200 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
+                    <button
+                      class="py-3 rounded-[50%] px-3 text-center h-8 w-8 align-middle font-sans text-xs font-bold text-gray-50  transition-all bg-[#ccba45] hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none flex items-center justify-center"
+                      type="button"
+                      data-ripple-light="true"
+                    >
+                      RM
+                    </button>
+                    <div className="flex flex-col">
+                      <p className="font-light relative -left-[37px] text-xs italic dark:text-[#f6f6f6]">
+                        Epic
+                      </p>
+                      <p className="font-bold text-sm dark:text-[#f6f6f6]">
+                        Backend Team
+                      </p>
+                    </div>
+                  </button>
+                  <button className="border-[1px] border-gray-200 border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
+                    <div class="bg-[#333333] h-7 w-7 rounded-[50%] flex items-center justify-center">
+                      <svg
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="22"
+                        width="22"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M14 6a4 4 0 1 1-8 0 4 4 0 0 1 8 0ZM2.233 15.626C3.591 13.361 6.646 12 9.095 12h2.054c2.449 0 5.26 1.36 6.618 3.626.608 1.015-.046 2.374-1.143 2.374H3.376c-1.097 0-1.751-1.36-1.143-2.374Z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                    </div>
+
+                    <div className="flex flex-col">
+                      <p className="font-light relative -left-[37px] text-xs dark:text-[#f6f6f6]">
+                        Team
+                      </p>
+                      <p className="font-bold text-sm dark:text-[#f6f6f6]">
+                        Backend Team
+                      </p>
+                    </div>
+                  </button>
+                </div>
+                <div className="my-3">
+                  <button className="border-[1px] border-gray-200 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
+                    <div className="flex gap-2 items-center">
+                      <p className="font-light relative text-xs italic dark:text-[#f6f6f6]">
+                        Epic
+                      </p>
+                      <p className="font-bold text-sm dark:text-[#f6f6f6]">
+                        Backend Team
+                      </p>
+                    </div>
+                  </button>
+                  <button className="border-[1px] border-gray-200 border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
+                    <div className="flex gap-2 items-center">
+                      <p className="font-light relative text-xs dark:text-[#f6f6f6]">
+                        Team
+                      </p>
+                      <p className="font-bold text-sm dark:text-[#f6f6f6]">
+                        Backend Team
+                      </p>
+                    </div>
+                  </button>
+                  <button className="border-[1px] border-gray-200 border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500 justify-between">
+                    <div className="flex gap-2 items-center">
+                      <p className="font-light relative text-xs dark:text-[#f6f6f6]">
+                        Followers
+                      </p>
+                      <p className="font-bold text-sm italic dark:text-[#f6f6f6]">
+                        Nobody
+                      </p>
+                    </div>
+                    <div className=" border-l-[1px] border-gray-200 px-2 text-[#73e298] font-bold text-md hover:bg-gray-100">
+                      +
+                    </div>
+                  </button>
+                </div>
+                <div className="flex items-center justify-between">
+                  <h4 class="my-2 font-bold text-sm text-[#4e4e4e] dark:text-[#f6f6f6]">
+                    Custom Fields
+                  </h4>
+                  <h6 class="my-2 font-bold text-sm text-[#2d78a4]">Edit</h6>
+                </div>
+                <div className="my-3">
+                  <button className="border-[1px] border-gray-200 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 16 14"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M3.00001 9C3.00001 9.26522 3.10537 9.51957 3.2929 9.70711C3.48044 9.89464 3.73479 10 4.00001 10C4.26523 10 4.51958 9.89464 4.70712 9.70711C4.89465 9.51957 5.00001 9.26522 5.00001 9V3.414L6.29301 4.707C6.48161 4.88916 6.73421 4.98995 6.99641 4.98767C7.25861 4.9854 7.50942 4.88023 7.69483 4.69482C7.88024 4.50941 7.98541 4.2586 7.98768 3.9964C7.98996 3.7342 7.88917 3.4816 7.70701 3.293L4.70701 0.293C4.51948 0.105529 4.26517 0.000213623 4.00001 0.000213623C3.73485 0.000213623 3.48054 0.105529 3.29301 0.293L0.29301 3.293C0.110852 3.4816 0.010058 3.7342 0.0123364 3.9964C0.0146148 4.2586 0.119784 4.50941 0.305192 4.69482C0.4906 4.88023 0.741412 4.9854 1.00361 4.98767C1.26581 4.98995 1.51841 4.88916 1.70701 4.707L3.00001 3.414V9ZM13 5C13 4.73478 12.8947 4.48043 12.7071 4.29289C12.5196 4.10536 12.2652 4 12 4C11.7348 4 11.4804 4.10536 11.2929 4.29289C11.1054 4.48043 11 4.73478 11 5V10.586L9.70701 9.293C9.51841 9.11084 9.26581 9.01005 9.00361 9.01233C8.74141 9.0146 8.4906 9.11977 8.30519 9.30518C8.11978 9.49059 8.01462 9.7414 8.01234 10.0036C8.01006 10.2658 8.11085 10.5184 8.29301 10.707L11.293 13.707C11.4805 13.8945 11.7348 13.9998 12 13.9998C12.2652 13.9998 12.5195 13.8945 12.707 13.707L15.707 10.707C15.8892 10.5184 15.99 10.2658 15.9877 10.0036C15.9854 9.7414 15.8802 9.49059 15.6948 9.30518C15.5094 9.11977 15.2586 9.0146 14.9964 9.01233C14.7342 9.01005 14.4816 9.11084 14.293 9.293L13 10.586V5Z"
+                        fill="#808080"
+                      ></path>
+                    </svg>
+                    <div className="flex flex-col">
+                      <p className="font-light relative -left-[37px] text-xs italic dark:text-[#f6f6f6]">
+                        Epic
+                      </p>
+                      <p className="font-bold text-sm dark:text-[#f6f6f6]">
+                        Backend Team
+                      </p>
+                    </div>
+                  </button>
+                </div>
+                <h4 class="my-2 font-light text-sm text-[#8a8a8a]">Labels</h4>
+                <button
+                  type="button"
+                  class="border-[1px] border-[#e4e8eb] rounded-md px-1 py-1 shadow hover:shadow-md text-xs mb-5 dark:text-[#f6f6f6]"
+                >
+                  <span class="text-[#13ae47] font-bold">+</span> Add Labels
+                </button>
+              </div>
+            </div>
+            <div className="footer bg-white dark:bg-[#161b26f2] border-t-[1px] dark:border-[#3f4a5f] border-[#e4e8eb] py-4 flex justify-between px-4">
+              <button
+                type="button"
+                className="border-[1px] border-[#e4e8eb] dark:bg-[#161b26] dark:text-gray-400 rounded-md px-3 py-2 shadow hover:shadow-md"
+              >
+                Discard Draft
+              </button>
+              <div className="flex">
+                <div class="flex gap-3 items-center px-2 py-1 hover:bg-[#e4e8eb] rounded-md dark:text-gray-400">
+                  Create Another
+                  <input type="checkbox" checked="" name="Stories" />
+                </div>
+                <div class="flex gap-3 items-center px-2 py-1 rounded-md">
+                  <button
+                    type="button"
+                    className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-3 py-2 shadow hover:shadow-md bg-[#3a95c9] text-gray-100 hover:bg-[#2d78a4] dark:text-[#f6f6f6]"
+                  >
+                    Create Story
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+      </Popup>
     </div>
   );
 };

@@ -8,18 +8,21 @@ interface ISidebarContext {
   isWorkFlowOpen: boolean;
   isTeamManageOpen: boolean;
   filterModalOpen: boolean;
+  isChangesOpen: boolean;
   toggleSidebarcollapse: () => void;
   toggleSidebarOpen: () => void;
   toggleTeamOpen: () => void;
   toggleTeamManageOpen: () => void;
   toggleWorkFlowOpen: () => void;
   toggleFilterModalOpen: () => void;
+  toggleChangesModalOpen: () => void;
   setCollapse: (collapsed: boolean) => void;
   setIsOpen: (collapsed: boolean) => void;
   setIsTeamOpen: (collapsed: boolean) => void;
   setIsTeamManageOpen: (collapsed: boolean) => void;
   setIsWorkFlowOpen: (collapsed: boolean) => void;
   setFilterModalOpen: (collapsed: boolean) => void;
+  setIsChangesOpen: (collapsed: boolean) => void;
 }
 
 const initialValue: ISidebarContext = {
@@ -29,6 +32,7 @@ const initialValue: ISidebarContext = {
   isWorkFlowOpen: false,
   isTeamManageOpen: false,
   filterModalOpen: false,
+  isChangesOpen: false,
   toggleSidebarcollapse: function (): void {
     throw new Error("Function not implemented.");
   },
@@ -45,6 +49,9 @@ const initialValue: ISidebarContext = {
     throw new Error("Function not implemented.");
   },
   toggleFilterModalOpen: function (): void {
+    throw new Error("Function not implemented.");
+  },
+  toggleChangesModalOpen: function (): void {
     throw new Error("Function not implemented.");
   },
   setCollapse: function (collapsed: boolean): void {
@@ -65,6 +72,9 @@ const initialValue: ISidebarContext = {
   setFilterModalOpen: function (collapsed: boolean): void {
     throw new Error("Function not implemented.");
   },
+  setIsChangesOpen: function (collapsed: boolean): void {
+    throw new Error("Function not implemented.");
+  },
 };
 
 const SidebarContext = createContext<ISidebarContext>(initialValue);
@@ -80,6 +90,7 @@ const SidebarProvider: React.FC<SidebarProviderProps> = ({ children }) => {
   const [isTeamManageOpen, setIsTeamManageOpen] = useState(false);
   const [isWorkFlowOpen, setIsWorkFlowOpen] = useState(false);
   const [filterModalOpen, setFilterModalOpen] = useState(false);
+  const [isChangesOpen, setIsChangesOpen] = useState(false);
 
   const toggleSidebarcollapse = () => {
     setCollapse((prevState) => !prevState);
@@ -98,6 +109,9 @@ const SidebarProvider: React.FC<SidebarProviderProps> = ({ children }) => {
   };
   const toggleFilterModalOpen = () => {
     setFilterModalOpen((prevState) => !prevState);
+  };
+  const toggleChangesModalOpen = () => {
+    setIsChangesOpen((prevState) => !prevState);
   };
 
   useEffect(() => {
@@ -167,6 +181,22 @@ const SidebarProvider: React.FC<SidebarProviderProps> = ({ children }) => {
       document.removeEventListener("click", handleOutsideClick);
     };
   }, [filterModalOpen]);
+  useEffect(() => {
+    const handleOutsideClick = (event: MouseEvent) => {
+      const target = event.target as Element;
+      if (isChangesOpen && !target.closest(".modal")) {
+        toggleChangesModalOpen();
+      }
+    };
+
+    if (isChangesOpen) {
+      document.addEventListener("click", handleOutsideClick);
+    }
+
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, [isChangesOpen]);
 
   return (
     <SidebarContext.Provider
@@ -189,6 +219,9 @@ const SidebarProvider: React.FC<SidebarProviderProps> = ({ children }) => {
         filterModalOpen,
         setFilterModalOpen,
         toggleFilterModalOpen,
+        isChangesOpen,
+        setIsChangesOpen,
+        toggleChangesModalOpen,
       }}
     >
       {children}
