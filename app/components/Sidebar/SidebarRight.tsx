@@ -143,7 +143,7 @@ function SidebarRight() {
                 <div className="flex justify-between items-center my-6">
                   <div className="flex gap-3 items-center">
                     <span className="dark:text-white font-bold text-sm text-[#686c73]">
-                      Spaces (4)
+                      Spaces
                     </span>
                   </div>
 

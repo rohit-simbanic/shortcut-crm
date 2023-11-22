@@ -42,7 +42,7 @@ const CreateButton = () => {
             id="style-2"
           >
             <div className="w-[80%] max-lg:w-[100%]">
-              <h4 className="mb-2 font-medium text-[#444] dark:text-[#f6f6f6]">
+              <h4 className="mb-2 font-medium text-[#444] dark:text-[#f6f6f6] text-[15px]">
                 Story Title
               </h4>
               <textarea
@@ -253,7 +253,7 @@ const CreateButton = () => {
                   </div>
                 </div>
               </form>
-              <h4 className="my-2 font-medium text-[#444] dark:text-[#f6f6f6]">
+              <h4 className="my-2 font-medium text-[#444] dark:text-[#f6f6f6] text-sm">
                 Tasks
               </h4>
 
@@ -268,7 +268,7 @@ const CreateButton = () => {
                 </span>{" "}
                 Add Task
               </button>
-              <h4 className="my-2 font-medium text-[#444] dark:text-[#f6f6f6]">
+              <h4 className="my-2 font-medium text-[#444] dark:text-[#f6f6f6] text-sm">
                 Add To Story
               </h4>
 
@@ -339,7 +339,7 @@ const CreateButton = () => {
                   Relationships..
                 </button>
               </div>
-              <h4 className="my-2 font-medium text-[#444] dark:text-[#f6f6f6]">
+              <h4 className="my-2 font-medium text-[#444] dark:text-[#f6f6f6] text-sm">
                 Attachments
               </h4>
 
@@ -398,10 +398,10 @@ const CreateButton = () => {
                     </svg>
                   </div>
                   <div className="flex flex-col">
-                    <p className="font-light relative -left-[37px] text-xs dark:text-[#f6f6f6]">
+                    <p className="font-light relative -left-[30px] text-xs dark:text-[#f6f6f6]">
                       Team
                     </p>
-                    <p className="font-bold text-sm dark:text-[#f6f6f6]">
+                    <p className="font-bold text-[12px] dark:text-[#f6f6f6] text-[#333]">
                       Backend Team
                     </p>
                   </div>
@@ -423,10 +423,10 @@ const CreateButton = () => {
                   </svg>
 
                   <div className="flex flex-col">
-                    <p className="font-light relative -left-[37px] text-xs dark:text-[#f6f6f6]">
+                    <p className="font-light relative -left-[30px] text-xs dark:text-[#f6f6f6]">
                       Team
                     </p>
-                    <p className="font-bold text-sm dark:text-[#f6f6f6]">
+                    <p className="font-bold text-[12px] dark:text-[#f6f6f6] text-[#333]">
                       Backend Team
                     </p>
                   </div>
@@ -446,10 +446,10 @@ const CreateButton = () => {
                     ></path>
                   </svg>
                   <div className="flex flex-col">
-                    <p className="font-light relative -left-[50px] text-xs dark:text-[#f6f6f6]">
+                    <p className="font-light relative -left-[43px] text-xs dark:text-[#f6f6f6]">
                       Team
                     </p>
-                    <p className="font-bold text-sm dark:text-[#f6f6f6]">
+                    <p className="font-bold text-[12px] dark:text-[#f6f6f6] text-[#333]">
                       State Unscheduled
                     </p>
                   </div>
@@ -481,10 +481,10 @@ const CreateButton = () => {
                     </g>
                   </svg>
                   <div className="flex flex-col">
-                    <p className="font-light relative -left-[37px] text-xs dark:text-[#f6f6f6]">
+                    <p className="font-light relative -left-[30px] text-xs dark:text-[#f6f6f6]">
                       Team
                     </p>
-                    <p className="font-bold text-sm dark:text-[#f6f6f6]">
+                    <p className="font-bold text-[12px] dark:text-[#f6f6f6] text-[#333]">
                       Backend Team
                     </p>
                   </div>
@@ -507,10 +507,10 @@ const CreateButton = () => {
                     ></path>
                   </svg>
                   <div className="flex flex-col">
-                    <p className="font-light relative -left-[37px] text-xs italic dark:text-[#f6f6f6]">
+                    <p className="font-light relative -left-[30px] text-xs italic dark:text-[#f6f6f6]">
                       Epic
                     </p>
-                    <p className="font-bold text-sm dark:text-[#f6f6f6]">
+                    <p className="font-bold text-[12px] dark:text-[#f6f6f6] text-[#333]">
                       Backend Team
                     </p>
                   </div>
@@ -532,10 +532,10 @@ const CreateButton = () => {
                   </svg>
 
                   <div className="flex flex-col">
-                    <p className="font-light relative -left-[37px] text-xs dark:text-[#f6f6f6]">
+                    <p className="font-light relative -left-[30px] text-xs dark:text-[#f6f6f6]">
                       Team
                     </p>
-                    <p className="font-bold text-sm dark:text-[#f6f6f6]">
+                    <p className="font-bold text-[12px] dark:text-[#f6f6f6] text-[#333]">
                       Backend Team
                     </p>
                   </div>
@@ -560,10 +560,10 @@ const CreateButton = () => {
                     </defs>
                   </svg>
                   <div className="flex flex-col">
-                    <p className="font-light relative -left-[50px] text-xs dark:text-[#f6f6f6]">
+                    <p className="font-light relative -left-[43px] text-xs dark:text-[#f6f6f6]">
                       Team
                     </p>
-                    <p className="font-bold text-sm dark:text-[#f6f6f6]">
+                    <p className="font-bold text-[12px] dark:text-[#f6f6f6] text-[#333]">
                       State Unscheduled
                     </p>
                   </div>
@@ -579,10 +579,10 @@ const CreateButton = () => {
                     RM
                   </button>
                   <div className="flex flex-col">
-                    <p className="font-light relative -left-[37px] text-xs italic dark:text-[#f6f6f6]">
+                    <p className="font-light relative -left-[30px] text-xs italic dark:text-[#f6f6f6]">
                       Epic
                     </p>
-                    <p className="font-bold text-sm dark:text-[#f6f6f6]">
+                    <p className="font-bold text-[12px] dark:text-[#f6f6f6] text-[#333]">
                       Backend Team
                     </p>
                   </div>
@@ -606,10 +606,10 @@ const CreateButton = () => {
                   </div>
 
                   <div className="flex flex-col">
-                    <p className="font-light relative -left-[37px] text-xs dark:text-[#f6f6f6]">
+                    <p className="font-light relative -left-[30px] text-xs dark:text-[#f6f6f6]">
                       Team
                     </p>
-                    <p className="font-bold text-sm dark:text-[#f6f6f6]">
+                    <p className="font-bold text-[12px] dark:text-[#f6f6f6] text-[#333]">
                       Backend Team
                     </p>
                   </div>
@@ -621,7 +621,7 @@ const CreateButton = () => {
                     <p className="font-light relative text-xs italic dark:text-[#f6f6f6]">
                       Epic
                     </p>
-                    <p className="font-bold text-sm dark:text-[#f6f6f6]">
+                    <p className="font-bold text-[12px] dark:text-[#f6f6f6] text-[#333]">
                       Backend Team
                     </p>
                   </div>
@@ -631,7 +631,7 @@ const CreateButton = () => {
                     <p className="font-light relative text-xs dark:text-[#f6f6f6]">
                       Team
                     </p>
-                    <p className="font-bold text-sm dark:text-[#f6f6f6]">
+                    <p className="font-bold text-[12px] dark:text-[#f6f6f6] text-[#333]">
                       Backend Team
                     </p>
                   </div>
@@ -641,7 +641,7 @@ const CreateButton = () => {
                     <p className="font-light relative text-xs dark:text-[#f6f6f6]">
                       Followers
                     </p>
-                    <p className="font-bold text-sm italic dark:text-[#f6f6f6]">
+                    <p className="font-bold text-[12px] italic dark:text-[#f6f6f6] text-[#333]">
                       Nobody
                     </p>
                   </div>
@@ -670,10 +670,10 @@ const CreateButton = () => {
                     ></path>
                   </svg>
                   <div className="flex flex-col">
-                    <p className="font-light relative -left-[37px] text-xs italic dark:text-[#f6f6f6]">
+                    <p className="font-light relative -left-[30px] text-xs italic dark:text-[#f6f6f6]">
                       Epic
                     </p>
-                    <p className="font-bold text-sm dark:text-[#f6f6f6]">
+                    <p className="font-bold text-[12px] dark:text-[#f6f6f6] text-[#333]">
                       Backend Team
                     </p>
                   </div>

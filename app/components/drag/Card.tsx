@@ -107,8 +107,10 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
             draggable="true"
             className="w-[210px] sm:w-[288px] mb-3 rounded-md  bg-white  dark:bg-[#2b2c37] shadow-[#364e7e1a] py-6 px-3 shadow-lg dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer"
           >
-            <p className="font-bold tracking-wide">Simbanic Services</p>
-            <p className="font-bold text-xs tracking-tighter mt-2 text-gray-500">
+            <p className="font-bold tracking-wide text-[0.84rem] text-[#333]">
+              Simbanic Services
+            </p>
+            <p className="font-light text-xs tracking-tighter mt-2 text-[0.70rem] text-[#333]">
               0 of 2 completed tasks
             </p>
             <div className="flex justify-between items-center mt-3">
@@ -188,7 +190,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
               id="style-2"
             >
               <div className="w-[80%] max-lg:w-[100%]">
-                <p className="italic text-[#808080] mb-2">
+                <p className="italic text-[grey] mb-2 text-[14px]">
                   No description given.
                 </p>
                 <button
@@ -428,7 +430,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                     </div>
                   </div>
                 </form>
-                <h4 className="my-2 font-medium text-[#444] dark:text-[#f6f6f6]">
+                <h4 className="my-2 font-medium text-[#444] text-[13px] dark:text-[#f6f6f6]">
                   Tasks
                 </h4>
 
@@ -436,14 +438,14 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
 
                 <button
                   type="button"
-                  className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 shadow hover:shadow-md text-xs dark:text-[#f6f6f6]"
+                  className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 shadow hover:shadow-md text-xs dark:text-[#f6f6f6] text-[13px]"
                 >
                   <span className="text-[#13ae47] font-bold dark:text-[#f6f6f6]">
                     +
                   </span>{" "}
                   Add Task
                 </button>
-                <h4 className="my-2 font-medium text-[#444] dark:text-[#f6f6f6]">
+                <h4 className="my-2 font-medium text-[#444] dark:text-[#f6f6f6] text-[13px]">
                   Add To Story
                 </h4>
 
@@ -514,7 +516,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                     Relationships..
                   </button>
                 </div>
-                <h4 className="my-2 font-medium text-[#444] dark:text-[#f6f6f6]">
+                <h4 className="my-2 font-medium text-[#444] dark:text-[#f6f6f6] text-[13px]">
                   Comments
                 </h4>
 
@@ -597,7 +599,9 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                     </button>
                   </div>
                   <div className="w-full">
-                    <h3 className="font-bold text-[#1f2532]">Rohit Mondal</h3>
+                    <h3 className="font-bold text-[14px] text-[#333]">
+                      Rohit Mondal
+                    </h3>
                     <textarea
                       id="message"
                       placeholder="Add a comment..."
@@ -606,7 +610,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                     ></textarea>
                   </div>
                 </div>
-                <h4 className="my-2 font-medium text-[#444] dark:text-[#f6f6f6]">
+                <h4 className="my-2 font-medium text-[#444] dark:text-[#f6f6f6] text-[13px]">
                   Story activity
                 </h4>
 
@@ -689,7 +693,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                     </button>
                   </div>
                   <div className="w-full">
-                    <h3 className="text-[#1f2532]">
+                    <h3 className="text-[14px] text-[#333]">
                       <strong>Alok Kumar</strong> created this story in{" "}
                       <strong>Unscheduled</strong>
                     </h3>

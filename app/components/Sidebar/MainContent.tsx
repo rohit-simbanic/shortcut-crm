@@ -99,11 +99,11 @@ const MainContent = () => {
                       fill="#666"
                     ></path>
                   </svg>
-                  <h2 className="text-md font-bold text-[#686c73] dark:text-gray-300">
+                  <h2 className="text-md font-medium text-[#686c73] dark:text-gray-300">
                     Unscheduled
                   </h2>
                 </div>
-                <div className="flex gap-1 items-center">
+                <div className="flex gap-1 items-center text-[11px]">
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
@@ -120,7 +120,7 @@ const MainContent = () => {
                   </svg>
                   22
                 </div>
-                <div className="flex gap-1 items-center">
+                <div className="flex gap-1 items-center text-[11px]">
                   <svg
                     height={16}
                     width={16}
@@ -137,7 +137,7 @@ const MainContent = () => {
                   </svg>
                   0
                 </div>
-                <div className="flex gap-1 items-center">
+                <div className="flex gap-1 items-center text-[11px]">
                   <svg
                     height={16}
                     width={16}
@@ -208,10 +208,10 @@ const MainContent = () => {
                         ID
                       </th>
                       <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[400px]">
-                        Type
+                        Name
                       </th>
                       <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[140px]">
-                        Name
+                        Type
                       </th>
                       <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[190px]">
                         Workflow
@@ -4971,12 +4971,14 @@ const MainContent = () => {
           </div>
         </div>
       ) : (
-        <div className="flex gap-2 justify-start">
+        <div className="flex gap-3 justify-start">
           <div>
             <div className="flex justify-between items-center my-6">
               <div className="w-[160px] flex gap-2">
-                <span className="dark:text-gray-200">Unscheduled</span>
-                <span className="bg-[#f3f3f3] px-[5px] rounded-md dark:bg-[#161b26]">
+                <span className="dark:text-gray-200 text-[0.87rem] text-[#333]">
+                  Unscheduled
+                </span>
+                <span className="bg-[#f3f3f3] px-[5px] rounded-md dark:bg-[#161b26] text-[0.87rem] text-[#333]">
                   0
                 </span>
               </div>
@@ -5011,11 +5013,11 @@ const MainContent = () => {
                 </svg>
                 <input
                   type="checkbox"
-                  className="border-gray-300 rounded h-4 w-4 dark:bg-[#161b26]"
+                  className="border-gray-300 rounded h-3 w-3 dark:bg-[#161b26]"
                 />
               </div>
             </div>
-            <button className="flex gap-3 items-center justify-between dark:text-gray-400 shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-6 px-[49px] rounded-[5px] border-[1px] border-dashed border-[#e4e8eb] hover:bg-[#e4e8eb]">
+            <button className="flex gap-3 items-center justify-between dark:text-gray-400 shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-6 px-[59px] rounded-[5px] border-[1px] border-dashed border-[#e4e8eb] hover:bg-[#e4e8eb] text-[0.87rem] text-[#333]">
               <svg
                 height={21}
                 width={21}
@@ -5036,8 +5038,10 @@ const MainContent = () => {
           <div>
             <div className="flex justify-between items-center my-6">
               <div className="w-[160px] flex gap-2">
-                <span className="dark:text-gray-200">Ready for devel..</span>
-                <span className="bg-[#f3f3f3] px-[5px] rounded-md dark:bg-[#161b26]">
+                <span className="dark:text-gray-200 text-[0.87rem] text-[#333]">
+                  Ready for devel..
+                </span>
+                <span className="bg-[#f3f3f3] px-[5px] rounded-md dark:bg-[#161b26] text-[0.87rem] text-[#333]">
                   0
                 </span>
               </div>
@@ -5072,11 +5076,11 @@ const MainContent = () => {
                 </svg>
                 <input
                   type="checkbox"
-                  className="border-gray-300 rounded h-4 w-4"
+                  className="border-gray-300 rounded h-3 w-3"
                 />
               </div>
             </div>
-            <button className="flex gap-3 items-center justify-between dark:text-gray-400 shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-6 px-[49px] rounded-[5px] border-[1px] border-dashed border-[#e4e8eb] hover:bg-[#e4e8eb]">
+            <button className="flex gap-3 items-center justify-between dark:text-gray-400 shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-6 px-[59px] rounded-[5px] border-[1px] border-dashed border-[#e4e8eb] hover:bg-[#e4e8eb] text-[0.87rem] text-[#333]">
               <svg
                 height={21}
                 width={21}
@@ -5097,8 +5101,10 @@ const MainContent = () => {
           <div>
             <div className="flex justify-between items-center my-6">
               <div className="w-[160px] flex gap-2">
-                <span className="dark:text-gray-200">In development</span>
-                <span className="bg-[#f3f3f3] px-[5px] rounded-md dark:bg-[#161b26]">
+                <span className="dark:text-gray-200 text-[0.87rem] text-[#333]">
+                  In development
+                </span>
+                <span className="bg-[#f3f3f3] px-[5px] rounded-md dark:bg-[#161b26] text-[0.87rem] text-[#333]">
                   0
                 </span>
               </div>
@@ -5133,11 +5139,11 @@ const MainContent = () => {
                 </svg>
                 <input
                   type="checkbox"
-                  className="border-gray-300 rounded h-4 w-4"
+                  className="border-gray-300 rounded h-3 w-3"
                 />
               </div>
             </div>
-            <button className="flex gap-3 items-center justify-between dark:text-gray-400 shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-6 px-[49px] rounded-[5px] border-[1px] border-dashed border-[#e4e8eb] hover:bg-[#e4e8eb]">
+            <button className="flex gap-3 items-center justify-between dark:text-gray-400 shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-6 px-[59px] rounded-[5px] border-[1px] border-dashed border-[#e4e8eb] hover:bg-[#e4e8eb] text-[0.87rem] text-[#333]">
               <svg
                 height={21}
                 width={21}
@@ -5158,8 +5164,10 @@ const MainContent = () => {
           <div>
             <div className="flex justify-between items-center my-6">
               <div className="w-[160px] flex gap-2">
-                <span className="dark:text-gray-200">Ready for Review</span>
-                <span className="bg-[#f3f3f3] px-[5px] rounded-md dark:bg-[#161b26]">
+                <span className="dark:text-gray-200 text-[0.87rem] text-[#333]">
+                  Ready for Review
+                </span>
+                <span className="bg-[#f3f3f3] px-[5px] rounded-md dark:bg-[#161b26] text-[0.87rem] text-[#333]">
                   0
                 </span>
               </div>
@@ -5194,11 +5202,11 @@ const MainContent = () => {
                 </svg>
                 <input
                   type="checkbox"
-                  className="border-gray-300 rounded h-4 w-4"
+                  className="border-gray-300 rounded h-3 w-3"
                 />
               </div>
             </div>
-            <button className="flex gap-3 items-center justify-between dark:text-gray-400 shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-6 px-[49px] rounded-[5px] border-[1px] border-dashed border-[#e4e8eb] hover:bg-[#e4e8eb]">
+            <button className="flex gap-3 items-center justify-between dark:text-gray-400 shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-6 px-[59px] rounded-[5px] border-[1px] border-dashed border-[#e4e8eb] hover:bg-[#e4e8eb] text-[0.87rem] text-[#333]">
               <svg
                 height={21}
                 width={21}
@@ -5219,8 +5227,10 @@ const MainContent = () => {
           <div>
             <div className="flex justify-between items-center my-6">
               <div className="w-[160px] flex gap-2">
-                <span className="dark:text-gray-200">Ready for Deploy</span>
-                <span className="bg-[#f3f3f3] px-[5px] rounded-md dark:bg-[#161b26]">
+                <span className="dark:text-gray-200 text-[0.87rem] text-[#333]">
+                  Ready for Deploy
+                </span>
+                <span className="bg-[#f3f3f3] px-[5px] rounded-md dark:bg-[#161b26] text-[0.87rem] text-[#333]">
                   0
                 </span>
               </div>
@@ -5255,11 +5265,11 @@ const MainContent = () => {
                 </svg>
                 <input
                   type="checkbox"
-                  className="border-gray-300 rounded h-4 w-4"
+                  className="border-gray-300 rounded h-3 w-3"
                 />
               </div>
             </div>
-            <button className="flex gap-3 items-center justify-between dark:text-gray-400 shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-6 px-[49px] rounded-[5px] border-[1px] border-dashed border-[#e4e8eb] hover:bg-[#e4e8eb]">
+            <button className="flex gap-3 items-center justify-between dark:text-gray-400 shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-6 px-[59px] rounded-[5px] border-[1px] border-dashed border-[#e4e8eb] hover:bg-[#e4e8eb] text-[0.87rem] text-[#333]">
               <svg
                 height={21}
                 width={21}
@@ -5280,8 +5290,10 @@ const MainContent = () => {
           <div>
             <div className="flex justify-between items-center my-6">
               <div className="w-[160px] flex gap-2">
-                <span className="dark:text-gray-200">Completed</span>
-                <span className="bg-[#f3f3f3] px-[5px] rounded-md dark:bg-[#161b26]">
+                <span className="dark:text-gray-200 text-[0.87rem] text-[#333]">
+                  Completed
+                </span>
+                <span className="bg-[#f3f3f3] px-[5px] rounded-md dark:bg-[#161b26] text-[0.87rem] text-[#333]">
                   0
                 </span>
               </div>
@@ -5316,7 +5328,7 @@ const MainContent = () => {
                 </svg>
                 <input
                   type="checkbox"
-                  className="border-gray-300 rounded h-4 w-4"
+                  className="border-gray-300 rounded h-3 w-3"
                 />
               </div>
             </div>
