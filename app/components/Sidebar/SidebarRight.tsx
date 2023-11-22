@@ -84,7 +84,7 @@ function SidebarRight() {
                 fill-rule="evenodd"
                 clip-rule="evenodd"
                 d="M11 1a1 1 0 0 0-1 1 1 1 0 0 1-1 1H3a1 1 0 0 0 0 2h6a1 1 0 0 1 1 1 1 1 0 1 0 2 0 1 1 0 0 1 1-1h4a1 1 0 1 0 0-2h-4a1 1 0 0 1-1-1 1 1 0 0 0-1-1ZM3 9a1 1 0 1 0 0 2h1a1 1 0 0 1 1 1 1 1 0 1 0 2 0 1 1 0 0 1 1-1h9a1 1 0 1 0 0-2H8a1 1 0 0 1-1-1 1 1 0 0 0-2 0 1 1 0 0 1-1 1H3Zm-1 7a1 1 0 0 1 1-1h9a1 1 0 0 0 1-1 1 1 0 1 1 2 0 1 1 0 0 0 1 1h1a1 1 0 1 1 0 2h-1a1 1 0 0 0-1 1 1 1 0 1 1-2 0 1 1 0 0 0-1-1H3a1 1 0 0 1-1-1Z"
-                fill="#666"
+                fill="#a9a9a9"
               ></path>
             </svg>
           ) : (
@@ -98,37 +98,6 @@ function SidebarRight() {
                   <span className="dark:text-white text-sm font-bold text-[#686c73]">
                     Workflow
                   </span>
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 30 30"
-                    className="chmln-hotspot-interactive"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                    aria-label="# Create and customize Workflows
-    A Workflow is a set of States through which Stories move from creation to completion.
-    "
-                    role="button"
-                    tabIndex={0}
-                  >
-                    <g fill="none" fill-rule="evenodd">
-                      <rect
-                        stroke="#2a6f98"
-                        stroke-width="2"
-                        fill="#2a6f98"
-                        x="1"
-                        y="1"
-                        width="28"
-                        height="28"
-                        rx="14"
-                      ></rect>
-                      <path
-                        d="M6.287 10.286a.571.571 0 0 1-.571.571H4.43a.571.571 0 0 1-.571-.571c0-3.797 3.214-3.44 3.214-6.286 0-.947-1.074-1.714-2.178-1.714-1.105 0-2.197.767-2.197 1.714-.004.325.046.649.149.958a.569.569 0 0 1-.537.756H1.149a.574.574 0 0 1-.554-.418A4.78 4.78 0 0 1 .43 4c0-2.21 2.047-4 4.572-4s4.571 1.79 4.571 4c0 3.667-3.286 3.524-3.286 6.286zM5.002 12.57a1.714 1.714 0 1 1 0 3.429 1.714 1.714 0 0 1 0-3.429z"
-                        fill="#f8f9fb"
-                        transform="translate(10 7)"
-                      ></path>
-                    </g>
-                  </svg>
                 </div>
 
                 <svg
@@ -176,35 +145,6 @@ function SidebarRight() {
                     <span className="dark:text-white font-bold text-sm text-[#686c73]">
                       Spaces (4)
                     </span>
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 30 30"
-                      className="chmln-hotspot-interactive"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
-                      aria-label="# Create and customize Workflows A Workflow is a set of States through which Stories move from creation to completion."
-                      role="button"
-                      tabIndex={0}
-                    >
-                      <g fill="none" fill-rule="evenodd">
-                        <rect
-                          stroke="#2a6f98"
-                          stroke-width="2"
-                          fill="#2a6f98"
-                          x="1"
-                          y="1"
-                          width="28"
-                          height="28"
-                          rx="14"
-                        ></rect>
-                        <path
-                          d="M6.287 10.286a.571.571 0 0 1-.571.571H4.43a.571.571 0 0 1-.571-.571c0-3.797 3.214-3.44 3.214-6.286 0-.947-1.074-1.714-2.178-1.714-1.105 0-2.197.767-2.197 1.714-.004.325.046.649.149.958a.569.569 0 0 1-.537.756H1.149a.574.574 0 0 1-.554-.418A4.78 4.78 0 0 1 .43 4c0-2.21 2.047-4 4.572-4s4.571 1.79 4.571 4c0 3.667-3.286 3.524-3.286 6.286zM5.002 12.57a1.714 1.714 0 1 1 0 3.429 1.714 1.714 0 0 1 0-3.429z"
-                          fill="#f8f9fb"
-                          transform="translate(10 7)"
-                        ></path>
-                      </g>
-                    </svg>
                   </div>
 
                   <svg

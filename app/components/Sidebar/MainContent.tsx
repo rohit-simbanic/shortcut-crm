@@ -74,10 +74,13 @@ const MainContent = () => {
         </div>
       </div>
       {isTableView ? (
-        <div className="h-[90%] overflow-y-auto" id="tableView">
+        <div className="h-[90%] overflow-y-auto overflow-x-none" id="tableView">
           <div className="my-3 w-full">
-            <div className="shadow-md rounded-[12px] p-[8px] bg-white">
-              <div className="flex gap-2 sticky top-0 z-50 bg-white">
+            <div
+              className="shadow-md rounded-[12px] p-[8px] bg-white whitespace-nowrap w-full"
+              id="tableBody"
+            >
+              <div className="flex gap-2 sticky top-0 z-10 bg-white">
                 <div
                   className="flex items-center space-x-2 px-3 mr-8 rounded-md duration-500 ease-in-out py-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-white dark:hover:text-[#635fc7] dark:text-white"
                   onClick={toggleScheduledTable}
