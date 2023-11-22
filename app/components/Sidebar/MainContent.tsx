@@ -4971,7 +4971,7 @@ const MainContent = () => {
           </div>
         </div>
       ) : (
-        <div className="flex gap-3 justify-start">
+        <div className="flex gap-[0.95rem] justify-start">
           <div>
             <div className="flex justify-between items-center my-6">
               <div className="w-[160px] flex gap-2">
