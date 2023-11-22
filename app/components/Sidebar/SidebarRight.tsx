@@ -266,7 +266,7 @@ function SidebarRight() {
                       className="flex justify-center text-[#686c73] font-medium items-center shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-1 px-3 rounded-[5px] border-[1px] border-[#e4e8eb] bg-[#fff] hover:bg-[#f8f9fb] w-full my-5 dark:bg-[#161b26] dark:hover:bg-black dark:border-gray-300"
                       onClick={toggleFilterModalOpen}
                     >
-                      Add Quick Filter
+                      Add Quick Filters
                     </button>
                     {filterModalOpen && (
                       <QuickFilterModal

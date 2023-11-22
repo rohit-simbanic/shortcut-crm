@@ -16,7 +16,7 @@ const CreateButton = () => {
       nested
     >
       {(close: React.MouseEventHandler<HTMLButtonElement> | undefined) => (
-        <div className="modal dark:bg-[#1f2532]">
+        <div className="dark:bg-[#1f2532]">
           <div className="flex justify-between items-start modal-header px-6">
             <h3 className="font-bold text-lg text-[#1f2532] dark:text-[#f6f6f6] my-6">
               Create Story
@@ -698,7 +698,7 @@ const CreateButton = () => {
             <div className="flex">
               <div class="flex gap-3 items-center px-2 py-1 hover:bg-[#e4e8eb] rounded-md dark:text-gray-400">
                 Create Another
-                <input type="checkbox" checked="" name="Stories" />
+                <input type="checkbox" name="Stories" />
               </div>
               <div class="flex gap-3 items-center px-2 py-1 rounded-md">
                 <button

@@ -1023,7 +1023,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
               <div className="flex">
                 <div class="flex gap-3 items-center px-2 py-1 hover:bg-[#e4e8eb] rounded-md dark:text-gray-400">
                   Create Another
-                  <input type="checkbox" checked="" name="Stories" />
+                  <input type="checkbox" name="Stories" />
                 </div>
                 <div class="flex gap-3 items-center px-2 py-1 rounded-md">
                   <button

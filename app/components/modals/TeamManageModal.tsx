@@ -4,6 +4,19 @@ const TeamManageModal = () => {
   return (
     <div className="w-[236px] z-[99999] bg-white dark:bg-[#2d3545] flex flex-col justify-between fixed top-[21rem] left-[148px] rounded-md shadow-md min-h-[164px] modal">
       <div className="px-2">
+        <div className="flex justify-between mt-2">
+          <p className="text-[13px] text-[#686c73]">Select Teams</p>
+          <svg
+            fill="#b3b3b3"
+            width="22px"
+            height="22px"
+            viewBox="0 0 1024 1024"
+            xmlns="http://www.w3.org/2000/svg"
+            className="hover:cursor-pointer hover:text-[#555]"
+          >
+            <path d="M697.4 759.2l61.8-61.8L573.8 512l185.4-185.4-61.8-61.8L512 450.2 326.6 264.8l-61.8 61.8L450.2 512 264.8 697.4l61.8 61.8L512 573.8z"></path>
+          </svg>
+        </div>
         <div className="pt-2 relative mx-auto text-gray-600">
           <input
             className="border-[1px] border-gray-300 bg-white dark:bg-[#2d3545] h-10 px-5 mb-3 w-full rounded-lg text-sm focus:outline-none"
@@ -27,7 +40,7 @@ const TeamManageModal = () => {
             </svg>
           </button>
         </div>
-        <div className="flex items-center relative ">
+        <div className="flex items-center relative mb-3">
           <div className="border-l-[3px] border-[#FF00FF] absolute h-9 -left-2"></div>
           <div className="space-x-2 bg-[#deeffa] dark:bg-[#485575] flex items-center px-3 rounded-md duration-500 ease-in-out py-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-white dark:hover:text-[#635fc7] dark:text-white w-full">
             <div className="bg-[#FF00FF] h-[25px] w-[25px] rounded-[50%]">

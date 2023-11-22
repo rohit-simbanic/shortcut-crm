@@ -11,7 +11,8 @@ const Dropdown = () => {
         dropdownButtonRef.current &&
         dropdownMenuRef.current &&
         !dropdownButtonRef.current.contains(event.target as Node) &&
-        !dropdownMenuRef.current.contains(event.target as Node)
+        !dropdownMenuRef.current.contains(event.target as Node) &&
+        !document.querySelector(".modal")
       ) {
         setIsDropdownOpen(false);
       }
@@ -72,7 +73,7 @@ const Dropdown = () => {
           aria-labelledby="dropdown-button"
         >
           <a
-            className="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-[#434452] active:bg-blue-100 cursor-pointer"
+            className="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-[#c4c4c7] active:bg-blue-100 cursor-pointer"
             role="menuitem"
           >
             <div className="flex items-center gap-3">
@@ -94,7 +95,7 @@ const Dropdown = () => {
             </div>
           </a>
           <a
-            className="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-[#434452] active:bg-blue-100 cursor-pointer"
+            className="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-[#c4c4c7] active:bg-blue-100 cursor-pointer"
             role="menuitem"
           >
             <div className="flex items-center gap-3">
@@ -116,7 +117,7 @@ const Dropdown = () => {
             </div>
           </a>
           <a
-            className="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-[#434452] active:bg-blue-100 cursor-pointer"
+            className="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-[#c4c4c7] active:bg-blue-100 cursor-pointer"
             role="menuitem"
           >
             <div className="flex items-center gap-3">
@@ -138,7 +139,30 @@ const Dropdown = () => {
             </div>
           </a>
           <a
-            className="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-[#434452] active:bg-blue-100 cursor-pointer"
+            className="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-[#c4c4c7] active:bg-blue-100 cursor-pointer"
+            role="menuitem"
+          >
+            <div className="flex items-center gap-3">
+              <svg
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                height={16}
+                width={16}
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15.657 3.271c-3.124-3.028-8.19-3.028-11.314 0a7.587 7.587 0 0 0 0 10.966l4.392 4.257a1.834 1.834 0 0 0 2.53 0l4.392-4.257a7.587 7.587 0 0 0 0-10.966ZM10 9.51c.982 0 1.778-.762 1.778-1.702S10.982 6.105 10 6.105s-1.778.762-1.778 1.702S9.018 9.51 10 9.51Z"
+                  fill="#666"
+                ></path>
+              </svg>
+
+              <span className="dark:text-[#f6f6f6]">Create Milestone</span>
+            </div>
+          </a>
+          <a
+            className="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-[#c4c4c7] active:bg-blue-100 cursor-pointer"
             role="menuitem"
           >
             <div className="flex items-center gap-3">
@@ -160,7 +184,7 @@ const Dropdown = () => {
             </div>
           </a>
           <a
-            className="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-[#434452] active:bg-blue-100 cursor-pointer"
+            className="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-[#c4c4c7] active:bg-blue-100 cursor-pointer"
             role="menuitem"
           >
             <div className="flex items-center gap-3">
@@ -189,7 +213,7 @@ const Dropdown = () => {
           </a>
           <hr />
           <a
-            className="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-[#434452] active:bg-blue-100 cursor-pointer"
+            className="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-[#c4c4c7] active:bg-blue-100 cursor-pointer"
             role="menuitem"
           >
             <div className="flex items-center gap-3">
@@ -211,7 +235,7 @@ const Dropdown = () => {
             </div>
           </a>
           <a
-            className="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-[#434452] active:bg-blue-100 cursor-pointer"
+            className="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-[#c4c4c7] active:bg-blue-100 cursor-pointer"
             role="menuitem"
           >
             <div className="flex items-center gap-3">
