@@ -77,8 +77,8 @@ const MainContent = () => {
         <div className="h-[90%] overflow-y-auto overflow-x-none" id="tableView">
           <div className="my-3 w-full">
             <div
-              className={`shadow-md rounded-[12px] p-[8px] bg-white whitespace-nowrap w-full dark:bg-[#1f2532] ${
-                isScheduledView ? " w-fit" : "overflow-none"
+              className={`shadow-md rounded-[12px] p-[8px] bg-white whitespace-nowrap dark:bg-[#1f2532] ${
+                isScheduledView ? "w-fit" : "w-full"
               }`}
               id="tableBody"
             >
