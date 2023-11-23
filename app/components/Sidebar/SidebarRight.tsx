@@ -1,10 +1,11 @@
 "use client";
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import FilterItems from "../Filter/FilterItems";
 import { SidebarContext } from "@/app/context/sidebarContext";
 import DefaultTeamModal from "../modals/DefaultTeamModal";
 import WorkFlowModal from "../modals/WorkFlowModal";
 import QuickFilterModal from "../modals/QuickFilterModal";
+import BoardModal from "../modals/BoardModal";
 
 function SidebarRight() {
   const {
@@ -20,7 +21,34 @@ function SidebarRight() {
     setFilterModalOpen,
     toggleFilterModalOpen,
   } = useContext(SidebarContext);
+  const [isBoardOpen, setIsBoardOpen] = useState(false);
 
+  const toggleBoard = () => {
+    setIsBoardOpen((prevState) => !prevState);
+  };
+
+  const boards = [
+    { name: "Bitux Board", id: 1 },
+    { name: "Melo Board", id: 2 },
+    { name: "Agile Board", id: 3 },
+  ];
+
+  useEffect(() => {
+    const handleOutsideClick = (event: MouseEvent) => {
+      const target = event.target as Element;
+      if (isBoardOpen && !target.closest(".modal")) {
+        toggleBoard();
+      }
+    };
+
+    if (isBoardOpen) {
+      document.addEventListener("click", handleOutsideClick);
+    }
+
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, [isBoardOpen]);
   return (
     <>
       <div
@@ -165,102 +193,48 @@ function SidebarRight() {
                 </div>
 
                 <div className="dropdown-borad flex flex-col h-[70vh]  justify-between">
-                  <div>
-                    <div className="flex items-center space-x-2 px-3 mr-8 rounded-md duration-500 ease-in-out py-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-white dark:hover:text-[#635fc7] dark:text-white">
-                      <svg
-                        viewBox="0 0 20 20"
-                        fill="none"
-                        height={18}
-                        width={18}
-                        xmlns="http://www.w3.org/2000/svg"
+                  <div className="relative">
+                    {Array.from(boards, (board) => (
+                      <div
+                        className="flex items-center space-x-2 px-3 mr-8 rounded-md duration-500 ease-in-out py-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-white dark:hover:text-[#635fc7] dark:text-white w-[154px] group"
+                        key={board.id}
                       >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M9.553 8.473a1 1 0 0 0 .894 0L15.96 5.72a.5.5 0 0 0 0-.895l-5.405-2.697a1.246 1.246 0 0 0-1.111 0L4.04 4.826a.5.5 0 0 0 0 .895l5.513 2.752Zm2.008 1.726a1 1 0 0 0-.561.899V17.2a.5.5 0 0 0 .72.45l5.693-2.778c.178-.09.326-.22.43-.377a.948.948 0 0 0 .157-.52V7.852a.5.5 0 0 0-.72-.45L11.56 10.2ZM2 7.853a.5.5 0 0 1 .72-.45L8.44 10.2a1 1 0 0 1 .56.899V17.2a.5.5 0 0 1-.72.45l-5.693-2.778a1.096 1.096 0 0 1-.43-.377.948.948 0 0 1-.157-.52V7.852Z"
-                          fill="#666"
-                        ></path>
-                      </svg>{" "}
-                      <p className="text-sm font-bold text-[#686c73] dark:text-gray-300">
-                        Bitux Board
-                      </p>
-                    </div>
-                    <div className="flex items-center space-x-2 px-3 mr-8 rounded-md duration-500 ease-in-out py-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-white dark:hover:text-[#635fc7] dark:text-white">
-                      <svg
-                        viewBox="0 0 20 20"
-                        fill="none"
-                        height={18}
-                        width={18}
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M9.553 8.473a1 1 0 0 0 .894 0L15.96 5.72a.5.5 0 0 0 0-.895l-5.405-2.697a1.246 1.246 0 0 0-1.111 0L4.04 4.826a.5.5 0 0 0 0 .895l5.513 2.752Zm2.008 1.726a1 1 0 0 0-.561.899V17.2a.5.5 0 0 0 .72.45l5.693-2.778c.178-.09.326-.22.43-.377a.948.948 0 0 0 .157-.52V7.852a.5.5 0 0 0-.72-.45L11.56 10.2ZM2 7.853a.5.5 0 0 1 .72-.45L8.44 10.2a1 1 0 0 1 .56.899V17.2a.5.5 0 0 1-.72.45l-5.693-2.778a1.096 1.096 0 0 1-.43-.377.948.948 0 0 1-.157-.52V7.852Z"
-                          fill="#666"
-                        ></path>
-                      </svg>{" "}
-                      <p className="text-sm font-bold text-[#686c73] dark:text-gray-300">
-                        Bitux Board
-                      </p>
-                    </div>
-                    <div className="flex items-center space-x-2 px-3 mr-8 rounded-md duration-500 ease-in-out py-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-white dark:hover:text-[#635fc7] dark:text-white">
-                      <svg
-                        viewBox="0 0 20 20"
-                        fill="none"
-                        height={18}
-                        width={18}
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M9.553 8.473a1 1 0 0 0 .894 0L15.96 5.72a.5.5 0 0 0 0-.895l-5.405-2.697a1.246 1.246 0 0 0-1.111 0L4.04 4.826a.5.5 0 0 0 0 .895l5.513 2.752Zm2.008 1.726a1 1 0 0 0-.561.899V17.2a.5.5 0 0 0 .72.45l5.693-2.778c.178-.09.326-.22.43-.377a.948.948 0 0 0 .157-.52V7.852a.5.5 0 0 0-.72-.45L11.56 10.2ZM2 7.853a.5.5 0 0 1 .72-.45L8.44 10.2a1 1 0 0 1 .56.899V17.2a.5.5 0 0 1-.72.45l-5.693-2.778a1.096 1.096 0 0 1-.43-.377.948.948 0 0 1-.157-.52V7.852Z"
-                          fill="#666"
-                        ></path>
-                      </svg>{" "}
-                      <p className="text-sm font-bold text-[#686c73] dark:text-gray-300">
-                        Bitux Board
-                      </p>
-                    </div>
-                    <div className="flex items-center space-x-2 px-3 mr-8 rounded-md duration-500 ease-in-out py-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-white dark:hover:text-[#635fc7] dark:text-white">
-                      <svg
-                        viewBox="0 0 20 20"
-                        fill="none"
-                        height={18}
-                        width={18}
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M9.553 8.473a1 1 0 0 0 .894 0L15.96 5.72a.5.5 0 0 0 0-.895l-5.405-2.697a1.246 1.246 0 0 0-1.111 0L4.04 4.826a.5.5 0 0 0 0 .895l5.513 2.752Zm2.008 1.726a1 1 0 0 0-.561.899V17.2a.5.5 0 0 0 .72.45l5.693-2.778c.178-.09.326-.22.43-.377a.948.948 0 0 0 .157-.52V7.852a.5.5 0 0 0-.72-.45L11.56 10.2ZM2 7.853a.5.5 0 0 1 .72-.45L8.44 10.2a1 1 0 0 1 .56.899V17.2a.5.5 0 0 1-.72.45l-5.693-2.778a1.096 1.096 0 0 1-.43-.377.948.948 0 0 1-.157-.52V7.852Z"
-                          fill="#666"
-                        ></path>
-                      </svg>{" "}
-                      <p className="text-sm font-bold text-[#686c73] dark:text-gray-300">
-                        Bitux Board
-                      </p>
-                    </div>
-                    <div className="flex items-center space-x-2 px-3 mr-8 rounded-md duration-500 ease-in-out py-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-white dark:hover:text-[#635fc7] dark:text-white">
-                      <svg
-                        viewBox="0 0 20 20"
-                        fill="none"
-                        height={18}
-                        width={18}
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M9.553 8.473a1 1 0 0 0 .894 0L15.96 5.72a.5.5 0 0 0 0-.895l-5.405-2.697a1.246 1.246 0 0 0-1.111 0L4.04 4.826a.5.5 0 0 0 0 .895l5.513 2.752Zm2.008 1.726a1 1 0 0 0-.561.899V17.2a.5.5 0 0 0 .72.45l5.693-2.778c.178-.09.326-.22.43-.377a.948.948 0 0 0 .157-.52V7.852a.5.5 0 0 0-.72-.45L11.56 10.2ZM2 7.853a.5.5 0 0 1 .72-.45L8.44 10.2a1 1 0 0 1 .56.899V17.2a.5.5 0 0 1-.72.45l-5.693-2.778a1.096 1.096 0 0 1-.43-.377.948.948 0 0 1-.157-.52V7.852Z"
-                          fill="#666"
-                        ></path>
-                      </svg>{" "}
-                      <p className="text-sm font-bold text-[#686c73] dark:text-gray-300">
-                        Bitux Board
-                      </p>
-                    </div>
+                        <svg
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          height={18}
+                          width={18}
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M9.553 8.473a1 1 0 0 0 .894 0L15.96 5.72a.5.5 0 0 0 0-.895l-5.405-2.697a1.246 1.246 0 0 0-1.111 0L4.04 4.826a.5.5 0 0 0 0 .895l5.513 2.752Zm2.008 1.726a1 1 0 0 0-.561.899V17.2a.5.5 0 0 0 .72.45l5.693-2.778c.178-.09.326-.22.43-.377a.948.948 0 0 0 .157-.52V7.852a.5.5 0 0 0-.72-.45L11.56 10.2ZM2 7.853a.5.5 0 0 1 .72-.45L8.44 10.2a1 1 0 0 1 .56.899V17.2a.5.5 0 0 1-.72.45l-5.693-2.778a1.096 1.096 0 0 1-.43-.377.948.948 0 0 1-.157-.52V7.852Z"
+                            fill="#666"
+                          ></path>
+                        </svg>{" "}
+                        <p className="text-sm font-bold text-[#686c73] dark:text-gray-300">
+                          {board.name}
+                        </p>
+                        <svg
+                          height={16}
+                          width={16}
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
+                          onClick={toggleBoard}
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M6.5 10a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm3.5 1.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"
+                            fill="#666"
+                          ></path>
+                        </svg>
+                        {isBoardOpen && <BoardModal />}
+                      </div>
+                    ))}
 
                     <button
                       className="flex justify-center text-[#686c73] font-medium items-center shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-1 px-3 rounded-[5px] border-[1px] border-[#e4e8eb] bg-[#fff] hover:bg-[#f8f9fb] w-full my-5 dark:bg-[#161b26] dark:hover:bg-black dark:border-gray-300"
