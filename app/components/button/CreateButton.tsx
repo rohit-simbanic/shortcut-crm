@@ -56,7 +56,7 @@ const CreateButton = () => {
               </h4>
               <form className="my-2">
                 <div className="mb-4 w-full bg-gray-50 rounded-lg border border-gray-200 dark:bg-gray-700 dark:border-gray-600">
-                  <div className="flex justify-between items-center dark:border-gray-600">
+                  <div className="flex justify-between items-center dark:border-gray-600 flex-wrap">
                     <div className="flex gap-0">
                       <div className="py-2 px-3 bg-white">Write</div>
                       <div className="text-[grey] py-2 bg-[#f9f9f9] px-3">
@@ -257,7 +257,6 @@ const CreateButton = () => {
                       id="editor"
                       rows="8"
                       class="block px-0 w-full text-sm text-gray-800 bg-white border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400"
-                      placeholder="Write an article..."
                       required
                     ></textarea>
                   </div>
