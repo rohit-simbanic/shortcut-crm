@@ -15,6 +15,9 @@ const Dropdown = () => {
       ) {
         setIsDropdownOpen(false);
       }
+      if (isDropdownOpen && event.stopPropagation) {
+        event.stopPropagation();
+      }
     };
 
     if (isDropdownOpen) {

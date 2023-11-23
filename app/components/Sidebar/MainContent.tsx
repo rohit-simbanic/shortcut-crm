@@ -77,10 +77,12 @@ const MainContent = () => {
         <div className="h-[90%] overflow-y-auto overflow-x-none" id="tableView">
           <div className="my-3 w-full">
             <div
-              className="shadow-md rounded-[12px] p-[8px] bg-white whitespace-nowrap w-full"
+              className={`shadow-md rounded-[12px] p-[8px] bg-white whitespace-nowrap w-full dark:bg-[#1f2532] ${
+                isScheduledView ? " w-fit" : "overflow-none"
+              }`}
               id="tableBody"
             >
-              <div className="flex gap-2 sticky top-0 z-10 bg-white">
+              <div className="flex gap-2 sticky top-0 z-10 bg-white dark:bg-[#1f2532]">
                 <div
                   className="flex items-center space-x-2 px-3 mr-8 rounded-md duration-500 ease-in-out py-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-white dark:hover:text-[#635fc7] dark:text-white"
                   onClick={toggleScheduledTable}
@@ -103,7 +105,7 @@ const MainContent = () => {
                     Unscheduled
                   </h2>
                 </div>
-                <div className="flex gap-1 items-center text-[11px]">
+                <div className="flex gap-1 items-center text-[11px] dark:text-[grey]">
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
@@ -120,7 +122,7 @@ const MainContent = () => {
                   </svg>
                   22
                 </div>
-                <div className="flex gap-1 items-center text-[11px]">
+                <div className="flex gap-1 items-center text-[11px] dark:text-[grey]">
                   <svg
                     height={16}
                     width={16}
@@ -137,7 +139,7 @@ const MainContent = () => {
                   </svg>
                   0
                 </div>
-                <div className="flex gap-1 items-center text-[11px]">
+                <div className="flex gap-1 items-center text-[11px] dark:text-[grey]">
                   <svg
                     height={16}
                     width={16}
@@ -158,7 +160,7 @@ const MainContent = () => {
               {isScheduledView && (
                 <table className="w-full">
                   <thead>
-                    <tr className="text-md font-semibold tracking-wide text-left text-gray-900 bg-white uppercase border-gray-600 border-t-[1px] border-t-[#0000000d] shadow-[0px 15px 10px -15px #111] sticky top-[2.4rem] z-50 bg-white">
+                    <tr className="text-md font-semibold tracking-wide text-left text-gray-900 bg-white uppercase border-gray-600 border-t-[1px] border-t-[#0000000d] shadow-[0px 15px 10px -15px #111] sticky top-[2.4rem] z-50 bg-white dark:bg-[#1f2532]">
                       <th className="px-4 hover:bg-[#e4e8eb] hover:cursor-pointer">
                         <div className="flex gap-3">
                           <svg
@@ -204,54 +206,55 @@ const MainContent = () => {
                           type="checkbox"
                         />
                       </th>
-                      <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer">
+                      <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer dark:text-[grey]">
                         ID
                       </th>
-                      <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[400px]">
+                      <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[400px] dark:text-[grey]">
                         Name
                       </th>
-                      <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[140px]">
+                      <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[140px] dark:text-[grey]">
                         Type
                       </th>
-                      <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[190px]">
+                      <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[190px] dark:text-[grey]">
                         Workflow
                       </th>
-                      <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[130px]">
+                      <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[130px] dark:text-[grey]">
                         State
                       </th>
-                      <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer">
+                      <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer dark:text-[grey]">
                         Team
                       </th>
-                      <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer">
+                      <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer dark:text-[grey]">
                         Owners
                       </th>
-                      <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[130px]">
+                      <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[130px] dark:text-[grey]">
                         Estimate
                       </th>
-                      <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[140px]">
+                      <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[140px] dark:text-[grey]">
                         Priority
                       </th>
-                      <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[140px]">
+                      <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[140px] dark:text-[grey]">
                         Severity
                       </th>
-                      <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[180px]">
+                      <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[180px] dark:text-[grey]">
                         Project
                       </th>
-                      <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[160px]">
+                      <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[160px] dark:text-[grey]">
                         Due date
                       </th>
-                      <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[160px]">
+                      <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[160px] dark:text-[grey]">
                         Epic
                       </th>
-                      <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[170px]">
+                      <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[170px] dark:text-[grey]">
                         Last Updated
                       </th>
-                      <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[180px]">
+                      <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[180px] dark:text-[grey]">
                         Created One
                       </th>
+                      <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[20px] dark:text-[grey]"></th>
                     </tr>
                   </thead>
-                  <tbody className="bg-white">
+                  <tbody className="bg-white dark:bg-[#1f2532]">
                     <tr className="text-gray-700">
                       <td className="px-4 border-b border-r border-t-[#00000005] border-t-[3px]">
                         <svg
