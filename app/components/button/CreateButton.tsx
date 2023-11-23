@@ -50,7 +50,7 @@ const CreateButton = () => {
                 rows="2"
                 class="block p-2.5 w-full text-sm text-gray-900 bg-white rounded resize-none border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               ></textarea>
-              <h4 className="mb-2 font-medium text-[#444] dark:text-[#333] text-[15px] py-2">
+              <h4 className="mb-2 font-medium text-[#444] dark:text-[grey] text-[15px] py-2">
                 Description{" "}
                 <span className="italic font-light ml-2">optional</span>
               </h4>
@@ -58,8 +58,10 @@ const CreateButton = () => {
                 <div className="mb-4 w-full bg-gray-50 rounded-lg border border-gray-200 dark:bg-gray-700 dark:border-gray-600">
                   <div className="flex justify-between items-center dark:border-gray-600 flex-wrap">
                     <div className="flex gap-0">
-                      <div className="py-2 px-3 bg-white">Write</div>
-                      <div className="text-[grey] py-2 bg-[#f9f9f9] px-3">
+                      <div className="py-2 px-3 bg-white dark:bg-[#1f2532] dark:text-[grey]">
+                        Write
+                      </div>
+                      <div className="text-[grey] py-2 bg-[#f9f9f9] dark:bg-gray-700 px-3">
                         Preview
                       </div>
                     </div>

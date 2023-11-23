@@ -11,8 +11,7 @@ const Dropdown = () => {
         dropdownButtonRef.current &&
         dropdownMenuRef.current &&
         !dropdownButtonRef.current.contains(event.target as Node) &&
-        !dropdownMenuRef.current.contains(event.target as Node) &&
-        !document.querySelector(".modal")
+        !dropdownMenuRef.current.contains(event.target as Node)
       ) {
         setIsDropdownOpen(false);
       }
