@@ -1085,7 +1085,7 @@ const Header = () => {
           </div>
           <div className="hidden xl:flex items-center">
             <button
-              className="hidden lg:flex select-none gap-3 rounded-lg border border-solid border-1 border-slate-50/10 px-2 py-0 text-center align-middle font-sans text-xs font-bold text-gray-500  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none h-10 items-center"
+              className="hidden lg:flex select-none gap-3 rounded-lg border border-solid border-1 border-slate-50/10 px-2 py-0 text-center align-middle font-sans text-xs font-bold text-[#f6f6f6]  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none h-10 items-center"
               type="button"
               data-ripple-light="true"
             >
