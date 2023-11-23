@@ -40,6 +40,12 @@ const TeamManageModal = () => {
             </svg>
           </button>
         </div>
+        <div className="flex justify-between mb-3">
+          <p className="text-[13px] text-[#686c73] font-bold">Other Teams</p>
+          <p className="text-[11px] text-[#3A95C9] cursor-pointer">
+            Select team
+          </p>
+        </div>
         <div className="flex items-center relative mb-3">
           <div className="border-l-[3px] border-[#FF00FF] absolute h-9 -left-2"></div>
           <div className="space-x-2 bg-[#deeffa] dark:bg-[#485575] flex items-center px-3 rounded-md duration-500 ease-in-out py-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-white dark:hover:text-[#635fc7] dark:text-white w-full">

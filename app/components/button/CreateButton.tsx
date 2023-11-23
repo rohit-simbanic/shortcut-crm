@@ -50,9 +50,19 @@ const CreateButton = () => {
                 rows="2"
                 class="block p-2.5 w-full text-sm text-gray-900 bg-white rounded resize-none border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               ></textarea>
+              <h4 className="mb-2 font-medium text-[#444] dark:text-[#333] text-[15px] py-2">
+                Description{" "}
+                <span className="italic font-light ml-2">optional</span>
+              </h4>
               <form className="my-2">
                 <div className="mb-4 w-full bg-gray-50 rounded-lg border border-gray-200 dark:bg-gray-700 dark:border-gray-600">
-                  <div className="flex justify-between items-center py-2 px-3 border-b dark:border-gray-600">
+                  <div className="flex justify-between items-center dark:border-gray-600">
+                    <div className="flex gap-0">
+                      <div className="py-2 px-3 bg-white">Write</div>
+                      <div className="text-[grey] py-2 bg-[#f9f9f9] px-3">
+                        Preview
+                      </div>
+                    </div>
                     <div className="flex flex-wrap items-center divide-gray-200 sm:divide-x dark:divide-gray-600">
                       <div className="flex items-center space-x-1 sm:pr-4">
                         <button
@@ -212,7 +222,7 @@ const CreateButton = () => {
                         </button>
                       </div>
                     </div>
-                    <button
+                    {/* <button
                       type="button"
                       data-tooltip-target="tooltip-fullscreen"
                       class="p-2 text-gray-500 rounded cursor-pointer sm:ml-auto hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600"
@@ -237,7 +247,7 @@ const CreateButton = () => {
                     >
                       Show full screen
                       <div class="tooltip-arrow" data-popper-arrow></div>
-                    </div>
+                    </div> */}
                   </div>
                   <div class="py-2 px-4 bg-white rounded-b-lg dark:bg-gray-800">
                     <label for="editor" class="sr-only">
@@ -688,7 +698,7 @@ const CreateButton = () => {
               </button>
             </div>
           </div>
-          <div className="footer bg-white dark:bg-[#161b26f2] border-t-[1px] dark:border-[#3f4a5f] border-[#e4e8eb] py-4 flex justify-between px-4">
+          <div className="footer bg-white dark:bg-[#161b26f2] border-t-[1px] dark:border-[#3f4a5f] border-[#e4e8eb] py-4 flex justify-between px-4 rounded-bl-[12px] rounded-br-[12px]">
             <button
               type="button"
               className="border-[1px] border-[#e4e8eb] dark:bg-[#161b26] dark:text-gray-400 rounded-md px-3 py-2 shadow hover:shadow-md"

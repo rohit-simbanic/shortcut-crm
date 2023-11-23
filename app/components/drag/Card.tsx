@@ -1013,7 +1013,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                 </button>
               </div>
             </div>
-            <div className="footer bg-white dark:bg-[#161b26f2] border-t-[1px] dark:border-[#3f4a5f] border-[#e4e8eb] py-4 flex justify-between px-4">
+            <div className="footer bg-white dark:bg-[#161b26f2] border-t-[1px] dark:border-[#3f4a5f] border-[#e4e8eb] py-4 flex justify-between px-4 rounded-bl-[12px] rounded-br-[12px]">
               <button
                 type="button"
                 className="border-[1px] border-[#e4e8eb] dark:bg-[#161b26] dark:text-gray-400 rounded-md px-3 py-2 shadow hover:shadow-md"
