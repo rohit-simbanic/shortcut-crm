@@ -22,9 +22,12 @@ function SidebarRight() {
     toggleFilterModalOpen,
   } = useContext(SidebarContext);
   const [isBoardOpen, setIsBoardOpen] = useState(false);
-
+  const [isBoardBarOpen, setBoardBarOpen] = useState(false);
   const toggleBoard = () => {
     setIsBoardOpen((prevState) => !prevState);
+  };
+  const toggleDropdownBarBoard = () => {
+    setBoardBarOpen((prevState) => !prevState);
   };
 
   const boards = [
@@ -235,7 +238,22 @@ function SidebarRight() {
                         {isBoardOpen && <BoardModal />}
                       </div>
                     ))}
-
+                    <span
+                      className="text-[#3A95C9] hover:cursor-pointer text-[0.87rem]"
+                      onClick={toggleDropdownBarBoard}
+                    >
+                      {isBoardBarOpen ? "Less spaces" : "More spaces"}
+                    </span>
+                    {isBoardBarOpen && (
+                      <div
+                        id="dropdown-menu"
+                        className={`mt-2 h-[70px]" dark:border-slate-50 `}
+                      >
+                        <p className="text-[#686c73] italic text-[13px] font-bold">
+                          No hidden spaces found.
+                        </p>
+                      </div>
+                    )}
                     <button
                       className="flex justify-center text-[#686c73] font-medium items-center shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-1 px-3 rounded-[5px] border-[1px] border-[#e4e8eb] bg-[#fff] hover:bg-[#f8f9fb] w-full my-5 dark:bg-[#161b26] dark:hover:bg-black dark:border-gray-300"
                       onClick={toggleFilterModalOpen}
