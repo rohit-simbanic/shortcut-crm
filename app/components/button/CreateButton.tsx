@@ -1,6 +1,7 @@
 //@ts-nocheck
 import React, { useState, useEffect, useRef } from "react";
 import Popup from "reactjs-popup";
+import { useDropdown } from "../Sidebar/UseDropDown";
 
 const CreateButton = () => {
   const [isWrite, setIsWrite] = useState(1);
@@ -8,11 +9,15 @@ const CreateButton = () => {
   const toggleWrite = (tabNumber: number) => {
     setIsWrite(tabNumber);
   };
+  const { setIsDropdownOpen } = useDropdown();
   return (
     <Popup
       trigger={
         <div className="relative inline-block text-left">
-          <button className="inline-flex justify-center border-r-[1px] border-gray-500 w-full px-4 py-2 text-sm font-bold text-white bg-[#3a95c9] rounded-l-md shadow-sm focus:outline-none hover:bg-[#2d78a4]">
+          <button
+            className="inline-flex justify-center border-r-[1px] border-gray-500 w-full px-4 py-2 text-sm font-bold text-white bg-[#3a95c9] rounded-l-md shadow-sm focus:outline-none hover:bg-[#2d78a4]"
+            onClick={() => setIsDropdownOpen(false)}
+          >
             Create Story
           </button>
         </div>
