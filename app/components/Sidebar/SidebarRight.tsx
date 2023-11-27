@@ -56,16 +56,14 @@ function SidebarRight() {
     <>
       <div
         className={`dark:bg-black ${
-          isOpen
-            ? "px-2 hover:bg-[#eef0f4] hover:cursor-pointer"
-            : "pl-4 pr-[1.1rem]"
+          isOpen ? "px-2 hover:bg-[#eef0f4] hover:cursor-pointer" : "pl-[1rem]"
         } flex-none items-center relative sidebar bg-[#f8f9fb] border-r border-gray-300 dark:border-[#283040] transform ${
           isOpen ? "translate-x-0" : "translate-x-[0px]"
         } opacity ${
           isOpen ? "100" : "0"
         } transition-all duration-300 ease-in-out cubic-bezier(0.175, 0.885, 0.32, 1.1)`}
       >
-        <div className="overflow-y-auto h-[95vh]" id="sidebarRight">
+        <div className="overflow-y-auto h-[95vh] pr-[1rem]" id="sidebarRight">
           <div
             className="h-[24px] w-[24px] bg-[#f8f9fb] dark:bg-[#0b101a] rounded-[50%] border-[1px] border-[#e4e8eb] fixed z-50 top-[11px] right-[-12px] cursor-pointer"
             onClick={toggleSidebarOpen}
