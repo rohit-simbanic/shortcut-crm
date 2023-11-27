@@ -1,13 +1,18 @@
 //@ts-nocheck
 import React, { useState, useEffect, useRef } from "react";
 import Popup from "reactjs-popup";
-import { useDropdown } from "../Sidebar/UseDropDown";
+import { useDropdown } from "../../context/UseDropDown";
 
 const CreateButton = () => {
   const [isWrite, setIsWrite] = useState(1);
-  console.log("isWrite", isWrite);
+
   const toggleWrite = (tabNumber: number) => {
     setIsWrite(tabNumber);
+  };
+  const [heightIncrease, setHeightIncrease] = useState(false);
+
+  const toggleHeight = (tabNumber: number) => {
+    setHeightIncrease((prevState) => !prevState);
   };
   const { setIsDropdownOpen } = useDropdown();
   return (
@@ -32,6 +37,19 @@ const CreateButton = () => {
               Create Story
             </h3>
             <div className="flex items-center mt-4">
+              <svg
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                width="29px"
+                height="29px"
+                className="cursor-pointer"
+              >
+                <path
+                  d="M10 6a1 1 0 0 1 1-1h2.5A1.5 1.5 0 0 1 15 6.5V9a1 1 0 1 1-2 0V8a1 1 0 0 0-1-1h-1a1 1 0 0 1-1-1ZM10 14a1 1 0 0 1-1 1H6.5A1.5 1.5 0 0 1 5 13.5V11a1 1 0 1 1 2 0v1a1 1 0 0 0 1 1h1a1 1 0 0 1 1 1Z"
+                  fill="#666"
+                ></path>
+              </svg>
               <button className="close" onClick={close}>
                 <svg
                   fill="#b3b3b3"
