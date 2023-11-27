@@ -7,7 +7,7 @@ import { ItemTypes } from "./Types";
 import Popup from "reactjs-popup";
 import { SidebarContext } from "@/app/context/sidebarContext";
 import ChangesModal from "../modals/ChangesModal";
-import { useDropdown } from "../Sidebar/UseDropDown";
+import { useDropdown } from "../../context/UseDropDown";
 
 export interface CardProps {
   id: any;

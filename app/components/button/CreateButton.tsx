@@ -1,13 +1,19 @@
 //@ts-nocheck
 import React, { useState, useEffect, useRef } from "react";
 import Popup from "reactjs-popup";
-import { useDropdown } from "../Sidebar/UseDropDown";
+import { useDropdown } from "../../context/UseDropDown";
+import PermalinkModal from "../modals/PermalinkModal";
 
 const CreateButton = () => {
   const [isWrite, setIsWrite] = useState(1);
-  console.log("isWrite", isWrite);
+
   const toggleWrite = (tabNumber: number) => {
     setIsWrite(tabNumber);
+  };
+  const [showPermalink, setShowPermalink] = useState(false);
+
+  const togglePermalink = () => {
+    setShowPermalink((prevState) => !prevState);
   };
   const { setIsDropdownOpen } = useDropdown();
   return (
@@ -31,7 +37,39 @@ const CreateButton = () => {
             <h3 className="font-bold text-lg text-[#1f2532] dark:text-[#f6f6f6] my-6">
               Create Story
             </h3>
-            <div className="flex items-center mt-4">
+            <div className="flex items-center mt-4 relative">
+              <svg
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                width="25px"
+                height="25px"
+                className="cursor-pointer"
+                onClick={togglePermalink}
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15.058 4.942a3.066 3.066 0 0 0-4.335 0L9.277 6.387a1.022 1.022 0 0 1-1.445-1.445l1.445-1.445a5.11 5.11 0 0 1 7.226 7.226l-1.445 1.445a1.022 1.022 0 0 1-1.445-1.445l1.445-1.446a3.066 3.066 0 0 0 0-4.335ZM4.942 15.058a3.066 3.066 0 0 0 4.335 0l1.446-1.445a1.022 1.022 0 1 1 1.445 1.445l-1.445 1.445a5.11 5.11 0 0 1-7.226-7.226l1.445-1.445a1.022 1.022 0 1 1 1.445 1.445l-1.445 1.446a3.066 3.066 0 0 0 0 4.335Zm7.226-5.78a1.022 1.022 0 0 0-1.445-1.446l-2.89 2.89a1.022 1.022 0 0 0 1.444 1.446l2.89-2.89Z"
+                  fill="#b3b3b3"
+                ></path>
+              </svg>
+              {showPermalink && (
+                <PermalinkModal togglePermalink={togglePermalink} />
+              )}
+              <svg
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                width="29px"
+                height="29px"
+                className="cursor-pointer"
+              >
+                <path
+                  d="M10 6a1 1 0 0 1 1-1h2.5A1.5 1.5 0 0 1 15 6.5V9a1 1 0 1 1-2 0V8a1 1 0 0 0-1-1h-1a1 1 0 0 1-1-1ZM10 14a1 1 0 0 1-1 1H6.5A1.5 1.5 0 0 1 5 13.5V11a1 1 0 1 1 2 0v1a1 1 0 0 0 1 1h1a1 1 0 0 1 1 1Z"
+                  fill="#b3b3b3"
+                ></path>
+              </svg>
               <button className="close" onClick={close}>
                 <svg
                   fill="#b3b3b3"
