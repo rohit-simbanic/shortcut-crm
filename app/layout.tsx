@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { SidebarProvider } from "./context/sidebarContext";
 import ThemeContextProvider from "./context/themeContext";
+import { DropdownProvider } from "./components/Sidebar/UseDropDown";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,9 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} dark:bg-black`}>
-        <ThemeContextProvider>
-          <SidebarProvider>{children}</SidebarProvider>
-        </ThemeContextProvider>
+        <DropdownProvider>
+          <ThemeContextProvider>
+            <SidebarProvider>{children}</SidebarProvider>
+          </ThemeContextProvider>
+        </DropdownProvider>
       </body>
     </html>
   );

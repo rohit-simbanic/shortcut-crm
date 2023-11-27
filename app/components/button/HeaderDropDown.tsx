@@ -1,23 +1,25 @@
 import React, { useState, useEffect, useRef } from "react";
+import { useDropdown } from "../Sidebar/UseDropDown";
 
 const Dropdown = () => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
+  const { isDropdownOpen, toggleDropdown, setIsDropdownOpen } = useDropdown();
   const dropdownButtonRef = useRef<HTMLButtonElement | null>(null);
   const dropdownMenuRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const handleOutsideClick = (event: MouseEvent) => {
       if (
-        dropdownButtonRef.current &&
-        dropdownMenuRef.current &&
-        !dropdownButtonRef.current.contains(event.target as Node) &&
-        !dropdownMenuRef.current.contains(event.target as Node)
+        (dropdownButtonRef.current &&
+          dropdownButtonRef.current.contains(event.target as Node)) ||
+        (dropdownMenuRef.current &&
+          dropdownMenuRef.current.contains(event.target as Node))
       ) {
-        setIsDropdownOpen(false);
+        // Click occurred inside the dropdown button or menu, do not close the dropdown
+        return;
       }
-      if (isDropdownOpen && event.stopPropagation) {
-        event.stopPropagation();
-      }
+
+      // Click occurred outside the dropdown, close the dropdown
+      setIsDropdownOpen(false);
     };
 
     if (isDropdownOpen) {
@@ -28,10 +30,6 @@ const Dropdown = () => {
       window.removeEventListener("click", handleOutsideClick);
     };
   }, [isDropdownOpen]);
-
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-  };
 
   return (
     <div className="relative inline-block text-left">
