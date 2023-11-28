@@ -328,7 +328,7 @@ const CreateButton = () => {
 
               <button
                 type="button"
-                className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 shadow hover:shadow-md text-xs dark:text-[#f6f6f6]"
+                className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:shadow-[0_1px_0_#0000001f] hover:bg-white text-xs dark:text-[#f6f6f6]"
               >
                 <span className="text-[#13ae47] font-bold dark:text-[#f6f6f6]">
                   +
@@ -343,7 +343,7 @@ const CreateButton = () => {
               <div className="flex gap-2 flex-wrap">
                 <button
                   type="button"
-                  className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 shadow hover:shadow-md text-xs flex gap-2 dark:text-[#f6f6f6]"
+                  className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:shadow-[0_1px_0_#0000001f] hover:bg-white text-xs flex gap-2 dark:text-[#f6f6f6]"
                 >
                   <span className="text-[#13ae47] font-bold">
                     <svg
@@ -363,7 +363,7 @@ const CreateButton = () => {
                 </button>
                 <button
                   type="button"
-                  className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 shadow hover:shadow-md text-xs flex gap-2 dark:text-[#f6f6f6]"
+                  className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:shadow-[0_1px_0_#0000001f] hover:bg-white text-xs flex gap-2 dark:text-[#f6f6f6]"
                 >
                   <span className="text-[#13ae47] font-bold">
                     <svg
@@ -385,7 +385,7 @@ const CreateButton = () => {
                 </button>
                 <button
                   type="button"
-                  className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 shadow hover:shadow-md text-xs flex gap-2 dark:text-[#f6f6f6]"
+                  className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:shadow-[0_1px_0_#0000001f] hover:bg-white text-xs flex gap-2 dark:text-[#f6f6f6]"
                 >
                   <span className="text-[#13ae47] font-bold">
                     <svg
@@ -413,7 +413,7 @@ const CreateButton = () => {
               <hr className="mb-2 dark:border-[#3f4a5f]" />
               <button
                 type="button"
-                className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 shadow hover:shadow-md text-xs flex gap-2 dark:text-[#f6f6f6]"
+                className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:shadow-[0_1px_0_#0000001f] hover:bg-white text-xs flex gap-2 dark:text-[#f6f6f6]"
               >
                 <span className="text-[#13ae47] font-bold">
                   <svg
@@ -749,7 +749,7 @@ const CreateButton = () => {
               <h4 class="my-2 font-light text-sm text-[#8a8a8a]">Labels</h4>
               <button
                 type="button"
-                class="border-[1px] border-[#e4e8eb] rounded-md px-1 py-1 shadow hover:shadow-md text-xs mb-5 dark:text-[#f6f6f6]"
+                class="border-[1px] border-[#e4e8eb] rounded-md px-1 py-1 hover:shadow-[0_1px_0_#0000001f] hover:bg-white text-xs mb-5 dark:text-[#f6f6f6]"
               >
                 <span class="text-[#13ae47] font-bold">+</span> Add Labels
               </button>
