@@ -292,7 +292,7 @@ const CreateButton = () => {
                     </div>
                   </div>
                   {isWrite === 1 ? (
-                    <div class="pb-2 px-4 bg-white rounded-b-lg dark:bg-gray-800 before:content-[''] before:block before:relative before:w-[97.6%] before:ml-[47px] before:border-t-[1px] before:border-[#2d78a4] border-r-[1px] border-[#2d78a4]">
+                    <div class="pb-2 px-4 bg-white rounded-b-lg dark:bg-gray-800 xl:before:content-[''] xl:before:block xl:before:relative xl:before:w-[97.6%] xl:before:ml-[47px] xl:before:border-t-[1px] xl:before:border-[#2d78a4] border-r-[1px] border-[#2d78a4]">
                       <label for="editor" className="sr-only">
                         Publish post
                       </label>
