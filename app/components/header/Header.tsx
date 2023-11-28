@@ -1152,25 +1152,6 @@ const Header = () => {
             Activity
           </button>
           <button
-            className="hidden lg:flex select-none items-center gap-3 rounded-lg border border-solid border-1 border-gray-400  py-1 px-3 text-center align-middle font-sans text-xs font-bold text-[#f6f6f6]  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-            type="button"
-            data-ripple-light="true"
-          >
-            <svg
-              viewBox="0 0 20 20"
-              width={17}
-              height={17}
-              fill="yellow"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M16.722 3.778h-1.778v-.89c0-.488-.4-.888-.888-.888H6.944c-.488 0-.888.4-.888.889v.889H4.278c-.978 0-1.778.8-1.778 1.778v.888c0 2.267 1.707 4.116 3.902 4.392.56 1.333 1.545 2.37 2.994 2.664L9.5 16H7c-.489 0-.944.622-.944 1.111s.4.889.888.889h7.112c.488 0 .888-.4.888-.889S14.49 16 14 16h-2v-2.5c1.449-.293 2.038-1.331 2.598-2.664C16.793 10.56 18.5 8.71 18.5 6.444v-.888c0-.978-.8-1.778-1.778-1.778zM4.5 6.444v-.888h1.556L6 8.5c-1.031-.373-1.5-.9-1.5-2.056zm12 0c0 1.156-.469 1.683-1.5 2.056l-.056-2.944H16.5v.888z"
-                fill="#ccba45"
-              ></path>
-            </svg>
-            Setup Guide
-          </button>
-          <button
             className="flex select-none items-center gap-3 rounded-lg  py-1 px-4 text-center align-middle font-sans bg-slate-50/10 text-xs font-bold text-gray-50  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             type="button"
             data-ripple-light="true"
