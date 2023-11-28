@@ -103,12 +103,20 @@ const CreateButton = () => {
                 <span className="italic font-light ml-2">optional</span>
               </h4>
               <form className="my-2">
-                <div className="mb-4 w-full bg-gray-50 rounded-lg border border-gray-200 dark:bg-gray-700 dark:border-gray-600">
+                <div
+                  className={`mb-4 w-full bg-gray-50 rounded-lg dark:bg-gray-700 dark:border-gray-600 ${
+                    isWrite === 1
+                      ? "border shadow-[rgba(0,0,0,0.24)_0px_3px_8px] border-t-0 border-r-0 border-[#2d78a4] rounded-t-0"
+                      : "border-gray-200"
+                  }`}
+                >
                   <div className="flex justify-between items-center dark:border-gray-600 flex-wrap">
                     <div className="flex gap-0">
                       <div
                         className={`py-2 px-3 ${
-                          isWrite === 1 ? "bg-white" : "bg-[#f9f9f9]"
+                          isWrite === 1
+                            ? "bg-white border-t-[1px] border-[#2d78a4] border-r-[1px]"
+                            : "bg-[#f9f9f9]"
                         }  dark:bg-[#1f2532] dark:text-[grey]`}
                         onClick={() => toggleWrite(1)}
                       >
@@ -284,28 +292,29 @@ const CreateButton = () => {
                     </div>
                   </div>
                   {isWrite === 1 ? (
-                    <div class="py-2 px-4 bg-white rounded-b-lg dark:bg-gray-800">
-                      <label for="editor" class="sr-only">
+                    <div class="pb-2 px-4 bg-white rounded-b-lg dark:bg-gray-800 before:content-[''] before:block before:relative before:w-[97.6%] before:ml-[47px] before:border-t-[1px] before:border-[#2d78a4] border-r-[1px] border-[#2d78a4]">
+                      <label for="editor" className="sr-only">
                         Publish post
                       </label>
                       <textarea
                         id="editor"
                         rows="8"
-                        class="block px-0 w-full text-sm text-gray-800 bg-white border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400"
+                        class="block px-0 w-full text-sm text-gray-800 bg-white border-0 dark:bg-gray-800 focus-visible:outline-none dark:text-white dark:placeholder-gray-400"
                         required
                       ></textarea>
                     </div>
                   ) : (
                     <div class="py-2 px-4 bg-white rounded-b-lg dark:bg-gray-800">
-                      <label for="editor" class="sr-only">
+                      <label for="editor" className="sr-only">
                         Publish post
                       </label>
                       <textarea
                         id="editor"
                         rows="5"
-                        class="block px-0 w-full text-sm text-gray-800 bg-white border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400"
+                        class="block px-0 w-full text-sm text-gray-800 bg-white border-0 dark:bg-gray-800 focus-visible:outline-none dark:text-white dark:placeholder-gray-400"
                         required
                         placeholder="Nothing to preview"
+                        disabled
                       ></textarea>
                     </div>
                   )}
