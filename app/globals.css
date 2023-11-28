@@ -8,6 +8,7 @@ body {
   /* overflow-y: hidden; */
   overflow: hidden;
   background-color: #f8f9fb;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 [data-collapse="true"] {
   width: 2.3rem;

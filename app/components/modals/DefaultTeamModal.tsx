@@ -2,7 +2,7 @@ import React from "react";
 
 const DefaultTeamModal = () => {
   return (
-    <div className="w-[236px] z-20 bg-white dark:bg-[#2d3545] flex flex-col justify-between fixed top-28 left-[8px] rounded-md shadow-md min-h-[177px] modal">
+    <div className="w-[236px] z-20 bg-white dark:bg-[#2d3545] flex flex-col justify-between fixed top-[6rem] left-[15px] rounded-md shadow-[rgba(0,0,0,0.35)_0px_5px_15px] min-h-[177px] modal">
       <div className="p-2">
         <div className="pt-2 relative mx-auto text-gray-600">
           <input
@@ -34,7 +34,7 @@ const DefaultTeamModal = () => {
           <span className="text-sm -left-2 relative">6 Workflow States</span>
         </div>
       </div>
-      <div className="bg-[#f1f3f7] dark:bg-[#2d3545] px-2">
+      <div className="bg-[#f1f3f7] dark:bg-[#2d3545] px-2 rounded-b-lg">
         <div className="flex items-center w-full space-x-2 px-3 mr-8 rounded-md duration-500 ease-in-out py-2 my-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-white dark:hover:text-[#635fc7] dark:text-white">
           <svg
             viewBox="0 0 20 20"

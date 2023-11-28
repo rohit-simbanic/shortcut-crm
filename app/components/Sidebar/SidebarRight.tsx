@@ -122,7 +122,7 @@ function SidebarRight() {
               className="transition-all duration-300 ease-in-out cubic-bezier(0.175, 0.885, 0.32, 1.1) w-[168px]"
             >
               {/* reWrite modal  */}
-              <div className="flex justify-between items-center my-6">
+              <div className="flex justify-between items-center mt-6 mb-2">
                 <div className="flex gap-3 items-center">
                   <span className="dark:text-white text-sm font-bold text-[#686c73]">
                     Workflow
@@ -169,7 +169,7 @@ function SidebarRight() {
               </button>
               {isTeamOpen && <DefaultTeamModal />}
               <div className=" dark:bg-black w-full py-4 rounded-xl">
-                <div className="flex justify-between items-center my-6">
+                <div className="flex justify-between items-center mt-6 mb-2">
                   <div className="flex gap-3 items-center">
                     <span className="dark:text-white font-bold text-sm text-[#686c73]">
                       Spaces
