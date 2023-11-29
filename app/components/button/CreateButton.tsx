@@ -34,7 +34,7 @@ const CreateButton = () => {
       {(close: React.MouseEventHandler<HTMLButtonElement> | undefined) => (
         <div className="dark:bg-[#1f2532]">
           <div className="flex justify-between items-start modal-header px-6">
-            <h3 className="font-bold text-[1.5rem] text-[#333] dark:text-[#f6f6f6] my-6">
+            <h3 className="font-medium text-[1.5rem] text-[#333] dark:text-[#f6f6f6] my-6">
               Create Story
             </h3>
             <div className="flex items-center mt-4 relative">
@@ -96,18 +96,18 @@ const CreateButton = () => {
               <textarea
                 id="message"
                 rows="2"
-                class="block p-2.5 w-full text-sm text-gray-900 bg-white rounded resize-none border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                class="block p-2.5 w-full text-sm text-gray-900 bg-white rounded resize-none border border-[#e4e8eb] focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               ></textarea>
-              <h4 className="mb-2 font-medium text-[#444] dark:text-[grey] text-[15px] py-2">
+              <h4 className="mb-2 font-medium text-[#444] dark:text-[grey] text-[15px] pt-2 pb-0">
                 Description{" "}
                 <span className="italic font-light ml-2">optional</span>
               </h4>
               <form className="my-2">
                 <div
-                  className={`mb-4 w-full bg-gray-50 rounded-lg dark:bg-gray-700 dark:border-gray-600 block p-2.5 w-full text-sm text-gray-900 bg-white rounded resize-none border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 ${
+                  className={`mb-4 w-full rounded-lg dark:bg-gray-700 dark:border-gray-600 block text-sm text-gray-900 resize-none border border-[#e4e8eb] focus:ring-blue-500 focus:border-blue-500 border-t-0 border-l-0 border-r-0 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 ${
                     isWrite === 1
-                      ? "focus:border border-gray-300 focus:border-t-0 focus:border-[#2d78a4] rounded-t-0"
-                      : "border-gray-200"
+                      ? "focus:border focus:border-t-0 focus:border-[#2d78a4] rounded-t-0"
+                      : ""
                   }`}
                 >
                   <div className="flex justify-between items-center dark:border-gray-600 flex-wrap">
@@ -115,8 +115,8 @@ const CreateButton = () => {
                       <div
                         className={`py-2 px-3 ${
                           isWrite === 1
-                            ? "bg-white focus:border-t-[1px] border-[#2d78a4] focus:border-r-[1px]"
-                            : "bg-[#f9f9f9]"
+                            ? "bg-white border-t-[1px] border-[#e4e8eb] border-r-[1px] border-l-[1px]"
+                            : "bg-[#f9f9f9] cursor-pointer border-b-[1px]"
                         }  dark:bg-[#1f2532] dark:text-[grey]`}
                         onClick={() => toggleWrite(1)}
                       >
@@ -124,7 +124,9 @@ const CreateButton = () => {
                       </div>
                       <div
                         className={`text-[grey] py-2 ${
-                          isWrite === 2 ? "bg-white" : "bg-[#f9f9f9]"
+                          isWrite === 2
+                            ? "bg-white border-t-[1px] border-[#e4e8eb] border-r-[1px] border-l-[1px]"
+                            : "bg-[#f9f9f9] cursor-pointer"
                         }  dark:bg-gray-700 px-3`}
                         onClick={() => toggleWrite(2)}
                       >
@@ -292,26 +294,26 @@ const CreateButton = () => {
                     </div>
                   </div>
                   {isWrite === 1 ? (
-                    <div class="pb-2 px-4 bg-white rounded-b-lg dark:bg-gray-800 xl:before:content-[''] xl:before:block xl:before:relative xl:before:w-[97.6%] xl:before:ml-[47px] xl:focus:before:border-t-[1px] xl:focus:before:border-[#2d78a4] focus:border-r-[1px] border-[#2d78a4]">
+                    <div class="pb-2 px-4 bg-white rounded-b-lg dark:bg-gray-800 xl:before:content-[''] xl:before:block xl:before:relative xl:before:w-[98%] xl:before:ml-[44px] xl:before:border-t-[1px] xl:before:border-[#e4e8eb] border-r-[1px] border-l-[1px] border-[#e4e8eb]">
                       <label for="editor" className="sr-only">
                         Publish post
                       </label>
                       <textarea
                         id="editor"
                         rows="8"
-                        class="block px-0 w-full text-sm text-gray-800 bg-white border-0 dark:bg-gray-800 focus-visible:outline-none dark:text-white dark:placeholder-gray-400"
+                        class="block px-0 w-full text-sm text-gray-800 bg-white border-0 dark:bg-gray-800 focus-visible:outline-none dark:text-white dark:placeholder-gray-400 pt-2"
                         required
                       ></textarea>
                     </div>
                   ) : (
-                    <div class="py-2 px-4 bg-white rounded-b-lg dark:bg-gray-800">
+                    <div class="pb-2 px-4 bg-white rounded-b-lg dark:bg-gray-800 border-r-[1px] border-l-[1px] border-[#e4e8eb] xl:before:content-[''] xl:before:block xl:before:relative xl:before:w-[92%] xl:before:ml-[119px] xl:before:border-t-[1px] xl:before:border-[#e4e8eb]">
                       <label for="editor" className="sr-only">
                         Publish post
                       </label>
                       <textarea
                         id="editor"
                         rows="5"
-                        class="block px-0 w-full text-sm text-gray-800 bg-white border-0 dark:bg-gray-800 focus-visible:outline-none dark:text-white dark:placeholder-gray-400"
+                        class="block px-0 w-full text-sm text-gray-800 bg-white border-0 dark:bg-gray-800 focus-visible:outline-none dark:text-white dark:placeholder-gray-400 pt-3"
                         required
                         placeholder="Nothing to preview"
                         disabled
