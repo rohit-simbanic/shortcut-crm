@@ -115,7 +115,7 @@ const CreateButton = () => {
                       <div
                         className={`py-2 px-3 ${
                           isWrite === 1
-                            ? "bg-white border-t-[1px] border-[#e4e8eb] border-r-[1px] border-l-[1px]"
+                            ? "bg-white border-t-[1px] border-[#e4e8eb] border-r-[1px] border-l-[1px] font-bold"
                             : "bg-[#f9f9f9] cursor-pointer border-b-[1px]"
                         }  dark:bg-[#1f2532] dark:text-[grey]`}
                         onClick={() => toggleWrite(1)}
@@ -125,7 +125,7 @@ const CreateButton = () => {
                       <div
                         className={`text-[grey] py-2 ${
                           isWrite === 2
-                            ? "bg-white border-t-[1px] border-[#e4e8eb] border-r-[1px] border-l-[1px]"
+                            ? "bg-white border-t-[1px] border-[#e4e8eb] border-r-[1px] border-l-[1px] font-bold text-gray-900"
                             : "bg-[#f9f9f9] cursor-pointer"
                         }  dark:bg-gray-700 px-3`}
                         onClick={() => toggleWrite(2)}
