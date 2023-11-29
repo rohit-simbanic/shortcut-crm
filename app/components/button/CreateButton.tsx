@@ -359,7 +359,7 @@ const CreateButton = () => {
                       ></path>
                     </svg>
                   </span>{" "}
-                  Relationships..
+                  Relationships...
                 </button>
                 <button
                   type="button"
@@ -381,7 +381,7 @@ const CreateButton = () => {
                       ></path>
                     </svg>
                   </span>{" "}
-                  Relationships..
+                  External Links...
                 </button>
                 <button
                   type="button"
@@ -403,7 +403,7 @@ const CreateButton = () => {
                       ></path>
                     </svg>
                   </span>{" "}
-                  Relationships..
+                  Attach Files...
                 </button>
               </div>
               <h4 className="my-2 font-medium text-[#444] dark:text-[#f6f6f6] text-sm">
@@ -442,7 +442,7 @@ const CreateButton = () => {
                     </g>
                   </svg>
                 </span>{" "}
-                Relationships..
+                Attach Files...
               </button>
             </div>
             <div className="w-[20%] max-lg:w-[100%]">
