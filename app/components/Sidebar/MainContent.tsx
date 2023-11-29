@@ -18,8 +18,57 @@ const MainContent = () => {
       className="mt-4 overflow-x-auto overflow-y-hidden h-[89vh] px-3 flex-grow"
       id="mainContent"
     >
-      <div className="flex items-center justify-end">
-        <div className="flex gap-2">
+      <div className="flex items-center justify-between">
+        <div className="flex items-center gap-3 flex-wrap">
+          <svg
+            height={22}
+            width={22}
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M9.553 8.473a1 1 0 0 0 .894 0L15.96 5.72a.5.5 0 0 0 0-.895l-5.405-2.697a1.246 1.246 0 0 0-1.111 0L4.04 4.826a.5.5 0 0 0 0 .895l5.513 2.752Zm2.008 1.726a1 1 0 0 0-.561.899V17.2a.5.5 0 0 0 .72.45l5.693-2.778c.178-.09.326-.22.43-.377a.948.948 0 0 0 .157-.52V7.852a.5.5 0 0 0-.72-.45L11.56 10.2ZM2 7.853a.5.5 0 0 1 .72-.45L8.44 10.2a1 1 0 0 1 .56.899V17.2a.5.5 0 0 1-.72.45l-5.693-2.778a1.096 1.096 0 0 1-.43-.377.948.948 0 0 1-.157-.52V7.852Z"
+              fill="#666"
+            ></path>
+          </svg>
+          <div className="font-bold text-[#9fa0a5] text-ellipsis text-[16px]">
+            Current Iteration{" "}
+            <span className="text-[#1f2532]">/ Owned by me</span>
+          </div>
+        </div>
+        <div className="flex gap-2 flex-wrap">
+          <div className="flex flex-col items-center gap-3">
+            <span className="text-[#808080]">Display</span>
+            <button className="flex gap-3 items-center justify-between shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-[0.55rem] px-3 rounded-[5px] border-[1px] border-[#e4e8eb] hover:bg-[#e4e8eb] w-full">
+              <svg
+                height={21}
+                width={21}
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11 1a1 1 0 0 0-1 1 1 1 0 0 1-1 1H3a1 1 0 0 0 0 2h6a1 1 0 0 1 1 1 1 1 0 1 0 2 0 1 1 0 0 1 1-1h4a1 1 0 1 0 0-2h-4a1 1 0 0 1-1-1 1 1 0 0 0-1-1ZM3 9a1 1 0 1 0 0 2h1a1 1 0 0 1 1 1 1 1 0 1 0 2 0 1 1 0 0 1 1-1h9a1 1 0 1 0 0-2H8a1 1 0 0 1-1-1 1 1 0 0 0-2 0 1 1 0 0 1-1 1H3Zm-1 7a1 1 0 0 1 1-1h9a1 1 0 0 0 1-1 1 1 0 1 1 2 0 1 1 0 0 0 1 1h1a1 1 0 1 1 0 2h-1a1 1 0 0 0-1 1 1 1 0 1 1-2 0 1 1 0 0 0-1-1H3a1 1 0 0 1-1-1Z"
+                  fill="#666"
+                ></path>
+              </svg>
+              <svg
+                x="0px"
+                y="0px"
+                fill="currentColor"
+                width="8"
+                height="8"
+                viewBox="0 0 12 12"
+              >
+                <path d="M12,3.4c0,0.2-0.1,0.4-0.2,0.5L6.5,9.1C6.4,9.3,6.2,9.4,6,9.4c-0.2,0-0.4-0.1-0.5-0.2L0.2,3.9 C0.1,3.8,0,3.6,0,3.4S0.1,3,0.2,2.9c0.1-0.1,0.3-0.2,0.5-0.2h10.5c0.2,0,0.4,0.1,0.5,0.2C11.9,3,12,3.2,12,3.4z"></path>
+              </svg>
+            </button>
+          </div>
           <div className="flex flex-col items-center gap-3">
             <span className="text-[#808080]">View</span>
             <div
