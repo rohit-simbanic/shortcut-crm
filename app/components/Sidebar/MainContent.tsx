@@ -5020,23 +5020,14 @@ const MainContent = () => {
                 />
               </div>
             </div>
-            <button className="flex gap-3 items-center justify-between dark:text-gray-400 shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-6 px-[59px] rounded-[5px] border-[1px] border-dashed border-[#e4e8eb] hover:bg-[#e4e8eb] text-[0.87rem] text-[#333]">
-              <svg
-                height={21}
-                width={21}
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M4 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H4Zm1 5a1 1 0 0 1 1-1h8a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Zm0 4a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z"
-                  fill="#666"
-                ></path>
-              </svg>
-              Add a story
-            </button>
+            <div
+              className="h-[80vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3"
+              id="mainDragBox"
+            >
+              <DndProvider backend={HTML5Backend}>
+                <Container />
+              </DndProvider>
+            </div>
           </div>
           <div>
             <div className="flex justify-between items-center my-6">
@@ -5083,23 +5074,14 @@ const MainContent = () => {
                 />
               </div>
             </div>
-            <button className="flex gap-3 items-center justify-between dark:text-gray-400 shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-6 px-[59px] rounded-[5px] border-[1px] border-dashed border-[#e4e8eb] hover:bg-[#e4e8eb] text-[0.87rem] text-[#333]">
-              <svg
-                height={21}
-                width={21}
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M4 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H4Zm1 5a1 1 0 0 1 1-1h8a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Zm0 4a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z"
-                  fill="#666"
-                ></path>
-              </svg>
-              Add a story
-            </button>
+            <div
+              className="h-[80vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3"
+              id="mainDragBox"
+            >
+              <DndProvider backend={HTML5Backend}>
+                <Container />
+              </DndProvider>
+            </div>
           </div>
           <div>
             <div className="flex justify-between items-center my-6">
@@ -5146,23 +5128,14 @@ const MainContent = () => {
                 />
               </div>
             </div>
-            <button className="flex gap-3 items-center justify-between dark:text-gray-400 shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-6 px-[59px] rounded-[5px] border-[1px] border-dashed border-[#e4e8eb] hover:bg-[#e4e8eb] text-[0.87rem] text-[#333]">
-              <svg
-                height={21}
-                width={21}
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M4 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H4Zm1 5a1 1 0 0 1 1-1h8a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Zm0 4a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z"
-                  fill="#666"
-                ></path>
-              </svg>
-              Add a story
-            </button>
+            <div
+              className="h-[80vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3"
+              id="mainDragBox"
+            >
+              <DndProvider backend={HTML5Backend}>
+                <Container />
+              </DndProvider>
+            </div>
           </div>
           <div>
             <div className="flex justify-between items-center my-6">
@@ -5209,23 +5182,14 @@ const MainContent = () => {
                 />
               </div>
             </div>
-            <button className="flex gap-3 items-center justify-between dark:text-gray-400 shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-6 px-[59px] rounded-[5px] border-[1px] border-dashed border-[#e4e8eb] hover:bg-[#e4e8eb] text-[0.87rem] text-[#333]">
-              <svg
-                height={21}
-                width={21}
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M4 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H4Zm1 5a1 1 0 0 1 1-1h8a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Zm0 4a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z"
-                  fill="#666"
-                ></path>
-              </svg>
-              Add a story
-            </button>
+            <div
+              className="h-[80vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3"
+              id="mainDragBox"
+            >
+              <DndProvider backend={HTML5Backend}>
+                <Container />
+              </DndProvider>
+            </div>
           </div>
           <div>
             <div className="flex justify-between items-center my-6">
@@ -5272,23 +5236,14 @@ const MainContent = () => {
                 />
               </div>
             </div>
-            <button className="flex gap-3 items-center justify-between dark:text-gray-400 shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-6 px-[59px] rounded-[5px] border-[1px] border-dashed border-[#e4e8eb] hover:bg-[#e4e8eb] text-[0.87rem] text-[#333]">
-              <svg
-                height={21}
-                width={21}
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M4 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H4Zm1 5a1 1 0 0 1 1-1h8a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Zm0 4a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z"
-                  fill="#666"
-                ></path>
-              </svg>
-              Add a story
-            </button>
+            <div
+              className="h-[80vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3"
+              id="mainDragBox"
+            >
+              <DndProvider backend={HTML5Backend}>
+                <Container />
+              </DndProvider>
+            </div>
           </div>
           <div>
             <div className="flex justify-between items-center my-6">
