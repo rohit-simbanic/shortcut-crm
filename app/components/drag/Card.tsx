@@ -259,7 +259,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                             <div
                               className={`py-2 px-3 ${
                                 isWrite === 1
-                                  ? "bg-white border-t-[1px] border-[#e4e8eb] border-r-[1px] border-l-[1px]"
+                                  ? "bg-white border-t-[1px] border-[#e4e8eb] border-r-[1px] border-l-[1px] font-bold"
                                   : "bg-[#f9f9f9] cursor-pointer border-b-[1px]"
                               }  dark:bg-[#1f2532] dark:text-[grey]`}
                               onClick={() => toggleWrite(1)}
@@ -269,7 +269,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                             <div
                               className={`text-[grey] py-2 ${
                                 isWrite === 2
-                                  ? "bg-white border-t-[1px] border-[#e4e8eb] border-r-[1px] border-l-[1px]"
+                                  ? "bg-white border-t-[1px] border-[#e4e8eb] border-r-[1px] border-l-[1px] font-bold text-gray-900"
                                   : "bg-[#f9f9f9] cursor-pointer"
                               }  dark:bg-gray-700 px-3`}
                               onClick={() => toggleWrite(2)}
@@ -773,7 +773,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                       <p className="font-light relative -left-[37px] text-xs dark:text-[#f6f6f6]">
                         Team
                       </p>
-                      <p className="font-bold text-sm dark:text-[#f6f6f6] text-[12px] text-[#333]">
+                      <p className="font-bold text-sm dark:text-[#f6f6f6] text-[12px] text-[#444]">
                         Backend Team
                       </p>
                     </div>
@@ -798,7 +798,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                       <p className="font-light relative -left-[37px] text-xs dark:text-[#f6f6f6]">
                         Team
                       </p>
-                      <p className="font-bold text-sm dark:text-[#f6f6f6] text-[12px] text-[#333]">
+                      <p className="font-bold text-sm dark:text-[#f6f6f6] text-[12px] text-[#444]">
                         Backend Team
                       </p>
                     </div>
@@ -821,7 +821,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                       <p className="font-light relative -left-[50px] text-xs dark:text-[#f6f6f6]">
                         Team
                       </p>
-                      <p className="font-bold text-sm dark:text-[#f6f6f6] text-[12px] text-[#333]">
+                      <p className="font-bold text-sm dark:text-[#f6f6f6] text-[12px] text-[#444]">
                         State Unscheduled
                       </p>
                     </div>
@@ -856,7 +856,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                       <p className="font-light relative -left-[37px] text-xs dark:text-[#f6f6f6]">
                         Team
                       </p>
-                      <p className="font-bold text-sm dark:text-[#f6f6f6] text-[12px] text-[#333] text-[12px] text-[#333]">
+                      <p className="font-bold text-sm dark:text-[#f6f6f6] text-[12px] text-[#444]">
                         Backend Team
                       </p>
                     </div>
@@ -882,7 +882,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                       <p className="font-light relative -left-[37px] text-xs italic dark:text-[#f6f6f6]">
                         Epic
                       </p>
-                      <p className="font-bold text-sm dark:text-[#f6f6f6] text-[12px] text-[#333]">
+                      <p className="font-bold text-sm dark:text-[#f6f6f6] text-[12px] text-[#444]">
                         Backend Team
                       </p>
                     </div>
@@ -907,7 +907,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                       <p className="font-light relative -left-[37px] text-xs dark:text-[#f6f6f6]">
                         Team
                       </p>
-                      <p className="font-bold text-sm dark:text-[#f6f6f6]">
+                      <p className="font-bold text-sm dark:text-[#f6f6f6] text-[#444]">
                         Backend Team
                       </p>
                     </div>
@@ -935,7 +935,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                       <p className="font-light relative -left-[50px] text-xs dark:text-[#f6f6f6]">
                         Team
                       </p>
-                      <p className="font-bold text-sm dark:text-[#f6f6f6] text-[12px] text-[#333]">
+                      <p className="font-bold text-sm dark:text-[#f6f6f6] text-[12px] text-[#444]">
                         State Unscheduled
                       </p>
                     </div>
@@ -954,7 +954,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                       <p className="font-light relative -left-[37px] text-xs italic dark:text-[#f6f6f6]">
                         Epic
                       </p>
-                      <p className="font-bold text-sm dark:text-[#f6f6f6]">
+                      <p className="font-bold text-sm dark:text-[#f6f6f6] text-[#444]">
                         Backend Team
                       </p>
                     </div>
@@ -981,7 +981,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                       <p className="font-light relative -left-[37px] text-xs dark:text-[#f6f6f6]">
                         Team
                       </p>
-                      <p className="font-bold text-sm dark:text-[#f6f6f6]">
+                      <p className="font-bold text-sm dark:text-[#f6f6f6] text-[#444]">
                         Backend Team
                       </p>
                     </div>
@@ -990,10 +990,10 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                 <div className="my-3">
                   <button className="border-[1px] border-gray-200 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
                     <div className="flex gap-2 items-center">
-                      <p className="font-light relative text-xs italic dark:text-[#f6f6f6]">
+                      <p className="font-light relative text-xs italic dark:text-[#f6f6f6] text-[#444]">
                         Epic
                       </p>
-                      <p className="font-bold text-sm dark:text-[#f6f6f6]">
+                      <p className="font-bold text-sm dark:text-[#f6f6f6] text-[#444]">
                         Backend Team
                       </p>
                     </div>
@@ -1003,7 +1003,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                       <p className="font-light relative text-xs dark:text-[#f6f6f6]">
                         Team
                       </p>
-                      <p className="font-bold text-sm dark:text-[#f6f6f6]">
+                      <p className="font-bold text-sm dark:text-[#f6f6f6] text-[#444]">
                         Backend Team
                       </p>
                     </div>
@@ -1045,7 +1045,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                       <p className="font-light relative -left-[37px] text-xs italic dark:text-[#f6f6f6]">
                         Epic
                       </p>
-                      <p className="font-bold text-sm dark:text-[#f6f6f6]">
+                      <p className="font-bold text-sm dark:text-[#f6f6f6] text-[#444]">
                         Backend Team
                       </p>
                     </div>
