@@ -31,6 +31,22 @@ const Header = () => {
       document.removeEventListener("click", handleOutsideClick);
     };
   }, [isModalOpen]);
+  useEffect(() => {
+    const handleProfileModalOutsideClick = (event: MouseEvent) => {
+      const target = event.target as Element;
+      if (isProfileModalOpen && !target.closest(".profile-modal")) {
+        setIsProfileModalOpen(false);
+      }
+    };
+
+    if (isProfileModalOpen) {
+      document.addEventListener("click", handleProfileModalOutsideClick);
+    }
+
+    return () => {
+      document.removeEventListener("click", handleProfileModalOutsideClick);
+    };
+  }, [isProfileModalOpen]);
   return (
     <div className="bg-[#151e2d] dark:bg-black border-b-[1px] border-black dark:border-[#283040] sm:py-1">
       <div className="mx-auto flex justify-center sm:justify-between flex-wrap sm:flex-1 py-2 sm:p-0 items-center px-2">
