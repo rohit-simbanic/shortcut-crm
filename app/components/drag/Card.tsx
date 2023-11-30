@@ -116,7 +116,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
         trigger={
           <div
             draggable="true"
-            className="w-[210px] sm:w-[288px] mb-3 rounded-md  bg-white  dark:bg-[#2b2c37] shadow-[#364e7e1a] shadow-lg dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer"
+            className="w-[210px] sm:w-[240px] mb-3 rounded-md  bg-white  dark:bg-[#2b2c37] shadow-[#364e7e1a] shadow-lg dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer"
           >
             <div
               className="box_container py-6 px-3"
