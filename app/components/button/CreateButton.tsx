@@ -359,7 +359,7 @@ const CreateButton = () => {
                       ></path>
                     </svg>
                   </span>{" "}
-                  Relationships...
+                  Relationships..
                 </button>
                 <button
                   type="button"
