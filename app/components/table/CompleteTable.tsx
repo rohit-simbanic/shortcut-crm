@@ -110,7 +110,7 @@ const CompleteTable: FC<completedTableComponentProps> = ({
         {isScheduledViewFive && (
           <table className="w-full">
             <thead>
-              <tr className="text-md font-semibold tracking-wide text-left text-gray-900 bg-white uppercase border-gray-600 border-t-[1px] border-t-[#0000000d] shadow-[0px 15px 10px -15px #111] sticky top-[2.4rem] z-50 bg-white dark:bg-[#1f2532]">
+              <tr className="text-md font-semibold tracking-wide text-left text-gray-900 bg-white uppercase border-gray-600 border-t-[1px] border-t-[#0000000d] shadow-[0px 15px 10px -15px #111] sticky top-[2.4rem] z-40 bg-white dark:bg-[#1f2532]">
                 <th className="px-4 hover:bg-[#e4e8eb] hover:cursor-pointer">
                   <div className="flex gap-3">
                     <svg
