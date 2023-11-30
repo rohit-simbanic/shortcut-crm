@@ -74,7 +74,7 @@ const FilterItems = () => {
   };
   return (
     <>
-      <div className="flex justify-between items-center mt-8 mb-6">
+      <div className="flex justify-between items-center mt-8 mb-3">
         <h2 className="font-bold text-[#686c73]">Filters</h2>
         <span
           className="text-[#3A95C9] text-xs hover:cursor-pointer"

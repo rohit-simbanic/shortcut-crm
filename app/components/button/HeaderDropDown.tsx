@@ -64,7 +64,7 @@ const Dropdown = () => {
         ref={dropdownMenuRef}
         className={`${
           isDropdownOpen ? "" : "hidden"
-        } origin-top-right absolute left-0 mt-2 w-64 z-[99999] rounded-md shadow-lg bg-white ring-1 ring-black dark:bg-[#161b26] ring-opacity-5`}
+        } origin-top-right absolute left-0 mt-2 w-64 z-[99999] rounded-md shadow-[rgba(0,0,0,0.35)_0px_5px_15px] bg-white ring-1 ring-black dark:bg-[#161b26] ring-opacity-5`}
       >
         <div
           className="py-2 p-2"

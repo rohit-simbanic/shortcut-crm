@@ -23,7 +23,7 @@ const SidebarLeft = () => {
   } = useContext(SidebarContext);
   console.log("isCollapsed Left", isCollapsed);
   return (
-    <div className="border-r border-gray-300 p-5 pr-0 relative z-10 bg-[#f8f9fb] dark:border-[#283040] dark:bg-black flex-none hidden md:block">
+    <div className="border-r border-gray-300 p-4 pr-0 relative z-10 bg-[#f8f9fb] dark:border-[#283040] dark:bg-black flex-none hidden md:block">
       <div className="overflow-y-auto h-[90vh] pr-[1rem]" id="leftSidebar">
         <div
           className="h-[24px] w-[24px] bg-[#f8f9fb] rounded-[50%] dark:bg-[#0b101a] border-[1px] border-[#e4e8eb] absolute top-[11px] right-[-12px] cursor-pointer z-[1000]"
@@ -64,7 +64,7 @@ const SidebarLeft = () => {
           className="transition-all duration-300 ease-in-out cubic-bezier(0.175, 0.885, 0.32, 1.1) w-[130px]"
         >
           <ul className="flex flex-col gap-[3px]">
-            <li className="flex gap-2 hover:bg-[#e4e8eb] hover:cursor-pointer px-2 py-1 rounded-md items-center leading-3">
+            <li className="flex gap-2 hover:bg-[#e4e8eb] hover:cursor-pointer pr-2 py-1 rounded-md items-center leading-3">
               {isCollapsed ? (
                 <svg
                   width="22"
@@ -102,7 +102,7 @@ const SidebarLeft = () => {
                 </>
               )}
             </li>
-            <li className="flex gap-2 hover:bg-[#e4e8eb] hover:cursor-pointer px-2 py-1 rounded-md leading-3">
+            <li className="flex gap-2 hover:bg-[#e4e8eb] hover:cursor-pointer pr-2 py-1 rounded-md leading-3">
               {isCollapsed ? (
                 <svg
                   width="22"
@@ -140,7 +140,7 @@ const SidebarLeft = () => {
                 </>
               )}
             </li>
-            <li className="flex gap-2 hover:bg-[#e4e8eb] hover:cursor-pointer px-2 py-1 rounded-md leading-3">
+            <li className="flex gap-2 hover:bg-[#e4e8eb] hover:cursor-pointer pr-2 py-1 rounded-md leading-3">
               {isCollapsed ? (
                 <svg
                   width="22"
@@ -178,7 +178,7 @@ const SidebarLeft = () => {
                 </>
               )}
             </li>
-            <li className="flex gap-2 hover:bg-[#e4e8eb] hover:cursor-pointer px-2 py-1 rounded-md leading-3">
+            <li className="flex gap-2 hover:bg-[#e4e8eb] hover:cursor-pointer pr-2 py-1 rounded-md leading-3">
               {isCollapsed ? (
                 <svg
                   width="22"
@@ -216,7 +216,7 @@ const SidebarLeft = () => {
                 </>
               )}
             </li>
-            <li className="flex gap-2 hover:bg-[#e4e8eb] hover:cursor-pointer px-2 py-1 rounded-md leading-3">
+            <li className="flex gap-2 hover:bg-[#e4e8eb] hover:cursor-pointer pr-2 py-1 rounded-md leading-3">
               {isCollapsed ? (
                 <svg
                   width="22"
@@ -254,7 +254,7 @@ const SidebarLeft = () => {
                 </>
               )}
             </li>
-            <li className="flex gap-2 hover:bg-[#e4e8eb] hover:cursor-pointer px-2 py-1 rounded-md leading-3">
+            <li className="flex gap-2 hover:bg-[#e4e8eb] hover:cursor-pointer pr-2 py-1 rounded-md leading-3">
               {isCollapsed ? (
                 <svg
                   width="22"
@@ -298,7 +298,7 @@ const SidebarLeft = () => {
               {isCollapsed ? (
                 ""
               ) : (
-                <div className="flex justify-between items-center mt-6 mb-3">
+                <div className="flex justify-between items-center mt-6 mb-1">
                   <span className="dark:text-[#828fa3]">Teams</span>
 
                   <svg
@@ -405,35 +405,35 @@ const SidebarLeft = () => {
                       >
                         <a
                           href="#"
-                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-gray-100"
+                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-[#e4e8eb]"
                           role="menuitem"
                         >
                           Stories
                         </a>
                         <a
                           href="#"
-                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-gray-100"
+                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-[#e4e8eb]"
                           role="menuitem"
                         >
                           Iteration
                         </a>
                         <a
                           href="#"
-                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-gray-100"
+                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-[#e4e8eb]"
                           role="menuitem"
                         >
                           Backlogs
                         </a>
                         <a
                           href="#"
-                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-gray-100"
+                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-[#e4e8eb]"
                           role="menuitem"
                         >
                           Epics
                         </a>
                         <a
                           href="#"
-                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-gray-100"
+                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-[#e4e8eb]"
                           role="menuitem"
                         >
                           Status
@@ -520,35 +520,35 @@ const SidebarLeft = () => {
                       >
                         <a
                           href="#"
-                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-gray-100"
+                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-[#e4e8eb]"
                           role="menuitem"
                         >
                           Stories
                         </a>
                         <a
                           href="#"
-                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-gray-100"
+                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-[#e4e8eb]"
                           role="menuitem"
                         >
                           Iteration
                         </a>
                         <a
                           href="#"
-                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-gray-100"
+                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-[#e4e8eb]"
                           role="menuitem"
                         >
                           Backlogs
                         </a>
                         <a
                           href="#"
-                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-gray-100"
+                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-[#e4e8eb]"
                           role="menuitem"
                         >
                           Epics
                         </a>
                         <a
                           href="#"
-                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-gray-100"
+                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-[#e4e8eb]"
                           role="menuitem"
                         >
                           Status

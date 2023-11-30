@@ -120,7 +120,7 @@ const MainContent = () => {
           <div>
             <div className="flex justify-between items-center my-6">
               <div className="w-[160px] flex gap-2">
-                <span className="dark:text-gray-200 text-[0.87rem] text-[#333] ml-3 font-bold">
+                <span className="dark:text-gray-200 text-[0.87rem] text-[#1f2532] ml-3 font-bold">
                   Unscheduled
                 </span>
                 <span className="bg-[#f3f3f3] px-[5px] rounded-md dark:bg-[#161b26] text-[0.87rem] text-[#333]">
@@ -183,7 +183,7 @@ const MainContent = () => {
           <div>
             <div className="flex justify-between items-center my-6">
               <div className="w-[160px] flex gap-2">
-                <span className="dark:text-gray-200 text-[0.87rem] text-[#333] ml-3 font-bold">
+                <span className="dark:text-gray-200 text-[0.87rem] text-[#1f2532] ml-3 font-bold">
                   Ready for devel..
                 </span>
                 <span className="bg-[#f3f3f3] px-[5px] rounded-md dark:bg-[#161b26] text-[0.87rem] text-[#333]">
@@ -246,7 +246,7 @@ const MainContent = () => {
           <div>
             <div className="flex justify-between items-center my-6">
               <div className="w-[160px] flex gap-2">
-                <span className="dark:text-gray-200 text-[0.87rem] text-[#333] ml-3 font-bold">
+                <span className="dark:text-gray-200 text-[0.87rem] text-[#1f2532] ml-3 font-bold">
                   In development
                 </span>
                 <span className="bg-[#f3f3f3] px-[5px] rounded-md dark:bg-[#161b26] text-[0.87rem] text-[#333]">
@@ -309,7 +309,7 @@ const MainContent = () => {
           <div>
             <div className="flex justify-between items-center my-6">
               <div className="w-[160px] flex gap-2">
-                <span className="dark:text-gray-200 text-[0.87rem] text-[#333] ml-3 font-bold">
+                <span className="dark:text-gray-200 text-[0.87rem] text-[#1f2532] ml-3 font-bold">
                   Ready for Review
                 </span>
                 <span className="bg-[#f3f3f3] px-[5px] rounded-md dark:bg-[#161b26] text-[0.87rem] text-[#333]">
@@ -372,7 +372,7 @@ const MainContent = () => {
           <div>
             <div className="flex justify-between items-center my-6">
               <div className="w-[160px] flex gap-2">
-                <span className="dark:text-gray-200 text-[0.87rem] text-[#333] ml-3 font-bold">
+                <span className="dark:text-gray-200 text-[0.87rem] text-[#1f2532] ml-3 font-bold">
                   Ready for Deploy
                 </span>
                 <span className="bg-[#f3f3f3] px-[5px] rounded-md dark:bg-[#161b26] text-[0.87rem] text-[#333]">
@@ -435,7 +435,7 @@ const MainContent = () => {
           <div>
             <div className="flex justify-between items-center my-6">
               <div className="w-[160px] flex gap-2">
-                <span className="dark:text-gray-200 text-[0.87rem] text-[#333] ml-3 font-bold">
+                <span className="dark:text-gray-200 text-[0.87rem] text-[#1f2532] ml-3 font-bold">
                   Completed
                 </span>
                 <span className="bg-[#f3f3f3] px-[5px] rounded-md dark:bg-[#161b26] text-[0.87rem] text-[#333]">

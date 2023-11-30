@@ -7,7 +7,7 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
   setFilterModalOpen,
 }) => {
   return (
-    <div className="fixed top-[80px] bg-white min-h-[600px] w-[630px] left-[111px] rounded-md shadow-md p-5 z-50 modal dark:bg-[#2d3545]">
+    <div className="fixed top-[80px] bg-white min-h-[600px] w-[630px] left-[111px] rounded-md shadow-[rgba(0,0,0,0.35)_0px_5px_15px] p-5 z-50 modal dark:bg-[#2d3545]">
       <div className="flex justify-between">
         <div></div>
         <svg
@@ -26,7 +26,7 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
         Filter by Label, User or Keyword
       </h3>
       <div className="flex items-center gap-8">
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             width="20"
             height="20"
@@ -47,9 +47,9 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               </clipPath>
             </defs>
           </svg>
-          <p>Labeled as...</p>
+          <p className="text-[14px]">Labeled as...</p>
         </button>
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             viewBox="0 0 20 20"
             fill="none"
@@ -64,9 +64,9 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               fill="#3a95c9"
             ></path>
           </svg>
-          <p>Owned or requested by...</p>
+          <p className="text-[14px]">Owned or requested by...</p>
         </button>
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             viewBox="0 0 20 20"
             fill="none"
@@ -81,7 +81,7 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               fill="#3a95c9"
             ></path>
           </svg>
-          <p>Has keyword ...</p>
+          <p className="text-[14px]">Has keyword ...</p>
         </button>
       </div>
       <hr className="my-4" />
@@ -89,7 +89,7 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
         Filter by Label, User or Keyword
       </h3>
       <div className="flex items-center gap-8">
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             viewBox="0 0 20 20"
             fill="none"
@@ -104,9 +104,9 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               fill="#3a95c9"
             ></path>
           </svg>
-          <p>Labeled as...</p>
+          <p className="text-[14px]">Labeled as...</p>
         </button>
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             viewBox="0 0 20 20"
             fill="none"
@@ -121,9 +121,9 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               fill="#3a95c9"
             ></path>
           </svg>
-          <p>Owned or requested by...</p>
+          <p className="text-[14px]">Owned or requested by...</p>
         </button>
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             width="20"
             height="20"
@@ -142,11 +142,11 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               </clipPath>
             </defs>
           </svg>
-          <p>Features</p>
+          <p className="text-[14px]">Features</p>
         </button>
       </div>
       <div className="flex items-center gap-8">
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             viewBox="0 0 20 20"
             fill="none"
@@ -161,9 +161,9 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               fill="#3a95c9"
             ></path>
           </svg>
-          <p>Labeled as...</p>
+          <p className="text-[14px]">Labeled as...</p>
         </button>
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             viewBox="0 0 20 20"
             fill="none"
@@ -178,9 +178,9 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               fill="#3a95c9"
             ></path>
           </svg>
-          <p>Owned or requested by...</p>
+          <p className="text-[14px]">Owned or requested by...</p>
         </button>
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             viewBox="0 0 20 20"
             fill="none"
@@ -195,11 +195,11 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               fill="#666"
             ></path>
           </svg>
-          <p>Bugs</p>
+          <p className="text-[14px]">Bugs</p>
         </button>
       </div>
       <div className="flex items-center gap-8">
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             viewBox="0 0 20 20"
             fill="none"
@@ -214,9 +214,9 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               fill="#3a95c9"
             ></path>
           </svg>
-          <p>Labeled as...</p>
+          <p className="text-[14px]">Labeled as...</p>
         </button>
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             viewBox="0 0 20 20"
             fill="none"
@@ -231,9 +231,9 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               fill="#3a95c9"
             ></path>
           </svg>
-          <p>Owned or requested by...</p>
+          <p className="text-[14px]">Owned or requested by...</p>
         </button>
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             viewBox="0 0 20 20"
             fill="none"
@@ -248,11 +248,11 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               fill="#666"
             ></path>
           </svg>
-          <p>Chores</p>
+          <p className="text-[14px]">Chores</p>
         </button>
       </div>
       <div className="flex items-center gap-8">
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             viewBox="0 0 20 20"
             fill="none"
@@ -267,9 +267,9 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               fill="#3a95c9"
             ></path>
           </svg>
-          <p>Labeled as...</p>
+          <p className="text-[14px]">Labeled as...</p>
         </button>
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             viewBox="0 0 20 20"
             fill="none"
@@ -284,9 +284,9 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               fill="#3a95c9"
             ></path>
           </svg>
-          <p>Owned or requested by...</p>
+          <p className="text-[14px]">Owned or requested by...</p>
         </button>
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             viewBox="0 0 20 20"
             fill="none"
@@ -301,7 +301,7 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               fill="#666"
             ></path>
           </svg>
-          <p>By estimate..</p>
+          <p className="text-[14px]">By estimate..</p>
         </button>
       </div>
       <hr className="my-4" />
@@ -309,7 +309,7 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
         Filter by Workstream
       </h3>
       <div className="flex items-center gap-8">
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             width="20"
             height="20"
@@ -323,9 +323,9 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               fill="#666"
             ></path>
           </svg>
-          <p>Labeled as...</p>
+          <p className="text-[14px]">Labeled as...</p>
         </button>
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             width="20"
             height="20"
@@ -339,9 +339,9 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               fill="#666"
             ></path>
           </svg>
-          <p>Epic list......</p>
+          <p className="text-[14px]">Epic list......</p>
         </button>
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             viewBox="0 0 20 20"
             fill="none"
@@ -356,11 +356,11 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               fill="#3a95c9"
             ></path>
           </svg>
-          <p>By estimate..</p>
+          <p className="text-[14px]">By estimate..</p>
         </button>
       </div>
       <div className="flex items-center gap-8">
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             width="20"
             height="20"
@@ -374,9 +374,9 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               fill="#666"
             ></path>
           </svg>
-          <p>Labeled as...</p>
+          <p className="text-[14px]">Labeled as...</p>
         </button>
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             width="20"
             height="20"
@@ -390,9 +390,9 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               fill="#666"
             ></path>
           </svg>
-          <p>To do epics</p>
+          <p className="text-[14px]">To do epics</p>
         </button>
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             viewBox="0 0 20 20"
             fill="none"
@@ -407,11 +407,11 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               fill="#3a95c9"
             ></path>
           </svg>
-          <p>No Milestone</p>
+          <p className="text-[14px]">No Milestone</p>
         </button>
       </div>
       <div className="flex items-center gap-8">
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             width="20"
             height="20"
@@ -425,9 +425,9 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               fill="#64A44C"
             ></path>
           </svg>
-          <p>Done iteration</p>
+          <p className="text-[14px]">Done iteration</p>
         </button>
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             width="20"
             height="20"
@@ -441,9 +441,9 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               fill="#64A44C"
             ></path>
           </svg>
-          <p>Done epics</p>
+          <p className="text-[14px]">Done epics</p>
         </button>
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             viewBox="0 0 20 20"
             fill="none"
@@ -458,7 +458,7 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               fill="#ccba45"
             ></path>
           </svg>
-          <p>Stale</p>
+          <p className="text-[14px]">Stale</p>
         </button>
       </div>
       <hr className="my-4" />
@@ -466,7 +466,7 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
         Filter by Workstream
       </h3>
       <div className="flex items-center gap-8">
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             viewBox="0 0 20 20"
             fill="none"
@@ -481,9 +481,9 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               fill="#3a95c9"
             ></path>
           </svg>
-          <p>Labeled as...</p>
+          <p className="text-[14px]">Labeled as...</p>
         </button>
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             viewBox="0 0 20 20"
             fill="none"
@@ -498,9 +498,9 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               fill="#3a95c9"
             ></path>
           </svg>
-          <p>Epic list......</p>
+          <p className="text-[14px]">Epic list......</p>
         </button>
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             width="20"
             height="20"
@@ -521,11 +521,11 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               </clipPath>
             </defs>
           </svg>
-          <p>By estimate..</p>
+          <p className="text-[14px]">By estimate..</p>
         </button>
       </div>
       <div className="flex items-center gap-8">
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             viewBox="0 0 20 20"
             fill="none"
@@ -540,9 +540,9 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               fill="#3a95c9"
             ></path>
           </svg>
-          <p>Labeled as...</p>
+          <p className="text-[14px]">Labeled as...</p>
         </button>
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             width="20"
             height="20"
@@ -556,9 +556,9 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               fill="#666"
             ></path>
           </svg>
-          <p>To do epics</p>
+          <p className="text-[14px]">To do epics</p>
         </button>
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             viewBox="0 0 20 20"
             fill="none"
@@ -573,11 +573,11 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               fill="#a00808"
             ></path>
           </svg>
-          <p>No Milestone</p>
+          <p className="text-[14px]">No Milestone</p>
         </button>
       </div>
       <div className="flex items-center gap-8">
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             viewBox="0 0 20 20"
             fill="none"
@@ -592,9 +592,9 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               fill="#3a95c9"
             ></path>
           </svg>
-          <p>Done iteration</p>
+          <p className="text-[14px]">Done iteration</p>
         </button>
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             viewBox="0 0 20 20"
             fill="none"
@@ -609,9 +609,9 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               fill="#3a95c9"
             ></path>
           </svg>
-          <p>Done epics</p>
+          <p className="text-[14px]">Done epics</p>
         </button>
-        <button className="flex items-center gap-2 hover:bg-[#434452] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
+        <button className="flex items-center gap-2 hover:bg-[#f1f3f7] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
           <svg
             viewBox="0 0 20 20"
             fill="none"
@@ -626,7 +626,7 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               fill="#ccba45"
             ></path>
           </svg>
-          <p>Stale</p>
+          <p className="text-[14px]">Stale</p>
         </button>
       </div>
     </div>

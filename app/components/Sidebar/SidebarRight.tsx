@@ -122,7 +122,7 @@ function SidebarRight() {
               className="transition-all duration-300 ease-in-out cubic-bezier(0.175, 0.885, 0.32, 1.1) w-[168px]"
             >
               {/* reWrite modal  */}
-              <div className="flex justify-between items-center my-6">
+              <div className="flex justify-between items-center mt-6 mb-2">
                 <div className="flex gap-3 items-center">
                   <span className="dark:text-white text-sm font-bold text-[#686c73]">
                     Workflow
@@ -169,7 +169,7 @@ function SidebarRight() {
               </button>
               {isTeamOpen && <DefaultTeamModal />}
               <div className=" dark:bg-black w-full py-4 rounded-xl">
-                <div className="flex justify-between items-center my-6">
+                <div className="flex justify-between items-center mt-6 mb-2">
                   <div className="flex gap-3 items-center">
                     <span className="dark:text-white font-bold text-sm text-[#686c73]">
                       Spaces
@@ -197,7 +197,7 @@ function SidebarRight() {
                   <div className="relative">
                     {Array.from(boards, (board) => (
                       <div
-                        className="flex items-center space-x-2 px-3 mr-8 rounded-md duration-500 ease-in-out py-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-white dark:hover:text-[#635fc7] dark:text-white w-[154px] group"
+                        className="flex items-center space-x-2 px-3 mr-8 rounded-md duration-500 ease-in-out py-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-white dark:hover:text-[#635fc7] dark:text-white w-[160px] group"
                         key={board.id}
                       >
                         <svg
