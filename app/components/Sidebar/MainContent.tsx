@@ -127,7 +127,7 @@ const MainContent = () => {
                   0
                 </span>
               </div>
-              <div className="flex gap-2 items-center">
+              <div className="flex gap-[0.1rem] items-center">
                 <svg
                   height={21}
                   width={21}
@@ -190,7 +190,7 @@ const MainContent = () => {
                   0
                 </span>
               </div>
-              <div className="flex gap-2 items-center">
+              <div className="flex gap-[0.1rem] items-center">
                 <svg
                   height={21}
                   width={21}
@@ -253,7 +253,7 @@ const MainContent = () => {
                   0
                 </span>
               </div>
-              <div className="flex gap-2 items-center">
+              <div className="flex gap-[0.1rem] items-center">
                 <svg
                   height={21}
                   width={21}
@@ -316,7 +316,7 @@ const MainContent = () => {
                   0
                 </span>
               </div>
-              <div className="flex gap-2 items-center">
+              <div className="flex gap-[0.1rem] items-center">
                 <svg
                   height={21}
                   width={21}
@@ -379,7 +379,7 @@ const MainContent = () => {
                   0
                 </span>
               </div>
-              <div className="flex gap-2 items-center">
+              <div className="flex gap-[0.1rem] items-center">
                 <svg
                   height={21}
                   width={21}
@@ -442,7 +442,7 @@ const MainContent = () => {
                   0
                 </span>
               </div>
-              <div className="flex gap-2 items-center">
+              <div className="flex gap-[0.1rem] items-center">
                 <svg
                   height={21}
                   width={21}
