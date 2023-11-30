@@ -17,7 +17,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
       >
         <div className="flex gap-2 sticky top-0 z-10 bg-white dark:bg-[#1f2532]">
           <div
-            className="flex items-center space-x-2 px-3 mr-8 rounded-md duration-500 ease-in-out py-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-white dark:hover:text-[#635fc7] dark:text-white"
+            className="flex items-center space-x-2 px-3 mr-8 rounded-md duration-500 ease-in-out py-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-gray-950 dark:hover:text-[#635fc7] dark:text-white"
             onClick={toggleScheduledTable}
           >
             {isScheduledView ? (
