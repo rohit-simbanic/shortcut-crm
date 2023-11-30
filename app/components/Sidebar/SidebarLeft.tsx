@@ -326,7 +326,7 @@ const SidebarLeft = () => {
                 }`}
               >
                 <button
-                  className={`flex justify-center gap-3 px-1 py-1 rounded-md items-center hover:bg-[#e4e8eb] ${
+                  className={`flex group justify-center gap-3 px-1 py-1 rounded-md items-center hover:bg-[#e4e8eb] ${
                     isDropdownOpen ? "" : "bg-[#deeffa] dark:bg-[#323c53]"
                   }`}
                   onClick={toggleDropdown}
@@ -357,6 +357,7 @@ const SidebarLeft = () => {
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
+                      className="transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
                     >
                       <path
                         fillRule="evenodd"
@@ -373,6 +374,7 @@ const SidebarLeft = () => {
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
+                      className="transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
                     >
                       <path
                         fillRule="evenodd"
@@ -441,7 +443,7 @@ const SidebarLeft = () => {
                   </div>
                 )}
                 <button
-                  className={`flex justify-center gap-3 px-1 py-1 rounded-md items-center hover:bg-[#e4e8eb] ${
+                  className={`flex group justify-center gap-3 px-1 py-1 rounded-md items-center hover:bg-[#e4e8eb] ${
                     isDropdownOpenAlt ? "" : "bg-[#deeffa] dark:bg-[#323c53]"
                   }`}
                   onClick={toggleDropdownAlt}
@@ -472,6 +474,7 @@ const SidebarLeft = () => {
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
+                      className="transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
                     >
                       <path
                         fillRule="evenodd"
@@ -488,6 +491,7 @@ const SidebarLeft = () => {
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
+                      className="transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
                     >
                       <path
                         fillRule="evenodd"
