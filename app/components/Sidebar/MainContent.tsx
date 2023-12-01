@@ -61,9 +61,11 @@ const MainContent = () => {
           </div>
         </div>
         <div className="flex gap-2 flex-wrap">
-          <div className="flex flex-col items-center gap-3">
-            <span className="text-[#808080]">Display</span>
-            <button className="flex gap-3 items-center justify-between shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-[0.55rem] px-3 rounded-[5px] border-[1px] border-[#e4e8eb] hover:bg-[#e4e8eb] w-full">
+          <div className="flex flex-col items-center gap-1">
+            <span className="text-[#808080] text-[11px] font-medium">
+              Display
+            </span>
+            <button className="flex gap-3 items-center justify-between shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-[0.45rem] px-2 rounded-[5px] border-[1px] border-[#e4e8eb] hover:bg-[#e4e8eb] w-full">
               <svg
                 height={21}
                 width={21}
@@ -90,10 +92,10 @@ const MainContent = () => {
               </svg>
             </button>
           </div>
-          <div className="flex flex-col items-center gap-3">
-            <span className="text-[#808080]">View</span>
+          <div className="flex flex-col items-center gap-1 ">
+            <span className="text-[#808080] text-[11px] font-medium">View</span>
             <div
-              className="flex gap-3 items-center justify-between shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-2 px-3 rounded-[5px] border-[1px] border-[#e4e8eb] hover:bg-[#e4e8eb] w-full"
+              className="flex gap-3 items-center justify-between shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-[0.39rem] px-2 rounded-[5px] border-[1px] border-[#e4e8eb] hover:bg-[#e4e8eb] w-full"
               onClick={() => toggleView("isTableView")}
             >
               <div
@@ -169,7 +171,7 @@ const MainContent = () => {
       ) : (
         <div className="flex gap-[1.1rem] justify-start">
           <div>
-            <div className="flex justify-between items-center my-6">
+            <div className="flex justify-between items-center mb-6 mt-4">
               <div className="w-[160px] flex gap-2">
                 <span className="dark:text-gray-200 text-[0.87rem] text-[#1f2532] ml-3 font-bold">
                   Unscheduled
@@ -223,7 +225,7 @@ const MainContent = () => {
             </div>
           </div>
           <div>
-            <div className="flex justify-between items-center my-6">
+            <div className="flex justify-between items-center mb-6 mt-4">
               <div className="w-[160px] flex gap-2">
                 <span className="dark:text-gray-200 text-[0.87rem] text-[#1f2532] ml-3 font-bold">
                   Ready for devel..
@@ -277,7 +279,7 @@ const MainContent = () => {
             </div>
           </div>
           <div>
-            <div className="flex justify-between items-center my-6">
+            <div className="flex justify-between items-center mb-6 mt-4">
               <div className="w-[160px] flex gap-2">
                 <span className="dark:text-gray-200 text-[0.87rem] text-[#1f2532] ml-3 font-bold">
                   In development
@@ -331,7 +333,7 @@ const MainContent = () => {
             </div>
           </div>
           <div>
-            <div className="flex justify-between items-center my-6">
+            <div className="flex justify-between items-center mb-6 mt-4">
               <div className="w-[160px] flex gap-2">
                 <span className="dark:text-gray-200 text-[0.87rem] text-[#1f2532] ml-3 font-bold">
                   Ready for Review
@@ -385,7 +387,7 @@ const MainContent = () => {
             </div>
           </div>
           <div>
-            <div className="flex justify-between items-center my-6">
+            <div className="flex justify-between items-center mb-6 mt-4">
               <div className="w-[160px] flex gap-2">
                 <span className="dark:text-gray-200 text-[0.87rem] text-[#1f2532] ml-3 font-bold">
                   Ready for Deploy
@@ -439,7 +441,7 @@ const MainContent = () => {
             </div>
           </div>
           <div>
-            <div className="flex justify-between items-center my-6">
+            <div className="flex justify-between items-center mb-6 mt-4">
               <div className="w-[160px] flex gap-2">
                 <span className="dark:text-gray-200 text-[0.87rem] text-[#1f2532] ml-3 font-bold">
                   Completed
