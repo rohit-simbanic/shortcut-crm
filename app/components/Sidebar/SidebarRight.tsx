@@ -199,7 +199,7 @@ function SidebarRight() {
                   <div className="relative">
                     {Array.from(boards, (board) => (
                       <div
-                        className="flex items-center space-x-2 px-3 mr-8 rounded-md duration-500 ease-in-out py-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-white dark:hover:text-[#635fc7] dark:text-white w-[160px] group"
+                        className="flex group items-center space-x-2 px-3 mr-8 rounded-md duration-500 ease-in-out py-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-white dark:hover:text-[#635fc7] dark:text-white w-[160px] group"
                         key={board.id}
                       >
                         <svg
@@ -216,7 +216,7 @@ function SidebarRight() {
                             fill="#666"
                           ></path>
                         </svg>{" "}
-                        <p className="text-sm font-bold text-[#686c73] dark:text-gray-300">
+                        <p className="text-sm font-bold text-[#686c73] dark:text-gray-300 dark:group-hover:text-[#1f2532]">
                           {board.name}
                         </p>
                         <svg
