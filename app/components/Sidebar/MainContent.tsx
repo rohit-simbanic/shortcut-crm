@@ -55,7 +55,9 @@ const MainContent = () => {
           </svg>
           <div className="font-bold text-[#9fa0a5] text-ellipsis text-[16px]">
             Current Iteration{" "}
-            <span className="text-[#1f2532]">/ Owned by me</span>
+            <span className="text-[#1f2532] dark:text-[#f6f6f6]">
+              / Owned by me
+            </span>
           </div>
         </div>
         <div className="flex gap-2 flex-wrap">
@@ -172,7 +174,7 @@ const MainContent = () => {
                 <span className="dark:text-gray-200 text-[0.87rem] text-[#1f2532] ml-3 font-bold">
                   Unscheduled
                 </span>
-                <span className="bg-[#f3f3f3] px-[5px] rounded-md dark:bg-[#161b26] text-[0.87rem] text-[#333]">
+                <span className="bg-[#f3f3f3] px-[5px] rounded-md dark:bg-[#161b26] text-[0.87rem] text-[#333] dark:text-[#f6f6f6]">
                   0
                 </span>
               </div>
@@ -226,7 +228,7 @@ const MainContent = () => {
                 <span className="dark:text-gray-200 text-[0.87rem] text-[#1f2532] ml-3 font-bold">
                   Ready for devel..
                 </span>
-                <span className="bg-[#f3f3f3] px-[5px] rounded-md dark:bg-[#161b26] text-[0.87rem] text-[#333]">
+                <span className="bg-[#f3f3f3] px-[5px] rounded-md dark:bg-[#161b26] text-[0.87rem] text-[#333] dark:text-[#f6f6f6]">
                   0
                 </span>
               </div>
@@ -280,7 +282,7 @@ const MainContent = () => {
                 <span className="dark:text-gray-200 text-[0.87rem] text-[#1f2532] ml-3 font-bold">
                   In development
                 </span>
-                <span className="bg-[#f3f3f3] px-[5px] rounded-md dark:bg-[#161b26] text-[0.87rem] text-[#333]">
+                <span className="bg-[#f3f3f3] px-[5px] rounded-md dark:bg-[#161b26] text-[0.87rem] text-[#333] dark:text-[#f6f6f6]">
                   0
                 </span>
               </div>
@@ -334,7 +336,7 @@ const MainContent = () => {
                 <span className="dark:text-gray-200 text-[0.87rem] text-[#1f2532] ml-3 font-bold">
                   Ready for Review
                 </span>
-                <span className="bg-[#f3f3f3] px-[5px] rounded-md dark:bg-[#161b26] text-[0.87rem] text-[#333]">
+                <span className="bg-[#f3f3f3] px-[5px] rounded-md dark:bg-[#161b26] text-[0.87rem] text-[#333] dark:text-[#f6f6f6]">
                   0
                 </span>
               </div>
@@ -388,7 +390,7 @@ const MainContent = () => {
                 <span className="dark:text-gray-200 text-[0.87rem] text-[#1f2532] ml-3 font-bold">
                   Ready for Deploy
                 </span>
-                <span className="bg-[#f3f3f3] px-[5px] rounded-md dark:bg-[#161b26] text-[0.87rem] text-[#333]">
+                <span className="bg-[#f3f3f3] px-[5px] rounded-md dark:bg-[#161b26] text-[0.87rem] text-[#333] dark:text-[#f6f6f6]">
                   0
                 </span>
               </div>
@@ -442,7 +444,7 @@ const MainContent = () => {
                 <span className="dark:text-gray-200 text-[0.87rem] text-[#1f2532] ml-3 font-bold">
                   Completed
                 </span>
-                <span className="bg-[#f3f3f3] px-[5px] rounded-md dark:bg-[#161b26] text-[0.87rem] text-[#333]">
+                <span className="bg-[#f3f3f3] px-[5px] rounded-md dark:bg-[#161b26] text-[0.87rem] text-[#333] dark:text-[#f6f6f6]">
                   0
                 </span>
               </div>
