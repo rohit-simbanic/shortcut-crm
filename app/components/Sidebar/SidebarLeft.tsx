@@ -96,7 +96,7 @@ const SidebarLeft = () => {
                       fill="#686c73"
                     ></path>
                   </svg>
-                  <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
+                  <span className="text-[#1f2532] dark:text-[#f6f6f6] text-sm list-text">
                     Home
                   </span>
                 </>
@@ -134,7 +134,7 @@ const SidebarLeft = () => {
                       fill="#686c73"
                     ></path>
                   </svg>
-                  <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
+                  <span className="text-[#1f2532] dark:text-[#f6f6f6] text-sm list-text">
                     Docs
                   </span>
                 </>
@@ -172,7 +172,7 @@ const SidebarLeft = () => {
                       fill="#686c73"
                     ></path>
                   </svg>
-                  <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
+                  <span className="text-[#1f2532] dark:text-[#f6f6f6] text-sm list-text">
                     Roadmap
                   </span>
                 </>
@@ -210,7 +210,7 @@ const SidebarLeft = () => {
                       fill="#686c73"
                     ></path>
                   </svg>
-                  <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
+                  <span className="text-[#1f2532] dark:text-[#f6f6f6] text-sm list-text">
                     Milestone
                   </span>
                 </>
@@ -248,7 +248,7 @@ const SidebarLeft = () => {
                       fill="#686c73"
                     ></path>
                   </svg>
-                  <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
+                  <span className="text-[#1f2532] dark:text-[#f6f6f6] text-sm list-text">
                     Reports
                   </span>
                 </>
@@ -286,7 +286,7 @@ const SidebarLeft = () => {
                       fill="#686c73"
                     ></path>
                   </svg>
-                  <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
+                  <span className="text-[#1f2532] dark:text-[#f6f6f6] text-sm list-text">
                     Projects
                   </span>
                 </>
@@ -299,7 +299,7 @@ const SidebarLeft = () => {
                 ""
               ) : (
                 <div className="flex justify-between items-center mt-6 mb-1">
-                  <span className="dark:text-[#828fa3]">Teams</span>
+                  <span className="dark:text-[#f6f6f6]">Teams</span>
 
                   <svg
                     width="22"
@@ -346,7 +346,7 @@ const SidebarLeft = () => {
                     </svg>
                   </div>
                   {!isCollapsed && (
-                    <span className="dark:text-[#828fa3] list-text text-sm">
+                    <span className="dark:text-[#f6f6f6] list-text text-sm">
                       All Work
                     </span>
                   )}
@@ -405,35 +405,35 @@ const SidebarLeft = () => {
                       >
                         <a
                           href="#"
-                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-[#e4e8eb]"
+                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-[#e4e8eb] dark:text-gray-400"
                           role="menuitem"
                         >
                           Stories
                         </a>
                         <a
                           href="#"
-                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-[#e4e8eb]"
+                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-[#e4e8eb] dark:text-gray-400"
                           role="menuitem"
                         >
                           Iteration
                         </a>
                         <a
                           href="#"
-                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-[#e4e8eb]"
+                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-[#e4e8eb] dark:text-gray-400"
                           role="menuitem"
                         >
                           Backlogs
                         </a>
                         <a
                           href="#"
-                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-[#e4e8eb]"
+                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-[#e4e8eb] dark:text-gray-400"
                           role="menuitem"
                         >
                           Epics
                         </a>
                         <a
                           href="#"
-                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-[#e4e8eb]"
+                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-[#e4e8eb] dark:text-gray-400"
                           role="menuitem"
                         >
                           Status
@@ -463,7 +463,7 @@ const SidebarLeft = () => {
                     </svg>
                   </div>
                   {!isCollapsed && (
-                    <span className="dark:text-[#828fa3] list-text text-sm">
+                    <span className="dark:text-[#f6f6f6] list-text text-sm">
                       Backend
                     </span>
                   )}
@@ -520,35 +520,35 @@ const SidebarLeft = () => {
                       >
                         <a
                           href="#"
-                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-[#e4e8eb]"
+                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-[#e4e8eb] dark:text-gray-400"
                           role="menuitem"
                         >
                           Stories
                         </a>
                         <a
                           href="#"
-                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-[#e4e8eb]"
+                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-[#e4e8eb] dark:text-gray-400"
                           role="menuitem"
                         >
                           Iteration
                         </a>
                         <a
                           href="#"
-                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-[#e4e8eb]"
+                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-[#e4e8eb] dark:text-gray-400"
                           role="menuitem"
                         >
                           Backlogs
                         </a>
                         <a
                           href="#"
-                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-[#e4e8eb]"
+                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-[#e4e8eb] dark:text-gray-400"
                           role="menuitem"
                         >
                           Epics
                         </a>
                         <a
                           href="#"
-                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-[#e4e8eb]"
+                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-[#e4e8eb] dark:text-gray-400"
                           role="menuitem"
                         >
                           Status
@@ -598,7 +598,7 @@ const SidebarLeft = () => {
                         fill="#686c73"
                       ></path>
                     </svg>
-                    <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
+                    <span className="text-[#1f2532] dark:text-[#f6f6f6] text-sm list-text">
                       Settings
                     </span>
                   </>
@@ -638,7 +638,7 @@ const SidebarLeft = () => {
                         fill="#686c73"
                       ></path>
                     </svg>
-                    <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
+                    <span className="text-[#1f2532] dark:text-[#f6f6f6] text-sm list-text">
                       Integrations
                     </span>
                   </>
@@ -682,7 +682,7 @@ const SidebarLeft = () => {
                         fill="#686c73"
                       ></path>
                     </svg>
-                    <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
+                    <span className="text-[#1f2532] dark:text-[#f6f6f6] text-sm list-text">
                       Invite users
                     </span>
                   </>

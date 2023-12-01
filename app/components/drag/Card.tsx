@@ -122,7 +122,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
               className="box_container py-6 px-3"
               onClick={() => setIsDropdownOpen(false)}
             >
-              <p className="font-bold tracking-wide text-[0.84rem] text-[#333] dark:text-[grey]">
+              <p className="font-bold tracking-wide text-[0.84rem] text-[#333] dark:text-[#f6f6f6]">
                 Simbanic Services
               </p>
               <p className="font-light text-xs tracking-tighter mt-2 text-[0.70rem] text-[#333]">
