@@ -61,7 +61,7 @@ const SidebarLeft = () => {
         </div>
         <div
           data-collapse={isCollapsed}
-          className="transition-all duration-300 ease-in-out cubic-bezier(0.175, 0.885, 0.32, 1.1) w-[130px]"
+          className="transition-all duration-[5ms] w-[130px]"
         >
           <ul className="flex flex-col gap-[3px]">
             <li className="flex gap-2 hover:bg-[#e4e8eb] hover:cursor-pointer pr-2 py-1 rounded-md items-center leading-3 group">
