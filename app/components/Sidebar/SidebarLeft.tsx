@@ -397,7 +397,9 @@ const SidebarLeft = () => {
                     {!isCollapsed && (
                       <div
                         className={`py-0 p-1 dropdown-items ${
-                          isCollapsed ? "collapsed" : ""
+                          isCollapsed
+                            ? "collapsed opacity-0 invisible"
+                            : "open transition-all duration-300 opacity-100"
                         }`}
                         role="menu"
                         aria-orientation="vertical"
@@ -513,7 +515,9 @@ const SidebarLeft = () => {
                   >
                     {!isCollapsed && (
                       <div
-                        className="py-0 p-1"
+                        className={`py-0 p-1 dropdown-items ${
+                          isCollapsed ? "collapsed" : ""
+                        }`}
                         role="menu"
                         aria-orientation="vertical"
                         aria-labelledby="dropdown-button"
