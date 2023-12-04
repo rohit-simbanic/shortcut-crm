@@ -124,7 +124,7 @@ function SidebarRight() {
               {/* reWrite modal  */}
               <div className="flex justify-between items-center mt-6 mb-2">
                 <div className="flex gap-3 items-center">
-                  <span className="dark:text-white text-sm font-bold text-[#686c73]">
+                  <span className="dark:text-white text-sm font-bold text-[#1f2532]">
                     Workflow
                   </span>
                 </div>
@@ -151,7 +151,7 @@ function SidebarRight() {
                 className="flex gap-3 items-center justify-between shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-1 px-3 rounded-[5px] border-[1px] border-[#e4e8eb] bg-[#fff] hover:bg-[#e4e8eb] dark:text-white dark:border-gray-400 dark:bg-[#161b26] dark:hover:bg-black w-full"
                 onClick={toggleTeamOpen}
               >
-                <p className="text-[#686c73] font-bold dark:text-[#f6f6f6]">
+                <p className="text-[#1f2532] font-bold dark:text-[#f6f6f6]">
                   Default Team
                 </p>
                 <svg
