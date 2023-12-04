@@ -199,7 +199,7 @@ function SidebarRight() {
                   <div className="relative">
                     {Array.from(boards, (board) => (
                       <div
-                        className="flex items-center space-x-2 px-3 mr-8 rounded-md duration-500 ease-in-out py-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-white dark:hover:text-[#635fc7] dark:text-white w-[160px] group"
+                        className="flex group items-center space-x-2 px-3 mr-8 rounded-md duration-500 ease-in-out py-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-white dark:hover:text-[#635fc7] dark:text-white w-[160px] group"
                         key={board.id}
                       >
                         <svg
@@ -216,7 +216,7 @@ function SidebarRight() {
                             fill="#666"
                           ></path>
                         </svg>{" "}
-                        <p className="text-sm font-bold text-[#686c73] dark:text-gray-300">
+                        <p className="text-sm font-bold text-[#686c73] dark:text-gray-300 dark:group-hover:text-[#1f2532]">
                           {board.name}
                         </p>
                         <svg
@@ -255,7 +255,7 @@ function SidebarRight() {
                       </div>
                     )}
                     <button
-                      className="flex justify-center text-[#1f2532] dark:text-[#f6f6f6] font-bold items-center shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-1 px-3 rounded-[5px] border-[1px] border-[#e4e8eb] bg-[#fff] hover:bg-[#f8f9fb] w-full my-5 dark:bg-[#161b26] dark:hover:bg-black dark:border-gray-300"
+                      className="flex justify-center text-[#686c73] dark:text-[#f6f6f6] font-bold items-center shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-1 px-3 rounded-[5px] border-[1px] border-[#e4e8eb] bg-[#fff] hover:bg-[#f8f9fb] w-full my-5 dark:bg-[#161b26] dark:hover:bg-black dark:border-gray-300"
                       onClick={toggleFilterModalOpen}
                     >
                       Add Quick Filters

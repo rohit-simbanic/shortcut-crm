@@ -116,13 +116,13 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
         trigger={
           <div
             draggable="true"
-            className="w-[210px] sm:w-[288px] mb-3 rounded-md  bg-white  dark:bg-[#2b2c37] shadow-[#364e7e1a] shadow-lg dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer"
+            className="w-[210px] sm:w-[240px] mb-3 rounded-md  bg-white  dark:bg-[#2b2c37] shadow-[#364e7e1a] shadow-lg dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer"
           >
             <div
               className="box_container py-6 px-3"
               onClick={() => setIsDropdownOpen(false)}
             >
-              <p className="font-bold tracking-wide text-[0.84rem] text-[#333] dark:text-[grey]">
+              <p className="font-bold tracking-wide text-[0.84rem] text-[#333] dark:text-[#f6f6f6]">
                 Simbanic Services
               </p>
               <p className="font-light text-xs tracking-tighter mt-2 text-[0.70rem] text-[#333]">

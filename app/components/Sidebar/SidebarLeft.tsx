@@ -64,7 +64,7 @@ const SidebarLeft = () => {
           className="transition-all duration-300 ease-in-out cubic-bezier(0.175, 0.885, 0.32, 1.1) w-[130px]"
         >
           <ul className="flex flex-col gap-[3px]">
-            <li className="flex gap-2 hover:bg-[#e4e8eb] hover:cursor-pointer pr-2 py-1 rounded-md items-center leading-3">
+            <li className="flex gap-2 hover:bg-[#e4e8eb] hover:cursor-pointer pr-2 py-1 rounded-md items-center leading-3 group">
               {isCollapsed ? (
                 <svg
                   width="22"
@@ -96,13 +96,13 @@ const SidebarLeft = () => {
                       fill="#686c73"
                     ></path>
                   </svg>
-                  <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
+                  <span className="text-[#1f2532] dark:text-[#f6f6f6] text-sm list-text dark:group-hover:text-[#1f2532]">
                     Home
                   </span>
                 </>
               )}
             </li>
-            <li className="flex gap-2 hover:bg-[#e4e8eb] hover:cursor-pointer pr-2 py-1 rounded-md leading-3">
+            <li className="flex gap-2 hover:bg-[#e4e8eb] hover:cursor-pointer pr-2 py-1 rounded-md leading-3 group">
               {isCollapsed ? (
                 <svg
                   width="22"
@@ -134,13 +134,13 @@ const SidebarLeft = () => {
                       fill="#686c73"
                     ></path>
                   </svg>
-                  <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
+                  <span className="text-[#1f2532] dark:text-[#f6f6f6] text-sm list-text dark:group-hover:text-[#1f2532]">
                     Docs
                   </span>
                 </>
               )}
             </li>
-            <li className="flex gap-2 hover:bg-[#e4e8eb] hover:cursor-pointer pr-2 py-1 rounded-md leading-3">
+            <li className="flex gap-2 hover:bg-[#e4e8eb] hover:cursor-pointer pr-2 py-1 rounded-md leading-3 group">
               {isCollapsed ? (
                 <svg
                   width="22"
@@ -172,13 +172,13 @@ const SidebarLeft = () => {
                       fill="#686c73"
                     ></path>
                   </svg>
-                  <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
+                  <span className="text-[#1f2532] dark:text-[#f6f6f6] text-sm list-text dark:group-hover:text-[#1f2532]">
                     Roadmap
                   </span>
                 </>
               )}
             </li>
-            <li className="flex gap-2 hover:bg-[#e4e8eb] hover:cursor-pointer pr-2 py-1 rounded-md leading-3">
+            <li className="flex gap-2 hover:bg-[#e4e8eb] hover:cursor-pointer pr-2 py-1 rounded-md leading-3 group">
               {isCollapsed ? (
                 <svg
                   width="22"
@@ -210,13 +210,13 @@ const SidebarLeft = () => {
                       fill="#686c73"
                     ></path>
                   </svg>
-                  <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
+                  <span className="text-[#1f2532] dark:text-[#f6f6f6] text-sm list-text dark:group-hover:text-[#1f2532]">
                     Milestone
                   </span>
                 </>
               )}
             </li>
-            <li className="flex gap-2 hover:bg-[#e4e8eb] hover:cursor-pointer pr-2 py-1 rounded-md leading-3">
+            <li className="flex gap-2 hover:bg-[#e4e8eb] hover:cursor-pointer pr-2 py-1 rounded-md leading-3 group">
               {isCollapsed ? (
                 <svg
                   width="22"
@@ -248,13 +248,13 @@ const SidebarLeft = () => {
                       fill="#686c73"
                     ></path>
                   </svg>
-                  <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
+                  <span className="text-[#1f2532] dark:text-[#f6f6f6] text-sm list-text dark:group-hover:text-[#1f2532]">
                     Reports
                   </span>
                 </>
               )}
             </li>
-            <li className="flex gap-2 hover:bg-[#e4e8eb] hover:cursor-pointer pr-2 py-1 rounded-md leading-3">
+            <li className="flex gap-2 hover:bg-[#e4e8eb] hover:cursor-pointer pr-2 py-1 rounded-md leading-3 group">
               {isCollapsed ? (
                 <svg
                   width="22"
@@ -286,7 +286,7 @@ const SidebarLeft = () => {
                       fill="#686c73"
                     ></path>
                   </svg>
-                  <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
+                  <span className="text-[#1f2532] dark:text-[#f6f6f6] text-sm list-text dark:group-hover:text-[#1f2532]">
                     Projects
                   </span>
                 </>
@@ -299,7 +299,7 @@ const SidebarLeft = () => {
                 ""
               ) : (
                 <div className="flex justify-between items-center mt-6 mb-1">
-                  <span className="dark:text-[#828fa3]">Teams</span>
+                  <span className="dark:text-[#f6f6f6]">Teams</span>
 
                   <svg
                     width="22"
@@ -326,7 +326,7 @@ const SidebarLeft = () => {
                 }`}
               >
                 <button
-                  className={`flex justify-center gap-3 px-1 py-1 rounded-md items-center hover:bg-[#e4e8eb] ${
+                  className={`flex group group justify-center gap-3 px-1 py-1 rounded-md items-center hover:bg-[#e4e8eb] ${
                     isDropdownOpen ? "" : "bg-[#deeffa] dark:bg-[#323c53]"
                   }`}
                   onClick={toggleDropdown}
@@ -346,7 +346,7 @@ const SidebarLeft = () => {
                     </svg>
                   </div>
                   {!isCollapsed && (
-                    <span className="dark:text-[#828fa3] list-text text-sm">
+                    <span className="dark:text-[#f6f6f6] list-text text-sm dark:group-hover:text-[#1f2532]">
                       All Work
                     </span>
                   )}
@@ -357,6 +357,7 @@ const SidebarLeft = () => {
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
+                      className="transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
                     >
                       <path
                         fillRule="evenodd"
@@ -373,6 +374,7 @@ const SidebarLeft = () => {
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
+                      className="transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
                     >
                       <path
                         fillRule="evenodd"
@@ -403,35 +405,35 @@ const SidebarLeft = () => {
                       >
                         <a
                           href="#"
-                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-[#e4e8eb]"
+                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-[#e4e8eb] dark:text-gray-400"
                           role="menuitem"
                         >
                           Stories
                         </a>
                         <a
                           href="#"
-                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-[#e4e8eb]"
+                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-[#e4e8eb] dark:text-gray-400"
                           role="menuitem"
                         >
                           Iteration
                         </a>
                         <a
                           href="#"
-                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-[#e4e8eb]"
+                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-[#e4e8eb] dark:text-gray-400"
                           role="menuitem"
                         >
                           Backlogs
                         </a>
                         <a
                           href="#"
-                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-[#e4e8eb]"
+                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-[#e4e8eb] dark:text-gray-400"
                           role="menuitem"
                         >
                           Epics
                         </a>
                         <a
                           href="#"
-                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-[#e4e8eb]"
+                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-[#e4e8eb] dark:text-gray-400"
                           role="menuitem"
                         >
                           Status
@@ -441,7 +443,7 @@ const SidebarLeft = () => {
                   </div>
                 )}
                 <button
-                  className={`flex justify-center gap-3 px-1 py-1 rounded-md items-center hover:bg-[#e4e8eb] ${
+                  className={`flex group justify-center gap-3 px-1 py-1 rounded-md items-center hover:bg-[#e4e8eb] ${
                     isDropdownOpenAlt ? "" : "bg-[#deeffa] dark:bg-[#323c53]"
                   }`}
                   onClick={toggleDropdownAlt}
@@ -461,7 +463,7 @@ const SidebarLeft = () => {
                     </svg>
                   </div>
                   {!isCollapsed && (
-                    <span className="dark:text-[#828fa3] list-text text-sm">
+                    <span className="dark:text-[#f6f6f6] list-text text-sm dark:group-hover:text-[#1f2532]">
                       Backend
                     </span>
                   )}
@@ -472,6 +474,7 @@ const SidebarLeft = () => {
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
+                      className="transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
                     >
                       <path
                         fillRule="evenodd"
@@ -488,6 +491,7 @@ const SidebarLeft = () => {
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
+                      className="transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
                     >
                       <path
                         fillRule="evenodd"
@@ -516,35 +520,35 @@ const SidebarLeft = () => {
                       >
                         <a
                           href="#"
-                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-[#e4e8eb]"
+                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md hover:bg-[#e4e8eb] dark:text-gray-400"
                           role="menuitem"
                         >
                           Stories
                         </a>
                         <a
                           href="#"
-                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-[#e4e8eb]"
+                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-[#e4e8eb] dark:text-gray-400"
                           role="menuitem"
                         >
                           Iteration
                         </a>
                         <a
                           href="#"
-                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-[#e4e8eb]"
+                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-[#e4e8eb] dark:text-gray-400"
                           role="menuitem"
                         >
                           Backlogs
                         </a>
                         <a
                           href="#"
-                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-[#e4e8eb]"
+                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-[#e4e8eb] dark:text-gray-400"
                           role="menuitem"
                         >
                           Epics
                         </a>
                         <a
                           href="#"
-                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-[#e4e8eb]"
+                          className="block px-4 py-1 mb-1 text-sm text-gray-700 rounded-md  hover:bg-[#e4e8eb] dark:text-gray-400"
                           role="menuitem"
                         >
                           Status
@@ -557,7 +561,7 @@ const SidebarLeft = () => {
             </div>
             <ul className="flex flex-col gap-[3px] mt-8">
               <li
-                className={`flex ${
+                className={`flex group ${
                   isCollapsed ? "justify-center" : "justify-start"
                 } gap-2 hover:bg-[#e4e8eb] hover:cursor-pointer px-1 py-1 rounded-md items-center leading-3`}
               >
@@ -594,14 +598,14 @@ const SidebarLeft = () => {
                         fill="#686c73"
                       ></path>
                     </svg>
-                    <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
+                    <span className="text-[#1f2532] dark:text-[#f6f6f6] text-sm list-text dark:group-hover:text-[#1f2532]">
                       Settings
                     </span>
                   </>
                 )}
               </li>
               <li
-                className={`flex ${
+                className={`flex group ${
                   isCollapsed ? "justify-center" : "justify-start"
                 } gap-2 hover:bg-[#e4e8eb] hover:cursor-pointer px-1 py-1 rounded-md items-center leading-3`}
               >
@@ -634,14 +638,14 @@ const SidebarLeft = () => {
                         fill="#686c73"
                       ></path>
                     </svg>
-                    <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
+                    <span className="text-[#1f2532] dark:text-[#f6f6f6] text-sm list-text dark:group-hover:text-[#1f2532]">
                       Integrations
                     </span>
                   </>
                 )}
               </li>
               <li
-                className={`flex ${
+                className={`flex group ${
                   isCollapsed ? "justify-center" : "justify-start"
                 } gap-2 hover:bg-[#e4e8eb] hover:cursor-pointer px-1 py-1 rounded-md items-center leading-3`}
               >
@@ -678,7 +682,7 @@ const SidebarLeft = () => {
                         fill="#686c73"
                       ></path>
                     </svg>
-                    <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
+                    <span className="text-[#1f2532] dark:text-[#f6f6f6] text-sm list-text dark:group-hover:text-[#1f2532]">
                       Invite users
                     </span>
                   </>

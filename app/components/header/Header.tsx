@@ -31,6 +31,22 @@ const Header = () => {
       document.removeEventListener("click", handleOutsideClick);
     };
   }, [isModalOpen]);
+  useEffect(() => {
+    const handleProfileModalOutsideClick = (event: MouseEvent) => {
+      const target = event.target as Element;
+      if (isProfileModalOpen && !target.closest(".profile-modal")) {
+        setIsProfileModalOpen(false);
+      }
+    };
+
+    if (isProfileModalOpen) {
+      document.addEventListener("click", handleProfileModalOutsideClick);
+    }
+
+    return () => {
+      document.removeEventListener("click", handleProfileModalOutsideClick);
+    };
+  }, [isProfileModalOpen]);
   return (
     <div className="bg-[#151e2d] dark:bg-black border-b-[1px] border-black dark:border-[#283040] sm:py-1">
       <div className="mx-auto flex justify-center sm:justify-between flex-wrap sm:flex-1 py-2 sm:p-0 items-center px-2">
@@ -1085,7 +1101,7 @@ const Header = () => {
           </div>
           <div className="hidden xl:flex items-center">
             <button
-              className="hidden lg:flex select-none gap-3 rounded-lg border border-solid border-1 border-slate-50/10 px-2 py-0 text-center align-middle font-sans text-xs font-bold text-[#f6f6f6]  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none h-10 items-center"
+              className="hidden lg:flex select-none gap-3 rounded-lg border border-solid border-1 border-[#434452] px-2 py-0 text-center align-middle font-sans text-xs font-bold text-[#b8b8bd]  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none h-10 items-center"
               type="button"
               data-ripple-light="true"
             >
@@ -1111,7 +1127,7 @@ const Header = () => {
             </svg>
           </button>
           <button
-            className="hidden lg:flex select-none items-center gap-3 rounded-lg  py-0 px-2 text-center align-middle font-sans text-xs font-bold text-[#f6f6f6]  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            className="hidden lg:flex select-none items-center gap-3 rounded-lg  py-0 px-2 text-center align-middle font-sans text-xs font-bold text-[#b8b8bd]  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             type="button"
             data-ripple-light="true"
           >
@@ -1131,7 +1147,7 @@ const Header = () => {
             Help
           </button>
           <button
-            className="hidden lg:flex select-none items-center gap-3 rounded-lg  py-0 px-2 text-center align-middle font-sans text-xs font-bold text-[#f6f6f6]  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            className="hidden lg:flex select-none items-center gap-3 rounded-lg  py-0 px-2 text-center align-middle font-sans text-xs font-bold text-[#b8b8bd]  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             type="button"
             data-ripple-light="true"
           >
@@ -1152,7 +1168,7 @@ const Header = () => {
             Activity
           </button>
           <button
-            className="flex select-none items-center gap-3 rounded-lg  py-1 px-4 text-center align-middle font-sans bg-slate-50/10 text-xs font-bold text-gray-50  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            className="flex select-none items-center gap-3 rounded-lg  py-1 px-4 text-center align-middle font-sans bg-slate-50/10 text-xs font-bold text-[#fff]  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             type="button"
             data-ripple-light="true"
           >
