@@ -6,6 +6,11 @@ import TeamManageModal from "../modals/TeamManageModal";
 const SidebarLeft = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [isDropdownOpenAlt, setDropdownOpenAlt] = useState(true);
+  const [isDropdownOpenMenu, setDropdownOpenMenu] = useState(false);
+
+  const toggleDropdownMenu = () => {
+    setDropdownOpenMenu(!isDropdownOpenMenu);
+  };
 
   const toggleDropdown = () => {
     setDropdownOpen((prevState) => !prevState);
@@ -393,7 +398,7 @@ const SidebarLeft = () => {
                       isCollapsed ? "ml-[17px]" : "ml-[12px]"
                     } border-l-[1px] dark:border-[#283040] ${
                       isCollapsed ? "h-[70px]" : ""
-                    } dark:border-slate-50 list-text `}
+                    } dark:border-slate-50 list-text dropdown-content`}
                   >
                     {!isCollapsed && (
                       <div
@@ -513,7 +518,7 @@ const SidebarLeft = () => {
                       isCollapsed ? "ml-[17px]" : "ml-[12px]"
                     } border-l-[1px] dark:border-[#283040] ${
                       isCollapsed ? "h-[70px]" : ""
-                    } dark:border-slate-50 list-text`}
+                    } dark:border-slate-50 list-text dropdown-content`}
                   >
                     {!isCollapsed && (
                       <div
