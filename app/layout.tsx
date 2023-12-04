@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${opensans.className} dark:bg-black`}>
+      <body className={`${opensans.className} dark:bg-[#0B101A]`}>
         <DropdownProvider>
           <ThemeContextProvider>
             <SidebarProvider>{children}</SidebarProvider>
