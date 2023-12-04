@@ -164,13 +164,34 @@ body {
   background-color: #c9c7c7;
 }
 
-/* .dropdown-items {
-  height: 0px;
-  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
-    z-index 0s linear 0.01s;
+/* Dropdown.css */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-.dropdown-items.open {
-  height: 160px;
-  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
-    z-index 0s linear 0.01s;
-} */
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.dropdown-content {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.dropdown-content.exit {
+  animation: fadeOut 0.3s ease-in-out;
+}
