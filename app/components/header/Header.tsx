@@ -48,7 +48,7 @@ const Header = () => {
     };
   }, [isProfileModalOpen]);
   return (
-    <div className="bg-[#151e2d] dark:bg-black border-b-[1px] border-black dark:border-[#283040] sm:py-1">
+    <div className="bg-[#151e2d] dark:bg-[#0B101A] border-b-[1px] border-black dark:border-[#283040] sm:py-1">
       <div className="mx-auto flex justify-center sm:justify-between flex-wrap sm:flex-1 py-2 sm:p-0 items-center px-2">
         <div className="flex gap-2">
           <div className="hover:bg-[#363e50] p-2 rounded-md hover:cursor-pointer">
