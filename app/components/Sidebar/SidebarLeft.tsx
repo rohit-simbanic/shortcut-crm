@@ -385,6 +385,7 @@ const SidebarLeft = () => {
                     </svg>
                   )}
                 </button>
+
                 {isDropdownOpen && (
                   <div
                     id="dropdown-menu"
@@ -444,6 +445,7 @@ const SidebarLeft = () => {
                     )}
                   </div>
                 )}
+
                 <button
                   className={`flex group justify-center gap-3 px-1 py-1 rounded-md items-center hover:bg-[#e4e8eb] ${
                     isDropdownOpenAlt ? "" : "bg-[#deeffa] dark:bg-[#323c53]"
