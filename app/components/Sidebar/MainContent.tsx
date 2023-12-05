@@ -65,10 +65,10 @@ const MainContent = () => {
             <span className="text-[#808080] text-[11px] font-medium">
               Display
             </span>
-            <button className="flex gap-3 items-center justify-between shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-[0.45rem] px-2 rounded-[5px] border-[1px] border-[#e4e8eb] hover:bg-[#e4e8eb] w-full">
+            <button className="flex gap-3 items-center justify-between shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-[0.45rem] px-2 rounded-[5px] border-[1px] border-[#dddddd] dark:border-[#283040] hover:bg-[#e4e8eb] dark:hover:bg-[#1f25324d] hover:cursor-pointer w-full">
               <svg
-                height={21}
-                width={21}
+                height={17}
+                width={17}
                 viewBox="0 0 20 20"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +83,7 @@ const MainContent = () => {
               <svg
                 x="0px"
                 y="0px"
-                fill="currentColor"
+                fill="#666"
                 width="8"
                 height="8"
                 viewBox="0 0 12 12"
@@ -95,7 +95,7 @@ const MainContent = () => {
           <div className="flex flex-col items-center gap-1 ">
             <span className="text-[#808080] text-[11px] font-medium">View</span>
             <div
-              className="flex gap-3 items-center justify-between shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-[0.39rem] px-2 rounded-[5px] border-[1px] border-[#e4e8eb] hover:bg-[#e4e8eb] w-full"
+              className="flex gap-3 items-center justify-between shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-[0.39rem] px-2 rounded-[5px] border-[1px] border-[#dddddd] dark:border-[#283040] hover:bg-[#e4e8eb] dark:hover:bg-[#1f25324d] hover:cursor-pointer w-full"
               onClick={() => toggleView("isTableView")}
             >
               <div
@@ -106,8 +106,8 @@ const MainContent = () => {
                 }
               >
                 <svg
-                  height={21}
-                  width={21}
+                  height={17}
+                  width={17}
                   viewBox="0 0 20 20"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -129,8 +129,8 @@ const MainContent = () => {
                 }
               >
                 <svg
-                  height={21}
-                  width={21}
+                  height={17}
+                  width={17}
                   viewBox="0 0 20 20"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
