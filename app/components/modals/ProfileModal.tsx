@@ -54,9 +54,9 @@ const ProfiileModal = () => {
         onClick={toggleTheme}
       >
         {theme === "light" ? (
-          <BsSun color="#666666" />
-        ) : (
           <BsMoon color="#666666" />
+        ) : (
+          <BsSun color="#666666" />
         )}
         <p className="text-md text-white">
           {theme === "light" ? "Dark" : "Light"}
