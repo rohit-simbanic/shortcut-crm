@@ -27,15 +27,15 @@ const DefaultTeamModal = () => {
             </svg>
           </button>
         </div>
-        <div className="space-x-2 bg-[#deeffa] dark:bg-[#485575] px-3 mr-8 rounded-md duration-500 ease-in-out py-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-white dark:hover:text-[#635fc7] dark:text-white w-full">
+        <div className="space-x-2 bg-[#deeffa] dark:bg-[#485575] px-3 mr-8 rounded-md duration-500 ease-in-out py-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-[#161b26] dark:hover:text-[#635fc7] dark:text-white w-full">
           <p className="text-sm font-bold text-black dark:text-gray-300">
             Default Team
           </p>
           <span className="text-sm -left-2 relative">6 Workflow States</span>
         </div>
       </div>
-      <div className="bg-[#f1f3f7] dark:bg-[#2d3545] px-2 rounded-b-lg">
-        <div className="flex items-center w-full space-x-2 px-3 mr-8 rounded-md duration-500 ease-in-out py-2 my-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-white dark:hover:text-[#635fc7] dark:text-white">
+      <div className="bg-[#f1f3f7] dark:bg-[#2d3545] px-2 rounded-b-lg ">
+        <div className="flex items-center w-full space-x-2 px-3 mr-8 rounded-md duration-500 ease-in-out py-2 my-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-[#161b26] dark:hover:text-[#635fc7] dark:text-white">
           <svg
             viewBox="0 0 20 20"
             fill="none"
