@@ -206,7 +206,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
             </thead>
             <tbody className="bg-white dark:bg-[#1f2532]">
               <tr className="text-gray-700">
-                <td className="px-4 border-b border-r border-t-[#00000005] border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td className="px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
@@ -229,12 +229,12 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                   />
                 </td>
                 <td className="px-4 text-xs  border-b border-t-[#00000005] border-t-[3px]">
-                  <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm">
+                  <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 dark:bg-[#1f2532] rounded-sm">
                     {" "}
                     445{" "}
                   </span>
                 </td>
-                <td className="px-4 text-sm  border-b w-[400px] border-t-[#00000005] border-t-[3px]">
+                <td className="px-4 text-sm  border-b w-[400px] border-t-[#00000005] border-t-[3px] dark:text-[#828fa3]">
                   Flutter App Development
                 </td>
                 <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px]">
@@ -401,7 +401,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                 </td>
               </tr>
               <tr className="text-gray-700">
-                <td className="px-4 border-b border-r border-t-[#00000005] border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td className="px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
@@ -424,12 +424,12 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                   />
                 </td>
                 <td className="px-4 text-xs  border-b border-t-[#00000005] border-t-[3px]">
-                  <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm">
+                  <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 dark:bg-[#1f2532] rounded-sm">
                     {" "}
                     445{" "}
                   </span>
                 </td>
-                <td className="px-4 text-sm  border-b w-[400px] border-t-[#00000005] border-t-[3px]">
+                <td className="px-4 text-sm  border-b w-[400px] border-t-[#00000005] border-t-[3px] dark:text-[#828fa3]">
                   Flutter App Development
                 </td>
                 <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px]">
@@ -596,7 +596,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                 </td>
               </tr>
               <tr className="text-gray-700">
-                <td className="px-4 border-b border-r border-t-[#00000005] border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td className="px-4 border-b border-r dark:border-r-0 border-t-[#00000005] border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
@@ -619,12 +619,12 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                   />
                 </td>
                 <td className="px-4 text-xs  border-b border-t-[#00000005] border-t-[3px]">
-                  <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm">
+                  <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 dark:bg-[#1f2532] rounded-sm">
                     {" "}
                     445{" "}
                   </span>
                 </td>
-                <td className="px-4 text-sm  border-b w-[400px] border-t-[#00000005] border-t-[3px]">
+                <td className="px-4 text-sm  border-b w-[400px] border-t-[#00000005] border-t-[3px] dark:text-[#828fa3]">
                   Flutter App Development
                 </td>
                 <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px]">
@@ -791,7 +791,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                 </td>
               </tr>
               <tr className="text-gray-700">
-                <td className="px-4 border-b border-r border-t-[#00000005] border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td className="px-4 border-b border-r dark:border-r-0 border-t-[#00000005] border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
@@ -814,12 +814,12 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                   />
                 </td>
                 <td className="px-4 text-xs  border-b border-t-[#00000005] border-t-[3px]">
-                  <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm">
+                  <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 dark:bg-[#1f2532] rounded-sm">
                     {" "}
                     445{" "}
                   </span>
                 </td>
-                <td className="px-4 text-sm  border-b w-[400px] border-t-[#00000005] border-t-[3px]">
+                <td className="px-4 text-sm  border-b w-[400px] border-t-[#00000005] border-t-[3px] dark:text-[#828fa3]">
                   Flutter App Development
                 </td>
                 <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px]">
@@ -986,7 +986,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                 </td>
               </tr>
               <tr className="text-gray-700">
-                <td className="px-4 border-b border-r border-t-[#00000005] border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td className="px-4 border-b border-r dark:border-r-0 border-t-[#00000005] border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
@@ -1009,12 +1009,12 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                   />
                 </td>
                 <td className="px-4 text-xs  border-b border-t-[#00000005] border-t-[3px]">
-                  <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm">
+                  <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 dark:bg-[#1f2532] rounded-sm">
                     {" "}
                     445{" "}
                   </span>
                 </td>
-                <td className="px-4 text-sm  border-b w-[400px] border-t-[#00000005] border-t-[3px]">
+                <td className="px-4 text-sm  border-b w-[400px] border-t-[#00000005] border-t-[3px] dark:text-[#828fa3]">
                   Flutter App Development
                 </td>
                 <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px]">
@@ -1181,7 +1181,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                 </td>
               </tr>
               <tr className="text-gray-700">
-                <td className="px-4 border-b border-r border-t-[#00000005] border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td className="px-4 border-b border-r dark:border-r-0 border-t-[#00000005] border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
@@ -1204,12 +1204,12 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                   />
                 </td>
                 <td className="px-4 text-xs  border-b border-t-[#00000005] border-t-[3px]">
-                  <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm">
+                  <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 dark:bg-[#1f2532] rounded-sm">
                     {" "}
                     445{" "}
                   </span>
                 </td>
-                <td className="px-4 text-sm  border-b w-[400px] border-t-[#00000005] border-t-[3px]">
+                <td className="px-4 text-sm  border-b w-[400px] border-t-[#00000005] border-t-[3px] dark:text-[#828fa3]">
                   Flutter App Development
                 </td>
                 <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px]">
@@ -1376,7 +1376,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                 </td>
               </tr>
               <tr className="text-gray-700">
-                <td className="px-4 border-b border-r border-t-[#00000005] border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td className="px-4 border-b border-r dark:border-r-0 border-t-[#00000005] border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
@@ -1399,12 +1399,12 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                   />
                 </td>
                 <td className="px-4 text-xs  border-b border-t-[#00000005] border-t-[3px]">
-                  <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm">
+                  <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 dark:bg-[#1f2532] rounded-sm">
                     {" "}
                     445{" "}
                   </span>
                 </td>
-                <td className="px-4 text-sm  border-b w-[400px] border-t-[#00000005] border-t-[3px]">
+                <td className="px-4 text-sm  border-b w-[400px] border-t-[#00000005] border-t-[3px] dark:text-[#828fa3]">
                   Flutter App Development
                 </td>
                 <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px]">
@@ -1571,7 +1571,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                 </td>
               </tr>
               <tr className="text-gray-700">
-                <td className="px-4 border-b border-r border-t-[#00000005] border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td className="px-4 border-b border-r dark:border-r-0 border-t-[#00000005] border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
@@ -1594,12 +1594,12 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                   />
                 </td>
                 <td className="px-4 text-xs  border-b border-t-[#00000005] border-t-[3px]">
-                  <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm">
+                  <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 dark:bg-[#1f2532] rounded-sm">
                     {" "}
                     445{" "}
                   </span>
                 </td>
-                <td className="px-4 text-sm  border-b w-[400px] border-t-[#00000005] border-t-[3px]">
+                <td className="px-4 text-sm  border-b w-[400px] border-t-[#00000005] border-t-[3px] dark:text-[#828fa3]">
                   Flutter App Development
                 </td>
                 <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px]">
@@ -1766,7 +1766,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                 </td>
               </tr>
               <tr className="text-gray-700">
-                <td className="px-4 border-b border-r border-t-[#00000005] border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td className="px-4 border-b border-r dark:border-r-0 border-t-[#00000005] border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
@@ -1789,12 +1789,12 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                   />
                 </td>
                 <td className="px-4 text-xs  border-b border-t-[#00000005] border-t-[3px]">
-                  <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm">
+                  <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 dark:bg-[#1f2532] rounded-sm">
                     {" "}
                     445{" "}
                   </span>
                 </td>
-                <td className="px-4 text-sm  border-b w-[400px] border-t-[#00000005] border-t-[3px]">
+                <td className="px-4 text-sm  border-b w-[400px] border-t-[#00000005] border-t-[3px] dark:text-[#828fa3]">
                   Flutter App Development
                 </td>
                 <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px]">
@@ -1961,7 +1961,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                 </td>
               </tr>
               <tr className="text-gray-700">
-                <td className="px-4 border-b border-r border-t-[#00000005] border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td className="px-4 border-b border-r dark:border-r-0 border-t-[#00000005] border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
@@ -1984,12 +1984,12 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                   />
                 </td>
                 <td className="px-4 text-xs  border-b border-t-[#00000005] border-t-[3px]">
-                  <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm">
+                  <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 dark:bg-[#1f2532] rounded-sm">
                     {" "}
                     445{" "}
                   </span>
                 </td>
-                <td className="px-4 text-sm  border-b w-[400px] border-t-[#00000005] border-t-[3px]">
+                <td className="px-4 text-sm  border-b w-[400px] border-t-[#00000005] border-t-[3px] dark:text-[#828fa3]">
                   Flutter App Development
                 </td>
                 <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px]">
@@ -2156,7 +2156,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                 </td>
               </tr>
               <tr className="text-gray-700">
-                <td className="px-4 border-b border-r border-t-[#00000005] border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td className="px-4 border-b border-r dark:border-r-0 border-t-[#00000005] border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
@@ -2179,12 +2179,12 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                   />
                 </td>
                 <td className="px-4 text-xs  border-b border-t-[#00000005] border-t-[3px]">
-                  <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm">
+                  <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 dark:bg-[#1f2532] rounded-sm">
                     {" "}
                     445{" "}
                   </span>
                 </td>
-                <td className="px-4 text-sm  border-b w-[400px] border-t-[#00000005] border-t-[3px]">
+                <td className="px-4 text-sm  border-b w-[400px] border-t-[#00000005] border-t-[3px] dark:text-[#828fa3]">
                   Flutter App Development
                 </td>
                 <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px]">
@@ -2351,7 +2351,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                 </td>
               </tr>
               <tr className="text-gray-700">
-                <td className="px-4 border-b border-r border-t-[#00000005] border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td className="px-4 border-b dark:border-b-0 border-r dark:border-r-0 border-t-[#00000005] border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
@@ -2367,22 +2367,22 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     ></path>
                   </svg>
                 </td>
-                <td className="px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] sticky left-[30px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td className="px-4 text-ms font-semibold  border-b dark:border-b-0 border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] sticky left-[30px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
                   <input
                     className="border-gray-300 rounded h-4 w-4 dark:bg-[#161b26]"
                     type="checkbox"
                   />
                 </td>
-                <td className="px-4 text-xs  border-b border-t-[#00000005] border-t-[3px]">
-                  <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm">
+                <td className="px-4 text-xs border-b dark:border-b-0 border-t-[#00000005] border-t-[3px]">
+                  <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 dark:bg-[#1f2532] rounded-sm">
                     {" "}
                     445{" "}
                   </span>
                 </td>
-                <td className="px-4 text-sm  border-b w-[400px] border-t-[#00000005] border-t-[3px]">
+                <td className="px-4 text-sm  border-b dark:border-b-0 w-[400px] border-t-[#00000005] border-t-[3px] dark:text-[#828fa3]">
                   Flutter App Development
                 </td>
-                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px]">
+                <td className="px-4 text-sm  border-b dark:border-b-0 border-t-[#00000005] border-t-[3px]">
                   <li className="flex gap-2 hover:bg-[#e4e8eb] hover:cursor-pointer px-2 py-1 rounded-md leading-3">
                     <svg
                       width="20"
@@ -2407,14 +2407,14 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     </span>
                   </li>
                 </td>
-                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px]">
+                <td className="px-4 text-sm  border-b dark:border-b-0 border-t-[#00000005] border-t-[3px]">
                   <li className="hover:bg-[#e4e8eb] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                     <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
                       Default team
                     </span>
                   </li>
                 </td>
-                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px]">
+                <td className="px-4 text-sm  border-b dark:border-b-0 border-t-[#00000005] border-t-[3px]">
                   <li className="flex gap-2 hover:bg-[#e4e8eb] hover:cursor-pointer px-2 py-1 rounded-md leading-3">
                     <svg
                       width="20"
@@ -2434,7 +2434,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     </span>
                   </li>
                 </td>
-                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px]">
+                <td className="px-4 text-sm  border-b dark:border-b-0 border-t-[#00000005] border-t-[3px]">
                   <div className="w-[20px] h-[20px] rounded-[50%] bg-[#73818b] hover:scale-110">
                     <svg
                       viewBox="0 0 20 20"
@@ -2450,7 +2450,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     </svg>
                   </div>
                 </td>
-                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px]">
+                <td className="px-4 text-sm  border-b dark:border-b-0 border-t-[#00000005] border-t-[3px]">
                   <button
                     className="py-1 rounded-[50%] px-1 text-center h-7 w-7 align-middle font-sans text-xs font-bold text-gray-50  transition-all bg-[#ccba45] hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                     type="button"
@@ -2459,35 +2459,35 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     RM
                   </button>
                 </td>
-                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px]">
+                <td className="px-4 text-sm  border-b dark:border-b-0 border-t-[#00000005] border-t-[3px]">
                   <li className="hover:bg-[#e4e8eb] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                     <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
                       -
                     </span>
                   </li>
                 </td>
-                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px]">
+                <td className="px-4 text-sm  border-b dark:border-b-0 border-t-[#00000005] border-t-[3px]">
                   <li className="hover:bg-[#e4e8eb] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                     <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
                       -
                     </span>
                   </li>
                 </td>
-                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px]">
+                <td className="px-4 text-sm  border-b dark:border-b-0 border-t-[#00000005] border-t-[3px]">
                   <li className="hover:bg-[#e4e8eb] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                     <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
                       -
                     </span>
                   </li>
                 </td>
-                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px]">
+                <td className="px-4 text-sm  border-b dark:border-b-0 border-t-[#00000005] border-t-[3px]">
                   <li className="hover:bg-[#e4e8eb] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                     <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
                       None
                     </span>
                   </li>
                 </td>
-                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px]">
+                <td className="px-4 text-sm  border-b dark:border-b-0 border-t-[#00000005] border-t-[3px]">
                   <li className="hover:bg-[#e4e8eb] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                     <svg
                       viewBox="0 0 20 20"
@@ -2505,28 +2505,28 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     </svg>
                   </li>
                 </td>
-                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px]">
+                <td className="px-4 text-sm  border-b dark:border-b-0 border-t-[#00000005] border-t-[3px]">
                   <li className="hover:bg-[#e4e8eb] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                     <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
                       None
                     </span>
                   </li>
                 </td>
-                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px]">
+                <td className="px-4 text-sm  border-b dark:border-b-0 border-t-[#00000005] border-t-[3px]">
                   <li className="hover:bg-[#e4e8eb] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                     <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
                       Nov 21, 2023
                     </span>
                   </li>
                 </td>
-                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px]">
+                <td className="px-4 text-sm  border-b dark:border-b-0 border-t-[#00000005] border-t-[3px]">
                   <li className="hover:bg-[#e4e8eb] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                     <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
                       Oct 18, 2022
                     </span>
                   </li>
                 </td>
-                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px] sticky right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td className="px-4 text-sm  border-b dark:border-b-0 border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px] sticky right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
                   <li className="hover:bg-[#e4e8eb] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                     <svg
                       viewBox="0 0 20 20"
