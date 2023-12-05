@@ -84,7 +84,7 @@ const FilterItems = () => {
         </span>
       </div>
       <button
-        className="flex gap-3 items-center text-[#686c73] font-bold text-[0.87rem] group relative hover:bg-[#e4e8eb] hover:text-[#1f2532] pr-3 py-1 rounded-md w-full dark:text-gray-400"
+        className="flex gap-3 items-center text-[#686c73] font-bold text-[0.87rem] group relative hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-[#3f4a5f] pr-3 py-1 rounded-md w-full dark:text-gray-400"
         onClick={toggleDropdownFilter}
       >
         <div>
@@ -154,7 +154,7 @@ const FilterItems = () => {
         </div>
       )}
       <button
-        className="flex gap-3 items-center text-[0.87rem] font-bold text-[#686c73] group relative hover:bg-[#e4e8eb] hover:text-[#1f2532] pr-3 py-1 rounded-md w-full dark:text-gray-400"
+        className="flex gap-3 items-center text-[0.87rem] font-bold text-[#686c73] group relative hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-[#3f4a5f] pr-3 py-1 rounded-md w-full dark:text-gray-400"
         onClick={toggleDropdownFilterTwo}
       >
         <div>
@@ -223,7 +223,7 @@ const FilterItems = () => {
           </div>
         </div>
       )}
-      <button className="flex gap-3 items-center text-[0.87rem] font-bold text-[#686c73] group relative hover:bg-[#e4e8eb] hover:text-[#1f2532] pr-3 py-1 rounded-md w-full dark:text-gray-400">
+      <button className="flex gap-3 items-center text-[0.87rem] font-bold text-[#686c73] group relative hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-[#3f4a5f] pr-3 py-1 rounded-md w-full dark:text-gray-400">
         <div>
           <svg
             height={22}
@@ -242,7 +242,7 @@ const FilterItems = () => {
         </div>
         Priority
       </button>
-      <button className="flex gap-3 items-center text-[0.87rem] font-bold text-[#686c73] group relative hover:bg-[#e4e8eb] hover:text-[#1f2532] pr-3 py-1 rounded-md w-full dark:text-gray-400">
+      <button className="flex gap-3 items-center text-[0.87rem] font-bold text-[#686c73] group relative hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-[#3f4a5f] pr-3 py-1 rounded-md w-full dark:text-gray-400">
         <div>
           <svg
             height={22}
@@ -261,7 +261,7 @@ const FilterItems = () => {
         </div>
         Epics
       </button>
-      <button className="flex gap-3 items-center text-[0.87rem] font-bold text-[#686c73] group relative hover:bg-[#e4e8eb] hover:text-[#1f2532] pr-3 py-1 rounded-md w-full dark:text-gray-400">
+      <button className="flex gap-3 items-center text-[0.87rem] font-bold text-[#686c73] group relative hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-[#3f4a5f] pr-3 py-1 rounded-md w-full dark:text-gray-400">
         <div>
           <svg
             height={22}
@@ -280,7 +280,7 @@ const FilterItems = () => {
         </div>
         Severity
       </button>
-      <button className="flex gap-3 items-center text-[0.87rem] font-bold text-[#686c73] group relative hover:bg-[#e4e8eb] hover:text-[#1f2532] pr-3 py-1 rounded-md w-full dark:text-gray-400">
+      <button className="flex gap-3 items-center text-[0.87rem] font-bold text-[#686c73] group relative hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-[#3f4a5f] pr-3 py-1 rounded-md w-full dark:text-gray-400">
         <div>
           <svg
             height={22}
@@ -299,7 +299,7 @@ const FilterItems = () => {
         </div>
         Projects
       </button>
-      <button className="flex gap-3 items-center text-[0.87rem] font-bold text-[#686c73] group relative hover:bg-[#e4e8eb] hover:text-[#1f2532] pr-3 py-1 rounded-md w-full dark:text-gray-400">
+      <button className="flex gap-3 items-center text-[0.87rem] font-bold text-[#686c73] group relative hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-[#3f4a5f] pr-3 py-1 rounded-md w-full dark:text-gray-400">
         <div>
           <svg
             height={22}

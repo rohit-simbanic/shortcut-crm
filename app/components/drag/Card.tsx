@@ -211,7 +211,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                 </p>
                 <button
                   type="button"
-                  class="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:shadow-[0_1px_0_#0000001f] hover:bg-white text-xs flex gap-2 dark:text-[#f6f6f6] items-center"
+                  class="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:shadow-[0_1px_0_#0000001f] hover:bg-white dark:hover:bg-[#1f2532] text-xs flex gap-2 dark:text-[#f6f6f6] items-center"
                   onClick={toggleEditDescription}
                 >
                   <span class="text-[#13ae47] font-bold">
@@ -485,7 +485,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
 
                 <button
                   type="button"
-                  className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:shadow-[0_1px_0_#0000001f] hover:bg-white text-xs dark:text-[#f6f6f6] text-[13px]"
+                  className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:shadow-[0_1px_0_#0000001f] hover:bg-white dark:hover:bg-[#1f2532] text-xs dark:text-[#f6f6f6] text-[13px]"
                 >
                   <span className="text-[#13ae47] font-bold dark:text-[#f6f6f6]">
                     +
@@ -500,7 +500,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                 <div className="flex gap-2 flex-wrap">
                   <button
                     type="button"
-                    className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:shadow-[0_1px_0_#0000001f] hover:bg-white text-xs flex gap-2 dark:text-[#f6f6f6]"
+                    className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:shadow-[0_1px_0_#0000001f] hover:bg-white dark:hover:bg-[#1f2532] text-xs flex gap-2 dark:text-[#f6f6f6]"
                   >
                     <span className="text-[#13ae47] font-bold">
                       <svg
@@ -520,7 +520,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                   </button>
                   <button
                     type="button"
-                    className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:shadow-[0_1px_0_#0000001f] hover:bg-white text-xs flex gap-2 dark:text-[#f6f6f6]"
+                    className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:shadow-[0_1px_0_#0000001f] hover:bg-white dark:hover:bg-[#1f2532] text-xs flex gap-2 dark:text-[#f6f6f6]"
                   >
                     <span className="text-[#13ae47] font-bold">
                       <svg
@@ -542,7 +542,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                   </button>
                   <button
                     type="button"
-                    className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:shadow-[0_1px_0_#0000001f] hover:bg-white text-xs flex gap-2 dark:text-[#f6f6f6]"
+                    className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:shadow-[0_1px_0_#0000001f] hover:bg-white dark:hover:bg-[#1f2532] text-xs flex gap-2 dark:text-[#f6f6f6]"
                   >
                     <span className="text-[#13ae47] font-bold">
                       <svg
@@ -571,7 +571,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                 <div className="flex justify-between">
                   <button
                     type="button"
-                    className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:shadow-[0_1px_0_#0000001f] hover:bg-white text-xs flex gap-2 dark:text-[#f6f6f6]"
+                    className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:shadow-[0_1px_0_#0000001f] hover:bg-white dark:hover:bg-[#1f2532] text-xs flex gap-2 dark:text-[#f6f6f6]"
                   >
                     <span className="text-[#13ae47] font-bold">
                       <svg
@@ -592,7 +592,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                           {" "}
                           <path
                             d="M12 9.5V15.5M12 9.5L10 11.5M12 9.5L14 11.5M8.4 19C5.41766 19 3 16.6044 3 13.6493C3 11.2001 4.8 8.9375 7.5 8.5C8.34694 6.48637 10.3514 5 12.6893 5C15.684 5 18.1317 7.32251 18.3 10.25C19.8893 10.9449 21 12.6503 21 14.4969C21 16.9839 18.9853 19 16.5 19L8.4 19Z"
-                            stroke="#000000"
+                            stroke="#666"
                             stroke-width="2"
                             stroke-linecap="round"
                             stroke-linejoin="round"
@@ -624,7 +624,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                           {" "}
                           <path
                             d="M12 5V19M12 19L6 13M12 19L18 13"
-                            stroke="#000000"
+                            stroke="#666"
                             stroke-width="2"
                             stroke-linecap="round"
                             stroke-linejoin="round"
@@ -645,8 +645,8 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                       RM
                     </button>
                   </div>
-                  <div className="w-full">
-                    <h3 className="font-bold text-[14px] text-[#333]">
+                  <div className="w-full flex flex-col gap-2">
+                    <h3 className="font-bold text-[14px] text-[#333] dark:text-[#f6f6f6]">
                       Rohit Mondal
                     </h3>
                     <textarea
@@ -665,16 +665,18 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                 <div className="relative">
                   <div className="flex justify-between">
                     <div className="flex gap-2">
-                      <p className="text-[#444] font-light text-sm">Showing:</p>
+                      <p className="text-[#444] font-light text-sm dark:text-[#f6f6f6]">
+                        Showing:
+                      </p>
                       <button
                         type="button"
-                        className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:shadow-[0_1px_0_#0000001f] hover:bg-white text-xs flex gap-2 dark:text-[#f6f6f6]"
+                        className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:shadow-[0_1px_0_#0000001f] hover:bg-white dark:hover:bg-[#1f2532] text-xs flex gap-2 dark:text-[#f6f6f6]"
                         onClick={toggleChangesModalOpen}
                       >
                         Important changes only
                         <span className="text-[#13ae47] font-bold">
                           <svg
-                            fill="#000000"
+                            fill="#666"
                             width="14px"
                             height="14px"
                             viewBox="0 0 32 32"
@@ -696,7 +698,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                     </div>
                     <button
                       type="button"
-                      className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:shadow-[0_1px_0_#0000001f] hover:bg-white text-xs flex gap-2 dark:text-[#f6f6f6]"
+                      className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:shadow-[0_1px_0_#0000001f] hover:bg-white dark:hover:bg-[#1f2532] text-xs flex gap-2 dark:text-[#f6f6f6]"
                     >
                       <span className="text-[#13ae47] font-bold">
                         <svg
@@ -716,7 +718,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                             {" "}
                             <path
                               d="M12 5V19M12 19L6 13M12 19L18 13"
-                              stroke="#000000"
+                              stroke="#666"
                               stroke-width="2"
                               stroke-linecap="round"
                               stroke-linejoin="round"
@@ -740,7 +742,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                     </button>
                   </div>
                   <div className="w-full">
-                    <h3 className="text-[14px] text-[#333]">
+                    <h3 className="text-[14px] text-[#333] dark:text-[#f6f6f6]">
                       <strong>Alok Kumar</strong> created this story in{" "}
                       <strong>Unscheduled</strong>
                     </h3>
@@ -752,7 +754,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
               </div>
               <div className="w-[20%] max-lg:w-[100%]">
                 <div>
-                  <button className="border-[1px] border-gray-200 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
+                  <button className="border-[1px] border-gray-200 dark:border-gray-500 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
                     <div className="bg-[#cd65b6] h-7 w-7 rounded-[50%] flex items-center justify-center">
                       <svg
                         viewBox="0 0 20 20"
@@ -778,7 +780,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                       </p>
                     </div>
                   </button>
-                  <button className="border-[1px] border-gray-200 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
+                  <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
                     <svg
                       viewBox="0 0 20 20"
                       fill="none"
@@ -803,7 +805,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                       </p>
                     </div>
                   </button>
-                  <button className="border-[1px] border-gray-200 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
+                  <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
                     <svg
                       width="20"
                       height="20"
@@ -826,7 +828,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                       </p>
                     </div>
                   </button>
-                  <button className="border-[1px] border-gray-200 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
+                  <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
                     <svg
                       viewBox="0 0 24 24"
                       fill="none"
@@ -863,7 +865,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                   </button>
                 </div>
                 <div className="my-3">
-                  <button className="border-[1px] border-gray-200 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
+                  <button className="border-[1px] border-gray-200 dark:border-gray-500 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
                     <svg
                       viewBox="0 0 20 20"
                       fill="none"
@@ -887,7 +889,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                       </p>
                     </div>
                   </button>
-                  <button className="border-[1px] border-gray-200 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
+                  <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
                     <svg
                       viewBox="0 0 20 20"
                       fill="none"
@@ -912,7 +914,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                       </p>
                     </div>
                   </button>
-                  <button className="border-[1px] border-gray-200 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
+                  <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
                     <svg
                       width="20"
                       height="20"
@@ -942,7 +944,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                   </button>
                 </div>
                 <div className="my-3">
-                  <button className="border-[1px] border-gray-200 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
+                  <button className="border-[1px] border-gray-200 dark:border-gray-500 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
                     <button
                       class="py-3 rounded-[50%] px-3 text-center h-8 w-8 align-middle font-sans text-xs font-bold text-gray-50  transition-all bg-[#ccba45] hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none flex items-center justify-center"
                       type="button"
@@ -959,7 +961,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                       </p>
                     </div>
                   </button>
-                  <button className="border-[1px] border-gray-200 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
+                  <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
                     <div class="bg-[#333333] h-7 w-7 rounded-[50%] flex items-center justify-center">
                       <svg
                         viewBox="0 0 20 20"
@@ -988,7 +990,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                   </button>
                 </div>
                 <div className="my-3">
-                  <button className="border-[1px] border-gray-200 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
+                  <button className="border-[1px] border-gray-200 dark:border-gray-500 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
                     <div className="flex gap-2 items-center">
                       <p className="font-light relative text-xs italic dark:text-[#f6f6f6] text-[#444]">
                         Epic
@@ -998,7 +1000,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                       </p>
                     </div>
                   </button>
-                  <button className="border-[1px] border-gray-200 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
+                  <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
                     <div className="flex gap-2 items-center">
                       <p className="font-light relative text-xs dark:text-[#f6f6f6]">
                         Team
@@ -1008,7 +1010,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                       </p>
                     </div>
                   </button>
-                  <button className="border-[1px] border-gray-200 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500 justify-between">
+                  <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500 justify-between">
                     <div className="flex gap-2 items-center">
                       <p className="font-light relative text-xs dark:text-[#f6f6f6]">
                         Followers
@@ -1029,7 +1031,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                   <h6 class="my-2 font-bold text-sm text-[#2d78a4]">Edit</h6>
                 </div>
                 <div className="my-3">
-                  <button className="border-[1px] border-gray-200 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
+                  <button className="border-[1px] border-gray-200 dark:border-gray-500 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500">
                     <svg
                       width="20"
                       height="20"
@@ -1054,7 +1056,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                 <h4 class="my-2 font-light text-sm text-[#8a8a8a]">Labels</h4>
                 <button
                   type="button"
-                  class="border-[1px] border-[#e4e8eb] rounded-md px-1 py-1 hover:shadow-[0_1px_0_#0000001f] hover:bg-white text-xs mb-5 dark:text-[#f6f6f6]"
+                  class="border-[1px] border-[#e4e8eb] rounded-md px-1 py-1 hover:shadow-[0_1px_0_#0000001f] hover:bg-white dark:hover:bg-[#1f2532] text-xs mb-5 dark:text-[#f6f6f6]"
                 >
                   <span class="text-[#13ae47] font-bold">+</span> Add Labels
                 </button>
