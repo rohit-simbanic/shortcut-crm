@@ -8,6 +8,8 @@ import DevelopmentTable from "../table/DevelopmentTable";
 import InDevelopmentTable from "../table/InDevelopmentTable";
 import ReviewTable from "../table/ReviewTable";
 import CompleteTable from "../table/CompleteTable";
+import { Tooltip } from "react-tooltip";
+
 interface ViewState {
   isTableView: boolean;
   isScheduledView: boolean;
@@ -98,49 +100,64 @@ const MainContent = () => {
               className="flex gap-3 items-center justify-between shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-[0.39rem] px-2 rounded-[5px] border-[1px] border-[#dddddd] dark:border-[#283040] hover:bg-[#e4e8eb] dark:hover:bg-[#1f25324d] hover:cursor-pointer w-full"
               onClick={() => toggleView("isTableView")}
             >
-              <div
-                className={
-                  viewState.isTableView
-                    ? "px-1 rounded-sm"
-                    : "border-[#3a95c9] border-[1px] bg-[#deeffa] px-1 rounded-sm"
-                }
-              >
-                <svg
-                  height={17}
-                  width={17}
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+              <a data-tooltip-id="kanban-click">
+                <Tooltip
+                  id="kanban-click"
+                  content="Kanban View"
+                  events={["hover"]}
+                />
+                <div
+                  className={
+                    viewState.isTableView
+                      ? "px-1 rounded-sm"
+                      : "border-[#3a95c9] border-[1px] bg-[#deeffa] px-1 rounded-sm"
+                  }
                 >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M4 2a2 2 0 0 0-2 2 1 1 0 0 0 1 1h14a1 1 0 0 0 1-1 2 2 0 0 0-2-2H4Zm14 6a1 1 0 0 0-1-1h-5a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h4a2 2 0 0 0 2-2V8ZM8 18a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v8a2 2 0 0 0 2 2h4Z"
-                    fill="#666"
-                  ></path>
-                  00
-                </svg>
-              </div>
-              <div
-                className={
-                  viewState.isTableView
-                    ? "px-1 border-[#3a95c9] border-[1px] bg-[#deeffa] rounded-sm"
-                    : "px-1 rounded-sm"
-                }
-              >
-                <svg
-                  height={17}
-                  width={17}
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+                  <svg
+                    height={17}
+                    width={17}
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M4 2a2 2 0 0 0-2 2 1 1 0 0 0 1 1h14a1 1 0 0 0 1-1 2 2 0 0 0-2-2H4Zm14 6a1 1 0 0 0-1-1h-5a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h4a2 2 0 0 0 2-2V8ZM8 18a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v8a2 2 0 0 0 2 2h4Z"
+                      fill="#666"
+                    ></path>
+                    00
+                  </svg>
+                </div>
+              </a>
+
+              <a data-tooltip-id="table-click">
+                <Tooltip
+                  id="table-click"
+                  content="Table View"
+                  events={["hover"]}
+                />
+                <div
+                  className={
+                    viewState.isTableView
+                      ? "px-1 border-[#3a95c9] border-[1px] bg-[#deeffa] rounded-sm"
+                      : "px-1 rounded-sm"
+                  }
                 >
-                  <path
-                    d="M2 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v.364a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4zM2 9.818a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v.364a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-.364zM2 15.636a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2V16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-.364z"
-                    fill="#666"
-                  ></path>
-                </svg>
-              </div>
+                  <svg
+                    height={17}
+                    width={17}
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v.364a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4zM2 9.818a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v.364a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-.364zM2 15.636a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2V16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-.364z"
+                      fill="#666"
+                    ></path>
+                  </svg>
+                </div>
+              </a>
             </div>
           </div>
         </div>
