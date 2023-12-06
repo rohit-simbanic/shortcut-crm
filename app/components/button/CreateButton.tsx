@@ -6,7 +6,8 @@ import PermalinkModal from "../modals/PermalinkModal";
 
 const CreateButton = () => {
   const [isWrite, setIsWrite] = useState(1);
-
+  const textareaRef = useRef(null);
+  const [blinkCursor, setBlinkCursor] = useState(true);
   const toggleWrite = (tabNumber: number) => {
     setIsWrite(tabNumber);
   };
@@ -16,6 +17,23 @@ const CreateButton = () => {
     setShowPermalink((prevState) => !prevState);
   };
   const { setIsDropdownOpen } = useDropdown();
+
+  useEffect(() => {
+    const textarea = textareaRef.current;
+
+    if (textarea) {
+      // Focus on the textarea
+      textarea.focus();
+
+      // Implement blinking cursor effect
+      const intervalId = setInterval(() => {
+        setBlinkCursor((prev) => !prev);
+      }, 500); // Adjust the interval as needed (e.g., 500 milliseconds)
+
+      // Clear the interval when the component unmounts
+      return () => clearInterval(intervalId);
+    }
+  }, []);
   return (
     <Popup
       trigger={
@@ -95,8 +113,12 @@ const CreateButton = () => {
               </h4>
               <textarea
                 id="message"
+                ref={textareaRef}
                 rows="2"
-                class="block p-2.5 w-full text-sm text-gray-900 bg-white rounded resize-none border border-[#e4e8eb] focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                contentEditable={true}
+                className={`block p-2.5 w-full text-sm text-gray-900 bg-white rounded resize-none border border-[#e4e8eb] focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 blinking-cursor ${
+                  blinkCursor ? "cursor-blink" : ""
+                }`}
               ></textarea>
               <h4 className="mb-2 font-medium text-[#444] dark:text-[grey] text-[15px] pt-2 pb-0">
                 Description{" "}
