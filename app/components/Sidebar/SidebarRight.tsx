@@ -55,9 +55,9 @@ function SidebarRight() {
   return (
     <>
       <div
-        className={`dark:bg-[#0B101A] ${
+        className={` ${
           isOpen ? "px-2 hover:bg-[#eef0f4] hover:cursor-pointer" : "pl-[1rem]"
-        } flex-none items-center relative sidebar bg-[#f8f9fb] border-r border-gray-300 dark:border-[#283040] transform ${
+        } flex-none items-center relative sidebar  border-r border-gray-300 dark:border-[#283040] transform ${
           isOpen ? "translate-x-0" : "translate-x-[0px]"
         } opacity ${
           isOpen ? "100" : "0"
@@ -170,7 +170,7 @@ function SidebarRight() {
                 </svg>
               </button>
               {isTeamOpen && <DefaultTeamModal />}
-              <div className=" dark:bg-[#0B101A] w-full py-4 rounded-xl">
+              <div className="w-full py-4 rounded-xl">
                 <div className="flex justify-between items-center mt-6 mb-2">
                   <div className="flex gap-3 items-center">
                     <span className="dark:text-white font-bold text-sm text-[#686c73]">
