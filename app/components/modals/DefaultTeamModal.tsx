@@ -2,7 +2,7 @@ import React from "react";
 
 const DefaultTeamModal = () => {
   return (
-    <div className="w-[236px] z-20 bg-white dark:bg-[#2d3545] flex flex-col justify-between fixed top-[6rem] left-[15px] rounded-md shadow-[rgba(0,0,0,0.35)_0px_5px_15px] min-h-[177px] modal">
+    <div className="w-[236px] z-[2147483647] bg-white dark:bg-[#2d3545] flex flex-col justify-between fixed top-[6rem] left-[15px] rounded-md shadow-[rgba(0,0,0,0.35)_0px_5px_15px] min-h-[177px] modal">
       <div className="p-2">
         <div className="pt-2 relative mx-auto text-gray-600">
           <input

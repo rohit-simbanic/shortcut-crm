@@ -1,4 +1,5 @@
-import React, { FC } from "react";
+import { SidebarContext } from "@/app/context/sidebarContext";
+import React, { FC, useContext } from "react";
 interface UnscheduledTableComponentProps {
   isScheduledView: boolean;
   toggleScheduledTable: () => void;
@@ -7,6 +8,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
   isScheduledView,
   toggleScheduledTable,
 }) => {
+  const { filterModalOpen, isTeamOpen } = useContext(SidebarContext);
   return (
     <div className="my-3 w-full">
       <div
@@ -15,7 +17,9 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
         }`}
         id="tableBody"
       >
-        <div className="flex gap-2 sticky top-0 z-20 bg-white dark:bg-[#1f2532]">
+        <div
+          className={`flex gap-2 sticky top-0 z-20 bg-white dark:bg-[#1f2532]`}
+        >
           <div
             className="flex items-center space-x-2 px-3 mr-8 rounded-md duration-500 ease-in-out py-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-gray-950 dark:hover:text-[#635fc7] dark:text-white sticky left-0 z-10 bg-white dark:bg-gray-700"
             onClick={toggleScheduledTable}
@@ -110,7 +114,9 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
         {isScheduledView && (
           <table className="w-full">
             <thead>
-              <tr className="text-md font-semibold tracking-wide text-left text-gray-900 bg-white uppercase border-gray-600 border-t-[1px] border-t-[#0000000d] shadow-[0px 15px 10px -15px #111] sticky top-[2.4rem] z-40 bg-white dark:bg-[#1f2532]">
+              <tr
+                className={`text-md font-semibold tracking-wide text-left text-gray-900 uppercase border-gray-600 border-t-[1px] border-t-[#0000000d] shadow-[0px 15px 10px -15px #111] sticky top-[2.4rem] z-40 bg-white dark:bg-[#1f2532]`}
+              >
                 <th className="px-4 hover:bg-[#e4e8eb] hover:cursor-pointer sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
                   <div className="flex gap-3">
                     <svg
@@ -206,7 +212,9 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
             </thead>
             <tbody className="bg-white dark:bg-[#1f2532]">
               <tr className="text-gray-700">
-                <td className="px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td
+                  className={`px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] sticky z-10 left-[0px]  bg-white flex-1 w-6 dark:bg-[#1f2532]`}
+                >
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
@@ -222,7 +230,9 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     ></path>
                   </svg>
                 </td>
-                <td className="px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] sticky left-[30px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td
+                  className={`px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] sticky left-[30px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]`}
+                >
                   <input
                     className="border-gray-300 rounded h-4 w-4 dark:bg-[#161b26]"
                     type="checkbox"
@@ -401,7 +411,9 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                 </td>
               </tr>
               <tr className="text-gray-700">
-                <td className="px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td
+                  className={`px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] sticky z-10 left-[0px]  bg-white flex-1 w-6 dark:bg-[#1f2532]`}
+                >
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
@@ -417,7 +429,9 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     ></path>
                   </svg>
                 </td>
-                <td className="px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] sticky left-[30px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td
+                  className={`px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] sticky left-[30px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]`}
+                >
                   <input
                     className="border-gray-300 rounded h-4 w-4 dark:bg-[#161b26]"
                     type="checkbox"
@@ -596,7 +610,9 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                 </td>
               </tr>
               <tr className="text-gray-700">
-                <td className="px-4 border-b border-r dark:border-r-0 border-t-[#00000005] border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td
+                  className={`px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] sticky z-10 left-[0px]  bg-white flex-1 w-6 dark:bg-[#1f2532]`}
+                >
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
@@ -612,7 +628,9 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     ></path>
                   </svg>
                 </td>
-                <td className="px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] sticky left-[30px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td
+                  className={`px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] sticky left-[30px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]`}
+                >
                   <input
                     className="border-gray-300 rounded h-4 w-4 dark:bg-[#161b26]"
                     type="checkbox"
@@ -791,7 +809,9 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                 </td>
               </tr>
               <tr className="text-gray-700">
-                <td className="px-4 border-b border-r dark:border-r-0 border-t-[#00000005] border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td
+                  className={`px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] sticky z-10 left-[0px]  bg-white flex-1 w-6 dark:bg-[#1f2532]`}
+                >
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
@@ -807,7 +827,9 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     ></path>
                   </svg>
                 </td>
-                <td className="px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] sticky left-[30px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td
+                  className={`px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] sticky left-[30px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]`}
+                >
                   <input
                     className="border-gray-300 rounded h-4 w-4 dark:bg-[#161b26]"
                     type="checkbox"
@@ -986,7 +1008,9 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                 </td>
               </tr>
               <tr className="text-gray-700">
-                <td className="px-4 border-b border-r dark:border-r-0 border-t-[#00000005] border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td
+                  className={`px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] sticky z-10 left-[0px]  bg-white flex-1 w-6 dark:bg-[#1f2532]`}
+                >
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
@@ -1002,7 +1026,9 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     ></path>
                   </svg>
                 </td>
-                <td className="px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] sticky left-[30px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td
+                  className={`px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] sticky left-[30px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]`}
+                >
                   <input
                     className="border-gray-300 rounded h-4 w-4 dark:bg-[#161b26]"
                     type="checkbox"
@@ -1181,7 +1207,9 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                 </td>
               </tr>
               <tr className="text-gray-700">
-                <td className="px-4 border-b border-r dark:border-r-0 border-t-[#00000005] border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td
+                  className={`px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] sticky z-10 left-[0px]  bg-white flex-1 w-6 dark:bg-[#1f2532]`}
+                >
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
@@ -1197,7 +1225,9 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     ></path>
                   </svg>
                 </td>
-                <td className="px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] sticky left-[30px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td
+                  className={`px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] sticky left-[30px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]`}
+                >
                   <input
                     className="border-gray-300 rounded h-4 w-4 dark:bg-[#161b26]"
                     type="checkbox"
@@ -1376,7 +1406,9 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                 </td>
               </tr>
               <tr className="text-gray-700">
-                <td className="px-4 border-b border-r dark:border-r-0 border-t-[#00000005] border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td
+                  className={`px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] sticky z-10 left-[0px]  bg-white flex-1 w-6 dark:bg-[#1f2532]`}
+                >
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
@@ -1392,7 +1424,9 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     ></path>
                   </svg>
                 </td>
-                <td className="px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] sticky left-[30px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td
+                  className={`px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] sticky left-[30px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]`}
+                >
                   <input
                     className="border-gray-300 rounded h-4 w-4 dark:bg-[#161b26]"
                     type="checkbox"
@@ -1571,7 +1605,9 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                 </td>
               </tr>
               <tr className="text-gray-700">
-                <td className="px-4 border-b border-r dark:border-r-0 border-t-[#00000005] border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td
+                  className={`px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] sticky z-10 left-[0px]  bg-white flex-1 w-6 dark:bg-[#1f2532]`}
+                >
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
@@ -1587,7 +1623,9 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     ></path>
                   </svg>
                 </td>
-                <td className="px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] sticky left-[30px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td
+                  className={`px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] sticky left-[30px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]`}
+                >
                   <input
                     className="border-gray-300 rounded h-4 w-4 dark:bg-[#161b26]"
                     type="checkbox"
@@ -1766,7 +1804,9 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                 </td>
               </tr>
               <tr className="text-gray-700">
-                <td className="px-4 border-b border-r dark:border-r-0 border-t-[#00000005] border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td
+                  className={`px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] sticky z-10 left-[0px]  bg-white flex-1 w-6 dark:bg-[#1f2532]`}
+                >
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
@@ -1782,7 +1822,9 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     ></path>
                   </svg>
                 </td>
-                <td className="px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] sticky left-[30px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td
+                  className={`px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] sticky left-[30px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]`}
+                >
                   <input
                     className="border-gray-300 rounded h-4 w-4 dark:bg-[#161b26]"
                     type="checkbox"
@@ -1961,7 +2003,9 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                 </td>
               </tr>
               <tr className="text-gray-700">
-                <td className="px-4 border-b border-r dark:border-r-0 border-t-[#00000005] border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td
+                  className={`px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] sticky z-10 left-[0px]  bg-white flex-1 w-6 dark:bg-[#1f2532]`}
+                >
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
@@ -1977,7 +2021,9 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     ></path>
                   </svg>
                 </td>
-                <td className="px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] sticky left-[30px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td
+                  className={`px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] sticky left-[30px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]`}
+                >
                   <input
                     className="border-gray-300 rounded h-4 w-4 dark:bg-[#161b26]"
                     type="checkbox"
@@ -2156,7 +2202,9 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                 </td>
               </tr>
               <tr className="text-gray-700">
-                <td className="px-4 border-b border-r dark:border-r-0 border-t-[#00000005] border-t-[3px] sticky left-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td
+                  className={`px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] sticky z-10 left-[0px]  bg-white flex-1 w-6 dark:bg-[#1f2532]`}
+                >
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
@@ -2172,7 +2220,9 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     ></path>
                   </svg>
                 </td>
-                <td className="px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] sticky left-[30px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td
+                  className={`px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] sticky left-[30px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]`}
+                >
                   <input
                     className="border-gray-300 rounded h-4 w-4 dark:bg-[#161b26]"
                     type="checkbox"
@@ -2373,7 +2423,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     type="checkbox"
                   />
                 </td>
-                <td className="px-4 text-xs border-b dark:border-b-0 border-t-[#00000005] border-t-[3px]">
+                <td className="px-4 text-xs  border-b dark:border-b-0 border-t-[#00000005] border-t-[3px]">
                   <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 dark:bg-[#1f2532] rounded-sm">
                     {" "}
                     445{" "}
