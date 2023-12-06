@@ -7,7 +7,7 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
   setFilterModalOpen,
 }) => {
   return (
-    <div className="fixed top-[80px] bg-white min-h-[600px] w-[630px] left-[111px] rounded-md shadow-[rgba(0,0,0,0.35)_0px_5px_15px] p-5 z-50 modal dark:bg-[#2d3545]">
+    <div className="fixed top-[80px] bg-white min-h-[600px] w-[630px] left-[111px] rounded-md shadow-[rgba(0,0,0,0.35)_0px_5px_15px] p-5 z-[2147483647] modal dark:bg-[#2d3545]">
       <div className="flex justify-between">
         <div></div>
         <svg

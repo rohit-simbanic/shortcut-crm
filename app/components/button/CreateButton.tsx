@@ -330,7 +330,7 @@ const CreateButton = () => {
 
               <button
                 type="button"
-                className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:bg-white hover:shadow-[0_1px_0_#0000001f] text-xs dark:text-[#f6f6f6]"
+                className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:bg-white dark:hover:bg-[#161b26] hover:shadow-[0_1px_0_#0000001f] text-xs dark:text-[#f6f6f6]"
               >
                 <span className="text-[#13ae47] font-bold dark:text-[#f6f6f6]">
                   +
@@ -345,7 +345,7 @@ const CreateButton = () => {
               <div className="flex gap-2 flex-wrap">
                 <button
                   type="button"
-                  className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:shadow-[0_1px_0_#0000001f] hover:bg-white text-xs flex gap-2 dark:text-[#f6f6f6]"
+                  className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:shadow-[0_1px_0_#0000001f] hover:bg-white dark:hover:bg-[#161b26] text-xs flex gap-2 dark:text-[#f6f6f6]"
                 >
                   <span className="text-[#13ae47] font-bold">
                     <svg
@@ -365,7 +365,7 @@ const CreateButton = () => {
                 </button>
                 <button
                   type="button"
-                  className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:shadow-[0_1px_0_#0000001f] hover:bg-white text-xs flex gap-2 dark:text-[#f6f6f6]"
+                  className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:shadow-[0_1px_0_#0000001f] hover:bg-white dark:hover:bg-[#161b26] text-xs flex gap-2 dark:text-[#f6f6f6]"
                 >
                   <span className="text-[#13ae47] font-bold">
                     <svg
@@ -387,7 +387,7 @@ const CreateButton = () => {
                 </button>
                 <button
                   type="button"
-                  className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:shadow-[0_1px_0_#0000001f] hover:bg-white text-xs flex gap-2 dark:text-[#f6f6f6]"
+                  className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:shadow-[0_1px_0_#0000001f] hover:bg-white dark:hover:bg-[#161b26] text-xs flex gap-2 dark:text-[#f6f6f6]"
                 >
                   <span className="text-[#13ae47] font-bold">
                     <svg
@@ -415,7 +415,7 @@ const CreateButton = () => {
               <hr className="mb-2 dark:border-[#3f4a5f]" />
               <button
                 type="button"
-                className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:shadow-[0_1px_0_#0000001f] hover:bg-white text-xs flex gap-2 dark:text-[#f6f6f6]"
+                className="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:shadow-[0_1px_0_#0000001f] hover:bg-white dark:hover:bg-[#161b26] text-xs flex gap-2 dark:text-[#f6f6f6]"
               >
                 <span className="text-[#13ae47] font-bold">
                   <svg
@@ -449,7 +449,7 @@ const CreateButton = () => {
             </div>
             <div className="w-[20%] max-lg:w-[100%]">
               <div>
-                <button className="border-[1px] border-gray-200 dark:border-gray-500 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-[#999]">
+                <button className="border-[1px] border-gray-200 dark:border-gray-500 flex items-center gap-4 w-full py-2 px-1 rounded dark:hover:bg-[#161b26] hover:shadow hover:border-[#999]">
                   <div className="bg-[#cd65b6] h-7 w-7 rounded-[50%] flex items-center justify-center">
                     <svg
                       viewBox="0 0 20 20"
@@ -475,7 +475,7 @@ const CreateButton = () => {
                     </p>
                   </div>
                 </button>
-                <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-[#999]">
+                <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-[#999] dark:hover:bg-[#161b26]">
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
@@ -500,7 +500,7 @@ const CreateButton = () => {
                     </p>
                   </div>
                 </button>
-                <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-[#999]">
+                <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-[#999] dark:hover:bg-[#161b26]">
                   <svg
                     width="20"
                     height="20"
@@ -523,7 +523,7 @@ const CreateButton = () => {
                     </p>
                   </div>
                 </button>
-                <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-[#999]">
+                <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-[#999] dark:hover:bg-[#161b26]">
                   <svg
                     viewBox="0 0 24 24"
                     fill="none"
@@ -560,7 +560,7 @@ const CreateButton = () => {
                 </button>
               </div>
               <div className="my-3">
-                <button className="border-[1px] border-gray-200 dark:border-gray-500 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-[#999]">
+                <button className="border-[1px] border-gray-200 dark:border-gray-500 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-[#999] dark:hover:bg-[#161b26]">
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
@@ -584,7 +584,7 @@ const CreateButton = () => {
                     </p>
                   </div>
                 </button>
-                <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-[#999]">
+                <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-[#999] dark:hover:bg-[#161b26]">
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
@@ -609,7 +609,7 @@ const CreateButton = () => {
                     </p>
                   </div>
                 </button>
-                <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-[#999]">
+                <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-[#999] dark:hover:bg-[#161b26]">
                   <svg
                     width="20"
                     height="20"
@@ -656,7 +656,7 @@ const CreateButton = () => {
                     </p>
                   </div>
                 </button>
-                <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-[#999]">
+                <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-[#999] dark:hover:bg-[#161b26]">
                   <div class="bg-[#333333] h-7 w-7 rounded-[50%] flex items-center justify-center">
                     <svg
                       viewBox="0 0 20 20"
@@ -685,7 +685,7 @@ const CreateButton = () => {
                 </button>
               </div>
               <div className="my-3">
-                <button className="border-[1px] border-gray-200 dark:border-gray-500 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-[#999]">
+                <button className="border-[1px] border-gray-200 dark:border-gray-500 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-[#999] dark:hover:bg-[#161b26]">
                   <div className="flex gap-2 items-center">
                     <p className="font-light relative text-xs italic dark:text-[#f6f6f6]">
                       Epic
@@ -695,7 +695,7 @@ const CreateButton = () => {
                     </p>
                   </div>
                 </button>
-                <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-[#999]">
+                <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-[#999] dark:hover:bg-[#161b26]">
                   <div className="flex gap-2 items-center">
                     <p className="font-light relative text-xs dark:text-[#f6f6f6]">
                       Team
@@ -705,7 +705,7 @@ const CreateButton = () => {
                     </p>
                   </div>
                 </button>
-                <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-[#999] justify-between">
+                <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-[#999] justify-between dark:hover:bg-[#161b26]">
                   <div className="flex gap-2 items-center">
                     <p className="font-light relative text-xs dark:text-[#f6f6f6]">
                       Followers
@@ -726,7 +726,7 @@ const CreateButton = () => {
                 <h6 class="my-2 font-bold text-sm text-[#2d78a4]">Edit</h6>
               </div>
               <div className="my-3">
-                <button className="border-[1px] border-gray-200 dark:border-gray-500 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-[#999]">
+                <button className="border-[1px] border-gray-200 dark:border-gray-500 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-[#999] dark:hover:bg-[#161b26]">
                   <svg
                     width="20"
                     height="20"
@@ -751,7 +751,7 @@ const CreateButton = () => {
               <h4 class="my-2 font-light text-sm text-[#8a8a8a]">Labels</h4>
               <button
                 type="button"
-                class="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:bg-white hover:shadow-[0_1px_0_#0000001f] text-xs dark:text-[#f6f6f6] mb-5"
+                class="border-[1px] border-[#e4e8eb] dark:border-[#3f4a5f] rounded-md px-1 py-1 hover:bg-white hover:shadow-[0_1px_0_#0000001f] text-xs dark:text-[#f6f6f6] mb-5 dark:hover:bg-[#161b26]"
               >
                 <span class="text-[#13ae47] font-bold">+</span> Add Labels
               </button>
