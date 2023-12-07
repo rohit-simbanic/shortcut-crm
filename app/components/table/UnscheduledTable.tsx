@@ -188,46 +188,46 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                 <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer dark:text-[grey]">
                   ID
                 </th>
-                <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[400px] dark:text-[grey]">
+                <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[400px] dark:text-[grey] capitalize">
                   Name
                 </th>
-                <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[140px] dark:text-[grey]">
+                <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[140px] dark:text-[grey] capitalize">
                   Type
                 </th>
-                <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[190px] dark:text-[grey]">
+                <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[190px] dark:text-[grey] capitalize">
                   Workflow
                 </th>
-                <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[130px] dark:text-[grey]">
+                <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[130px] dark:text-[grey] capitalize">
                   State
                 </th>
-                <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer dark:text-[grey]">
+                <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer dark:text-[grey] capitalize">
                   Team
                 </th>
-                <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer dark:text-[grey]">
+                <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer dark:text-[grey] capitalize">
                   Owners
                 </th>
-                <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[130px] dark:text-[grey]">
+                <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[130px] dark:text-[grey] capitalize">
                   Estimate
                 </th>
-                <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[140px] dark:text-[grey]">
+                <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[140px] dark:text-[grey] capitalize">
                   Priority
                 </th>
-                <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[140px] dark:text-[grey]">
+                <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[140px] dark:text-[grey] capitalize">
                   Severity
                 </th>
-                <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[180px] dark:text-[grey]">
+                <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[180px] dark:text-[grey] capitalize">
                   Project
                 </th>
-                <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[160px] dark:text-[grey]">
+                <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[160px] dark:text-[grey] capitalize">
                   Due date
                 </th>
-                <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[160px] dark:text-[grey]">
+                <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[160px] dark:text-[grey] capitalize">
                   Epic
                 </th>
-                <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[170px] dark:text-[grey]">
+                <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[170px] dark:text-[grey] capitalize">
                   Last Updated
                 </th>
-                <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[180px] dark:text-[grey]">
+                <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[180px] dark:text-[grey] capitalize">
                   Created One
                 </th>
                 <th className="px-4 font-normal hover:bg-[#e4e8eb] hover:cursor-pointer min-w-[20px] dark:text-[grey]"></th>

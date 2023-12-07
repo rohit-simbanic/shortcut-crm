@@ -195,3 +195,13 @@ body {
 .dropdown-content.exit {
   animation: fadeOut 0.3s ease-in-out;
 }
+.cursor-blink {
+  border-color: #2d78a4 !important;
+  animation: cursor-blink 1s infinite step-start;
+}
+
+@keyframes cursor-blink {
+  50% {
+    border-color: initial !important;
+  }
+}
