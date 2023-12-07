@@ -36,7 +36,7 @@ const MainContent = () => {
   };
   return (
     <div
-      className="mt-4 overflow-x-auto overflow-y-hidden h-[89vh] px-3 flex-grow"
+      className="mt-4 overflow-x-auto overflow-y-hidden h-[89vh] px-1 flex-grow"
       id="mainContent"
     >
       <div className="flex items-center justify-between">
@@ -186,9 +186,9 @@ const MainContent = () => {
           />
         </div>
       ) : (
-        <div className="flex gap-[1.1rem] justify-start">
+        <div className="flex gap-[0 rem] justify-start">
           <div>
-            <div className="flex justify-between items-center mb-6 mt-4">
+            <div className="flex justify-between items-center mb-6 mt-4 px-[9px]">
               <div className="w-[160px] flex gap-2">
                 <span className="dark:text-gray-200 text-[0.87rem] text-[#444444] ml-3 font-bold">
                   Unscheduled
@@ -233,7 +233,7 @@ const MainContent = () => {
               </div>
             </div>
             <div
-              className="h-[80vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3"
+              className="h-[80vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3 px-[9px]"
               id="mainDragBox"
             >
               <DndProvider backend={HTML5Backend}>
@@ -242,7 +242,7 @@ const MainContent = () => {
             </div>
           </div>
           <div>
-            <div className="flex justify-between items-center mb-6 mt-4">
+            <div className="flex justify-between items-center mb-6 mt-4 px-[9px]">
               <div className="w-[160px] flex gap-2">
                 <span className="dark:text-gray-200 text-[0.87rem] text-[#444444] ml-3 font-bold">
                   Ready for devel..
@@ -287,7 +287,7 @@ const MainContent = () => {
               </div>
             </div>
             <div
-              className="h-[80vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3"
+              className="h-[80vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3 px-[9px]"
               id="mainDragBox"
             >
               <DndProvider backend={HTML5Backend}>
@@ -296,7 +296,7 @@ const MainContent = () => {
             </div>
           </div>
           <div>
-            <div className="flex justify-between items-center mb-6 mt-4">
+            <div className="flex justify-between items-center mb-6 mt-4 px-[9px]">
               <div className="w-[160px] flex gap-2">
                 <span className="dark:text-gray-200 text-[0.87rem] text-[#444444] ml-3 font-bold">
                   In development
@@ -341,7 +341,7 @@ const MainContent = () => {
               </div>
             </div>
             <div
-              className="h-[80vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3"
+              className="h-[80vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3 px-[9px]"
               id="mainDragBox"
             >
               <DndProvider backend={HTML5Backend}>
@@ -350,7 +350,7 @@ const MainContent = () => {
             </div>
           </div>
           <div>
-            <div className="flex justify-between items-center mb-6 mt-4">
+            <div className="flex justify-between items-center mb-6 mt-4 px-[9px]">
               <div className="w-[160px] flex gap-2">
                 <span className="dark:text-gray-200 text-[0.87rem] text-[#444444] ml-3 font-bold">
                   Ready for Review
@@ -395,7 +395,7 @@ const MainContent = () => {
               </div>
             </div>
             <div
-              className="h-[80vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3"
+              className="h-[80vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3 px-[9px]"
               id="mainDragBox"
             >
               <DndProvider backend={HTML5Backend}>
@@ -404,7 +404,7 @@ const MainContent = () => {
             </div>
           </div>
           <div>
-            <div className="flex justify-between items-center mb-6 mt-4">
+            <div className="flex justify-between items-center mb-6 mt-4 px-[9px]">
               <div className="w-[160px] flex gap-2">
                 <span className="dark:text-gray-200 text-[0.87rem] text-[#444444] ml-3 font-bold">
                   Ready for Deploy
@@ -449,7 +449,7 @@ const MainContent = () => {
               </div>
             </div>
             <div
-              className="h-[80vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3"
+              className="h-[80vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3 px-[9px]"
               id="mainDragBox"
             >
               <DndProvider backend={HTML5Backend}>
@@ -458,7 +458,7 @@ const MainContent = () => {
             </div>
           </div>
           <div>
-            <div className="flex justify-between items-center mb-6 mt-4">
+            <div className="flex justify-between items-center mb-6 mt-4 px-[9px]">
               <div className="w-[160px] flex gap-2">
                 <span className="dark:text-gray-200 text-[0.87rem] text-[#444444] ml-3 font-bold">
                   Completed
@@ -504,7 +504,7 @@ const MainContent = () => {
             </div>
 
             <div
-              className="h-[80vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3"
+              className="h-[80vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3 px-[9px]"
               id="mainDragBox"
             >
               <DndProvider backend={HTML5Backend}>

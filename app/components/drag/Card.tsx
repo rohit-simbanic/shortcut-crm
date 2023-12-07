@@ -212,10 +212,10 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
             </div>
 
             <div
-              className="content h-[509px] overflow-y-scroll flex max-lg:flex-col gap-4 px-6"
+              className="content h-[589px] overflow-y-scroll flex max-lg:flex-col gap-4 px-6"
               id="style-2"
             >
-              <div className="w-[80%] max-lg:w-[100%]">
+              <div className="w-[88%] max-lg:w-[100%]">
                 <p className="italic text-[grey] mb-2 text-[14px]">
                   No description given.
                 </p>
@@ -762,9 +762,9 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                   </div>
                 </div>
               </div>
-              <div className="w-[20%] max-lg:w-[100%]">
+              <div className="w-[12%] max-lg:w-[100%]">
                 <div>
-                  <button className="border-[1px] border-gray-200 dark:border-gray-500 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500 dark:hover:bg-[#161b26]">
+                  <button className="border-[1px] border-gray-200 dark:border-gray-500 flex items-center gap-4 w-full py-2 px-1 hover:rounded hover:shadow hover:border-gray-500 dark:hover:bg-[#161b26]">
                     <div className="bg-[#cd65b6] h-7 w-7 rounded-[50%] flex items-center justify-center">
                       <svg
                         viewBox="0 0 20 20"
@@ -785,12 +785,12 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                       <p className="font-light relative -left-[37px] text-xs dark:text-[#f6f6f6]">
                         Team
                       </p>
-                      <p className="font-bold text-sm dark:text-[#f6f6f6] text-[12px] text-[#444]">
+                      <p className=" text-sm dark:text-[#f6f6f6] text-[12px] text-[#444]">
                         Backend Team
                       </p>
                     </div>
                   </button>
-                  <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500 dark:hover:bg-[#161b26]">
+                  <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 hover:rounded hover:shadow hover:border-gray-500 dark:hover:bg-[#161b26]">
                     <svg
                       viewBox="0 0 20 20"
                       fill="none"
@@ -810,12 +810,12 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                       <p className="font-light relative -left-[37px] text-xs dark:text-[#f6f6f6]">
                         Team
                       </p>
-                      <p className="font-bold text-sm dark:text-[#f6f6f6] text-[12px] text-[#444]">
+                      <p className="text-sm dark:text-[#f6f6f6] text-[12px] text-[#444]">
                         Backend Team
                       </p>
                     </div>
                   </button>
-                  <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500 dark:hover:bg-[#161b26]">
+                  <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 hover:rounded hover:shadow hover:border-gray-500 dark:hover:bg-[#161b26]">
                     <svg
                       width="20"
                       height="20"
@@ -833,12 +833,12 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                       <p className="font-light relative -left-[50px] text-xs dark:text-[#f6f6f6]">
                         Team
                       </p>
-                      <p className="font-bold text-sm dark:text-[#f6f6f6] text-[12px] text-[#444]">
+                      <p className="text-sm dark:text-[#f6f6f6] text-[12px] text-[#444]">
                         State Unscheduled
                       </p>
                     </div>
                   </button>
-                  <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500 dark:hover:bg-[#161b26]">
+                  <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 hover:rounded hover:shadow hover:border-gray-500 dark:hover:bg-[#161b26]">
                     <svg
                       viewBox="0 0 24 24"
                       fill="none"
@@ -868,14 +868,14 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                       <p className="font-light relative -left-[37px] text-xs dark:text-[#f6f6f6]">
                         Team
                       </p>
-                      <p className="font-bold text-sm dark:text-[#f6f6f6] text-[12px] text-[#444]">
+                      <p className=" text-sm dark:text-[#f6f6f6] text-[12px] text-[#444]">
                         Backend Team
                       </p>
                     </div>
                   </button>
                 </div>
                 <div className="my-3">
-                  <button className="border-[1px] border-gray-200 dark:border-gray-500 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500 dark:hover:bg-[#161b26]">
+                  <button className="border-[1px] border-gray-200 dark:border-gray-500 flex items-center gap-4 w-full py-2 px-1 hover:rounded hover:shadow hover:border-gray-500 dark:hover:bg-[#161b26]">
                     <svg
                       viewBox="0 0 20 20"
                       fill="none"
@@ -894,12 +894,12 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                       <p className="font-light relative -left-[37px] text-xs italic dark:text-[#f6f6f6]">
                         Epic
                       </p>
-                      <p className="font-bold text-sm dark:text-[#f6f6f6] text-[12px] text-[#444]">
+                      <p className="text-sm dark:text-[#f6f6f6] text-[12px] text-[#444]">
                         Backend Team
                       </p>
                     </div>
                   </button>
-                  <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500 dark:hover:bg-[#161b26]">
+                  <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 hover:rounded hover:shadow hover:border-gray-500 dark:hover:bg-[#161b26]">
                     <svg
                       viewBox="0 0 20 20"
                       fill="none"
@@ -919,12 +919,12 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                       <p className="font-light relative -left-[37px] text-xs dark:text-[#f6f6f6]">
                         Team
                       </p>
-                      <p className="font-bold text-sm dark:text-[#f6f6f6] text-[#444]">
+                      <p className=" text-sm dark:text-[#f6f6f6] text-[#444]">
                         Backend Team
                       </p>
                     </div>
                   </button>
-                  <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500 dark:hover:bg-[#161b26]">
+                  <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 hover:rounded hover:shadow hover:border-gray-500 dark:hover:bg-[#161b26]">
                     <svg
                       width="20"
                       height="20"
@@ -947,14 +947,14 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                       <p className="font-light relative -left-[50px] text-xs dark:text-[#f6f6f6]">
                         Team
                       </p>
-                      <p className="font-bold text-sm dark:text-[#f6f6f6] text-[12px] text-[#444]">
+                      <p className="text-sm dark:text-[#f6f6f6] text-[12px] text-[#444]">
                         State Unscheduled
                       </p>
                     </div>
                   </button>
                 </div>
                 <div className="my-3">
-                  <button className="border-[1px] border-gray-200 dark:border-gray-500 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500 dark:hover:bg-[#161b26]">
+                  <button className="border-[1px] border-gray-200 dark:border-gray-500 flex items-center gap-4 w-full py-2 px-1 hover:shadow hover:rounded hover:border-gray-500 dark:hover:bg-[#161b26]">
                     <button
                       class="py-3 rounded-[50%] px-3 text-center h-8 w-8 align-middle font-sans text-xs font-bold text-gray-50  transition-all bg-[#ccba45] hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none flex items-center justify-center"
                       type="button"
@@ -966,12 +966,12 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                       <p className="font-light relative -left-[37px] text-xs italic dark:text-[#f6f6f6]">
                         Epic
                       </p>
-                      <p className="font-bold text-sm dark:text-[#f6f6f6] text-[#444]">
+                      <p className="text-sm dark:text-[#f6f6f6] text-[#444]">
                         Backend Team
                       </p>
                     </div>
                   </button>
-                  <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500 dark:hover:bg-[#161b26]">
+                  <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 hover:rounded hover:shadow hover:border-gray-500 dark:hover:bg-[#161b26]">
                     <div class="bg-[#333333] h-7 w-7 rounded-[50%] flex items-center justify-center">
                       <svg
                         viewBox="0 0 20 20"
@@ -993,39 +993,39 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                       <p className="font-light relative -left-[37px] text-xs dark:text-[#f6f6f6]">
                         Team
                       </p>
-                      <p className="font-bold text-sm dark:text-[#f6f6f6] text-[#444]">
+                      <p className="text-sm dark:text-[#f6f6f6] text-[#444]">
                         Backend Team
                       </p>
                     </div>
                   </button>
                 </div>
                 <div className="my-3">
-                  <button className="border-[1px] border-gray-200 dark:border-gray-500 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500 dark:hover:bg-[#161b26]">
+                  <button className="border-[1px] border-gray-200 dark:border-gray-500 flex items-center gap-4 w-full py-2 px-1 hover:shadow hover:rounded hover:border-gray-500 dark:hover:bg-[#161b26]">
                     <div className="flex gap-2 items-center">
                       <p className="font-light relative text-xs italic dark:text-[#f6f6f6] text-[#444]">
                         Epic
                       </p>
-                      <p className="font-bold text-sm dark:text-[#f6f6f6] text-[#444]">
+                      <p className="text-sm dark:text-[#f6f6f6] text-[#444]">
                         Backend Team
                       </p>
                     </div>
                   </button>
-                  <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500 dark:hover:bg-[#161b26]">
+                  <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 hover:rounded hover:shadow hover:border-gray-500 dark:hover:bg-[#161b26]">
                     <div className="flex gap-2 items-center">
                       <p className="font-light relative text-xs dark:text-[#f6f6f6]">
                         Team
                       </p>
-                      <p className="font-bold text-sm dark:text-[#f6f6f6] text-[#444]">
+                      <p className="text-sm dark:text-[#f6f6f6] text-[#444]">
                         Backend Team
                       </p>
                     </div>
                   </button>
-                  <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500 justify-between dark:hover:bg-[#161b26]">
+                  <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 hover:rounded hover:shadow hover:border-gray-500 justify-between dark:hover:bg-[#161b26]">
                     <div className="flex gap-2 items-center">
                       <p className="font-light relative text-xs dark:text-[#f6f6f6]">
                         Followers
                       </p>
-                      <p className="font-bold italic dark:text-[#f6f6f6] text-[12px] text-[#333]">
+                      <p className="italic dark:text-[#f6f6f6] text-[12px] text-[#333]">
                         Nobody
                       </p>
                     </div>
@@ -1041,7 +1041,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                   <h6 class="my-2 font-bold text-sm text-[#2d78a4]">Edit</h6>
                 </div>
                 <div className="my-3">
-                  <button className="border-[1px] border-gray-200 dark:border-gray-500 flex items-center gap-4 w-full py-2 px-1 rounded hover:shadow hover:border-gray-500 dark:hover:bg-[#161b26]">
+                  <button className="border-[1px] border-gray-200 dark:border-gray-500 flex items-center gap-4 w-full py-2 px-1 hover:shadow hover:rounded hover:border-gray-500 dark:hover:bg-[#161b26]">
                     <svg
                       width="20"
                       height="20"
@@ -1057,7 +1057,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                       <p className="font-light relative -left-[37px] text-xs italic dark:text-[#f6f6f6]">
                         Epic
                       </p>
-                      <p className="font-bold text-sm dark:text-[#f6f6f6] text-[#444]">
+                      <p className="text-sm dark:text-[#f6f6f6] text-[#444]">
                         Backend Team
                       </p>
                     </div>
