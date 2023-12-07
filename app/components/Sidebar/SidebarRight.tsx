@@ -57,7 +57,7 @@ function SidebarRight() {
       <div
         className={` ${
           isOpen ? "px-2 hover:bg-[#eef0f4] hover:cursor-pointer" : "pl-[1rem]"
-        } flex-none items-center relative sidebar  border-r border-gray-300 dark:border-[#283040] transform ${
+        } flex-none items-center sidebar border-r border-gray-300 dark:border-[#283040] transform ${
           isOpen ? "translate-x-0" : "translate-x-[0px]"
         } opacity ${
           isOpen ? "100" : "0"
@@ -196,7 +196,7 @@ function SidebarRight() {
                 </div>
 
                 <div className="dropdown-borad flex flex-col h-[70vh]  justify-between">
-                  <div className="relative">
+                  <div className="">
                     {Array.from(boards, (board) => (
                       <div
                         className="flex group items-center space-x-2 px-3 mr-8 rounded-md duration-500 ease-in-out py-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-[#1f2532] dark:hover:text-[#635fc7] dark:text-white w-[160px] group"
