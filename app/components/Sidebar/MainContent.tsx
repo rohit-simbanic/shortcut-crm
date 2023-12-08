@@ -36,7 +36,7 @@ const MainContent = () => {
   };
   return (
     <div
-      className="mt-1 overflow-x-auto overflow-y-hidden h-[92.7vh] flex-grow"
+      className="mt-1 overflow-x-auto overflow-y-hidden h-[92vh] flex-grow"
       id="mainContent"
     >
       <div className="w-full overflow-hidden sticky left-0">
