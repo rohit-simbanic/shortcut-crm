@@ -36,7 +36,7 @@ const MainContent = () => {
   };
   return (
     <div
-      className="mt-4 overflow-x-auto overflow-y-hidden h-[89vh] px-1 flex-grow"
+      className="mt-4 overflow-x-auto overflow-y-hidden h-[89vh] flex-grow"
       id="mainContent"
     >
       <div className="flex items-center justify-between">
