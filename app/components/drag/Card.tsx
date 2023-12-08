@@ -110,21 +110,33 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
   const toggleEditDescription = () => {
     setEditIsOpen((prevState) => !prevState);
   };
+  const { filterModalOpen, isTeamOpen, isWorkFlowOpen } =
+    useContext(SidebarContext);
   return (
     <div ref={ref} style={{ opacity }} data-handler-id={handlerId}>
       <Popup
         trigger={
           <div
             draggable="true"
-            className="w-[210px] sm:w-[240px] mb-3 rounded-md  bg-white  dark:bg-[#161b26] shadow-[#364e7e1a] shadow-lg border-[1px] border-[#e4e8eb] dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer"
+            className={`w-[210px] ${
+              filterModalOpen || isTeamOpen || isWorkFlowOpen ? "" : "relative"
+            } group sm:w-[240px] mb-3 rounded-md  bg-white hover:shadow-[0_1px_3px_-1px_#0003,0_3px_9px_-3px_#0000001a] dark:bg-[#161b26] shadow-[#364e7e1a] shadow-lg border-[1px] border-[#e4e8eb] dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer`}
           >
             <div
               className="box_container py-2 px-3"
               onClick={() => setIsDropdownOpen(false)}
             >
-              <p className="font-light text-xs tracking-tighter my-2 text-[0.70rem] text-[#333] dark:text-[#b8b8bd]">
-                Quick fix - DV - 1.0
-              </p>
+              <div className="flex justify-between">
+                <p className="font-light text-xs tracking-tighter my-2 text-[0.70rem] text-[#333] dark:text-[#b8b8bd]">
+                  Quick fix - DV - 1.0
+                </p>
+                <button className="bg-transparent w-6 h-6 dark:bg-[#1f2532] opacity-0 group-hover:opacity-100 transition-opacity absolute right-0 top-0 rounded-tr-md z-50">
+                  <input
+                    type="checkbox"
+                    class="border-gray-300 rounded h-3 w-3 dark:bg-[#161b26]"
+                  />
+                </button>
+              </div>
               <p className="font-bold tracking-wide text-[0.84rem] text-[#333] dark:text-[#f6f6f6]">
                 Blink cursor in Story Title input box automatically
               </p>
