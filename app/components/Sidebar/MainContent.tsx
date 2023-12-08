@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { Container } from "../drag/Container";
@@ -9,6 +9,7 @@ import InDevelopmentTable from "../table/InDevelopmentTable";
 import ReviewTable from "../table/ReviewTable";
 import CompleteTable from "../table/CompleteTable";
 import { Tooltip } from "react-tooltip";
+import { SidebarContext } from "@/app/context/sidebarContext";
 
 interface ViewState {
   isTableView: boolean;
@@ -18,15 +19,16 @@ interface ViewState {
   isScheduledViewFour: boolean;
   isScheduledViewFive: boolean;
 }
+
 const MainContent = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  const { setHovered } = useContext(SidebarContext);
 
   const handleMouseEnter = () => {
-    setIsHovered(true);
+    setHovered(true);
   };
 
   const handleMouseLeave = () => {
-    setIsHovered(false);
+    setHovered(false);
   };
   const [viewState, setViewState] = useState<ViewState>({
     isTableView: false,
@@ -104,15 +106,17 @@ const MainContent = () => {
                 </svg>
               </button>
             </div>
-            <div className="flex flex-col items-center gap-1 ">
+            <div
+              className="flex flex-col items-center gap-1 "
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
               <span className="text-[#808080] text-[11px] font-medium">
                 View
               </span>
               <div
                 className="flex gap-3 items-center justify-between shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-[0.39rem] px-2 rounded-[5px] border-[1px] border-[#dddddd] dark:border-[#283040] hover:bg-[#e4e8eb] dark:hover:bg-[#1f25324d] hover:cursor-pointer w-full"
                 onClick={() => toggleView("isTableView")}
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
               >
                 <a data-tooltip-id="kanban-click">
                   <Tooltip
