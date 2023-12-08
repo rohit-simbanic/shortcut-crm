@@ -10,6 +10,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
 }) => {
   const { filterModalOpen, isTeamOpen, isWorkFlowOpen, isHovered } =
     useContext(SidebarContext);
+  console.log(isHovered);
   return (
     <div className="my-3 w-full">
       <div
