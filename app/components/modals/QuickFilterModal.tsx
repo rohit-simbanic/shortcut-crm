@@ -86,7 +86,7 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
       </div>
       <hr className="my-4" />
       <h3 className="text-md font-bold text-[#1f2532] mb-5 dark:text-[#f6f6f6]">
-        Filter by Label, User or Keyword
+        Filter by Story Attributes
       </h3>
       <div className="flex items-center gap-8">
         <button className="flex items-center gap-2 hover:bg-[#f1f3f7] dark:hover:bg-[#1f2532] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
@@ -463,7 +463,7 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
       </div>
       <hr className="my-4" />
       <h3 className="text-md font-bold text-[#1f2532] mb-5 dark:text-[#f6f6f6]">
-        Filter by Workstream
+        More Story Filters
       </h3>
       <div className="flex items-center gap-8">
         <button className="flex items-center gap-2 hover:bg-[#f1f3f7] dark:hover:bg-[#1f2532] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
