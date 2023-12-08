@@ -19,6 +19,15 @@ interface ViewState {
   isScheduledViewFive: boolean;
 }
 const MainContent = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
   const [viewState, setViewState] = useState<ViewState>({
     isTableView: false,
     isScheduledView: false,
@@ -36,11 +45,11 @@ const MainContent = () => {
   };
   return (
     <div
-      className="mt-1 overflow-x-auto overflow-y-hidden h-[92.7vh] flex-grow"
+      className="mt-4 overflow-x-auto overflow-y-hidden h-[92.7vh] flex-grow"
       id="mainContent"
     >
-      <div className="w-full overflow-hidden sticky left-0">
-        <div className="flex items-center justify-between px-2">
+      <div className="w-full">
+        <div className="flex items-center justify-between mx-4 sticky left-0">
           <div className="flex items-center gap-3 flex-wrap">
             <svg
               height={22}
@@ -102,6 +111,8 @@ const MainContent = () => {
               <div
                 className="flex gap-3 items-center justify-between shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-[0.39rem] px-2 rounded-[5px] border-[1px] border-[#dddddd] dark:border-[#283040] hover:bg-[#e4e8eb] dark:hover:bg-[#1f25324d] hover:cursor-pointer w-full"
                 onClick={() => toggleView("isTableView")}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
               >
                 <a data-tooltip-id="kanban-click">
                   <Tooltip

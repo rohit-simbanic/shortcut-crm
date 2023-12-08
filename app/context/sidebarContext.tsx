@@ -9,6 +9,7 @@ interface ISidebarContext {
   isTeamManageOpen: boolean;
   filterModalOpen: boolean;
   isChangesOpen: boolean;
+  isHovered: boolean;
   toggleSidebarcollapse: () => void;
   toggleSidebarOpen: () => void;
   toggleTeamOpen: () => void;
@@ -23,6 +24,7 @@ interface ISidebarContext {
   setIsWorkFlowOpen: (collapsed: boolean) => void;
   setFilterModalOpen: (collapsed: boolean) => void;
   setIsChangesOpen: (collapsed: boolean) => void;
+  setHovered: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const initialValue: ISidebarContext = {
@@ -33,6 +35,7 @@ const initialValue: ISidebarContext = {
   isTeamManageOpen: false,
   filterModalOpen: false,
   isChangesOpen: false,
+  isHovered: false,
   toggleSidebarcollapse: function (): void {
     throw new Error("Function not implemented.");
   },
@@ -75,6 +78,7 @@ const initialValue: ISidebarContext = {
   setIsChangesOpen: function (collapsed: boolean): void {
     throw new Error("Function not implemented.");
   },
+  setHovered: () => {},
 };
 
 const SidebarContext = createContext<ISidebarContext>(initialValue);
@@ -91,6 +95,7 @@ const SidebarProvider: React.FC<SidebarProviderProps> = ({ children }) => {
   const [isWorkFlowOpen, setIsWorkFlowOpen] = useState(false);
   const [filterModalOpen, setFilterModalOpen] = useState(false);
   const [isChangesOpen, setIsChangesOpen] = useState(false);
+  const [isHovered, setHovered] = useState(false);
 
   const toggleSidebarcollapse = () => {
     setCollapse((prevState) => !prevState);
@@ -222,6 +227,8 @@ const SidebarProvider: React.FC<SidebarProviderProps> = ({ children }) => {
         isChangesOpen,
         setIsChangesOpen,
         toggleChangesModalOpen,
+        isHovered,
+        setHovered,
       }}
     >
       {children}
