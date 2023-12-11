@@ -182,7 +182,10 @@ const MainContent = () => {
         </div>
       </div>
       {viewState.isTableView ? (
-        <div className="h-[90%] overflow-y-auto overflow-x-auto" id="tableView">
+        <div
+          className="h-[90%] overflow-y-auto overflow-x-auto px-6"
+          id="tableView"
+        >
           <UnscheduledTable
             isScheduledView={viewState.isScheduledView}
             toggleScheduledTable={() => toggleView("isScheduledView")}
