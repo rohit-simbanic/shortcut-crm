@@ -147,7 +147,6 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
             data-tooltip-id="points-completed"
             data-tooltip-place="top"
             data-tooltip-content="Points Completed"
-            d
           >
             <Tooltip
               id="points-completed"
