@@ -58,7 +58,9 @@ function SidebarRight() {
     <>
       <div
         className={` ${
-          isOpen ? "px-2 hover:bg-[#1f2532] hover:cursor-pointer" : "pl-[1rem]"
+          isOpen
+            ? "px-2 dark:hover:bg-[#1f2532] hover:bg-[#eef0f4] hover:cursor-pointer"
+            : "pl-[1rem]"
         } flex-none items-center sidebar border-r border-gray-300 dark:border-[#283040] transform ${
           isOpen ? "translate-x-0" : "translate-x-[0px]"
         } opacity ${
