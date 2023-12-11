@@ -1,5 +1,6 @@
 import { SidebarContext } from "@/app/context/sidebarContext";
 import React, { FC, useContext } from "react";
+import { Tooltip } from "react-tooltip";
 interface InDevelopmenTableComponentProps {
   isScheduledViewThree: boolean;
   toggleScheduledTable: () => void;
@@ -8,8 +9,16 @@ const InDevelopmentTable: FC<InDevelopmenTableComponentProps> = ({
   isScheduledViewThree,
   toggleScheduledTable,
 }) => {
-  const { filterModalOpen, isTeamOpen, isWorkFlowOpen, isHovered } =
+  const dark = true;
+  const { filterModalOpen, isTeamOpen, isWorkFlowOpen, isHovered, setHovered } =
     useContext(SidebarContext);
+  const handleMouseEnter = () => {
+    setHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setHovered(false);
+  };
   return (
     <div className="my-3 w-full">
       <div
@@ -17,9 +26,11 @@ const InDevelopmentTable: FC<InDevelopmenTableComponentProps> = ({
           isScheduledViewThree ? "w-fit" : "w-full"
         }`}
         id="tableBody"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
       >
         <div
-          className={`flex gap-2 ${
+          className={`flex items-center gap-2 ${
             filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
               ? ""
               : "sticky z-20"
@@ -68,57 +79,96 @@ const InDevelopmentTable: FC<InDevelopmenTableComponentProps> = ({
               In development
             </h2>
           </div>
-          <div className="flex gap-1 items-center text-[11px] dark:text-[grey]">
-            <svg
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              height={16}
-              width={16}
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M4 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H4Zm1 5a1 1 0 0 1 1-1h8a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Zm0 4a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z"
-                fill="#666"
-              ></path>
-            </svg>
-            2
-          </div>
-          <div className="flex gap-1 items-center text-[11px] dark:text-[grey]">
-            <svg
-              height={16}
-              width={16}
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M15.5 2A1.5 1.5 0 0 0 14 3.5v13a1.5 1.5 0 0 0 3 0v-13A1.5 1.5 0 0 0 15.5 2ZM8 8.5a1.5 1.5 0 1 1 3 0v8a1.5 1.5 0 0 1-3 0v-8Zm-6 5a1.5 1.5 0 0 1 3 0v3a1.5 1.5 0 0 1-3 0v-3Z"
-                fill="#666"
-              ></path>
-            </svg>
-            10
-          </div>
-          <div className="flex gap-1 items-center text-[11px] dark:text-[grey]">
-            <svg
-              height={16}
-              width={16}
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm3.707-9.293a1 1 0 0 0-1.414-1.414l-2.94 2.94a.5.5 0 0 1-.707 0l-.939-.94a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4z"
-                fill="#666"
-              ></path>
-            </svg>
-            22
-          </div>
+          <a
+            data-tooltip-id="stories-click3"
+            data-tooltip-place="top"
+            data-tooltip-content="Total Stories!"
+          >
+            <Tooltip
+              id="stories-click3"
+              style={{
+                backgroundColor: dark ? "#2d3545" : "",
+                color: dark ? "#fff" : "",
+              }}
+            />
+            <div className="flex gap-1 items-center text-[11px] dark:text-[grey]">
+              <svg
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                height={16}
+                width={16}
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M4 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H4Zm1 5a1 1 0 0 1 1-1h8a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Zm0 4a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z"
+                  fill="#666"
+                ></path>
+              </svg>
+              2
+            </div>
+          </a>
+          <a
+            data-tooltip-id="points-click3"
+            data-tooltip-place="top"
+            data-tooltip-content="Total Points"
+          >
+            <Tooltip
+              id="points-click3"
+              style={{
+                backgroundColor: dark ? "#2d3545" : "",
+                color: dark ? "#fff" : "",
+              }}
+            />
+            <div className="flex gap-1 items-center text-[11px] dark:text-[grey]">
+              <svg
+                height={16}
+                width={16}
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15.5 2A1.5 1.5 0 0 0 14 3.5v13a1.5 1.5 0 0 0 3 0v-13A1.5 1.5 0 0 0 15.5 2ZM8 8.5a1.5 1.5 0 1 1 3 0v8a1.5 1.5 0 0 1-3 0v-8Zm-6 5a1.5 1.5 0 0 1 3 0v3a1.5 1.5 0 0 1-3 0v-3Z"
+                  fill="#666"
+                ></path>
+              </svg>
+              10
+            </div>
+          </a>
+          <a
+            data-tooltip-id="points-completed3"
+            data-tooltip-place="top"
+            data-tooltip-content="Points Completed"
+          >
+            <Tooltip
+              id="points-completed3"
+              style={{
+                backgroundColor: dark ? "#2d3545" : "",
+                color: dark ? "#fff" : "",
+              }}
+            />
+            <div className="flex gap-1 items-center text-[11px] dark:text-[grey]">
+              <svg
+                height={16}
+                width={16}
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm3.707-9.293a1 1 0 0 0-1.414-1.414l-2.94 2.94a.5.5 0 0 1-.707 0l-.939-.94a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4z"
+                  fill="#666"
+                ></path>
+              </svg>
+              22
+            </div>
+          </a>
         </div>
         {isScheduledViewThree && (
           <table className="w-full">
