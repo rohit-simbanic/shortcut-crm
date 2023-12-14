@@ -478,7 +478,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     </span>
                   </li>
                 </td>
-                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px] sticky right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px]  right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
                   <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                     <svg
                       viewBox="0 0 20 20"
@@ -685,7 +685,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     </span>
                   </li>
                 </td>
-                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px] sticky right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px]  right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
                   <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                     <svg
                       viewBox="0 0 20 20"
@@ -892,7 +892,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     </span>
                   </li>
                 </td>
-                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px] sticky right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px]  right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
                   <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                     <svg
                       viewBox="0 0 20 20"
@@ -1099,7 +1099,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     </span>
                   </li>
                 </td>
-                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px] sticky right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px]  right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
                   <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                     <svg
                       viewBox="0 0 20 20"
@@ -1306,7 +1306,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     </span>
                   </li>
                 </td>
-                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px] sticky right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px]  right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
                   <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                     <svg
                       viewBox="0 0 20 20"
@@ -1513,7 +1513,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     </span>
                   </li>
                 </td>
-                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px] sticky right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px]  right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
                   <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                     <svg
                       viewBox="0 0 20 20"
@@ -1720,7 +1720,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     </span>
                   </li>
                 </td>
-                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px] sticky right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px]  right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
                   <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                     <svg
                       viewBox="0 0 20 20"
@@ -1927,7 +1927,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     </span>
                   </li>
                 </td>
-                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px] sticky right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px]  right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
                   <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                     <svg
                       viewBox="0 0 20 20"
@@ -2134,7 +2134,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     </span>
                   </li>
                 </td>
-                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px] sticky right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px]  right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
                   <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                     <svg
                       viewBox="0 0 20 20"
@@ -2341,7 +2341,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     </span>
                   </li>
                 </td>
-                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px] sticky right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px]  right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
                   <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                     <svg
                       viewBox="0 0 20 20"
@@ -2548,7 +2548,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     </span>
                   </li>
                 </td>
-                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px] sticky right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px]  right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
                   <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                     <svg
                       viewBox="0 0 20 20"
@@ -2755,7 +2755,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     </span>
                   </li>
                 </td>
-                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px] sticky right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px]  right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
                   <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                     <svg
                       viewBox="0 0 20 20"
@@ -2962,7 +2962,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     </span>
                   </li>
                 </td>
-                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px] sticky right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px]  right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
                   <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                     <svg
                       viewBox="0 0 20 20"
@@ -3169,7 +3169,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     </span>
                   </li>
                 </td>
-                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px] sticky right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td className="px-4 text-sm  border-b border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px]  right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
                   <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                     <svg
                       viewBox="0 0 20 20"
@@ -3376,7 +3376,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     </span>
                   </li>
                 </td>
-                <td className="px-4 text-sm   border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px] sticky right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
+                <td className="px-4 text-sm   border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px]  right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]">
                   <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                     <svg
                       viewBox="0 0 20 20"
