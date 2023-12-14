@@ -73,7 +73,7 @@ const Dropdown = () => {
           aria-labelledby="dropdown-button"
         >
           <a
-            className="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-[#c4c4c7] active:bg-blue-100 cursor-pointer"
+            className="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-[#c4c4c7] dark:hover:bg-[#f8fafc1a] active:bg-blue-100 cursor-pointer"
             role="menuitem"
           >
             <div className="flex items-center gap-3">
@@ -95,7 +95,7 @@ const Dropdown = () => {
             </div>
           </a>
           <a
-            className="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-[#c4c4c7] active:bg-blue-100 cursor-pointer"
+            className="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-[#c4c4c7] dark:hover:bg-[#f8fafc1a] active:bg-blue-100 cursor-pointer"
             role="menuitem"
           >
             <div className="flex items-center gap-3">
@@ -117,7 +117,7 @@ const Dropdown = () => {
             </div>
           </a>
           <a
-            className="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-[#c4c4c7] active:bg-blue-100 cursor-pointer"
+            className="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-[#c4c4c7] dark:hover:bg-[#f8fafc1a] active:bg-blue-100 cursor-pointer"
             role="menuitem"
           >
             <div className="flex items-center gap-3">
@@ -139,7 +139,7 @@ const Dropdown = () => {
             </div>
           </a>
           <a
-            className="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-[#c4c4c7] active:bg-blue-100 cursor-pointer"
+            className="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-[#c4c4c7] dark:hover:bg-[#f8fafc1a] active:bg-blue-100 cursor-pointer"
             role="menuitem"
           >
             <div className="flex items-center gap-3">
@@ -162,7 +162,7 @@ const Dropdown = () => {
             </div>
           </a>
           <a
-            className="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-[#c4c4c7] active:bg-blue-100 cursor-pointer"
+            className="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-[#c4c4c7] dark:hover:bg-[#f8fafc1a] active:bg-blue-100 cursor-pointer"
             role="menuitem"
           >
             <div className="flex items-center gap-3">
@@ -184,7 +184,7 @@ const Dropdown = () => {
             </div>
           </a>
           <a
-            className="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-[#c4c4c7] active:bg-blue-100 cursor-pointer"
+            className="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-[#c4c4c7] dark:hover:bg-[#f8fafc1a] active:bg-blue-100 cursor-pointer"
             role="menuitem"
           >
             <div className="flex items-center gap-3">
@@ -211,9 +211,9 @@ const Dropdown = () => {
               <span className="dark:text-[#f6f6f6]">Create Label</span>
             </div>
           </a>
-          <hr />
+          <hr className="dark:border-[#283040]" />
           <a
-            className="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-[#c4c4c7] active:bg-blue-100 cursor-pointer"
+            className="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-[#c4c4c7] dark:hover:bg-[#f8fafc1a] active:bg-blue-100 cursor-pointer"
             role="menuitem"
           >
             <div className="flex items-center gap-3">
@@ -235,7 +235,7 @@ const Dropdown = () => {
             </div>
           </a>
           <a
-            className="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-[#c4c4c7] active:bg-blue-100 cursor-pointer"
+            className="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-[#c4c4c7] dark:hover:bg-[#f8fafc1a] active:bg-blue-100 cursor-pointer"
             role="menuitem"
           >
             <div className="flex items-center gap-3">
