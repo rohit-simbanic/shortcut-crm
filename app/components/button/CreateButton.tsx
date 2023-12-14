@@ -120,7 +120,7 @@ const CreateButton = () => {
                   blinkCursor ? "cursor-blink" : ""
                 }`}
               ></textarea>
-              <h4 className="mb-2 font-medium text-[#444] dark:text-[grey] text-[15px] pt-2 pb-0">
+              <h4 className="mb-2 font-bold dark:text-[white] text-[#444] text-[15px] pt-2 pb-0">
                 Description{" "}
                 <span className="italic font-light ml-2">optional</span>
               </h4>
@@ -137,7 +137,7 @@ const CreateButton = () => {
                       <div
                         className={`py-2 px-3 ${
                           isWrite === 1
-                            ? "bg-white border-t-[1px] border-[#e4e8eb] border-r-[1px] border-l-[1px] font-bold"
+                            ? "bg-white border-t-[1px] border-[#e4e8eb] border-r-[1px] border-l-[1px] font-bold dark:text-[white]"
                             : "bg-[#f9f9f9] cursor-pointer border-b-[1px]"
                         }  dark:bg-[#1f2532] dark:text-[grey]`}
                         onClick={() => toggleWrite(1)}
@@ -147,9 +147,9 @@ const CreateButton = () => {
                       <div
                         className={`text-[grey] py-2 ${
                           isWrite === 2
-                            ? "bg-white border-t-[1px] border-[#e4e8eb] border-r-[1px] border-l-[1px] font-bold text-gray-900"
+                            ? "bg-white border-t-[1px] border-[#e4e8eb] border-r-[1px] border-l-[1px] font-bold text-gray-900 dark:text-[white]"
                             : "bg-[#f9f9f9] cursor-pointer"
-                        }  dark:bg-gray-700 px-3`}
+                        }  dark:bg-gray-700 dark:text-[grey] px-3`}
                         onClick={() => toggleWrite(2)}
                       >
                         Preview
@@ -316,7 +316,7 @@ const CreateButton = () => {
                     </div>
                   </div>
                   {isWrite === 1 ? (
-                    <div class="pb-2 px-4 bg-white rounded-b-lg dark:bg-gray-800 xl:before:content-[''] xl:before:block xl:before:relative xl:before:w-[98%] xl:before:ml-[44px] xl:before:border-t-[1px] xl:before:border-[#e4e8eb] border-r-[1px] border-l-[1px] border-[#e4e8eb]">
+                    <div class="pb-2 px-4 bg-white rounded-b-lg dark:bg-gray-800 xl:before:content-[''] xl:before:block xl:before:relative xl:before:w-[96%] xl:before:ml-[47px] xl:before:border-t-[1px] xl:before:border-[#e4e8eb] border-r-[1px] border-l-[1px] border-[#e4e8eb]">
                       <label for="editor" className="sr-only">
                         Publish post
                       </label>
@@ -328,7 +328,7 @@ const CreateButton = () => {
                       ></textarea>
                     </div>
                   ) : (
-                    <div class="pb-2 px-4 bg-white rounded-b-lg dark:bg-gray-800 border-r-[1px] border-l-[1px] border-[#e4e8eb] xl:before:content-[''] xl:before:block xl:before:relative xl:before:w-[92%] xl:before:ml-[119px] xl:before:border-t-[1px] xl:before:border-[#e4e8eb]">
+                    <div class="pb-2 px-4 bg-white rounded-b-lg dark:bg-gray-800 border-r-[1px] border-l-[1px] border-[#e4e8eb] xl:before:content-[''] xl:before:block xl:before:relative xl:before:w-[85%] xl:before:ml-[124px] xl:before:border-t-[1px] xl:before:border-[#e4e8eb]">
                       <label for="editor" className="sr-only">
                         Publish post
                       </label>
