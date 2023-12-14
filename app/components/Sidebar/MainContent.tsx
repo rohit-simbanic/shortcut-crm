@@ -208,7 +208,10 @@ const MainContent = () => {
           />
         </div>
       ) : (
-        <div className="flex gap-[0 rem] justify-start">
+        <div
+          className="flex gap-[0 rem] justify-start h-[93.4%] overflow-y-auto overflow-x-auto"
+          id="tableView"
+        >
           <div>
             <div className="flex justify-between items-center mb-6 mt-4 px-[9px]">
               <div className="w-[160px] flex gap-2">
