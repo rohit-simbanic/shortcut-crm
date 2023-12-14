@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { Container } from "../drag/Container";
@@ -9,6 +9,7 @@ import InDevelopmentTable from "../table/InDevelopmentTable";
 import ReviewTable from "../table/ReviewTable";
 import CompleteTable from "../table/CompleteTable";
 import { Tooltip } from "react-tooltip";
+import { SidebarContext } from "@/app/context/sidebarContext";
 
 interface ViewState {
   isTableView: boolean;
@@ -18,7 +19,17 @@ interface ViewState {
   isScheduledViewFour: boolean;
   isScheduledViewFive: boolean;
 }
+
 const MainContent = () => {
+  const { setHovered } = useContext(SidebarContext);
+
+  const handleMouseEnter = () => {
+    setHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setHovered(false);
+  };
   const [viewState, setViewState] = useState<ViewState>({
     isTableView: false,
     isScheduledView: false,
@@ -36,11 +47,11 @@ const MainContent = () => {
   };
   return (
     <div
-      className="mt-1 overflow-x-auto overflow-y-hidden h-[92vh] flex-grow"
+      className="mt-4 overflow-x-auto overflow-y-hidden h-[92.7vh] flex-grow"
       id="mainContent"
     >
-      <div className="w-full overflow-hidden sticky left-0">
-        <div className="flex items-center justify-between px-2">
+      <div className="w-full">
+        <div className="flex items-center justify-between mx-4 sticky left-0">
           <div className="flex items-center gap-3 flex-wrap">
             <svg
               height={22}
@@ -95,7 +106,11 @@ const MainContent = () => {
                 </svg>
               </button>
             </div>
-            <div className="flex flex-col items-center gap-1 ">
+            <div
+              className="flex flex-col items-center gap-1 "
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
               <span className="text-[#808080] text-[11px] font-medium">
                 View
               </span>
@@ -167,7 +182,10 @@ const MainContent = () => {
         </div>
       </div>
       {viewState.isTableView ? (
-        <div className="h-[90%] overflow-y-auto overflow-x-auto" id="tableView">
+        <div
+          className="h-[88%] overflow-y-auto overflow-x-auto px-6"
+          id="tableView"
+        >
           <UnscheduledTable
             isScheduledView={viewState.isScheduledView}
             toggleScheduledTable={() => toggleView("isScheduledView")}
@@ -191,7 +209,7 @@ const MainContent = () => {
         </div>
       ) : (
         <div
-          className="flex gap-[0 rem] justify-start h-[90.4%] overflow-y-auto overflow-x-auto"
+          className="flex gap-[0 rem] justify-start h-[88.4%] overflow-y-auto overflow-x-auto"
           id="tableView"
         >
           <div>

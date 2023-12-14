@@ -4,6 +4,7 @@ import { SidebarProvider } from "./context/sidebarContext";
 import ThemeContextProvider from "./context/themeContext";
 import { DropdownProvider } from "./context/UseDropDown";
 import { Open_Sans } from "next/font/google";
+import "react-tooltip/dist/react-tooltip.css";
 
 export const metadata: Metadata = {
   title: "Simbanic App",
