@@ -183,7 +183,7 @@ const MainContent = () => {
       </div>
       {viewState.isTableView ? (
         <div
-          className="h-[90%] overflow-y-auto overflow-x-auto px-6"
+          className="h-[88%] overflow-y-auto overflow-x-auto px-6"
           id="tableView"
         >
           <UnscheduledTable
@@ -209,7 +209,7 @@ const MainContent = () => {
         </div>
       ) : (
         <div
-          className="flex gap-[0 rem] justify-start h-[90.4%] overflow-y-auto overflow-x-auto"
+          className="flex gap-[0 rem] justify-start h-[88.4%] overflow-y-auto overflow-x-auto"
           id="tableView"
         >
           <div>
