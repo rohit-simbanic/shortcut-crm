@@ -20,14 +20,14 @@ function SidebarRight() {
     filterModalOpen,
     setFilterModalOpen,
     toggleFilterModalOpen,
+    isBoardOpen,
+    toggleBoard,
   } = useContext(SidebarContext);
 
   console.log("isOpen", isOpen);
-  const [isBoardOpen, setIsBoardOpen] = useState(false);
+
   const [isBoardBarOpen, setBoardBarOpen] = useState(false);
-  const toggleBoard = () => {
-    setIsBoardOpen((prevState) => !prevState);
-  };
+
   const toggleDropdownBarBoard = () => {
     setBoardBarOpen((prevState) => !prevState);
   };
@@ -38,22 +38,6 @@ function SidebarRight() {
     { name: "Agile Board", id: 3 },
   ];
 
-  useEffect(() => {
-    const handleOutsideClick = (event: MouseEvent) => {
-      const target = event.target as Element;
-      if (isBoardOpen && !target.closest(".modal")) {
-        toggleBoard();
-      }
-    };
-
-    if (isBoardOpen) {
-      document.addEventListener("click", handleOutsideClick);
-    }
-
-    return () => {
-      document.removeEventListener("click", handleOutsideClick);
-    };
-  }, [isBoardOpen]);
   return (
     <>
       <div

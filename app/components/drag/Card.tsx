@@ -110,7 +110,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
   const toggleEditDescription = () => {
     setEditIsOpen((prevState) => !prevState);
   };
-  const { filterModalOpen, isTeamOpen, isWorkFlowOpen } =
+  const { filterModalOpen, isTeamOpen, isWorkFlowOpen, isBoardOpen } =
     useContext(SidebarContext);
   return (
     <div ref={ref} style={{ opacity }} data-handler-id={handlerId}>
@@ -119,7 +119,9 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
           <div
             draggable="true"
             className={`w-[210px] ${
-              filterModalOpen || isTeamOpen || isWorkFlowOpen ? "" : "relative"
+              filterModalOpen || isTeamOpen || isWorkFlowOpen || isBoardOpen
+                ? ""
+                : "relative"
             } group sm:w-[240px] mb-3 rounded-md  bg-white hover:shadow-[0_1px_3px_-1px_#0003,0_3px_9px_-3px_#0000001a] dark:bg-[#161b26] shadow-[#364e7e1a] shadow-lg border-[1px] border-[#e4e8eb] dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer`}
           >
             <div
