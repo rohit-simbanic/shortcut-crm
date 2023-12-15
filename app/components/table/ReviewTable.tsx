@@ -10,8 +10,14 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
   toggleScheduledTable,
 }) => {
   const dark = true;
-  const { filterModalOpen, isTeamOpen, isWorkFlowOpen, isHovered, setHovered } =
-    useContext(SidebarContext);
+  const {
+    filterModalOpen,
+    isTeamOpen,
+    isWorkFlowOpen,
+    isHovered,
+    setHovered,
+    isBoardOpen,
+  } = useContext(SidebarContext);
   const handleMouseEnter = () => {
     setHovered(true);
   };
@@ -31,14 +37,22 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
       >
         <div
           className={`flex items-center gap-2 ${
-            filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+            filterModalOpen ||
+            isWorkFlowOpen ||
+            isTeamOpen ||
+            isHovered ||
+            isBoardOpen
               ? ""
               : "sticky z-20"
           } top-0  bg-white dark:bg-[#1f2532]`}
         >
           <div
             className={`flex items-center space-x-2 px-3 mr-8 rounded-md duration-500 ease-in-out py-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-gray-950 dark:hover:text-[#635fc7] dark:text-white ${
-              filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+              filterModalOpen ||
+              isWorkFlowOpen ||
+              isTeamOpen ||
+              isHovered ||
+              isBoardOpen
                 ? ""
                 : "sticky z-10"
             } left-0  bg-white dark:bg-gray-700`}
@@ -175,14 +189,22 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
             <thead>
               <tr
                 className={`text-md font-semibold tracking-wide text-left text-gray-900 uppercase border-gray-600 border-t-[1px] border-t-[#0000000d] shadow-[0px 15px 10px -15px #111] ${
-                  filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                  filterModalOpen ||
+                  isWorkFlowOpen ||
+                  isTeamOpen ||
+                  isHovered ||
+                  isBoardOpen
                     ? ""
                     : "sticky z-40"
                 } top-[2.4rem]  bg-white dark:bg-[#1f2532]`}
               >
                 <th
                   className={`px-4 hover:bg-[#e4e8eb] hover:cursor-pointer ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-10"
                   } left-[0px] bg-white flex-1 w-6 dark:bg-[#1f2532]`}
@@ -227,7 +249,11 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                 </th>
                 <th
                   className={`px-4 hover:bg-[#e4e8eb] hover:cursor-pointer ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-10"
                   } left-[30px] bg-white flex-1 w-6 dark:bg-[#1f2532]`}
@@ -289,7 +315,11 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
               <tr className="text-gray-700 dark:hover:bg-[#000000] hover:cursor-pointer">
                 <td
                   className={`px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-10 dark:bg-[#1f2532]"
                   } left-[0px]  flex-1 w-6`}
@@ -311,7 +341,11 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                 </td>
                 <td
                   className={`px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-10 dark:bg-[#1f2532]"
                   } left-[30px] flex-1 w-6 `}
@@ -496,7 +530,11 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
               <tr className="text-gray-700 dark:hover:bg-[#000000] hover:cursor-pointer">
                 <td
                   className={`px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-10 dark:bg-[#1f2532]"
                   } left-[0px]  flex-1 w-6`}
@@ -518,7 +556,11 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                 </td>
                 <td
                   className={`px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-10 dark:bg-[#1f2532]"
                   } left-[30px] flex-1 w-6 `}
@@ -703,7 +745,11 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
               <tr className="text-gray-700 dark:hover:bg-[#000000] hover:cursor-pointer">
                 <td
                   className={`px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-10 dark:bg-[#1f2532]"
                   } left-[0px]  flex-1 w-6`}
@@ -725,7 +771,11 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                 </td>
                 <td
                   className={`px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-10 dark:bg-[#1f2532]"
                   } left-[30px] flex-1 w-6 `}
@@ -910,7 +960,11 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
               <tr className="text-gray-700 dark:hover:bg-[#000000] hover:cursor-pointer">
                 <td
                   className={`px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-10 dark:bg-[#1f2532]"
                   } left-[0px]  flex-1 w-6`}
@@ -932,7 +986,11 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                 </td>
                 <td
                   className={`px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-10 dark:bg-[#1f2532]"
                   } left-[30px] flex-1 w-6 `}
@@ -1117,7 +1175,11 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
               <tr className="text-gray-700 dark:hover:bg-[#000000] hover:cursor-pointer">
                 <td
                   className={`px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-10 dark:bg-[#1f2532]"
                   } left-[0px]  flex-1 w-6`}
@@ -1139,7 +1201,11 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                 </td>
                 <td
                   className={`px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-10 dark:bg-[#1f2532]"
                   } left-[30px] flex-1 w-6 `}
@@ -1324,7 +1390,11 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
               <tr className="text-gray-700 dark:hover:bg-[#000000] hover:cursor-pointer">
                 <td
                   className={`px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-10 dark:bg-[#1f2532]"
                   } left-[0px]  flex-1 w-6`}
@@ -1346,7 +1416,11 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                 </td>
                 <td
                   className={`px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-10 dark:bg-[#1f2532]"
                   } left-[30px] flex-1 w-6 `}
@@ -1531,7 +1605,11 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
               <tr className="text-gray-700 dark:hover:bg-[#000000] hover:cursor-pointer">
                 <td
                   className={`px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-10 dark:bg-[#1f2532]"
                   } left-[0px]  flex-1 w-6`}
@@ -1553,7 +1631,11 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                 </td>
                 <td
                   className={`px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-10 dark:bg-[#1f2532]"
                   } left-[30px] flex-1 w-6 `}
@@ -1738,7 +1820,11 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
               <tr className="text-gray-700 dark:hover:bg-[#000000] hover:cursor-pointer">
                 <td
                   className={`px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-10 dark:bg-[#1f2532]"
                   } left-[0px]  flex-1 w-6`}
@@ -1760,7 +1846,11 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                 </td>
                 <td
                   className={`px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-10 dark:bg-[#1f2532]"
                   } left-[30px] flex-1 w-6 `}
@@ -1945,7 +2035,11 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
               <tr className="text-gray-700 dark:hover:bg-[#000000] hover:cursor-pointer">
                 <td
                   className={`px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-10 dark:bg-[#1f2532]"
                   } left-[0px]  flex-1 w-6`}
@@ -1967,7 +2061,11 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                 </td>
                 <td
                   className={`px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-10 dark:bg-[#1f2532]"
                   } left-[30px] flex-1 w-6 `}
@@ -2152,7 +2250,11 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
               <tr className="text-gray-700 dark:hover:bg-[#000000] hover:cursor-pointer">
                 <td
                   className={`px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-10 dark:bg-[#1f2532]"
                   } left-[0px]  flex-1 w-6`}
@@ -2174,7 +2276,11 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                 </td>
                 <td
                   className={`px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-10 dark:bg-[#1f2532]"
                   } left-[30px] flex-1 w-6 `}
@@ -2359,7 +2465,11 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
               <tr className="text-gray-700 dark:hover:bg-[#000000] hover:cursor-pointer">
                 <td
                   className={`px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-10 dark:bg-[#1f2532]"
                   } left-[0px]  flex-1 w-6`}
@@ -2381,7 +2491,11 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                 </td>
                 <td
                   className={`px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-10 dark:bg-[#1f2532]"
                   } left-[30px] flex-1 w-6 `}
@@ -2566,7 +2680,11 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
               <tr className="text-gray-700 dark:hover:bg-[#000000] hover:cursor-pointer">
                 <td
                   className={`px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-10 dark:bg-[#1f2532]"
                   } left-[0px]  flex-1 w-6`}
@@ -2588,7 +2706,11 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                 </td>
                 <td
                   className={`px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-10 dark:bg-[#1f2532]"
                   } left-[30px] flex-1 w-6 `}
@@ -2773,7 +2895,11 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
               <tr className="text-gray-700 dark:hover:bg-[#000000] hover:cursor-pointer">
                 <td
                   className={`px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-10 dark:bg-[#1f2532]"
                   } left-[0px]  flex-1 w-6`}
@@ -2795,7 +2921,11 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                 </td>
                 <td
                   className={`px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-10 dark:bg-[#1f2532]"
                   } left-[30px] flex-1 w-6 `}
@@ -2980,7 +3110,11 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
               <tr className="text-gray-700 dark:hover:bg-[#000000] hover:cursor-pointer">
                 <td
                   className={`px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-10 dark:bg-[#1f2532]"
                   } left-[0px]  flex-1 w-6`}
@@ -3002,7 +3136,11 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                 </td>
                 <td
                   className={`px-4 text-ms font-semibold  border-b border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-10 dark:bg-[#1f2532]"
                   } left-[30px] flex-1 w-6 `}
@@ -3187,7 +3325,11 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
               <tr className="text-gray-700 dark:hover:bg-[#000000] hover:cursor-pointer">
                 <td
                   className={`px-4 border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-10 dark:bg-[#1f2532]"
                   } left-[0px]  flex-1 w-6`}
@@ -3209,7 +3351,11 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                 </td>
                 <td
                   className={`px-4 text-ms font-semibold border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-10 dark:bg-[#1f2532]"
                   } left-[30px] flex-1 w-6 `}
