@@ -2258,7 +2258,7 @@ const DevelopmentTable: FC<DevelopmenTableComponentProps> = ({
                   <span className="font-bold">34</span> results
                 </p>
                 <button className="flex gap-3 items-center justify-center shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-1 px-3 rounded-[5px] border-[1px] border-[#e4e8eb] bg-[#fff] hover:bg-[#e4e8eb] dark:text-white dark:border-[#283040] dark:bg-[#161b26] dark:hover:bg-[#1f2532] w-[7%]">
-                  <p className="text-[#1f2532] font-bold dark:text-[#f6f6f6]">
+                  <p className="text-[#1f2532] font-medium dark:text-[#f6f6f6]">
                     Load more results
                   </p>
                 </button>
