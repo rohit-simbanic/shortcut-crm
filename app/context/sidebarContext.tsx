@@ -88,6 +88,7 @@ const initialValue: ISidebarContext = {
   setIsBoardOpen: function (collapsed: boolean): void {
     throw new Error("Function not implemented.");
   },
+
   setHovered: () => {},
 };
 
