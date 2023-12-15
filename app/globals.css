@@ -120,7 +120,7 @@ body {
   width: 8px;
 }
 #leftSidebar:hover::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(129, 128, 128, 0.2);
   border-radius: 10px;
 }
 
@@ -132,7 +132,7 @@ body {
   width: 8px;
 }
 #sidebarRight:hover::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(129, 128, 128, 0.2);
   border-radius: 10px;
 }
 #mainDragBox::-webkit-scrollbar {
