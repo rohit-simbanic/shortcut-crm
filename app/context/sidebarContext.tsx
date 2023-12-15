@@ -260,6 +260,7 @@ const SidebarProvider: React.FC<SidebarProviderProps> = ({ children }) => {
         setHovered,
         isBoardOpen,
         toggleBoard,
+        setIsBoardOpen
       }}
     >
       {children}
