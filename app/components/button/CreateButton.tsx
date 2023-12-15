@@ -104,10 +104,10 @@ const CreateButton = () => {
           </div>
 
           <div
-            className="content h-[589px] overflow-y-scroll flex max-lg:flex-col gap-4 px-6"
+            className="content h-[689px] overflow-y-scroll flex max-lg:flex-col gap-4 px-6"
             id="style-2"
           >
-            <div className="w-[88%] max-lg:w-[100%]">
+            <div className="w-[75%] max-lg:w-[100%]">
               <h4 className="mb-2 font-medium text-[#444] dark:text-[#f6f6f6] text-[15px]">
                 Story Title
               </h4>
@@ -120,7 +120,7 @@ const CreateButton = () => {
                   blinkCursor ? "cursor-blink" : ""
                 }`}
               ></textarea>
-              <h4 className="mb-2 font-medium text-[#444] dark:text-[grey] text-[15px] pt-2 pb-0">
+              <h4 className="mb-2 font-bold dark:text-[white] text-[#444] text-[15px] pt-2 pb-0">
                 Description{" "}
                 <span className="italic font-light ml-2">optional</span>
               </h4>
@@ -137,7 +137,7 @@ const CreateButton = () => {
                       <div
                         className={`py-2 px-3 ${
                           isWrite === 1
-                            ? "bg-white border-t-[1px] border-[#e4e8eb] border-r-[1px] border-l-[1px] font-bold"
+                            ? "bg-white border-t-[1px] border-[#e4e8eb] border-r-[1px] border-l-[1px] font-bold dark:text-[white]"
                             : "bg-[#f9f9f9] cursor-pointer border-b-[1px]"
                         }  dark:bg-[#1f2532] dark:text-[grey]`}
                         onClick={() => toggleWrite(1)}
@@ -147,9 +147,9 @@ const CreateButton = () => {
                       <div
                         className={`text-[grey] py-2 ${
                           isWrite === 2
-                            ? "bg-white border-t-[1px] border-[#e4e8eb] border-r-[1px] border-l-[1px] font-bold text-gray-900"
+                            ? "bg-white border-t-[1px] border-[#e4e8eb] border-r-[1px] border-l-[1px] font-bold text-gray-900 dark:text-[white]"
                             : "bg-[#f9f9f9] cursor-pointer"
-                        }  dark:bg-gray-700 px-3`}
+                        }  dark:bg-gray-700 dark:text-[grey] px-3`}
                         onClick={() => toggleWrite(2)}
                       >
                         Preview
@@ -316,7 +316,7 @@ const CreateButton = () => {
                     </div>
                   </div>
                   {isWrite === 1 ? (
-                    <div class="pb-2 px-4 bg-white rounded-b-lg dark:bg-gray-800 xl:before:content-[''] xl:before:block xl:before:relative xl:before:w-[98%] xl:before:ml-[44px] xl:before:border-t-[1px] xl:before:border-[#e4e8eb] border-r-[1px] border-l-[1px] border-[#e4e8eb]">
+                    <div class="pb-2 px-4 bg-white rounded-b-lg dark:bg-gray-800 xl:before:content-[''] xl:before:block xl:before:relative xl:before:w-[94%] xl:before:ml-[47px] xl:before:border-t-[1px] xl:before:border-[#e4e8eb] border-r-[1px] border-l-[1px] border-[#e4e8eb]">
                       <label for="editor" className="sr-only">
                         Publish post
                       </label>
@@ -328,7 +328,7 @@ const CreateButton = () => {
                       ></textarea>
                     </div>
                   ) : (
-                    <div class="pb-2 px-4 bg-white rounded-b-lg dark:bg-gray-800 border-r-[1px] border-l-[1px] border-[#e4e8eb] xl:before:content-[''] xl:before:block xl:before:relative xl:before:w-[92%] xl:before:ml-[119px] xl:before:border-t-[1px] xl:before:border-[#e4e8eb]">
+                    <div class="pb-2 px-4 bg-white rounded-b-lg dark:bg-gray-800 border-r-[1px] border-l-[1px] border-[#e4e8eb] xl:before:content-[''] xl:before:block xl:before:relative xl:before:w-[80%] xl:before:ml-[124px] xl:before:border-t-[1px] xl:before:border-[#e4e8eb]">
                       <label for="editor" className="sr-only">
                         Publish post
                       </label>
@@ -469,7 +469,7 @@ const CreateButton = () => {
                 Attachments..
               </button>
             </div>
-            <div className="w-[12%] max-lg:w-[100%]">
+            <div className="w-[25%] max-lg:w-[100%]">
               <div>
                 <button className="border-[1px] border-gray-200 dark:border-gray-500 flex items-center gap-4 w-full py-2 px-1 hover:rounded dark:hover:bg-[#161b26] hover:shadow hover:border-[#999]">
                   <div className="bg-[#cd65b6] h-7 w-7 rounded-[50%] flex items-center justify-center">
@@ -526,7 +526,6 @@ const CreateButton = () => {
                   <svg
                     width="20"
                     height="20"
-                    fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
@@ -564,7 +563,7 @@ const CreateButton = () => {
                       {" "}
                       <path
                         d="M12 9.5V15.5M12 9.5L10 11.5M12 9.5L14 11.5M8.4 19C5.41766 19 3 16.6044 3 13.6493C3 11.2001 4.8 8.9375 7.5 8.5C8.34694 6.48637 10.3514 5 12.6893 5C15.684 5 18.1317 7.32251 18.3 10.25C19.8893 10.9449 21 12.6503 21 14.4969C21 16.9839 18.9853 19 16.5 19L8.4 19Z"
-                        stroke="#000000"
+                        stroke="#666"
                         stroke-width="2"
                         stroke-linecap="round"
                         stroke-linejoin="round"
@@ -609,7 +608,6 @@ const CreateButton = () => {
                 <button className="border-[1px] border-gray-200 dark:border-gray-500 dark:border-t-0 flex items-center gap-4 w-full py-2 px-1 hover:rounded hover:shadow hover:border-[#999] dark:hover:bg-[#161b26]">
                   <svg
                     viewBox="0 0 20 20"
-                    fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     height="22"
                     width="22"
@@ -641,7 +639,7 @@ const CreateButton = () => {
                     <g clip-path="url(#a)">
                       <path
                         d="M9.191 2.112a1 1 0 0 1 1.618 0l1.547 2.129a1 1 0 0 0 .829.411l2.564-.05a1 1 0 0 1 .993 1.229l-.648 2.76a1 1 0 0 0 .187.845l1.727 2.202a1 1 0 0 1-.35 1.517l-2.41 1.167a1 1 0 0 0-.546.706l-.536 2.709a1 1 0 0 1-1.45.689L10.47 17.23a1 1 0 0 0-.94 0l-2.245 1.195a1 1 0 0 1-1.451-.688l-.536-2.709a1 1 0 0 0-.545-.706l-2.41-1.167a1 1 0 0 1-.351-1.517l1.727-2.202a1 1 0 0 0 .187-.846l-.648-2.76a1 1 0 0 1 .993-1.228l2.564.05a1 1 0 0 0 .829-.411L9.19 2.112z"
-                        fill="#c9a61d"
+                        fill="#666"
                       ></path>
                     </g>
                     <defs>

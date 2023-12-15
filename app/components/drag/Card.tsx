@@ -110,7 +110,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
   const toggleEditDescription = () => {
     setEditIsOpen((prevState) => !prevState);
   };
-  const { filterModalOpen, isTeamOpen, isWorkFlowOpen } =
+  const { filterModalOpen, isTeamOpen, isWorkFlowOpen, isBoardOpen } =
     useContext(SidebarContext);
   return (
     <div ref={ref} style={{ opacity }} data-handler-id={handlerId}>
@@ -224,10 +224,10 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
             </div>
 
             <div
-              className="content h-[589px] overflow-y-scroll flex max-lg:flex-col gap-4 px-6"
+              className="content h-[689px] overflow-y-scroll flex max-lg:flex-col gap-4 px-6"
               id="style-2"
             >
-              <div className="w-[88%] max-lg:w-[100%]">
+              <div className="w-[75%] max-lg:w-[100%]">
                 <p className="italic text-[grey] mb-2 text-[14px]">
                   No description given.
                 </p>
@@ -774,7 +774,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                   </div>
                 </div>
               </div>
-              <div className="w-[12%] max-lg:w-[100%]">
+              <div className="w-[25%] max-lg:w-[100%]">
                 <div>
                   <button className="border-[1px] border-gray-200 dark:border-gray-500 flex items-center gap-4 w-full py-2 px-1 hover:rounded hover:shadow hover:border-gray-500 dark:hover:bg-[#161b26]">
                     <div className="bg-[#cd65b6] h-7 w-7 rounded-[50%] flex items-center justify-center">
@@ -869,7 +869,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                         {" "}
                         <path
                           d="M12 9.5V15.5M12 9.5L10 11.5M12 9.5L14 11.5M8.4 19C5.41766 19 3 16.6044 3 13.6493C3 11.2001 4.8 8.9375 7.5 8.5C8.34694 6.48637 10.3514 5 12.6893 5C15.684 5 18.1317 7.32251 18.3 10.25C19.8893 10.9449 21 12.6503 21 14.4969C21 16.9839 18.9853 19 16.5 19L8.4 19Z"
-                          stroke="#000000"
+                          stroke="#666"
                           stroke-width="2"
                           stroke-linecap="round"
                           stroke-linejoin="round"

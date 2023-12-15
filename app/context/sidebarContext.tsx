@@ -10,6 +10,7 @@ interface ISidebarContext {
   filterModalOpen: boolean;
   isChangesOpen: boolean;
   isHovered: boolean;
+  isBoardOpen: boolean;
   toggleSidebarcollapse: () => void;
   toggleSidebarOpen: () => void;
   toggleTeamOpen: () => void;
@@ -17,6 +18,7 @@ interface ISidebarContext {
   toggleWorkFlowOpen: () => void;
   toggleFilterModalOpen: () => void;
   toggleChangesModalOpen: () => void;
+  toggleBoard: () => void;
   setCollapse: (collapsed: boolean) => void;
   setIsOpen: (collapsed: boolean) => void;
   setIsTeamOpen: (collapsed: boolean) => void;
@@ -24,6 +26,7 @@ interface ISidebarContext {
   setIsWorkFlowOpen: (collapsed: boolean) => void;
   setFilterModalOpen: (collapsed: boolean) => void;
   setIsChangesOpen: (collapsed: boolean) => void;
+  setIsBoardOpen: (collapsed: boolean) => void;
   setHovered: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
@@ -36,6 +39,7 @@ const initialValue: ISidebarContext = {
   filterModalOpen: false,
   isChangesOpen: false,
   isHovered: false,
+  isBoardOpen: false,
   toggleSidebarcollapse: function (): void {
     throw new Error("Function not implemented.");
   },
@@ -55,6 +59,9 @@ const initialValue: ISidebarContext = {
     throw new Error("Function not implemented.");
   },
   toggleChangesModalOpen: function (): void {
+    throw new Error("Function not implemented.");
+  },
+  toggleBoard: function (): void {
     throw new Error("Function not implemented.");
   },
   setCollapse: function (collapsed: boolean): void {
@@ -78,6 +85,10 @@ const initialValue: ISidebarContext = {
   setIsChangesOpen: function (collapsed: boolean): void {
     throw new Error("Function not implemented.");
   },
+  setIsBoardOpen: function (collapsed: boolean): void {
+    throw new Error("Function not implemented.");
+  },
+
   setHovered: () => {},
 };
 
@@ -96,6 +107,7 @@ const SidebarProvider: React.FC<SidebarProviderProps> = ({ children }) => {
   const [filterModalOpen, setFilterModalOpen] = useState(false);
   const [isChangesOpen, setIsChangesOpen] = useState(false);
   const [isHovered, setHovered] = useState(false);
+  const [isBoardOpen, setIsBoardOpen] = useState(false);
 
   const toggleSidebarcollapse = () => {
     setCollapse((prevState) => !prevState);
@@ -118,7 +130,9 @@ const SidebarProvider: React.FC<SidebarProviderProps> = ({ children }) => {
   const toggleChangesModalOpen = () => {
     setIsChangesOpen((prevState) => !prevState);
   };
-
+  const toggleBoard = () => {
+    setIsBoardOpen((prevState) => !prevState);
+  };
   useEffect(() => {
     const handleOutsideClick = (event: MouseEvent) => {
       const target = event.target as Element;
@@ -202,7 +216,22 @@ const SidebarProvider: React.FC<SidebarProviderProps> = ({ children }) => {
       document.removeEventListener("click", handleOutsideClick);
     };
   }, [isChangesOpen]);
+  useEffect(() => {
+    const handleOutsideClick = (event: MouseEvent) => {
+      const target = event.target as Element;
+      if (isBoardOpen && !target.closest(".modal")) {
+        toggleBoard();
+      }
+    };
 
+    if (isBoardOpen) {
+      document.addEventListener("click", handleOutsideClick);
+    }
+
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, [isBoardOpen]);
   return (
     <SidebarContext.Provider
       value={{
@@ -229,6 +258,9 @@ const SidebarProvider: React.FC<SidebarProviderProps> = ({ children }) => {
         toggleChangesModalOpen,
         isHovered,
         setHovered,
+        isBoardOpen,
+        toggleBoard,
+        setIsBoardOpen
       }}
     >
       {children}

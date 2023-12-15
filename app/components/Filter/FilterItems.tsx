@@ -132,7 +132,7 @@ const FilterItems = () => {
           >
             {values.map((inputValue, i) => (
               <div
-                className="flex gap-3 items-center px-2 py-1 hover:bg-[#e4e8eb] rounded-md"
+                className="flex gap-3 items-center px-2 py-1 hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] rounded-md"
                 key={i}
                 onChange={handleChange}
               >
@@ -143,7 +143,7 @@ const FilterItems = () => {
                 />
                 <a
                   href="#"
-                  className="block text-sm text-gray-700 rounded-md dark:bg-[#828fa3]"
+                  className="block text-sm text-gray-700 rounded-md dark:bg-[transparent] dark:text-gray-400"
                   role="menuitem"
                 >
                   {inputValue.name}
@@ -202,7 +202,7 @@ const FilterItems = () => {
           >
             {valuesTwo.map((inputValue, i) => (
               <div
-                className="flex gap-3 items-center px-2 py-1 hover:bg-[#e4e8eb] rounded-md"
+                className="flex gap-3 items-center px-2 py-1 hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] rounded-md"
                 key={i}
                 onChange={handleChangeNext}
               >
@@ -213,7 +213,7 @@ const FilterItems = () => {
                 />
                 <a
                   href="#"
-                  className="block text-sm text-gray-700 rounded-md dark:bg-[#828fa3]"
+                  className="block text-sm text-gray-700 rounded-md dark:bg-[transparent] dark:text-gray-400"
                   role="menuitem"
                 >
                   {inputValue.name}
