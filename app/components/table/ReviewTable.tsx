@@ -8,8 +8,13 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
   isScheduledViewFour,
   toggleScheduledTable,
 }) => {
-  const { filterModalOpen, isTeamOpen, isWorkFlowOpen, isHovered } =
-    useContext(SidebarContext);
+  const {
+    filterModalOpen,
+    isTeamOpen,
+    isWorkFlowOpen,
+    isHovered,
+    isBoardOpen,
+  } = useContext(SidebarContext);
   return (
     <div className="my-3 w-full">
       <div
@@ -20,14 +25,22 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
       >
         <div
           className={`flex gap-2 ${
-            filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+            filterModalOpen ||
+            isWorkFlowOpen ||
+            isTeamOpen ||
+            isHovered ||
+            isBoardOpen
               ? ""
               : "sticky z-20"
           } top-0  bg-white dark:bg-[#1f2532]`}
         >
           <div
             className={`flex items-center space-x-2 px-3 mr-8 rounded-md duration-500 ease-in-out py-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-gray-950 dark:hover:text-[#635fc7] dark:text-white ${
-              filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+              filterModalOpen ||
+              isWorkFlowOpen ||
+              isTeamOpen ||
+              isHovered ||
+              isBoardOpen
                 ? ""
                 : "sticky z-10"
             } left-0  bg-white dark:bg-gray-700`}
@@ -126,7 +139,11 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
               <thead>
                 <tr
                   className={`text-md font-semibold tracking-wide text-left text-gray-900 uppercase border-gray-600 border-t-[1px] border-t-[#0000000d] shadow-[0px 15px 10px -15px #111] ${
-                    filterModalOpen || isWorkFlowOpen || isTeamOpen || isHovered
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isHovered ||
+                    isBoardOpen
                       ? ""
                       : "sticky z-40"
                   } top-[2.4rem]  bg-white dark:bg-[#1f2532]`}
@@ -136,7 +153,8 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                       filterModalOpen ||
                       isWorkFlowOpen ||
                       isTeamOpen ||
-                      isHovered
+                      isHovered ||
+                      isBoardOpen
                         ? ""
                         : "sticky z-10"
                     } left-[0px] bg-white flex-1 w-6 dark:bg-[#1f2532]`}
@@ -184,7 +202,8 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                       filterModalOpen ||
                       isWorkFlowOpen ||
                       isTeamOpen ||
-                      isHovered
+                      isHovered ||
+                      isBoardOpen
                         ? ""
                         : "sticky z-10"
                     } left-[30px] bg-white flex-1 w-6 dark:bg-[#1f2532]`}
@@ -249,7 +268,8 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                       filterModalOpen ||
                       isWorkFlowOpen ||
                       isTeamOpen ||
-                      isHovered
+                      isHovered ||
+                      isBoardOpen
                         ? ""
                         : "sticky z-10"
                     } left-[0px]  bg-white flex-1 w-6 dark:bg-[#1f2532]`}
@@ -274,7 +294,8 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                       filterModalOpen ||
                       isWorkFlowOpen ||
                       isTeamOpen ||
-                      isHovered
+                      isHovered ||
+                      isBoardOpen
                         ? ""
                         : "sticky z-10"
                     } left-[30px] bg-white flex-1 w-6 dark:bg-[#1f2532]`}
@@ -462,7 +483,8 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                       filterModalOpen ||
                       isWorkFlowOpen ||
                       isTeamOpen ||
-                      isHovered
+                      isHovered ||
+                      isBoardOpen
                         ? ""
                         : "sticky z-10"
                     } left-[0px]  bg-white flex-1 w-6 dark:bg-[#1f2532]`}
@@ -487,7 +509,8 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                       filterModalOpen ||
                       isWorkFlowOpen ||
                       isTeamOpen ||
-                      isHovered
+                      isHovered ||
+                      isBoardOpen
                         ? ""
                         : "sticky z-10"
                     } left-[30px] bg-white flex-1 w-6 dark:bg-[#1f2532]`}
@@ -675,7 +698,8 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                       filterModalOpen ||
                       isWorkFlowOpen ||
                       isTeamOpen ||
-                      isHovered
+                      isHovered ||
+                      isBoardOpen
                         ? ""
                         : "sticky z-10"
                     } left-[0px]  bg-white flex-1 w-6 dark:bg-[#1f2532]`}
@@ -700,7 +724,8 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                       filterModalOpen ||
                       isWorkFlowOpen ||
                       isTeamOpen ||
-                      isHovered
+                      isHovered ||
+                      isBoardOpen
                         ? ""
                         : "sticky z-10"
                     } left-[30px] bg-white flex-1 w-6 dark:bg-[#1f2532]`}
@@ -888,7 +913,8 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                       filterModalOpen ||
                       isWorkFlowOpen ||
                       isTeamOpen ||
-                      isHovered
+                      isHovered ||
+                      isBoardOpen
                         ? ""
                         : "sticky z-10"
                     } left-[0px]  bg-white flex-1 w-6 dark:bg-[#1f2532]`}
@@ -913,7 +939,8 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                       filterModalOpen ||
                       isWorkFlowOpen ||
                       isTeamOpen ||
-                      isHovered
+                      isHovered ||
+                      isBoardOpen
                         ? ""
                         : "sticky z-10"
                     } left-[30px] bg-white flex-1 w-6 dark:bg-[#1f2532]`}
@@ -1101,7 +1128,8 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                       filterModalOpen ||
                       isWorkFlowOpen ||
                       isTeamOpen ||
-                      isHovered
+                      isHovered ||
+                      isBoardOpen
                         ? ""
                         : "sticky z-10"
                     } left-[0px]  bg-white flex-1 w-6 dark:bg-[#1f2532]`}
@@ -1126,7 +1154,8 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                       filterModalOpen ||
                       isWorkFlowOpen ||
                       isTeamOpen ||
-                      isHovered
+                      isHovered ||
+                      isBoardOpen
                         ? ""
                         : "sticky z-10"
                     } left-[30px] bg-white flex-1 w-6 dark:bg-[#1f2532]`}
@@ -1314,7 +1343,8 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                       filterModalOpen ||
                       isWorkFlowOpen ||
                       isTeamOpen ||
-                      isHovered
+                      isHovered ||
+                      isBoardOpen
                         ? ""
                         : "sticky z-10"
                     } left-[0px]  bg-white flex-1 w-6 dark:bg-[#1f2532]`}
@@ -1339,7 +1369,8 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                       filterModalOpen ||
                       isWorkFlowOpen ||
                       isTeamOpen ||
-                      isHovered
+                      isHovered ||
+                      isBoardOpen
                         ? ""
                         : "sticky z-10"
                     } left-[30px] bg-white flex-1 w-6 dark:bg-[#1f2532]`}
@@ -1527,7 +1558,8 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                       filterModalOpen ||
                       isWorkFlowOpen ||
                       isTeamOpen ||
-                      isHovered
+                      isHovered ||
+                      isBoardOpen
                         ? ""
                         : "sticky z-10"
                     } left-[0px]  bg-white flex-1 w-6 dark:bg-[#1f2532]`}
@@ -1552,7 +1584,8 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                       filterModalOpen ||
                       isWorkFlowOpen ||
                       isTeamOpen ||
-                      isHovered
+                      isHovered ||
+                      isBoardOpen
                         ? ""
                         : "sticky z-10"
                     } left-[30px] bg-white flex-1 w-6 dark:bg-[#1f2532]`}
@@ -1740,7 +1773,8 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                       filterModalOpen ||
                       isWorkFlowOpen ||
                       isTeamOpen ||
-                      isHovered
+                      isHovered ||
+                      isBoardOpen
                         ? ""
                         : "sticky z-10"
                     } left-[0px]  bg-white flex-1 w-6 dark:bg-[#1f2532]`}
@@ -1765,7 +1799,8 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                       filterModalOpen ||
                       isWorkFlowOpen ||
                       isTeamOpen ||
-                      isHovered
+                      isHovered ||
+                      isBoardOpen
                         ? ""
                         : "sticky z-10"
                     } left-[30px] bg-white flex-1 w-6 dark:bg-[#1f2532]`}
