@@ -107,10 +107,11 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
-                d="M10.5 19a8.5 8.5 0 1 0 0-17 8.5 8.5 0 0 0 0 17zm1-12.75a1 1 0 1 0-2 0v4.25a1 1 0 0 0 .293.707l3.005 3.005a1 1 0 0 0 1.414-1.414L11.5 10.086V6.25z"
+                d="M14 6a4 4 0 1 1-8 0 4 4 0 0 1 8 0ZM2.233 15.626C3.591 13.361 6.646 12 9.095 12h2.054c2.449 0 5.26 1.36 6.618 3.626.608 1.015-.046 2.374-1.143 2.374H3.376c-1.097 0-1.751-1.36-1.143-2.374Z"
                 fill="#3a95c9"
               ></path>
             </svg>
+
             <p className="text-[14px]">Owned by me</p>
           </button>
         </div>
@@ -126,7 +127,7 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
-                d="M14 6a4 4 0 1 1-8 0 4 4 0 0 1 8 0ZM2.233 15.626C3.591 13.361 6.646 12 9.095 12h2.054c2.449 0 5.26 1.36 6.618 3.626.608 1.015-.046 2.374-1.143 2.374H3.376c-1.097 0-1.751-1.36-1.143-2.374Z"
+                d="M10.5 19a8.5 8.5 0 1 0 0-17 8.5 8.5 0 0 0 0 17zm1-12.75a1 1 0 1 0-2 0v4.25a1 1 0 0 0 .293.707l3.005 3.005a1 1 0 0 0 1.414-1.414L11.5 10.086V6.25z"
                 fill="#3a95c9"
               ></path>
             </svg>
@@ -170,7 +171,7 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
-                d="M10.5 19a8.5 8.5 0 1 0 0-17 8.5 8.5 0 0 0 0 17zm1-12.75a1 1 0 1 0-2 0v4.25a1 1 0 0 0 .293.707l3.005 3.005a1 1 0 0 0 1.414-1.414L11.5 10.086V6.25z"
+                d="M14 6a4 4 0 1 1-8 0 4 4 0 0 1 8 0ZM2.233 15.626C3.591 13.361 6.646 12 9.095 12h2.054c2.449 0 5.26 1.36 6.618 3.626.608 1.015-.046 2.374-1.143 2.374H3.376c-1.097 0-1.751-1.36-1.143-2.374Z"
                 fill="#3a95c9"
               ></path>
             </svg>
@@ -189,7 +190,7 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
-                d="M14 6a4 4 0 1 1-8 0 4 4 0 0 1 8 0ZM2.233 15.626C3.591 13.361 6.646 12 9.095 12h2.054c2.449 0 5.26 1.36 6.618 3.626.608 1.015-.046 2.374-1.143 2.374H3.376c-1.097 0-1.751-1.36-1.143-2.374Z"
+                d="M10.5 19a8.5 8.5 0 1 0 0-17 8.5 8.5 0 0 0 0 17zm1-12.75a1 1 0 1 0-2 0v4.25a1 1 0 0 0 .293.707l3.005 3.005a1 1 0 0 0 1.414-1.414L11.5 10.086V6.25z"
                 fill="#3a95c9"
               ></path>
             </svg>
@@ -209,7 +210,7 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
                 fill-rule="evenodd"
                 clip-rule="evenodd"
                 d="M13.856 4.403c-.24-.201-.275-.57-.054-.79l.49-.492a1 1 0 0 0-1.413-1.414l-1.065 1.064c-.246.247-.603.341-.948.291a6.051 6.051 0 0 0-1.732 0c-.345.05-.702-.044-.948-.29L7.12 1.707a1 1 0 1 0-1.414 1.414l.49.491c.222.222.187.59-.053.791A6.023 6.023 0 0 0 4.616 6.35c-.187.38-.558.651-.982.651H2a1 1 0 0 0 0 2h1a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 1 0 0 2h1.634c.424 0 .795.271.982.651a6.02 6.02 0 0 0 3.245 2.957c.578.22 1.139-.254 1.139-.873V15a1 1 0 1 1 2 0v2.735c0 .619.56 1.093 1.139.873a6.02 6.02 0 0 0 3.245-2.957c.187-.38.558-.651.982-.651H18a1 1 0 1 0 0-2h-1a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1h1a1 1 0 1 0 0-2h-1.634c-.424 0-.794-.271-.982-.651a6.024 6.024 0 0 0-1.528-1.946Z"
-                fill="#666"
+                fill="#a00808"
               ></path>
             </svg>
             <p className="text-[14px]">Bugs</p>
@@ -229,7 +230,7 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
-                d="M10.5 19a8.5 8.5 0 1 0 0-17 8.5 8.5 0 0 0 0 17zm1-12.75a1 1 0 1 0-2 0v4.25a1 1 0 0 0 .293.707l3.005 3.005a1 1 0 0 0 1.414-1.414L11.5 10.086V6.25z"
+                d="M14 6a4 4 0 1 1-8 0 4 4 0 0 1 8 0ZM2.233 15.626C3.591 13.361 6.646 12 9.095 12h2.054c2.449 0 5.26 1.36 6.618 3.626.608 1.015-.046 2.374-1.143 2.374H3.376c-1.097 0-1.751-1.36-1.143-2.374Z"
                 fill="#3a95c9"
               ></path>
             </svg>
@@ -268,7 +269,7 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
                 fill-rule="evenodd"
                 clip-rule="evenodd"
                 d="M11.476 14.28c.6-.31 1.393-.108 1.644.52l.577 1.443a1.958 1.958 0 1 0 2.546-2.546l-1.444-.577c-.627-.251-.828-1.044-.519-1.644A6.5 6.5 0 0 0 6.7 2.253c-.343.098-.427.526-.172.776l1.897 1.86a2.5 2.5 0 1 1-3.536 3.536L3.03 6.528c-.25-.255-.678-.171-.777.172a6.5 6.5 0 0 0 9.223 7.58Z"
-                fill="#666"
+                fill="#555"
               ></path>
             </svg>
             <p className="text-[14px]">Chores</p>
@@ -288,7 +289,7 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
-                d="M10.5 19a8.5 8.5 0 1 0 0-17 8.5 8.5 0 0 0 0 17zm1-12.75a1 1 0 1 0-2 0v4.25a1 1 0 0 0 .293.707l3.005 3.005a1 1 0 0 0 1.414-1.414L11.5 10.086V6.25z"
+                d="M14 6a4 4 0 1 1-8 0 4 4 0 0 1 8 0ZM2.233 15.626C3.591 13.361 6.646 12 9.095 12h2.054c2.449 0 5.26 1.36 6.618 3.626.608 1.015-.046 2.374-1.143 2.374H3.376c-1.097 0-1.751-1.36-1.143-2.374Z"
                 fill="#3a95c9"
               ></path>
             </svg>
@@ -307,7 +308,7 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
-                d="M14 6a4 4 0 1 1-8 0 4 4 0 0 1 8 0ZM2.233 15.626C3.591 13.361 6.646 12 9.095 12h2.054c2.449 0 5.26 1.36 6.618 3.626.608 1.015-.046 2.374-1.143 2.374H3.376c-1.097 0-1.751-1.36-1.143-2.374Z"
+                d="M10.5 19a8.5 8.5 0 1 0 0-17 8.5 8.5 0 0 0 0 17zm1-12.75a1 1 0 1 0-2 0v4.25a1 1 0 0 0 .293.707l3.005 3.005a1 1 0 0 0 1.414-1.414L11.5 10.086V6.25z"
                 fill="#3a95c9"
               ></path>
             </svg>
@@ -469,7 +470,7 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
                 fill="#64A44C"
               ></path>
             </svg>
-            <p className="text-[14px]">Done iteration</p>
+            <p className="text-[14px]">Has comments</p>
           </button>
         </div>
         <div className="w-[33%]">
@@ -531,7 +532,7 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
                 fill="#3a95c9"
               ></path>
             </svg>
-            <p className="text-[14px]">Labeled as...</p>
+            <p className="text-[14px]">Has attachments</p>
           </button>
         </div>
         <div className="w-[33%]">
@@ -602,19 +603,20 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
         <div className="w-[33%]">
           <button className="flex items-center gap-2 hover:bg-[#f1f3f7] dark:hover:bg-[#1f2532] py-1 px-1 rounded-md dark:text-[#f6f6f6]">
             <svg
-              width="20"
-              height="20"
+              viewBox="0 0 20 20"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
             >
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
-                d="M10.883 1.043a9.001 9.001 0 0 1-1.765 17.914l.193-1.99a7.11 7.11 0 0 0 .776.033 7 7 0 1 0-.776-13.967l-.193-1.99a9.108 9.108 0 0 1 1.764 0zM7.966 3.299l-.58-1.914c-.569.173-1.114.4-1.63.676l.945 1.763c.4-.214.824-.39 1.265-.525zM5.56 4.588 4.29 3.043A9.054 9.054 0 0 0 3.043 4.29l1.545 1.27c.291-.355.617-.68.972-.972zM3.824 6.701l-1.763-.944a8.944 8.944 0 0 0-.676 1.63l1.914.58c.134-.442.31-.866.525-1.266zM1 10c0-.298.014-.592.043-.883l1.99.194a7.11 7.11 0 0 0 0 1.378l-1.99.194A9.108 9.108 0 0 1 1 10zm2.3 2.034-1.915.58c.173.569.4 1.114.676 1.63l1.763-.945c-.214-.4-.39-.824-.525-1.265zm1.288 2.406-1.545 1.27c.374.455.792.873 1.247 1.247l1.27-1.545a7.06 7.06 0 0 1-.972-.972zm2.113 1.736-.944 1.763a8.95 8.95 0 0 0 1.63.676l.58-1.914a6.945 6.945 0 0 1-1.266-.525z"
-                fill="#666"
+                d="M6 2a1 1 0 0 0-1 1v1H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1V3a1 1 0 1 0-2 0v1H7V3a1 1 0 0 0-1-1Zm0 5a1 1 0 0 0 0 2h8a1 1 0 1 0 0-2H6Z"
+                fill="#3a95c9"
               ></path>
             </svg>
-            <p className="text-[14px]">To do epics</p>
+            <p className="text-[14px]">Has overdue</p>
           </button>
         </div>
         <div className="w-[33%]">
@@ -633,7 +635,7 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
                 fill="#a00808"
               ></path>
             </svg>
-            <p className="text-[14px]">No Milestone</p>
+            <p className="text-[14px]">Is blocked</p>
           </button>
         </div>
       </div>
@@ -673,7 +675,7 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
                 fill="#3a95c9"
               ></path>
             </svg>
-            <p className="text-[14px]">Done epics</p>
+            <p className="text-[14px]">Over due</p>
           </button>
         </div>
         <div className="w-[33%]">
@@ -689,11 +691,11 @@ const QuickFilterModal: React.FC<QuickFilterModalProps> = ({
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
-                d="M11.62 2.954c-.76-1.272-2.48-1.272-3.24 0L1.313 14.776C.482 16.166 1.403 18 2.933 18h14.134c1.53 0 2.451-1.834 1.62-3.224L11.62 2.954ZM9 7a1 1 0 1 1 2 0v3a1 1 0 1 1-2 0V7Zm0 7a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z"
-                fill="#ccba45"
+                d="M16 10a6 6 0 0 1-8.452 5.477c-.565-.253-.626-.985-.189-1.422l6.696-6.696c.437-.437 1.17-.376 1.422.189.336.748.523 1.578.523 2.452ZM4.522 12.453c.254.564.986.625 1.423.188l6.696-6.696c.437-.437.376-1.17-.188-1.423a6 6 0 0 0-7.93 7.93ZM18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"
+                fill="#a00808"
               ></path>
             </svg>
-            <p className="text-[14px]">Stale</p>
+            <p className="text-[14px]">Is blocker</p>
           </button>
         </div>
       </div>
