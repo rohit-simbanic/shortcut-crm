@@ -121,8 +121,8 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
             className={`w-[210px] ${
               filterModalOpen || isTeamOpen || isWorkFlowOpen || isBoardOpen
                 ? ""
-                : "relative"
-            } group sm:w-[240px] mb-3 rounded-md  bg-white hover:shadow-[0_1px_3px_-1px_#0003,0_3px_9px_-3px_#0000001a] dark:bg-[#161b26] shadow-[#364e7e1a] hover:transform hover:-translate-y-[1px] shadow-lg border-[1px] border-[#e4e8eb] dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer`}
+                : "relative group"
+            }  sm:w-[240px] mb-3 rounded-md  bg-white hover:shadow-[0_1px_3px_-1px_#0003,0_3px_9px_-3px_#0000001a] dark:bg-[#161b26] shadow-[#364e7e1a]  shadow-lg border-[1px] border-[#e4e8eb] dark:text-white dark:border-[#1f2532] dark:border-[1px] cursor-pointer`}
           >
             <div
               className="box_container py-2 px-3"
