@@ -76,13 +76,13 @@ const SidebarLeft = () => {
                   height="22"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="hover:scale-110 transform scale-75"
+                  className="hover:scale-110 transform scale-75 text-[#686c73] dark:text-[#9fa0a5]"
                 >
                   <path
                     fillRule="evenodd"
                     clipRule="evenodd"
                     d="M9.879 3.879a3 3 0 0 1 4.242 0l7 7A3 3 0 0 1 22 13v6.757a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-2a2 2 0 1 0-4 0v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V13a3 3 0 0 1 .879-2.121l7-7ZM12 12.757a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"
-                    fill="#686c73"
+                    fill="currentColor"
                   ></path>
                 </svg>
               ) : (
@@ -92,13 +92,13 @@ const SidebarLeft = () => {
                     height="22"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="hover:scale-110 transform scale-75"
+                    className="hover:scale-110 transform scale-75 text-[#686c73] dark:text-[#9fa0a5]"
                   >
                     <path
                       fillRule="evenodd"
                       clipRule="evenodd"
                       d="M9.879 3.879a3 3 0 0 1 4.242 0l7 7A3 3 0 0 1 22 13v6.757a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-2a2 2 0 1 0-4 0v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V13a3 3 0 0 1 .879-2.121l7-7ZM12 12.757a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"
-                      fill="#686c73"
+                      fill="currentColor"
                     ></path>
                   </svg>
                   <span className="text-[#1f2532] dark:text-[#f6f6f6] text-sm list-text dark:group-hover:text-[#f6f6f6]">
@@ -114,13 +114,13 @@ const SidebarLeft = () => {
                   height="22"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="hover:scale-110 transform scale-75"
+                  className="hover:scale-110 transform scale-75 text-[#686c73] dark:text-[#9fa0a5]"
                 >
                   <path
                     fillRule="evenodd"
                     clipRule="evenodd"
                     d="M19 1a3 3 0 0 1 3 3v13a2 2 0 0 1-2 2H5a1 1 0 1 0 0 2h16a1 1 0 1 1 0 2H5a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3h14ZM5 5a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Zm0 4a1 1 0 0 1 1-1h5a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z"
-                    fill="#686c73"
+                    fill="currentColor"
                   ></path>
                 </svg>
               ) : (
@@ -130,13 +130,13 @@ const SidebarLeft = () => {
                     height="22"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="hover:scale-110 transform scale-75"
+                    className="hover:scale-110 transform scale-75 text-[#686c73] dark:text-[#9fa0a5]"
                   >
                     <path
                       fillRule="evenodd"
                       clipRule="evenodd"
                       d="M19 1a3 3 0 0 1 3 3v13a2 2 0 0 1-2 2H5a1 1 0 1 0 0 2h16a1 1 0 1 1 0 2H5a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3h14ZM5 5a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Zm0 4a1 1 0 0 1 1-1h5a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z"
-                      fill="#686c73"
+                      fill="currentColor"
                     ></path>
                   </svg>
                   <span className="text-[#1f2532] dark:text-[#f6f6f6] text-sm list-text dark:group-hover:text-[#f6f6f6]">
@@ -152,13 +152,13 @@ const SidebarLeft = () => {
                   height="22"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="hover:scale-110 transform scale-75"
+                  className="hover:scale-110 transform scale-75 text-[#686c73] dark:text-[#9fa0a5]"
                 >
                   <path
                     fillRule="evenodd"
                     clipRule="evenodd"
                     d="M7.666 2A3 3 0 0 0 4.78 4.18l-3.694 13A3 3 0 0 0 3.97 21H10a1 1 0 0 0 1-1v-2a1 1 0 1 1 2 0v2a1 1 0 0 0 1 1h6.029a3 3 0 0 0 2.885-3.82l-3.695-13A3 3 0 0 0 16.334 2H7.666zM11 6a1 1 0 1 1 2 0v2a1 1 0 1 1-2 0V6zm1 5a1 1 0 0 0-1 1v2a1 1 0 1 0 2 0v-2a1 1 0 0 0-1-1z"
-                    fill="#686c73"
+                    fill="currentColor"
                   ></path>
                 </svg>
               ) : (
@@ -168,13 +168,13 @@ const SidebarLeft = () => {
                     height="22"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="hover:scale-110 transform scale-75"
+                    className="hover:scale-110 transform scale-75 text-[#686c73] dark:text-[#9fa0a5]"
                   >
                     <path
                       fillRule="evenodd"
                       clipRule="evenodd"
                       d="M7.666 2A3 3 0 0 0 4.78 4.18l-3.694 13A3 3 0 0 0 3.97 21H10a1 1 0 0 0 1-1v-2a1 1 0 1 1 2 0v2a1 1 0 0 0 1 1h6.029a3 3 0 0 0 2.885-3.82l-3.695-13A3 3 0 0 0 16.334 2H7.666zM11 6a1 1 0 1 1 2 0v2a1 1 0 1 1-2 0V6zm1 5a1 1 0 0 0-1 1v2a1 1 0 1 0 2 0v-2a1 1 0 0 0-1-1z"
-                      fill="#686c73"
+                      fill="currentColor"
                     ></path>
                   </svg>
                   <span className="text-[#1f2532] dark:text-[#f6f6f6] text-sm list-text dark:group-hover:text-[#f6f6f6]">
@@ -190,13 +190,13 @@ const SidebarLeft = () => {
                   height="22"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="hover:scale-110 transform scale-75"
+                  className="hover:scale-110 transform scale-75 text-[#686c73] dark:text-[#9fa0a5]"
                 >
                   <path
                     fillRule="evenodd"
                     clipRule="evenodd"
                     d="M18.364 3.65a8.967 8.967 0 0 0-12.728 0c-3.515 3.533-3.515 9.26 0 12.793l4.941 4.967a2.01 2.01 0 0 0 2.846 0l4.941-4.967c3.515-3.533 3.515-9.26 0-12.793ZM12 10.927c1.105 0 2-.889 2-1.985a1.993 1.993 0 0 0-2-1.986c-1.105 0-2 .89-2 1.986s.895 1.985 2 1.985Z"
-                    fill="#686c73"
+                    fill="currentColor"
                   ></path>
                 </svg>
               ) : (
@@ -206,13 +206,13 @@ const SidebarLeft = () => {
                     height="22"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="hover:scale-110 transform scale-75"
+                    className="hover:scale-110 transform scale-75 text-[#686c73] dark:text-[#9fa0a5]"
                   >
                     <path
                       fillRule="evenodd"
                       clipRule="evenodd"
                       d="M18.364 3.65a8.967 8.967 0 0 0-12.728 0c-3.515 3.533-3.515 9.26 0 12.793l4.941 4.967a2.01 2.01 0 0 0 2.846 0l4.941-4.967c3.515-3.533 3.515-9.26 0-12.793ZM12 10.927c1.105 0 2-.889 2-1.985a1.993 1.993 0 0 0-2-1.986c-1.105 0-2 .89-2 1.986s.895 1.985 2 1.985Z"
-                      fill="#686c73"
+                      fill="currentColor"
                     ></path>
                   </svg>
                   <span className="text-[#1f2532] dark:text-[#f6f6f6] text-sm list-text dark:group-hover:text-[#f6f6f6]">
@@ -228,13 +228,13 @@ const SidebarLeft = () => {
                   height="22"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="hover:scale-110 transform scale-75"
+                  className="hover:scale-110 transform scale-75 text-[#686c73] dark:text-[#9fa0a5]"
                 >
                   <path
                     fillRule="evenodd"
                     clipRule="evenodd"
                     d="M5 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H5Zm5 3a1 1 0 0 0-1 1v8a1 1 0 1 0 2 0V6a1 1 0 0 0-1-1Zm-4 5a1 1 0 0 0-1 1v3a1 1 0 1 0 2 0v-3a1 1 0 0 0-1-1Zm7-1a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0V9Z"
-                    fill="#686c73"
+                    fill="currentColor"
                   ></path>
                 </svg>
               ) : (
@@ -244,13 +244,13 @@ const SidebarLeft = () => {
                     height="22"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="hover:scale-110 transform scale-75"
+                    className="hover:scale-110 transform scale-75 text-[#686c73] dark:text-[#9fa0a5]"
                   >
                     <path
                       fillRule="evenodd"
                       clipRule="evenodd"
                       d="M5 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H5Zm5 3a1 1 0 0 0-1 1v8a1 1 0 1 0 2 0V6a1 1 0 0 0-1-1Zm-4 5a1 1 0 0 0-1 1v3a1 1 0 1 0 2 0v-3a1 1 0 0 0-1-1Zm7-1a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0V9Z"
-                      fill="#686c73"
+                      fill="currentColor"
                     ></path>
                   </svg>
                   <span className="text-[#1f2532] dark:text-[#f6f6f6] text-sm list-text dark:group-hover:text-[#f6f6f6]">
@@ -266,13 +266,13 @@ const SidebarLeft = () => {
                   height="22"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="hover:scale-110 transform scale-75"
+                  className="hover:scale-110 transform scale-75 text-[#686c73] dark:text-[#9fa0a5]"
                 >
                   <path
                     fillRule="evenodd"
                     clipRule="evenodd"
                     d="M18.98 2.63a1.391 1.391 0 0 0-1.61-1.61c-1.918.316-3.608.915-5.041 1.71-.666.37-1.464.413-2.204.234-1.957-.472-4.062.092-5.575 1.694-.285.285-.57.655-.856 1.034a.203.203 0 0 0 .019.266l1.735 1.734c.478.479.576 1.225.362 1.867a16.35 16.35 0 0 0-.432 1.625c-.217.998.131 2.02.853 2.742.694.693 1.667 1.046 2.629.855.514-.102 1.09-.24 1.615-.416.686-.231 1.496-.15 2.008.362l1.693 1.693a.187.187 0 0 0 .222.034c.385-.212.762-.51 1.052-.897 1.545-1.545 2.085-3.785 1.62-5.801-.154-.669-.121-1.382.196-1.99A17.035 17.035 0 0 0 18.98 2.63Zm-4.088 4.058a1.603 1.603 0 1 1-3.206 0 1.603 1.603 0 0 1 3.206 0ZM4.657 15.343c-.855-.855-2.137-.855-2.992 0-.855.748-.641 3.633-.641 3.633s2.778.214 3.633-.64c.855-.856.855-2.138 0-2.993Z"
-                    fill="#686c73"
+                    fill="currentColor"
                   ></path>
                 </svg>
               ) : (
@@ -282,13 +282,13 @@ const SidebarLeft = () => {
                     height="22"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="hover:scale-110 transform scale-75"
+                    className="hover:scale-110 transform scale-75 text-[#686c73] dark:text-[#9fa0a5]"
                   >
                     <path
                       fillRule="evenodd"
                       clipRule="evenodd"
                       d="M18.98 2.63a1.391 1.391 0 0 0-1.61-1.61c-1.918.316-3.608.915-5.041 1.71-.666.37-1.464.413-2.204.234-1.957-.472-4.062.092-5.575 1.694-.285.285-.57.655-.856 1.034a.203.203 0 0 0 .019.266l1.735 1.734c.478.479.576 1.225.362 1.867a16.35 16.35 0 0 0-.432 1.625c-.217.998.131 2.02.853 2.742.694.693 1.667 1.046 2.629.855.514-.102 1.09-.24 1.615-.416.686-.231 1.496-.15 2.008.362l1.693 1.693a.187.187 0 0 0 .222.034c.385-.212.762-.51 1.052-.897 1.545-1.545 2.085-3.785 1.62-5.801-.154-.669-.121-1.382.196-1.99A17.035 17.035 0 0 0 18.98 2.63Zm-4.088 4.058a1.603 1.603 0 1 1-3.206 0 1.603 1.603 0 0 1 3.206 0ZM4.657 15.343c-.855-.855-2.137-.855-2.992 0-.855.748-.641 3.633-.641 3.633s2.778.214 3.633-.64c.855-.856.855-2.138 0-2.993Z"
-                      fill="#686c73"
+                      fill="currentColor"
                     ></path>
                   </svg>
                   <span className="text-[#1f2532] dark:text-[#f6f6f6] text-sm list-text dark:group-hover:text-[#f6f6f6]">
@@ -583,13 +583,13 @@ const SidebarLeft = () => {
                     viewBox="0 0 20 20"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="hover:scale-110 transform scale-75"
+                    className="hover:scale-110 transform scale-75 text-[#686c73] dark:text-[#9fa0a5]"
                   >
                     <path
                       fillRule="evenodd"
                       clipRule="evenodd"
                       d="M11.675 2.317c-.426-1.756-2.924-1.756-3.35 0a1.724 1.724 0 0 1-2.573 1.066c-1.543-.94-3.31.826-2.37 2.37.608.996.07 2.296-1.065 2.572-1.756.426-1.756 2.924 0 3.35a1.724 1.724 0 0 1 1.066 2.573c-.94 1.543.826 3.31 2.37 2.37a1.724 1.724 0 0 1 2.572 1.065c.426 1.756 2.924 1.756 3.35 0a1.724 1.724 0 0 1 2.573-1.066c1.543.94 3.31-.826 2.37-2.37a1.724 1.724 0 0 1 1.065-2.572c1.756-.426 1.756-2.924 0-3.35a1.724 1.724 0 0 1-1.066-2.573c.94-1.543-.826-3.31-2.37-2.37a1.724 1.724 0 0 1-2.572-1.065ZM10 13.375a3.375 3.375 0 1 0 0-6.75 3.375 3.375 0 0 0 0 6.75Z"
-                      fill="#686c73"
+                      fill="currentColor"
                     ></path>
                   </svg>
                 ) : (
@@ -600,13 +600,13 @@ const SidebarLeft = () => {
                       viewBox="0 0 20 20"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="hover:scale-110 transform scale-75"
+                      className="hover:scale-110 transform scale-75 text-[#686c73] dark:text-[#9fa0a5]"
                     >
                       <path
                         fillRule="evenodd"
                         clipRule="evenodd"
                         d="M11.675 2.317c-.426-1.756-2.924-1.756-3.35 0a1.724 1.724 0 0 1-2.573 1.066c-1.543-.94-3.31.826-2.37 2.37.608.996.07 2.296-1.065 2.572-1.756.426-1.756 2.924 0 3.35a1.724 1.724 0 0 1 1.066 2.573c-.94 1.543.826 3.31 2.37 2.37a1.724 1.724 0 0 1 2.572 1.065c.426 1.756 2.924 1.756 3.35 0a1.724 1.724 0 0 1 2.573-1.066c1.543.94 3.31-.826 2.37-2.37a1.724 1.724 0 0 1 1.065-2.572c1.756-.426 1.756-2.924 0-3.35a1.724 1.724 0 0 1-1.066-2.573c.94-1.543-.826-3.31-2.37-2.37a1.724 1.724 0 0 1-2.572-1.065ZM10 13.375a3.375 3.375 0 1 0 0-6.75 3.375 3.375 0 0 0 0 6.75Z"
-                        fill="#686c73"
+                        fill="currentColor"
                       ></path>
                     </svg>
                     <span className="text-[#1f2532] dark:text-[#f6f6f6] text-sm list-text dark:group-hover:text-[#f6f6f6]">
@@ -627,11 +627,11 @@ const SidebarLeft = () => {
                     viewBox="0 0 20 20"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="hover:scale-110 transform scale-75"
+                    className="hover:scale-110 transform scale-75 text-[#686c73] dark:text-[#9fa0a5]"
                   >
                     <path
                       d="M10 3.5a1.5 1.5 0 0 1 3 0V4a1 1 0 0 0 1 1h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-.5a1.5 1.5 0 0 0 0 3h.5a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1v-.5a1.5 1.5 0 0 0-3 0v.5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-3a1 1 0 0 0-1-1h-.5a1.5 1.5 0 0 1 0-3H4a1 1 0 0 0 1-1V6a1 1 0 0 1 1-1h3a1 1 0 0 0 1-1v-.5Z"
-                      fill="#686c73"
+                      fill="currentColor"
                     ></path>
                   </svg>
                 ) : (
@@ -642,11 +642,11 @@ const SidebarLeft = () => {
                       viewBox="0 0 20 20"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="hover:scale-110 transform scale-75"
+                      className="hover:scale-110 transform scale-75 text-[#686c73] dark:text-[#9fa0a5]"
                     >
                       <path
                         d="M10 3.5a1.5 1.5 0 0 1 3 0V4a1 1 0 0 0 1 1h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-.5a1.5 1.5 0 0 0 0 3h.5a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1v-.5a1.5 1.5 0 0 0-3 0v.5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-3a1 1 0 0 0-1-1h-.5a1.5 1.5 0 0 1 0-3H4a1 1 0 0 0 1-1V6a1 1 0 0 1 1-1h3a1 1 0 0 0 1-1v-.5Z"
-                        fill="#686c73"
+                        fill="currentColor"
                       ></path>
                     </svg>
                     <span className="text-[#1f2532] dark:text-[#f6f6f6] text-sm list-text dark:group-hover:text-[#f6f6f6]">
@@ -667,13 +667,13 @@ const SidebarLeft = () => {
                     viewBox="0 0 20 20"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="hover:scale-110 transform scale-75"
+                    className="hover:scale-110 transform scale-75 text-[#686c73] dark:text-[#9fa0a5]"
                   >
                     <path
                       fillRule="evenodd"
                       clipRule="evenodd"
                       d="M12 6a4 4 0 1 1-8 0 4 4 0 0 1 8 0ZM.582 15.626A8.143 8.143 0 0 1 7.358 12h2.284a8.143 8.143 0 0 1 6.775 3.626c.677 1.015-.05 2.374-1.27 2.374H1.853c-1.22 0-1.947-1.36-1.27-2.374ZM17 10a1 1 0 0 1-1-1V8h-1a1 1 0 1 1 0-2h1V5a1 1 0 1 1 2 0v1h1a1 1 0 1 1 0 2h-1v1a1 1 0 0 1-1 1Z"
-                      fill="#686c73"
+                      fill="currentColor"
                     ></path>
                   </svg>
                 ) : (
@@ -684,13 +684,13 @@ const SidebarLeft = () => {
                       viewBox="0 0 20 20"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="hover:scale-110 transform scale-75"
+                      className="hover:scale-110 transform scale-75 text-[#686c73] dark:text-[#9fa0a5]"
                     >
                       <path
                         fillRule="evenodd"
                         clipRule="evenodd"
                         d="M12 6a4 4 0 1 1-8 0 4 4 0 0 1 8 0ZM.582 15.626A8.143 8.143 0 0 1 7.358 12h2.284a8.143 8.143 0 0 1 6.775 3.626c.677 1.015-.05 2.374-1.27 2.374H1.853c-1.22 0-1.947-1.36-1.27-2.374ZM17 10a1 1 0 0 1-1-1V8h-1a1 1 0 1 1 0-2h1V5a1 1 0 1 1 2 0v1h1a1 1 0 1 1 0 2h-1v1a1 1 0 0 1-1 1Z"
-                        fill="#686c73"
+                        fill="currentColor"
                       ></path>
                     </svg>
                     <span className="text-[#1f2532] dark:text-[#f6f6f6] text-sm list-text dark:group-hover:text-[#f6f6f6]">
