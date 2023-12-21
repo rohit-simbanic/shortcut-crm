@@ -53,12 +53,7 @@ const Header = () => {
       <div className="mx-auto flex justify-center sm:justify-between flex-wrap sm:flex-1 py-2 sm:p-0 items-center px-2">
         <div className="flex gap-2">
           <div className="hover:bg-[#363e50] p-2 rounded-md hover:cursor-pointer">
-            <Image
-              src={"/header/shortcut-logo-mark-6086c44b85.svg"}
-              height={30}
-              width={30}
-              alt="logo"
-            />
+            <Image src={"/header/logo.svg"} height={30} width={30} alt="logo" />
           </div>
           <div className="flex gap-0 items-center">
             <CreateButton />
