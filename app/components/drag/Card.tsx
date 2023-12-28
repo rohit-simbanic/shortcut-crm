@@ -438,7 +438,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                         <div className="flex justify-end">
                           <button
                             type="button"
-                            className="text-[14px] border border-[#e4e8eb] px-[12px] py-[7px] rounded-md hover:bg-[#e4e8eb]"
+                            className="text-[14px] border border-[#e4e8eb] px-[12px] py-[7px] dark:text-[#e4e8eb] rounded-md hover:bg-[#e4e8eb] dark:hover:bg-[transparent]"
                             onClick={() => setEditIsOpen(false)}
                           >
                             Cancel
