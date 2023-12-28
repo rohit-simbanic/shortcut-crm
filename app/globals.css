@@ -19,9 +19,8 @@ body {
 .popup-content {
   margin: auto;
   background: #f9f9f9;
-  width: 50%;
   border-radius: 12px;
-  width: 56%;
+  width: 866px;
   box-shadow: 0 2px 10px #00000080;
 }
 .popup-arrow {
