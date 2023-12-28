@@ -171,7 +171,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                 </div>
 
                 <div
-                  className="content h-[689px] overflow-y-scroll flex max-lg:flex-col gap-4 px-6"
+                  className="content h-[550px] overflow-y-scroll flex max-lg:flex-col gap-4 px-6"
                   id="style-2"
                 >
                   <div className="w-[75%] max-lg:w-[100%]">
@@ -228,7 +228,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                                 <div
                                   className={`py-2 px-3 ${
                                     isWrite === 1
-                                      ? "bg-white border-t-[1px] border-[#e4e8eb] border-r-[1px] border-l-[1px] font-bold"
+                                      ? "bg-white border-t-[1px] border-[#e4e8eb] border-r-[1px] border-l-[1px] font-bold dark:text-[white]"
                                       : "bg-[#f9f9f9] cursor-pointer border-b-[1px]"
                                   }  dark:bg-[#1f2532] dark:text-[grey]`}
                                   onClick={() => toggleWrite(1)}
@@ -238,7 +238,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                                 <div
                                   className={`text-[grey] py-2 ${
                                     isWrite === 2
-                                      ? "bg-white border-t-[1px] border-[#e4e8eb] border-r-[1px] border-l-[1px] font-bold text-gray-900"
+                                      ? "bg-white border-t-[1px] border-[#e4e8eb] border-r-[1px] border-l-[1px] font-bold text-gray-900 dark:text-[white]"
                                       : "bg-[#f9f9f9] cursor-pointer"
                                   }  dark:bg-gray-700 px-3`}
                                   onClick={() => toggleWrite(2)}
@@ -407,7 +407,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                               </div>
                             </div>
                             {isWrite === 1 ? (
-                              <div class="pb-2 px-4 bg-white rounded-b-lg dark:bg-gray-800 xl:before:content-[''] xl:before:block xl:before:relative xl:before:w-[98%] xl:before:ml-[44px] xl:before:border-t-[1px] xl:before:border-[#e4e8eb] border-r-[1px] border-l-[1px] border-[#e4e8eb]">
+                              <div class="pb-2 px-4 bg-white rounded-b-lg dark:bg-gray-800 xl:before:content-[''] xl:before:block xl:before:relative xl:before:w-[94.4%] xl:before:ml-[48px] xl:before:border-t-[1px] xl:before:border-[#e4e8eb] border-r-[1px] border-b-[1px] border-l-[1px] border-[#e4e8eb]">
                                 <label for="editor" className="sr-only">
                                   Publish post
                                 </label>
@@ -419,7 +419,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                                 ></textarea>
                               </div>
                             ) : (
-                              <div class="pb-2 px-4 bg-white rounded-b-lg dark:bg-gray-800 border-r-[1px] border-l-[1px] border-[#e4e8eb] xl:before:content-[''] xl:before:block xl:before:relative xl:before:w-[92%] xl:before:ml-[119px] xl:before:border-t-[1px] xl:before:border-[#e4e8eb]">
+                              <div class="pb-2 px-4 bg-white rounded-b-lg dark:bg-gray-800 border-r-[1px] border-l-[1px] border-b-[1px] border-[#e4e8eb] xl:before:content-[''] xl:before:block xl:before:relative xl:before:w-[81%] xl:before:ml-[124px] xl:before:border-t-[1px] xl:before:border-[#e4e8eb]">
                                 <label for="editor" className="sr-only">
                                   Publish post
                                 </label>

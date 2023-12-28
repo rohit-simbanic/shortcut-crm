@@ -104,7 +104,7 @@ const CreateButton = () => {
           </div>
 
           <div
-            className="content h-[689px] overflow-y-scroll flex max-lg:flex-col gap-4 px-6"
+            className="content h-[480px] overflow-y-scroll flex max-lg:flex-col gap-4 px-6"
             id="style-2"
           >
             <div className="w-[75%] max-lg:w-[100%]">
@@ -316,7 +316,7 @@ const CreateButton = () => {
                     </div>
                   </div>
                   {isWrite === 1 ? (
-                    <div class="pb-2 px-4 bg-white rounded-b-lg dark:bg-gray-800 xl:before:content-[''] xl:before:block xl:before:relative xl:before:w-[94%] xl:before:ml-[47px] xl:before:border-t-[1px] xl:before:border-[#e4e8eb] border-r-[1px] border-l-[1px] border-[#e4e8eb]">
+                    <div class="pb-2 px-4 bg-white rounded-b-lg dark:bg-gray-800 xl:before:content-[''] xl:before:block xl:before:relative xl:before:w-[94.2%] xl:before:ml-[48.8px] xl:before:border-t-[1px] xl:before:border-[#e4e8eb] border-r-[1px] border-b-[1px] border-l-[1px] border-[#e4e8eb]">
                       <label for="editor" className="sr-only">
                         Publish post
                       </label>
@@ -328,7 +328,7 @@ const CreateButton = () => {
                       ></textarea>
                     </div>
                   ) : (
-                    <div class="pb-2 px-4 bg-white rounded-b-lg dark:bg-gray-800 border-r-[1px] border-l-[1px] border-[#e4e8eb] xl:before:content-[''] xl:before:block xl:before:relative xl:before:w-[80%] xl:before:ml-[124px] xl:before:border-t-[1px] xl:before:border-[#e4e8eb]">
+                    <div class="pb-2 px-4 bg-white rounded-b-lg dark:bg-gray-800 border-r-[1px] border-b-[1px] border-l-[1px] border-[#e4e8eb] xl:before:content-[''] xl:before:block xl:before:relative xl:before:w-[80.9%] xl:before:ml-[124px] xl:before:border-t-[1px] xl:before:border-[#e4e8eb]">
                       <label for="editor" className="sr-only">
                         Publish post
                       </label>
