@@ -8,7 +8,7 @@ const PermalinkModal: React.FC<PermalinkModalProps> = ({ togglePermalink }) => {
   return (
     <div className="h-[89px] flex flex-col gap-0 w-[300px] absolute top-6 -left-[249px] bg-white z-50 rounded-lg shadow-lg p-3 modal dark:bg-[#2d3545]">
       <div className="flex justify-between items-center">
-        <p className="font-light py-2 px-2 text-[13px] rounded-md text-[#686c73]">
+        <p className="font-light py-2 px-2 text-[13px] rounded-md text-[#686c73] dark:text-gray-400">
           Share a link to this dialog
         </p>
 
