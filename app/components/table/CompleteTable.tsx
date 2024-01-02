@@ -47,7 +47,7 @@ const CompleteTable: FC<completedTableComponentProps> = ({
               isBoardOpen
                 ? ""
                 : "sticky z-10"
-            } left-0  bg-white dark:bg-gray-700`}
+            } left-0  bg-white dark:hover:bg-gray-700 dark:bg-[#1f2532]`}
             onClick={toggleScheduledTable}
           >
             {isScheduledViewFive ? (

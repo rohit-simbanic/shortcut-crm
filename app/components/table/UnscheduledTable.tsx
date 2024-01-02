@@ -55,7 +55,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
               isHovered
                 ? ""
                 : "sticky z-10"
-            } left-0  bg-white dark:bg-gray-700`}
+            } left-0  bg-white dark:hover:bg-gray-700 dark:bg-[#1f2532]`}
             onClick={toggleScheduledTable}
           >
             {isScheduledView ? (
