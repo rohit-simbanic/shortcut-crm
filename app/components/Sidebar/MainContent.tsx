@@ -45,6 +45,7 @@ const MainContent = () => {
       [view]: !prevState[view],
     }));
   };
+
   return (
     <div
       className="mt-4 overflow-x-auto overflow-y-hidden h-[92.7vh] flex-grow"
@@ -119,12 +120,12 @@ const MainContent = () => {
                 className="flex gap-3 items-center justify-between shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-[0.39rem] px-2 rounded-[5px] border-[1px] border-[#dddddd] dark:border-[#283040] hover:bg-[#e4e8eb] dark:hover:bg-[#1f25324d] hover:cursor-pointer w-full"
                 onClick={() => toggleView("isTableView")}
               >
-                <a data-tooltip-id="kanban-click">
-                  <Tooltip
-                    id="kanban-click"
-                    content="Kanban View"
-                    events={["hover"]}
-                  />
+                <a
+                  data-tooltip-id="kanban-click"
+                  data-tooltip-place="top"
+                  data-tooltip-content="Kanban View"
+                >
+                  <Tooltip id="kanban-click" />
                   <div
                     className={
                       viewState.isTableView
@@ -150,12 +151,12 @@ const MainContent = () => {
                   </div>
                 </a>
 
-                <a data-tooltip-id="table-click">
-                  <Tooltip
-                    id="table-click"
-                    content="Table View"
-                    events={["hover"]}
-                  />
+                <a
+                  data-tooltip-id="table-click"
+                  data-tooltip-place="top"
+                  data-tooltip-content="Table View"
+                >
+                  <Tooltip id="table-click" />
                   <div
                     className={
                       viewState.isTableView
