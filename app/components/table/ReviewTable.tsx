@@ -15,7 +15,6 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
     isTeamOpen,
     isWorkFlowOpen,
     isHovered,
-    setHovered,
     isBoardOpen,
   } = useContext(SidebarContext);
 

@@ -315,7 +315,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                 </tr>
               </thead>
               <tbody className="bg-white dark:bg-[#1f2532]">
-                <tr className="text-gray-700 dark:hover:bg-[#000000] hover:cursor-pointer">
+                <tr className="text-gray-700 dark:hover:bg-[#1f2532] hover:cursor-pointer">
                   <td
                     className={`px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] ${
                       filterModalOpen ||
@@ -537,7 +537,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     </li>
                   </td>
                 </tr>
-                <tr className="text-gray-700 dark:hover:bg-[#000000] hover:cursor-pointer">
+                <tr className="text-gray-700 dark:hover:bg-[#1f2532] hover:cursor-pointer">
                   <td
                     className={`px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] ${
                       filterModalOpen ||
@@ -759,7 +759,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     </li>
                   </td>
                 </tr>
-                <tr className="text-gray-700 dark:hover:bg-[#000000] hover:cursor-pointer">
+                <tr className="text-gray-700 dark:hover:bg-[#1f2532] hover:cursor-pointer">
                   <td
                     className={`px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] ${
                       filterModalOpen ||
@@ -981,7 +981,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     </li>
                   </td>
                 </tr>
-                <tr className="text-gray-700 dark:hover:bg-[#000000] hover:cursor-pointer">
+                <tr className="text-gray-700 dark:hover:bg-[#1f2532] hover:cursor-pointer">
                   <td
                     className={`px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] ${
                       filterModalOpen ||
@@ -1203,7 +1203,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     </li>
                   </td>
                 </tr>
-                <tr className="text-gray-700 dark:hover:bg-[#000000] hover:cursor-pointer">
+                <tr className="text-gray-700 dark:hover:bg-[#1f2532] hover:cursor-pointer">
                   <td
                     className={`px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] ${
                       filterModalOpen ||
@@ -1425,7 +1425,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     </li>
                   </td>
                 </tr>
-                <tr className="text-gray-700 dark:hover:bg-[#000000] hover:cursor-pointer">
+                <tr className="text-gray-700 dark:hover:bg-[#1f2532] hover:cursor-pointer">
                   <td
                     className={`px-4 border-b border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] ${
                       filterModalOpen ||
@@ -1647,7 +1647,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                     </li>
                   </td>
                 </tr>
-                <tr className="text-gray-700 dark:hover:bg-[#000000] hover:cursor-pointer">
+                <tr className="text-gray-700 dark:hover:bg-[#1f2532] hover:cursor-pointer">
                   <td
                     className={`px-4 border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] ${
                       filterModalOpen ||
