@@ -37,7 +37,7 @@ const InDevelopmentTable: FC<InDevelopmenTableComponentProps> = ({
   return (
     <div className="my-3 w-full">
       <div
-        className={`shadow-md rounded-[12px] p-[8px] bg-white whitespace-nowrap dark:bg-[#1f2532] ${
+        className={`shadow-md rounded-[12px] p-[8px] bg-white whitespace-nowrap dark:bg-[#161b26] ${
           isScheduledViewThree ? "w-fit" : "w-full"
         }`}
         id="tableBody"
@@ -51,7 +51,7 @@ const InDevelopmentTable: FC<InDevelopmenTableComponentProps> = ({
             isBoardOpen
               ? ""
               : "sticky z-20"
-          } top-0  bg-white dark:bg-[#1f2532]`}
+          } top-0  bg-white dark:bg-[#161b26]`}
         >
           <div
             className={`flex items-center space-x-2 px-3 mr-8 rounded-md duration-500 ease-in-out py-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-gray-950 dark:hover:text-[#635fc7] dark:text-white ${
@@ -62,7 +62,7 @@ const InDevelopmentTable: FC<InDevelopmenTableComponentProps> = ({
               isBoardOpen
                 ? ""
                 : "sticky z-10"
-            } left-0  bg-white dark:hover:bg-gray-700 dark:bg-[#1f2532]`}
+            } left-0  bg-white dark:hover:bg-gray-700 dark:bg-[#161b26]`}
             onClick={toggleScheduledTable}
           >
             {isScheduledViewThree ? (
@@ -206,7 +206,7 @@ const InDevelopmentTable: FC<InDevelopmenTableComponentProps> = ({
                     isBoardOpen
                       ? ""
                       : "sticky z-40"
-                  } top-[2.4rem]  bg-white dark:bg-[#1f2532]`}
+                  } top-[2.4rem]  bg-white dark:bg-[#161b26]`}
                 >
                   <th
                     className={`px-4 hover:bg-[#e4e8eb] hover:cursor-pointer ${
@@ -217,7 +217,7 @@ const InDevelopmentTable: FC<InDevelopmenTableComponentProps> = ({
                       isBoardOpen
                         ? ""
                         : "sticky z-10"
-                    } left-[0px] bg-white flex-1 w-6 dark:bg-[#1f2532]`}
+                    } left-[0px] bg-white flex-1 w-6 dark:bg-[#161b26] py-3`}
                   >
                     <div className="flex gap-3">
                       <svg
@@ -266,7 +266,7 @@ const InDevelopmentTable: FC<InDevelopmenTableComponentProps> = ({
                       isBoardOpen
                         ? ""
                         : "sticky z-10"
-                    } left-[30px] bg-white flex-1 w-6 dark:bg-[#1f2532]`}
+                    } left-[30px] bg-white flex-1 w-6 dark:bg-[#161b26]`}
                   >
                     <input
                       className="border-gray-300 rounded h-4 w-4 dark:bg-[#161b26]"
@@ -324,7 +324,7 @@ const InDevelopmentTable: FC<InDevelopmenTableComponentProps> = ({
                   <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer min-w-[20px] dark:text-[grey]"></th>
                 </tr>
               </thead>
-              <tbody className="bg-white dark:bg-[#1f2532]">
+              <tbody className="bg-white dark:bg-[#161b26]">
                 {dataArray.map((element, index) => {
                   const isLastItem = index === dataArray.length - 1;
                   return (
@@ -334,16 +334,16 @@ const InDevelopmentTable: FC<InDevelopmenTableComponentProps> = ({
                     >
                       <td
                         className={`px-4 ${
-                          isLastItem ? "" : "border-b"
-                        }  border-r border-t-[#00000005] dark:border-r-0 border-t-[3px] ${
+                          isLastItem ? "" : "border-b-0"
+                        }  border-r border-t-[#00000005] dark:border-r-0 border-t-[1px] ${
                           filterModalOpen ||
                           isWorkFlowOpen ||
                           isTeamOpen ||
                           isHovered ||
                           isBoardOpen
                             ? ""
-                            : "sticky z-10 dark:bg-[#1f2532]"
-                        } left-[0px]  flex-1 w-6`}
+                            : "sticky z-10"
+                        } left-[0px]  flex-1 w-6 py-3`}
                       >
                         <svg
                           viewBox="0 0 20 20"
@@ -362,15 +362,15 @@ const InDevelopmentTable: FC<InDevelopmenTableComponentProps> = ({
                       </td>
                       <td
                         className={`px-4 text-ms font-semibold  ${
-                          isLastItem ? "" : "border-b"
-                        } border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[3px] ${
+                          isLastItem ? "" : "border-b-0"
+                        } border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[1px] ${
                           filterModalOpen ||
                           isWorkFlowOpen ||
                           isTeamOpen ||
                           isHovered ||
                           isBoardOpen
                             ? ""
-                            : "sticky z-10 dark:bg-[#1f2532]"
+                            : "sticky z-10"
                         } left-[30px] flex-1 w-6 `}
                       >
                         <input
@@ -383,7 +383,7 @@ const InDevelopmentTable: FC<InDevelopmenTableComponentProps> = ({
                           isLastItem ? "" : "border-b"
                         } border-t-[#00000005] border-t-[3px]`}
                       >
-                        <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 dark:bg-[#1f2532] rounded-sm">
+                        <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 dark:bg-[#161b26] rounded-sm">
                           {" "}
                           445{" "}
                         </span>
