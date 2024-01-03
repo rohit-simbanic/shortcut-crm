@@ -344,12 +344,12 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                   return (
                     <tr
                       key={index}
-                      className="text-gray-700 dark:hover:bg-[#1f2532] hover:cursor-pointer"
+                      className="text-gray-700 dark:hover:bg-[#1f2532] hover:bg-[#f8f9fb] hover:cursor-pointer"
                     >
                       <td
                         className={`px-4 ${
                           isLastItem ? "" : "border-b-0"
-                        }  border-r border-t-[#00000005] dark:border-r-0 border-t-[1px] ${
+                        }  border-r border-t-[#ffffff12] dark:border-r-0 border-t-[1px] ${
                           filterModalOpen ||
                           isWorkFlowOpen ||
                           isTeamOpen ||
@@ -377,7 +377,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                       <td
                         className={`px-4 text-ms font-semibold  ${
                           isLastItem ? "" : "border-b-0"
-                        } border-r-[#00000005] border-r-[3px] border-t-[#00000005] border-t-[1px] ${
+                        } border-r-[#ffffff12] border-r-[3px] border-t-[#ffffff12] border-t-[1px] ${
                           filterModalOpen ||
                           isWorkFlowOpen ||
                           isTeamOpen ||
@@ -394,8 +394,8 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                       </td>
                       <td
                         className={`px-4 text-xs  ${
-                          isLastItem ? "" : "border-b"
-                        } border-t-[#00000005] border-t-[3px]`}
+                          isLastItem ? "" : "dark:border-b-0 border-b"
+                        } border-t-[#ffffff12] border-t-[1px]`}
                       >
                         <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 dark:bg-[#161b26] rounded-sm">
                           {" "}
@@ -405,9 +405,9 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                       <Popup
                         trigger={
                           <td
-                            className={`px-4 text-sm  ${
-                              isLastItem ? "" : "border-b"
-                            } w-[400px] border-t-[#00000005] border-t-[3px] dark:text-[#828fa3]`}
+                            className={`px-4 text-sm font-medium  ${
+                              isLastItem ? "" : "dark:border-b-0 border-b"
+                            } w-[400px] border-t-[#ffffff12] border-t-[1px] dark:text-[#828fa3]`}
                           >
                             Flutter App Development
                           </td>
@@ -1341,8 +1341,8 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                       </Popup>
                       <td
                         className={`px-4 text-sm  ${
-                          isLastItem ? "" : "border-b"
-                        } border-t-[#00000005] border-t-[3px]`}
+                          isLastItem ? "" : "dark:border-b-0 border-b"
+                        } border-t-[#ffffff12] border-t-[1px]`}
                       >
                         <li className="flex gap-2 hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3">
                           <svg
@@ -1370,8 +1370,8 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                       </td>
                       <td
                         className={`px-4 text-sm  ${
-                          isLastItem ? "" : "border-b"
-                        } border-t-[#00000005] border-t-[3px]`}
+                          isLastItem ? "" : "dark:border-b-0 border-b"
+                        } border-t-[#ffffff12] border-t-[1px]`}
                       >
                         <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                           <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
@@ -1381,8 +1381,8 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                       </td>
                       <td
                         className={`px-4 text-sm  ${
-                          isLastItem ? "" : "border-b"
-                        } border-t-[#00000005] border-t-[3px]`}
+                          isLastItem ? "" : "dark:border-b-0 border-b"
+                        } border-t-[#ffffff12] border-t-[1px]`}
                       >
                         <li className="flex gap-2 hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3">
                           <svg
@@ -1405,8 +1405,8 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                       </td>
                       <td
                         className={`px-4 text-sm  ${
-                          isLastItem ? "" : "border-b"
-                        } border-t-[#00000005] border-t-[3px]`}
+                          isLastItem ? "" : "dark:border-b-0 border-b"
+                        } border-t-[#ffffff12] border-t-[1px]`}
                       >
                         <div className="w-[20px] h-[20px] rounded-[50%] bg-[#73818b] hover:scale-110">
                           <svg
@@ -1425,8 +1425,8 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                       </td>
                       <td
                         className={`px-4 text-sm  ${
-                          isLastItem ? "" : "border-b"
-                        } border-t-[#00000005] border-t-[3px]`}
+                          isLastItem ? "" : "dark:border-b-0 border-b"
+                        } border-t-[#ffffff12] border-t-[1px]`}
                       >
                         <button
                           className="py-1 rounded-[50%] px-1 text-center h-7 w-7 align-middle font-sans text-xs font-bold text-gray-50  transition-all bg-[#ccba45] hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
@@ -1438,8 +1438,8 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                       </td>
                       <td
                         className={`px-4 text-sm  ${
-                          isLastItem ? "" : "border-b"
-                        } border-t-[#00000005] border-t-[3px]`}
+                          isLastItem ? "" : "dark:border-b-0 border-b"
+                        } border-t-[#ffffff12] border-t-[1px]`}
                       >
                         <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                           <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
@@ -1449,8 +1449,8 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                       </td>
                       <td
                         className={`px-4 text-sm  ${
-                          isLastItem ? "" : "border-b"
-                        } border-t-[#00000005] border-t-[3px]`}
+                          isLastItem ? "" : "dark:border-b-0 border-b"
+                        } border-t-[#ffffff12] border-t-[1px]`}
                       >
                         <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                           <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
@@ -1460,8 +1460,8 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                       </td>
                       <td
                         className={`px-4 text-sm ${
-                          isLastItem ? "" : "border-b"
-                        } border-t-[#00000005] border-t-[3px]`}
+                          isLastItem ? "" : "dark:border-b-0 border-b"
+                        } border-t-[#ffffff12] border-t-[1px]`}
                       >
                         <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                           <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
@@ -1471,8 +1471,8 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                       </td>
                       <td
                         className={`px-4 text-sm  ${
-                          isLastItem ? "" : "border-b"
-                        } border-t-[#00000005] border-t-[3px]`}
+                          isLastItem ? "" : "dark:border-b-0 border-b"
+                        } border-t-[#ffffff12] border-t-[1px]`}
                       >
                         <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                           <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
@@ -1482,8 +1482,8 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                       </td>
                       <td
                         className={`px-4 text-sm  ${
-                          isLastItem ? "" : "border-b"
-                        } border-t-[#00000005] border-t-[3px]`}
+                          isLastItem ? "" : "dark:border-b-0 border-b"
+                        } border-t-[#ffffff12] border-t-[1px]`}
                       >
                         <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                           <svg
@@ -1504,8 +1504,8 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                       </td>
                       <td
                         className={`px-4 text-sm  ${
-                          isLastItem ? "" : "border-b"
-                        } border-t-[#00000005] border-t-[3px]`}
+                          isLastItem ? "" : "dark:border-b-0 border-b"
+                        } border-t-[#ffffff12] border-t-[1px]`}
                       >
                         <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                           <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
@@ -1515,8 +1515,8 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                       </td>
                       <td
                         className={`px-4 text-sm  ${
-                          isLastItem ? "" : "border-b"
-                        } border-t-[#00000005] border-t-[3px]`}
+                          isLastItem ? "" : "dark:border-b-0 border-b"
+                        } border-t-[#ffffff12] border-t-[1px]`}
                       >
                         <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                           <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
@@ -1526,8 +1526,8 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                       </td>
                       <td
                         className={`px-4 text-sm  ${
-                          isLastItem ? "" : "border-b"
-                        } border-t-[#00000005] border-t-[3px]`}
+                          isLastItem ? "" : "dark:border-b-0 border-b"
+                        } border-t-[#ffffff12] border-t-[1px]`}
                       >
                         <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                           <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
@@ -1537,8 +1537,8 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                       </td>
                       <td
                         className={`px-4 text-sm  ${
-                          isLastItem ? "" : "border-b"
-                        } border-t-[#00000005] border-t-[3px]`}
+                          isLastItem ? "" : "dark:border-b-0 border-b"
+                        } border-t-[#ffffff12] border-t-[1px]`}
                       >
                         <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                           <span className="text-[#1f2532] dark:text-[#828fa3] text-sm list-text">
@@ -1548,8 +1548,8 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                       </td>
                       <td
                         className={`px-4 text-sm  ${
-                          isLastItem ? "" : "border-b"
-                        } border-t-[#00000005] border-t-[3px] border-l-[#00000005] border-l-[3px]  right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]`}
+                          isLastItem ? "" : "dark:border-b-0 border-b"
+                        } border-t-[#ffffff12] border-t-[1px] border-l-[#ffffff12] border-l-[3px]  right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]`}
                       >
                         <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                           <svg
