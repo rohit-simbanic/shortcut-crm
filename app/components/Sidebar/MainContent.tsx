@@ -52,7 +52,7 @@ const MainContent = () => {
       id="mainContent"
     >
       <div className="w-full">
-        <div className="flex items-center justify-between mx-4 sticky left-0">
+        <div className="flex items-center justify-between mx-4 sticky left-0 mb-5">
           <div className="flex items-center gap-3 flex-wrap">
             <svg
               height={22}
