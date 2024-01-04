@@ -185,7 +185,7 @@ const MainContent = () => {
       </div>
       {viewState.isTableView ? (
         <div
-          className="h-[88%] overflow-y-auto overflow-x-auto px-6"
+          className="h-[84.6%] overflow-y-auto overflow-x-auto px-6"
           id="tableView"
         >
           <UnscheduledTable
