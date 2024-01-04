@@ -44,7 +44,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
   const dataArray = [1, 2, 3, 4, 5];
 
   return (
-    <div className="my-3 w-full">
+    <div className="mb-3 w-full">
       <div
         className={`shadow-md rounded-[12px] p-[8px] bg-white whitespace-nowrap dark:bg-[#161b26] ${
           isScheduledView ? "w-fit" : "w-full"
