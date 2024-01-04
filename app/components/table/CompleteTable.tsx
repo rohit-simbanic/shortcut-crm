@@ -198,7 +198,7 @@ const CompleteTable: FC<completedTableComponentProps> = ({
             <table className="w-full">
               <thead>
                 <tr
-                  className={`text-md font-semibold tracking-wide text-left text-gray-900 uppercase border-gray-600 border-t-[1px] border-t-[#0000000d] shadow-[0px 15px 10px -15px #111] ${
+                  className={`text-md font-semibold tracking-wide text-left text-gray-900 uppercase border-gray-600 border-t-[1px] border-t-[#0000000d] ${
                     filterModalOpen ||
                     isWorkFlowOpen ||
                     isTeamOpen ||
@@ -209,7 +209,7 @@ const CompleteTable: FC<completedTableComponentProps> = ({
                   } top-[2.4rem]  bg-white dark:bg-[#161b26]`}
                 >
                   <th
-                    className={`px-4 hover:bg-[#e4e8eb] hover:cursor-pointer ${
+                    className={`pl-4 hover:bg-[#e4e8eb] hover:cursor-pointer ${
                       filterModalOpen ||
                       isWorkFlowOpen ||
                       isTeamOpen ||
@@ -217,9 +217,9 @@ const CompleteTable: FC<completedTableComponentProps> = ({
                       isBoardOpen
                         ? ""
                         : "sticky z-10"
-                    } left-[0px] bg-white flex-1 w-6 dark:bg-[#161b26] py-3`}
+                    } left-[0px] bg-white flex-1 w-2 dark:bg-[#161b26] py-3`}
                   >
-                    <div className="flex gap-3">
+                    <div className="flex gap-1">
                       <svg
                         viewBox="0 0 20 20"
                         fill="none"
@@ -333,7 +333,7 @@ const CompleteTable: FC<completedTableComponentProps> = ({
                       className="text-gray-700 dark:hover:bg-[#1f2532] hover:bg-[#f8f9fb] hover:cursor-pointer"
                     >
                       <td
-                        className={`px-4 ${
+                        className={`pl-4 ${
                           isLastItem ? "" : "border-b-0"
                         }  border-r border-t-[#ffffff12] dark:border-r-0 border-t-[1px] ${
                           filterModalOpen ||
@@ -343,7 +343,7 @@ const CompleteTable: FC<completedTableComponentProps> = ({
                           isBoardOpen
                             ? ""
                             : "sticky z-10"
-                        } left-[0px]  flex-1 w-6 py-3`}
+                        } left-[0px]  flex-1 w-2 py-3`}
                       >
                         <svg
                           viewBox="0 0 20 20"
@@ -363,7 +363,7 @@ const CompleteTable: FC<completedTableComponentProps> = ({
                       <td
                         className={`px-4 text-ms font-semibold  ${
                           isLastItem ? "" : "border-b-0"
-                        } border-r-[#ffffff12] border-r-[3px] border-t-[#ffffff12] border-t-[1px] ${
+                        } dark:border-r-[#ffffff12] border-r-[#0000000f] border-r-[3px] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] border-t-[#ffffff12] border-t-[1px] ${
                           filterModalOpen ||
                           isWorkFlowOpen ||
                           isTeamOpen ||
@@ -380,7 +380,7 @@ const CompleteTable: FC<completedTableComponentProps> = ({
                       </td>
                       <td
                         className={`px-4 text-xs  ${
-                          isLastItem ? "" : "dark:border-b-0 border-b"
+                          isLastItem ? "" : "dark:border-b-0"
                         } border-t-[#ffffff12] border-t-[1px]`}
                       >
                         <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 dark:bg-[#161b26] rounded-sm">
@@ -392,7 +392,7 @@ const CompleteTable: FC<completedTableComponentProps> = ({
                         trigger={
                           <td
                             className={`px-4 text-sm font-medium  ${
-                              isLastItem ? "" : "dark:border-b-0 border-b"
+                              isLastItem ? "" : "dark:border-b-0"
                             } w-[400px] border-t-[#ffffff12] border-t-[1px] dark:text-[#828fa3]`}
                           >
                             Flutter App Development
@@ -1327,7 +1327,7 @@ const CompleteTable: FC<completedTableComponentProps> = ({
                       </Popup>
                       <td
                         className={`px-4 text-sm  ${
-                          isLastItem ? "" : "dark:border-b-0 border-b"
+                          isLastItem ? "" : "dark:border-b-0"
                         } border-t-[#ffffff12] border-t-[1px]`}
                       >
                         <li className="flex gap-2 hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3">
@@ -1356,7 +1356,7 @@ const CompleteTable: FC<completedTableComponentProps> = ({
                       </td>
                       <td
                         className={`px-4 text-sm  ${
-                          isLastItem ? "" : "dark:border-b-0 border-b"
+                          isLastItem ? "" : "dark:border-b-0"
                         } border-t-[#ffffff12] border-t-[1px]`}
                       >
                         <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
@@ -1367,7 +1367,7 @@ const CompleteTable: FC<completedTableComponentProps> = ({
                       </td>
                       <td
                         className={`px-4 text-sm  ${
-                          isLastItem ? "" : "dark:border-b-0 border-b"
+                          isLastItem ? "" : "dark:border-b-0"
                         } border-t-[#ffffff12] border-t-[1px]`}
                       >
                         <li className="flex gap-2 hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3">
@@ -1391,7 +1391,7 @@ const CompleteTable: FC<completedTableComponentProps> = ({
                       </td>
                       <td
                         className={`px-4 text-sm  ${
-                          isLastItem ? "" : "dark:border-b-0 border-b"
+                          isLastItem ? "" : "dark:border-b-0"
                         } border-t-[#ffffff12] border-t-[1px]`}
                       >
                         <div className="w-[20px] h-[20px] rounded-[50%] bg-[#73818b] hover:scale-110">
@@ -1411,7 +1411,7 @@ const CompleteTable: FC<completedTableComponentProps> = ({
                       </td>
                       <td
                         className={`px-4 text-sm  ${
-                          isLastItem ? "" : "dark:border-b-0 border-b"
+                          isLastItem ? "" : "dark:border-b-0"
                         } border-t-[#ffffff12] border-t-[1px]`}
                       >
                         <button
@@ -1424,7 +1424,7 @@ const CompleteTable: FC<completedTableComponentProps> = ({
                       </td>
                       <td
                         className={`px-4 text-sm  ${
-                          isLastItem ? "" : "dark:border-b-0 border-b"
+                          isLastItem ? "" : "dark:border-b-0"
                         } border-t-[#ffffff12] border-t-[1px]`}
                       >
                         <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
@@ -1435,7 +1435,7 @@ const CompleteTable: FC<completedTableComponentProps> = ({
                       </td>
                       <td
                         className={`px-4 text-sm  ${
-                          isLastItem ? "" : "dark:border-b-0 border-b"
+                          isLastItem ? "" : "dark:border-b-0"
                         } border-t-[#ffffff12] border-t-[1px]`}
                       >
                         <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
@@ -1446,7 +1446,7 @@ const CompleteTable: FC<completedTableComponentProps> = ({
                       </td>
                       <td
                         className={`px-4 text-sm ${
-                          isLastItem ? "" : "dark:border-b-0 border-b"
+                          isLastItem ? "" : "dark:border-b-0"
                         } border-t-[#ffffff12] border-t-[1px]`}
                       >
                         <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
@@ -1457,7 +1457,7 @@ const CompleteTable: FC<completedTableComponentProps> = ({
                       </td>
                       <td
                         className={`px-4 text-sm  ${
-                          isLastItem ? "" : "dark:border-b-0 border-b"
+                          isLastItem ? "" : "dark:border-b-0"
                         } border-t-[#ffffff12] border-t-[1px]`}
                       >
                         <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
@@ -1468,7 +1468,7 @@ const CompleteTable: FC<completedTableComponentProps> = ({
                       </td>
                       <td
                         className={`px-4 text-sm  ${
-                          isLastItem ? "" : "dark:border-b-0 border-b"
+                          isLastItem ? "" : "dark:border-b-0"
                         } border-t-[#ffffff12] border-t-[1px]`}
                       >
                         <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
@@ -1490,7 +1490,7 @@ const CompleteTable: FC<completedTableComponentProps> = ({
                       </td>
                       <td
                         className={`px-4 text-sm  ${
-                          isLastItem ? "" : "dark:border-b-0 border-b"
+                          isLastItem ? "" : "dark:border-b-0"
                         } border-t-[#ffffff12] border-t-[1px]`}
                       >
                         <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
@@ -1501,7 +1501,7 @@ const CompleteTable: FC<completedTableComponentProps> = ({
                       </td>
                       <td
                         className={`px-4 text-sm  ${
-                          isLastItem ? "" : "dark:border-b-0 border-b"
+                          isLastItem ? "" : "dark:border-b-0"
                         } border-t-[#ffffff12] border-t-[1px]`}
                       >
                         <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
@@ -1512,7 +1512,7 @@ const CompleteTable: FC<completedTableComponentProps> = ({
                       </td>
                       <td
                         className={`px-4 text-sm  ${
-                          isLastItem ? "" : "dark:border-b-0 border-b"
+                          isLastItem ? "" : "dark:border-b-0"
                         } border-t-[#ffffff12] border-t-[1px]`}
                       >
                         <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
@@ -1523,7 +1523,7 @@ const CompleteTable: FC<completedTableComponentProps> = ({
                       </td>
                       <td
                         className={`px-4 text-sm  ${
-                          isLastItem ? "" : "dark:border-b-0 border-b"
+                          isLastItem ? "" : "dark:border-b-0"
                         } border-t-[#ffffff12] border-t-[1px]`}
                       >
                         <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
@@ -1534,7 +1534,7 @@ const CompleteTable: FC<completedTableComponentProps> = ({
                       </td>
                       <td
                         className={`px-4 text-sm  ${
-                          isLastItem ? "" : "dark:border-b-0 border-b"
+                          isLastItem ? "" : "dark:border-b-0"
                         } border-t-[#ffffff12] border-t-[1px] border-l-[#ffffff12] border-l-[3px]  right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]`}
                       >
                         <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
