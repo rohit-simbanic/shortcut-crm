@@ -196,18 +196,18 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
         {isScheduledViewFour && (
           <>
             <table className="w-full">
-              <thead>
-                <tr
-                  className={`text-md font-semibold tracking-wide text-left text-gray-900 uppercase border-gray-600 border-t-[1px] border-t-[#0000000d] ${
-                    filterModalOpen ||
-                    isWorkFlowOpen ||
-                    isTeamOpen ||
-                    isHovered ||
-                    isBoardOpen
-                      ? ""
-                      : "sticky z-40"
-                  } top-[2.4rem]  bg-white dark:bg-[#161b26]`}
-                >
+              <thead
+                className={`text-md font-semibold tracking-wide text-left text-gray-900 uppercase border-gray-600 border-t-[1px] border-t-[#0000000d] ${
+                  filterModalOpen ||
+                  isWorkFlowOpen ||
+                  isTeamOpen ||
+                  isHovered ||
+                  isBoardOpen
+                    ? ""
+                    : "sticky z-40"
+                } top-[2.4rem]  bg-white shadow-[rgba(0,0,0,0.04)_0px_4px_0px_0px] dark:shadow-[rgba(0,0,0,0.1)_0px_4px_0px_0px] dark:bg-[#161b26] dark:border-b-[#ffffff12]  dark:border-b-[3px] h-[36px]`}
+              >
+                <tr>
                   <th
                     className={`pl-4 hover:bg-[#e4e8eb] hover:cursor-pointer ${
                       filterModalOpen ||
