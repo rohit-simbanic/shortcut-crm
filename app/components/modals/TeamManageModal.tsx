@@ -1,6 +1,11 @@
 import React from "react";
+interface TeamManageModalProps {
+  setIsTeamManageOpen: (isOpen: boolean) => void;
+}
 
-const TeamManageModal = () => {
+const TeamManageModal: React.FC<TeamManageModalProps> = ({
+  setIsTeamManageOpen,
+}) => {
   return (
     <div className="w-[236px] z-[99999] bg-white dark:bg-[#2d3545] flex flex-col justify-between fixed top-[21rem] left-[148px] rounded-md shadow-md min-h-[164px] modal">
       <div className="px-2">
@@ -13,6 +18,7 @@ const TeamManageModal = () => {
             viewBox="0 0 1024 1024"
             xmlns="http://www.w3.org/2000/svg"
             className="hover:cursor-pointer hover:text-[#555]"
+            onClick={() => setIsTeamManageOpen(false)}
           >
             <path d="M697.4 759.2l61.8-61.8L573.8 512l185.4-185.4-61.8-61.8L512 450.2 326.6 264.8l-61.8 61.8L450.2 512 264.8 697.4l61.8 61.8L512 573.8z"></path>
           </svg>

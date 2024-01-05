@@ -31,6 +31,7 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
     isBoardOpen,
     toggleChangesModalOpen,
     isChangesOpen,
+    isTeamManageOpen,
   } = useContext(SidebarContext);
   const dataArray = [1, 2, 3];
 
@@ -48,7 +49,8 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
             isWorkFlowOpen ||
             isTeamOpen ||
             isBoardOpen ||
-            isHovered
+            isHovered ||
+            isTeamManageOpen
               ? ""
               : "sticky z-20"
           } top-0  bg-white dark:bg-[#161b26]`}
@@ -59,7 +61,8 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
               isWorkFlowOpen ||
               isTeamOpen ||
               isBoardOpen ||
-              isHovered
+              isHovered ||
+              isTeamManageOpen
                 ? ""
                 : "sticky z-10"
             } left-[-30px]  bg-white dark:hover:bg-gray-700 dark:bg-[#161b26]`}
@@ -202,7 +205,8 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                   isWorkFlowOpen ||
                   isTeamOpen ||
                   isHovered ||
-                  isBoardOpen
+                  isBoardOpen ||
+                  isTeamManageOpen
                     ? ""
                     : "sticky z-40"
                 } top-[2.4rem]  bg-white shadow-[rgba(0,0,0,0.04)_0px_4px_0px_0px] dark:shadow-[rgba(0,0,0,0.1)_0px_4px_0px_0px] dark:bg-[#161b26] dark:border-b-[#ffffff12]  dark:border-b-[3px] h-[36px]`}
@@ -214,7 +218,8 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                       isWorkFlowOpen ||
                       isTeamOpen ||
                       isHovered ||
-                      isBoardOpen
+                      isBoardOpen ||
+                      isTeamManageOpen
                         ? ""
                         : "sticky z-10"
                     } left-[-35px] bg-white flex-1 w-2 dark:bg-[#161b26] py-3`}
@@ -263,7 +268,8 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                       isWorkFlowOpen ||
                       isTeamOpen ||
                       isHovered ||
-                      isBoardOpen
+                      isBoardOpen ||
+                      isTeamManageOpen
                         ? ""
                         : "sticky z-10"
                     } left-[0px] bg-white flex-1 w-6 dark:bg-[#161b26]`}
@@ -340,7 +346,8 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                           isWorkFlowOpen ||
                           isTeamOpen ||
                           isHovered ||
-                          isBoardOpen
+                          isBoardOpen ||
+                          isTeamManageOpen
                             ? ""
                             : "sticky z-10 left-[-35px]"
                         }   flex-1 w-2 py-3 shadow-[rgba(0,0,0,0.02)_3px_0px_0px_0px]`}
@@ -368,7 +375,8 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                           isWorkFlowOpen ||
                           isTeamOpen ||
                           isHovered ||
-                          isBoardOpen
+                          isBoardOpen ||
+                          isTeamManageOpen
                             ? ""
                             : "sticky z-10 left-[0px]"
                         }  flex-1 w-6 border-r-[#0000000f] border-r-[3px] shadow-[rgba(0,0,0,0.02)_3px_0px_0px_0px]`}

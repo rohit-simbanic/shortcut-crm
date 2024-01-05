@@ -25,6 +25,7 @@ const SidebarLeft = () => {
     setCollapse,
     isTeamManageOpen,
     toggleTeamManageOpen,
+    setIsTeamManageOpen,
   } = useContext(SidebarContext);
   console.log("isCollapsed Left", isCollapsed);
   return (
@@ -324,7 +325,9 @@ const SidebarLeft = () => {
                   </svg>
                 </div>
               )}
-              {isTeamManageOpen && <TeamManageModal />}
+              {isTeamManageOpen && (
+                <TeamManageModal setIsTeamManageOpen={setIsTeamManageOpen} />
+              )}
               <div
                 className={`flex flex-col gap-[4px] ${
                   isCollapsed ? "mt-8" : ""
