@@ -211,7 +211,7 @@ const MainContent = () => {
         </div>
       ) : (
         <div
-          className="flex gap-[0 rem] justify-start h-[84.4%] overflow-y-auto overflow-x-auto"
+          className="flex gap-[0 rem] justify-start h-[82.4%] overflow-y-auto overflow-x-auto"
           id="tableView"
         >
           <div>
@@ -260,7 +260,7 @@ const MainContent = () => {
               </div>
             </div>
             <div
-              className="h-[68vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3 px-[9px]"
+              className="h-[65vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3 px-[9px]"
               id="mainDragBox"
             >
               <DndProvider backend={HTML5Backend}>
@@ -314,7 +314,7 @@ const MainContent = () => {
               </div>
             </div>
             <div
-              className="h-[68vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3 px-[9px]"
+              className="h-[65vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3 px-[9px]"
               id="mainDragBox"
             >
               <DndProvider backend={HTML5Backend}>
@@ -368,7 +368,7 @@ const MainContent = () => {
               </div>
             </div>
             <div
-              className="h-[68vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3 px-[9px]"
+              className="h-[65vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3 px-[9px]"
               id="mainDragBox"
             >
               <DndProvider backend={HTML5Backend}>
@@ -422,7 +422,7 @@ const MainContent = () => {
               </div>
             </div>
             <div
-              className="h-[68vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3 px-[9px]"
+              className="h-[65vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3 px-[9px]"
               id="mainDragBox"
             >
               <DndProvider backend={HTML5Backend}>
@@ -476,7 +476,7 @@ const MainContent = () => {
               </div>
             </div>
             <div
-              className="h-[68vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3 px-[9px]"
+              className="h-[65vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3 px-[9px]"
               id="mainDragBox"
             >
               <DndProvider backend={HTML5Backend}>
@@ -531,7 +531,7 @@ const MainContent = () => {
             </div>
 
             <div
-              className="h-[68vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3 px-[9px]"
+              className="h-[65vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3 px-[9px]"
               id="mainDragBox"
             >
               <DndProvider backend={HTML5Backend}>
