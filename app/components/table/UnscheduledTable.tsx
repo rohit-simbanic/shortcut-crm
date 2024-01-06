@@ -209,7 +209,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
         </div>
         {isScheduledView && (
           <>
-            <table className="w-full">
+            <table className="w-full border-separate">
               <thead
                 className={`text-md font-semibold tracking-wide text-left text-gray-900 uppercase border-gray-600 border-t-[1px] border-t-[#0000000d] ${
                   filterModalOpen ||
@@ -357,7 +357,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                           isBoardOpen
                             ? ""
                             : "sticky z-10 left-[-35px]"
-                        }   flex-1 w-2 py-3 shadow-[rgba(0,0,0,0.02)_3px_0px_0px_0px]`}
+                        }   flex-1 w-2 py-3`}
                       >
                         <svg
                           viewBox="0 0 20 20"
@@ -385,7 +385,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                           isBoardOpen
                             ? ""
                             : "sticky z-10 left-[0px]"
-                        }  flex-1 w-6 border-r-[#0000000f] border-r-[3px] shadow-[rgba(0,0,0,0.02)_3px_0px_0px_0px]`}
+                        }  flex-1 w-6 border-r-[#0000000f] border-r-[1px] shadow-[rgba(0,0,0,0.02)_3px_0px_0px_0px]`}
                       >
                         <input
                           className="border-gray-300 rounded h-4 w-4 dark:bg-[#161b26]"
