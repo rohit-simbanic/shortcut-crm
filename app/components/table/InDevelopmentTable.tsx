@@ -170,18 +170,18 @@ const InDevelopmentTable: FC<InDevelopmenTableComponentProps> = ({
           </div>
           {isScheduledViewThree && (
             <>
-              <table className="w-full">
+              <table className="w-full border-separate">
                 <thead
                   className={`text-md font-semibold tracking-wide text-left text-gray-900 uppercase border-gray-600 border-t-[1px] border-t-[#0000000d] ${
                     filterModalOpen ||
                     isWorkFlowOpen ||
                     isTeamOpen ||
-                    isHovered ||
                     isBoardOpen ||
-                    isTeamManageOpen
+                    isTeamManageOpen ||
+                    isHovered
                       ? ""
-                      : "sticky z-40"
-                  } top-[2.4rem]  bg-white shadow-[rgba(0,0,0,0.04)_0px_4px_0px_0px] dark:shadow-[rgba(0,0,0,0.1)_0px_4px_0px_0px] dark:bg-[#161b26] dark:border-b-[#ffffff12]  dark:border-b-[3px] h-[36px]`}
+                      : "sticky z-40 top-[2.4rem]"
+                  }  bg-white shadow-[rgba(0,0,0,0.04)_0px_4px_0px_0px] dark:shadow-[rgba(0,0,0,0.1)_0px_4px_0px_0px] dark:bg-[#161b26] dark:border-b-[#ffffff12]  dark:border-b-[3px] h-[36px]`}
                 >
                   <tr>
                     <th
@@ -351,7 +351,7 @@ const InDevelopmentTable: FC<InDevelopmenTableComponentProps> = ({
                             isTeamManageOpen
                               ? ""
                               : "sticky z-10 left-[0px]"
-                          }  flex-1 w-6 border-r-[#0000000f] border-r-[3px] shadow-[rgba(0,0,0,0.02)_3px_0px_0px_0px]`}
+                          }  flex-1 w-6 border-r-[#0000000f] border-r-[1px] shadow-[rgba(0,0,0,0.02)_3px_0px_0px_0px]`}
                         >
                           <input
                             className="border-gray-300 rounded h-4 w-4 dark:bg-[#161b26]"
