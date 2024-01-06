@@ -127,7 +127,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
           onClick={() => setIsDropdownOpen(false)}
         >
           <div className="flex justify-between">
-            <p className="font-light text-xs tracking-tighter my-2 text-[0.70rem] text-[#333] dark:text-[#b8b8bd]">
+            <p className="font-light text-xs tracking-tighter my-2 text-[0.70rem] text-[#686c73] dark:text-[#b8b8bd]">
               Quick fix - DV - 1.0
             </p>
             <button className="bg-transparent w-6 h-6 dark:bg-[#1f2532] opacity-0 group-hover:opacity-100 transition-opacity absolute right-0 top-0 rounded-tr-md z-50">
@@ -140,7 +140,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
           <Popup
             trigger={
               <p className="font-bold tracking-wide text-[0.84rem] text-[#333] dark:text-[#f6f6f6] cursor-pointer">
-                Blink cursor in Story Title input box automatically
+                Blink cursor in Story Title
               </p>
             }
             modal

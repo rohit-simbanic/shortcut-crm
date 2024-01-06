@@ -232,6 +232,7 @@ const SidebarProvider: React.FC<SidebarProviderProps> = ({ children }) => {
       document.removeEventListener("click", handleOutsideClick);
     };
   }, [isBoardOpen]);
+
   return (
     <SidebarContext.Provider
       value={{
@@ -260,7 +261,7 @@ const SidebarProvider: React.FC<SidebarProviderProps> = ({ children }) => {
         setHovered,
         isBoardOpen,
         toggleBoard,
-        setIsBoardOpen
+        setIsBoardOpen,
       }}
     >
       {children}
