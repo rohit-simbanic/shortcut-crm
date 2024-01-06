@@ -140,7 +140,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
           <Popup
             trigger={
               <p className="font-bold tracking-wide text-[0.84rem] text-[#333] dark:text-[#f6f6f6] cursor-pointer">
-                Blink cursor in Story Title input box automatically
+                Blink cursor in Story Title
               </p>
             }
             modal
