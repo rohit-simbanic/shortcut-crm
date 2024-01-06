@@ -170,159 +170,35 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
               </div>
             </div>
           </div>
-        </div>
-        {isScheduledView && (
-          <>
-            <table className="w-full border-separate">
-              <thead
-                className={`text-md font-semibold tracking-wide text-left text-gray-900 uppercase border-gray-600 border-t-[1px] border-t-[#0000000d] ${
-                  filterModalOpen ||
-                  isWorkFlowOpen ||
-                  isTeamOpen ||
-                  isHovered ||
-                  isBoardOpen
-                    ? ""
-                    : "sticky z-40"
-                } top-[2.4rem]  bg-white shadow-[rgba(0,0,0,0.04)_0px_4px_0px_0px] dark:shadow-[rgba(0,0,0,0.1)_0px_4px_0px_0px] dark:bg-[#161b26] dark:border-b-[#ffffff12]  dark:border-b-[3px] h-[36px]`}
-              >
-                <tr>
-                  <th
-                    className={`pl-4 hover:bg-[#e4e8eb] hover:cursor-pointer ${
-                      filterModalOpen ||
-                      isWorkFlowOpen ||
-                      isTeamOpen ||
-                      isHovered ||
-                      isBoardOpen
-                        ? ""
-                        : "sticky z-10"
-                    } left-[-35px] bg-white flex-1 w-2 dark:bg-[#161b26] py-3`}
-                  >
-                    <div className="flex gap-1">
-                      <svg
-                        viewBox="0 0 20 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        height={18}
-                        width={18}
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M7.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM9 9.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm3.5 1.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM9 14.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm3.5 1.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"
-                          fill="#666"
-                        ></path>
-                      </svg>
-                      <svg
-                        viewBox="0 0 20 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        height={18}
-                        width={18}
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M13.707 7.707a1 1 0 0 1-1.414 0l-1.586-1.586a1 1 0 0 0-1.414 0L7.707 7.707a1 1 0 0 1-1.414-1.414l3-3a1 1 0 0 1 1.414 0l3 3a1 1 0 0 1 0 1.414z"
-                          fill="#666"
-                        ></path>
-                        <path
-                          opacity="0.4"
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M6.293 11.293a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
-                          fill="#666"
-                        ></path>
-                      </svg>
-                    </div>
-                  </th>
-                  <th
-                    className={`px-4 hover:bg-[#e4e8eb] hover:cursor-pointer ${
-                      filterModalOpen ||
-                      isWorkFlowOpen ||
-                      isTeamOpen ||
-                      isHovered ||
-                      isBoardOpen
-                        ? ""
-                        : "sticky z-10"
-                    } left-[0px] bg-white flex-1 w-6 dark:bg-[#161b26]`}
-                  >
-                    <input
-                      className="border-gray-300 rounded h-4 w-4 dark:bg-[#161b26]"
-                      type="checkbox"
-                    />
-                  </th>
-                  <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer dark:text-[grey]">
-                    ID
-                  </th>
-                  <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer min-w-[400px] dark:text-[grey] capitalize">
-                    Name
-                  </th>
-                  <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer min-w-[140px] dark:text-[grey] capitalize">
-                    Type
-                  </th>
-                  <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer min-w-[190px] dark:text-[grey] capitalize">
-                    Workflow
-                  </th>
-                  <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer min-w-[130px] dark:text-[grey] capitalize">
-                    State
-                  </th>
-                  <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer dark:text-[grey] capitalize">
-                    Team
-                  </th>
-                  <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer dark:text-[grey] capitalize">
-                    Owners
-                  </th>
-                  <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer min-w-[130px] dark:text-[grey] capitalize">
-                    Estimate
-                  </th>
-                  <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer min-w-[140px] dark:text-[grey] capitalize">
-                    Priority
-                  </th>
-                  <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer min-w-[140px] dark:text-[grey] capitalize">
-                    Severity
-                  </th>
-                  <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer min-w-[180px] dark:text-[grey] capitalize">
-                    Project
-                  </th>
-                  <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer min-w-[160px] dark:text-[grey] capitalize">
-                    Due date
-                  </th>
-                  <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer min-w-[160px] dark:text-[grey] capitalize">
-                    Iteration
-                  </th>
-                  <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer min-w-[160px] dark:text-[grey] capitalize">
-                    Epic
-                  </th>
-                  <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer min-w-[170px] dark:text-[grey] capitalize">
-                    Last Updated
-                  </th>
-                  <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer min-w-[180px] dark:text-[grey] capitalize">
-                    Created One
-                  </th>
-                  <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer min-w-[20px] dark:text-[grey]"></th>
-                </tr>
-              </thead>
-              <tbody className="bg-white dark:bg-[#161b26]">
-                {dataArray.map((element, index) => {
-                  const isLastItem = index === dataArray.length - 1;
-                  return (
-                    <tr
-                      key={index}
-                      className="text-gray-700 dark:hover:bg-[#1f2532] bg-white dark:bg-[#161b26] hover:bg-[#f8f9fb] hover:cursor-pointer"
+          {isScheduledView && (
+            <>
+              <table className="w-full border-separate">
+                <thead
+                  className={`text-md font-semibold tracking-wide text-left text-gray-900 uppercase border-gray-600 border-t-[1px] border-t-[#0000000d] ${
+                    filterModalOpen ||
+                    isWorkFlowOpen ||
+                    isTeamOpen ||
+                    isBoardOpen ||
+                    isTeamManageOpen ||
+                    isHovered
+                      ? ""
+                      : "sticky z-40 top-[2.4rem]"
+                  }  bg-white shadow-[rgba(0,0,0,0.04)_0px_4px_0px_0px] dark:shadow-[rgba(0,0,0,0.1)_0px_4px_0px_0px] dark:bg-[#161b26] dark:border-b-[#ffffff12]  dark:border-b-[3px] h-[36px]`}
+                >
+                  <tr>
+                    <th
+                      className={`pl-4 hover:bg-[#e4e8eb] hover:cursor-pointer ${
+                        filterModalOpen ||
+                        isWorkFlowOpen ||
+                        isTeamOpen ||
+                        isHovered ||
+                        isBoardOpen ||
+                        isTeamManageOpen
+                          ? ""
+                          : "sticky z-10"
+                      } left-[-35px] bg-white flex-1 w-2 dark:bg-[#161b26] py-3`}
                     >
-                      <td
-                        className={`pl-4 bg-inherit   ${
-                          isLastItem ? "" : "border-b-0"
-                        }  border-r-[#0000000f] border-r-[1px] border-t-[#ffffff12] dark:border-r-0 border-t-[1px] ${
-                          filterModalOpen ||
-                          isWorkFlowOpen ||
-                          isTeamOpen ||
-                          isHovered ||
-                          isBoardOpen
-                            ? ""
-                            : "sticky z-10 left-[-35px]"
-                        }   flex-1 w-2 py-3`}
-                      >
+                      <div className="flex gap-1">
                         <svg
                           viewBox="0 0 20 20"
                           fill="none"
@@ -337,19 +213,104 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                             fill="#666"
                           ></path>
                         </svg>
-                      </td>
-                      <td
-                        className={`px-4 bg-inherit text-ms  font-semibold  ${
-                          isLastItem ? "" : "border-b-0"
-                        } dark:border-r-[#ffffff12]  border-t-[#ffffff12] border-t-[1px] ${
-                          filterModalOpen ||
-                          isWorkFlowOpen ||
-                          isTeamOpen ||
-                          isHovered ||
-                          isBoardOpen
-                            ? ""
-                            : "sticky z-10 left-[0px]"
-                        }  flex-1 w-6 border-r-[#0000000f] border-r-[1px] shadow-[rgba(0,0,0,0.02)_3px_0px_0px_0px]`}
+                        <svg
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height={18}
+                          width={18}
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M13.707 7.707a1 1 0 0 1-1.414 0l-1.586-1.586a1 1 0 0 0-1.414 0L7.707 7.707a1 1 0 0 1-1.414-1.414l3-3a1 1 0 0 1 1.414 0l3 3a1 1 0 0 1 0 1.414z"
+                            fill="#666"
+                          ></path>
+                          <path
+                            opacity="0.4"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M6.293 11.293a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
+                            fill="#666"
+                          ></path>
+                        </svg>
+                      </div>
+                    </th>
+                    <th
+                      className={`px-4 hover:bg-[#e4e8eb] hover:cursor-pointer ${
+                        filterModalOpen ||
+                        isWorkFlowOpen ||
+                        isTeamOpen ||
+                        isHovered ||
+                        isBoardOpen ||
+                        isTeamManageOpen
+                          ? ""
+                          : "sticky z-10"
+                      } left-[0px] bg-white flex-1 w-6 dark:bg-[#161b26]`}
+                    >
+                      <input
+                        className="border-gray-300 rounded h-4 w-4 dark:bg-[#161b26]"
+                        type="checkbox"
+                      />
+                    </th>
+                    <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer dark:text-[grey]">
+                      ID
+                    </th>
+                    <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer min-w-[400px] dark:text-[grey] capitalize">
+                      Name
+                    </th>
+                    <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer min-w-[140px] dark:text-[grey] capitalize">
+                      Type
+                    </th>
+                    <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer min-w-[190px] dark:text-[grey] capitalize">
+                      Workflow
+                    </th>
+                    <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer min-w-[130px] dark:text-[grey] capitalize">
+                      State
+                    </th>
+                    <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer dark:text-[grey] capitalize">
+                      Team
+                    </th>
+                    <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer dark:text-[grey] capitalize">
+                      Owners
+                    </th>
+                    <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer min-w-[130px] dark:text-[grey] capitalize">
+                      Estimate
+                    </th>
+                    <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer min-w-[140px] dark:text-[grey] capitalize">
+                      Priority
+                    </th>
+                    <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer min-w-[140px] dark:text-[grey] capitalize">
+                      Severity
+                    </th>
+                    <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer min-w-[180px] dark:text-[grey] capitalize">
+                      Project
+                    </th>
+                    <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer min-w-[160px] dark:text-[grey] capitalize">
+                      Due date
+                    </th>
+                    <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer min-w-[160px] dark:text-[grey] capitalize">
+                      Iteration
+                    </th>
+                    <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer min-w-[160px] dark:text-[grey] capitalize">
+                      Epic
+                    </th>
+                    <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer min-w-[170px] dark:text-[grey] capitalize">
+                      Last Updated
+                    </th>
+                    <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer min-w-[180px] dark:text-[grey] capitalize">
+                      Created One
+                    </th>
+                    <th className="px-4 font-normal hover:bg-[#e4e8eb] dark:hover:bg-[#0b101a] hover:cursor-pointer min-w-[20px] dark:text-[grey]"></th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white dark:bg-[#161b26]">
+                  {dataArray.map((element, index) => {
+                    const isLastItem = index === dataArray.length - 1;
+                    return (
+                      <tr
+                        key={index}
+                        className="text-gray-700 dark:hover:bg-[#1f2532] bg-white dark:bg-[#161b26] hover:bg-[#f8f9fb] hover:cursor-pointer"
                       >
                         <td
                           className={`pl-4 bg-inherit   ${
@@ -392,7 +353,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
                             isTeamManageOpen
                               ? ""
                               : "sticky z-10 left-[0px]"
-                          }  flex-1 w-6 border-r-[#0000000f] border-r-[3px] shadow-[rgba(0,0,0,0.02)_3px_0px_0px_0px]`}
+                          }  flex-1 w-6 border-r-[#0000000f] border-r-[1px] shadow-[rgba(0,0,0,0.02)_3px_0px_0px_0px]`}
                         >
                           <input
                             className="border-gray-300 rounded h-4 w-4 dark:bg-[#161b26]"
@@ -1596,7 +1557,7 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
             </>
           )}
         </div>
-      
+      </div>
       <ReactTooltip
         id="points-click1"
         place="top"
