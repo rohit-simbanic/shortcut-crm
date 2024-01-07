@@ -1516,7 +1516,7 @@ const ReviewTable: FC<reviewTableComponentProps> = ({
                         <td
                           className={`px-4 text-sm  ${
                             isLastItem ? "" : "dark:border-b-0"
-                          } border-t-[#ffffff12] border-t-[1px] border-l-[#ffffff12] border-l-[3px]  right-[0px] z-10 bg-white flex-1 w-6 dark:bg-[#1f2532]`}
+                          } border-t-[#ffffff12] border-t-[1px] border-l-[#ffffff12] border-l-[1px] z-10  flex-1 w-6  sticky right-[-24px] shadow-[rgba(0,0,0,0.02)_-3px_0px_0px_0px] bg-inherit`}
                         >
                           <li className="hover:bg-[#e4e8eb] dark:hover:bg-[#3f4a5f] hover:cursor-pointer px-2 py-1 rounded-md leading-3 list-none">
                             <svg
