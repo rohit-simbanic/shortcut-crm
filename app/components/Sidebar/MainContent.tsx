@@ -40,7 +40,7 @@ const MainContent = () => {
   return (
     <>
       <div
-        className="mt-4 overflow-x-auto overflow-y-hidden h-[92.7vh] flex-grow"
+        className="mt-[1.8rem] overflow-x-auto overflow-y-hidden h-[92.7vh] flex-grow"
         id="mainContent"
       >
         <div className="w-full">
