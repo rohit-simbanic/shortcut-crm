@@ -22,6 +22,7 @@ function SidebarRight() {
     toggleFilterModalOpen,
     isBoardOpen,
     toggleBoard,
+    isFilterDropdownOpen,
   } = useContext(SidebarContext);
 
   console.log("isOpen", isOpen);
@@ -54,7 +55,7 @@ function SidebarRight() {
         <div
           className={`${
             isOpen ? "pr-0" : "pr-[1rem]"
-          } overflow-y-auto h-[95vh] `}
+          } overflow-y-auto overflow-x-hidden h-[100vh] `}
           id="sidebarRight"
         >
           <div
@@ -112,7 +113,7 @@ function SidebarRight() {
           ) : (
             <div
               data-collapse={isOpen}
-              className="transition-all duration-300 ease-in-out cubic-bezier(0.175, 0.885, 0.32, 1.1) w-[168px]"
+              className="transition-all duration-300 ease-in-out cubic-bezier(0.175, 0.885, 0.32, 1.1) w-[168px] pb-4"
             >
               {/* reWrite modal  */}
               <div className="flex justify-between items-center mt-6 mb-2">
@@ -188,7 +189,11 @@ function SidebarRight() {
                   </svg>
                 </div>
 
-                <div className="dropdown-borad flex flex-col h-[70vh]  justify-between">
+                <div
+                  className={`dropdown-borad flex flex-col ${
+                    isFilterDropdownOpen ? "h-[89vh]" : "h-[70vh]"
+                  }  justify-between`}
+                >
                   <div className="">
                     {Array.from(boards, (board) => (
                       <div

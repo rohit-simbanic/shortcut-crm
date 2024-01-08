@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { SidebarContext } from "@/app/context/sidebarContext";
+import React, { useContext, useState } from "react";
 interface InputValue {
   name: string;
   checked: boolean;
@@ -13,7 +14,8 @@ const FilterItems = () => {
     { name: "Stories", checked: false },
     { name: "No Team", checked: true },
   ];
-  const [isFilterDropdownOpen, setFilterDropdownOpen] = useState(false);
+  const { isFilterDropdownOpen, setFilterDropdownOpen } =
+    useContext(SidebarContext);
   const [isFilterDropdownOpenTwo, setFilterDropdownOpenTwo] = useState(false);
   const [values, setValues] = useState<InputValue[]>(value);
   const [valuesTwo, setValuesTwo] = useState<InputValue[]>(valueTwo);
