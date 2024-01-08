@@ -44,7 +44,7 @@ const MainContent = () => {
         id="mainContent"
       >
         <div className="w-full">
-          <div className="flex items-center justify-between mx-4 sticky left-0 mb-5">
+          <div className="flex items-center max-[657px]:flex-col  justify-between mx-4 sticky left-0 mb-5">
             <div className="flex items-center gap-3 flex-wrap">
               <svg
                 height={22}
@@ -52,7 +52,7 @@ const MainContent = () => {
                 viewBox="0 0 20 20"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="text-[#666] dark:text-[#9fa0a5]"
+                className="text-[#666] dark:text-[#9fa0a5] max-[479px]:hidden"
               >
                 <path
                   fill-rule="evenodd"
@@ -61,7 +61,7 @@ const MainContent = () => {
                   fill="currentColor"
                 ></path>
               </svg>
-              <div className="font-bold text-[#9fa0a5] text-ellipsis text-[16px]">
+              <div className="font-bold text-[#9fa0a5] text-ellipsis max-[479px]:text-center text-[16px]">
                 Current Iteration{" "}
                 <span className="text-[#1f2532] dark:text-[#f6f6f6]">
                   / Owned by me
@@ -69,7 +69,7 @@ const MainContent = () => {
               </div>
             </div>
             <div className="flex gap-2 flex-wrap">
-              <div className="flex flex-col items-center gap-1">
+              <div className="flex flex-col items-center gap-1 max-[376px]:hidden">
                 <span className="text-[#808080] text-[11px] font-medium">
                   Display
                 </span>
@@ -187,7 +187,7 @@ const MainContent = () => {
           </div>
         ) : (
           <div
-            className="flex gap-[0 rem] justify-start h-[82.4%] overflow-y-auto overflow-x-auto"
+            className="flex gap-[0 rem] justify-start h-[82.4%] max-[657px]:h-[77.4%] overflow-y-auto overflow-x-auto"
             id="tableView"
           >
             <div>
@@ -236,7 +236,7 @@ const MainContent = () => {
                 </div>
               </div>
               <div
-                className="h-[65vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3 px-[9px]"
+                className="h-[65vh] max-[657px]:h-[61vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3 px-[9px]"
                 id="mainDragBox"
               >
                 <DndProvider backend={HTML5Backend}>
