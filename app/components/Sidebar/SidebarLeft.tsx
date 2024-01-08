@@ -29,8 +29,11 @@ const SidebarLeft = () => {
   } = useContext(SidebarContext);
   console.log("isCollapsed Left", isCollapsed);
   return (
-    <div className="border-r border-gray-300 p-4 pr-0 relative z-10 bg-[#f8f9fb] dark:border-[#283040] dark:bg-[#0B101A] flex-none hidden lg:block">
-      <div className="overflow-y-auto h-[90vh] pr-[1rem]" id="leftSidebar">
+    <div className="border-r border-gray-300 pl-4 pr-0 relative z-10 bg-[#f8f9fb] dark:border-[#283040] dark:bg-[#0B101A] flex-none hidden lg:block">
+      <div
+        className="overflow-y-auto h-[91vh] pr-[1rem] overflow-x-hidden"
+        id="leftSidebar"
+      >
         <div
           className="h-[24px] w-[24px] bg-[#f8f9fb] rounded-[50%] dark:bg-[#0b101a] border-[1px] border-[#e4e8eb] absolute top-[11px] right-[-12px] cursor-pointer z-[1000]"
           onClick={toggleSidebarcollapse}
@@ -67,7 +70,7 @@ const SidebarLeft = () => {
         </div>
         <div
           data-collapse={isCollapsed}
-          className="transition-all duration-[5ms] w-[130px]"
+          className="transition-all duration-[5ms] w-[130px] py-4"
         >
           <ul className="flex flex-col gap-[3px]">
             <li className="flex gap-2 hover:bg-[#e4e8eb] dark:hover:bg-[#1f2532] hover:cursor-pointer pr-2 py-1 rounded-md items-center leading-3 group">
