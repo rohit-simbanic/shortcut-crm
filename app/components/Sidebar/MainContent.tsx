@@ -37,7 +37,8 @@ const MainContent = () => {
       [view]: !prevState[view],
     }));
   };
-  const { isWorkFlowOpen } = useContext(SidebarContext);
+  const { isWorkFlowOpen, filterModalOpen, isTeamOpen } =
+    useContext(SidebarContext);
   return (
     <>
       <div
@@ -47,7 +48,7 @@ const MainContent = () => {
         <div className="w-full">
           <div
             className={`flex items-center max-[672px]:flex-col  justify-between mx-4 ${
-              isWorkFlowOpen ? "" : "sticky"
+              isWorkFlowOpen || isTeamOpen || filterModalOpen ? "" : "sticky"
             } left-0 mb-5`}
           >
             <div className="flex items-center gap-3 flex-wrap">
