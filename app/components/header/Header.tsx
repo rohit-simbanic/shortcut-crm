@@ -86,44 +86,52 @@ const Header = () => {
               <div className="modal bg-white w-[560px] absolute top-12 z-50 shadow-md rounded-md dark:bg-[#2d3545]">
                 <nav className="flex flex-col sm:flex-row overflow-x-auto scrollbar-input dark:border-b-[#3f4a5f]">
                   <button
-                    className={`text-gray-600 py-4 px-6 hover:text-blue-500 focus:outline-none font-medium flex items-center gap-2 ${
+                    className={`text-gray-600 py-4 px-6 dark:hover:text-white focus:outline-none font-medium flex items-center gap-2 ${
                       activeTab === "stories" &&
-                      "text-blue-500 border-[#3a95c9] border-b-2"
+                      "dark:text-white border-[#3a95c9] border-b-[3px]"
                     }`}
                     onClick={() => handleTabClick("stories")}
                   >
                     <span>Stories</span>
-                    <span className="p-1 bg-[#f1f3f7] rounded-md">26</span>
+                    <span className="p-1 bg-[#f1f3f7] dark:bg-[#252e3d] dark:text-[#f6f6f6] rounded-md">
+                      26
+                    </span>
                   </button>
                   <button
-                    className={`text-gray-600 py-4 px-6 hover:text-blue-500 focus:outline-none border-b-1 font-medium flex items-center gap-2 ${
+                    className={`text-gray-600 py-4 px-6 dark:hover:text-white focus:outline-none border-b-1 font-medium flex items-center gap-2 ${
                       activeTab === "epics" &&
-                      "text-blue-500 border-[#3a95c9] border-b-2"
+                      "dark:text-white border-[#3a95c9] border-b-[3px]"
                     }`}
                     onClick={() => handleTabClick("epics")}
                   >
                     <span>Epics</span>
-                    <span className="p-1 bg-[#f1f3f7] rounded-md">22</span>
+                    <span className="p-1 bg-[#f1f3f7] dark:bg-[#252e3d] dark:text-[#f6f6f6] rounded-md">
+                      22
+                    </span>
                   </button>
                   <button
-                    className={`text-gray-600 py-4 px-6 hover:text-blue-500 focus:outline-none border-b-1 font-medium flex items-center gap-2 ${
+                    className={`text-gray-600 py-4 px-6 dark:hover:text-white focus:outline-none border-b-1 font-medium flex items-center gap-2 ${
                       activeTab === "iterations" &&
-                      "text-blue-500 border-[#3a95c9] border-b-2"
+                      "dark:text-white border-[#3a95c9] border-b-[3px]"
                     }`}
                     onClick={() => handleTabClick("iterations")}
                   >
                     <span>Iterations</span>
-                    <span className="p-1 bg-[#f1f3f7] rounded-md">0</span>
+                    <span className="p-1 bg-[#f1f3f7] dark:bg-[#252e3d] dark:text-[#f6f6f6] rounded-md">
+                      0
+                    </span>
                   </button>
                   <button
-                    className={`text-gray-600 py-4 px-6 hover:text-blue-500 focus:outline-none border-b-1 font-medium flex items-center gap-2 ${
+                    className={`text-gray-600 py-4 px-6 dark:hover:text-white focus:outline-none border-b-1 font-medium flex items-center gap-2 ${
                       activeTab === "docs" &&
-                      "text-blue-500 border-[#3a95c9] border-b-2"
+                      "dark:text-white border-[#3a95c9] border-b-[3px]"
                     }`}
                     onClick={() => handleTabClick("docs")}
                   >
                     <span>Docs</span>
-                    <span className="p-1 bg-[#f1f3f7] rounded-md">0</span>
+                    <span className="p-1 bg-[#f1f3f7] dark:bg-[#252e3d] dark:text-[#f6f6f6] rounded-md">
+                      0
+                    </span>
                   </button>
                 </nav>
                 <div className="header border-b-[1px] border-slate-200 flex justify-between px-4"></div>
@@ -133,7 +141,7 @@ const Header = () => {
                 >
                   {activeTab === "stories" && (
                     <>
-                      <span className="text-sm font-normal">
+                      <span className="text-sm font-normal dark:text-[#b8b8bd]">
                         Recently Viewed
                       </span>
                       <ul>
@@ -160,10 +168,10 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4 className="dark:text-gray-400">
+                              <h4 className="dark:text-gray-100">
                                 Create Button - Create Epic
                               </h4>
-                              <span className="py-2 font-sans text-[12px] font-normal">
+                              <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
                             </div>
@@ -200,10 +208,10 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4 className="dark:text-gray-400">
+                              <h4 className="dark:text-gray-100">
                                 Create Button - Create Epic
                               </h4>
-                              <span className="py-2 font-sans text-[12px] font-normal">
+                              <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
                             </div>
@@ -240,10 +248,10 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4 className="dark:text-gray-400">
+                              <h4 className="dark:text-gray-100">
                                 Create Button - Create Epic
                               </h4>
-                              <span className="py-2 font-sans text-[12px] font-normal">
+                              <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
                             </div>
@@ -280,10 +288,10 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4 className="dark:text-gray-400">
+                              <h4 className="dark:text-gray-100">
                                 Create Button - Create Epic
                               </h4>
-                              <span className="py-2 font-sans text-[12px] font-normal">
+                              <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
                             </div>
@@ -320,10 +328,10 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4 className="dark:text-gray-400">
+                              <h4 className="dark:text-gray-100">
                                 Create Button - Create Epic
                               </h4>
-                              <span className="py-2 font-sans text-[12px] font-normal">
+                              <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
                             </div>
@@ -360,10 +368,10 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4 className="dark:text-gray-400">
+                              <h4 className="dark:text-gray-100">
                                 Create Button - Create Epic
                               </h4>
-                              <span className="py-2 font-sans text-[12px] font-normal">
+                              <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
                             </div>
@@ -400,10 +408,10 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4 className="dark:text-gray-400">
+                              <h4 className="dark:text-gray-100">
                                 Create Button - Create Epic
                               </h4>
-                              <span className="py-2 font-sans text-[12px] font-normal">
+                              <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
                             </div>
@@ -440,10 +448,10 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4 className="dark:text-gray-400">
+                              <h4 className="dark:text-gray-100">
                                 Create Button - Create Epic
                               </h4>
-                              <span className="py-2 font-sans text-[12px] font-normal">
+                              <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
                             </div>
@@ -480,10 +488,10 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4 className="dark:text-gray-400">
+                              <h4 className="dark:text-gray-100">
                                 Create Button - Create Epic
                               </h4>
-                              <span className="py-2 font-sans text-[12px] font-normal">
+                              <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
                             </div>
@@ -520,10 +528,10 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4 className="dark:text-gray-400">
+                              <h4 className="dark:text-gray-100">
                                 Create Button - Create Epic
                               </h4>
-                              <span className="py-2 font-sans text-[12px] font-normal">
+                              <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
                             </div>
@@ -560,10 +568,10 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4 className="dark:text-gray-400">
+                              <h4 className="dark:text-gray-100">
                                 Create Button - Create Epic
                               </h4>
-                              <span className="py-2 font-sans text-[12px] font-normal">
+                              <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
                             </div>
@@ -582,7 +590,7 @@ const Header = () => {
                   )}
                   {activeTab === "epics" && (
                     <>
-                      <span className="text-sm font-normal">
+                      <span className="text-sm font-normal dark:text-[#b8b8bd]">
                         Recently Viewed
                       </span>
                       <ul>
@@ -609,10 +617,10 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4 className="dark:text-gray-400">
+                              <h4 className="dark:text-gray-100">
                                 Create Button - Create Epic
                               </h4>
-                              <span className="py-2 font-sans text-[12px] font-normal">
+                              <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
                             </div>
@@ -649,10 +657,10 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4 className="dark:text-gray-400">
+                              <h4 className="dark:text-gray-100">
                                 Create Button - Create Epic
                               </h4>
-                              <span className="py-2 font-sans text-[12px] font-normal">
+                              <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
                             </div>
@@ -689,10 +697,10 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4 className="dark:text-gray-400">
+                              <h4 className="dark:text-gray-100">
                                 Create Button - Create Epic
                               </h4>
-                              <span className="py-2 font-sans text-[12px] font-normal">
+                              <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
                             </div>
@@ -729,10 +737,10 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4 className="dark:text-gray-400">
+                              <h4 className="dark:text-gray-100">
                                 Create Button - Create Epic
                               </h4>
-                              <span className="py-2 font-sans text-[12px] font-normal">
+                              <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
                             </div>
@@ -769,10 +777,10 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4 className="dark:text-gray-400">
+                              <h4 className="dark:text-gray-100">
                                 Create Button - Create Epic
                               </h4>
-                              <span className="py-2 font-sans text-[12px] font-normal">
+                              <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
                             </div>
@@ -809,10 +817,10 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4 className="dark:text-gray-400">
+                              <h4 className="dark:text-gray-100">
                                 Create Button - Create Epic
                               </h4>
-                              <span className="py-2 font-sans text-[12px] font-normal">
+                              <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
                             </div>
@@ -849,10 +857,10 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4 className="dark:text-gray-400">
+                              <h4 className="dark:text-gray-100">
                                 Create Button - Create Epic
                               </h4>
-                              <span className="py-2 font-sans text-[12px] font-normal">
+                              <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
                             </div>
@@ -889,10 +897,10 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4 className="dark:text-gray-400">
+                              <h4 className="dark:text-gray-100">
                                 Create Button - Create Epic
                               </h4>
-                              <span className="py-2 font-sans text-[12px] font-normal">
+                              <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
                             </div>
@@ -929,10 +937,10 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4 className="dark:text-gray-400">
+                              <h4 className="dark:text-gray-100">
                                 Create Button - Create Epic
                               </h4>
-                              <span className="py-2 font-sans text-[12px] font-normal">
+                              <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
                             </div>
@@ -969,10 +977,10 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4 className="dark:text-gray-400">
+                              <h4 className="dark:text-gray-100">
                                 Create Button - Create Epic
                               </h4>
-                              <span className="py-2 font-sans text-[12px] font-normal">
+                              <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
                             </div>
@@ -1009,10 +1017,10 @@ const Header = () => {
                               </svg>
                             </div>
                             <div>
-                              <h4 className="dark:text-gray-400">
+                              <h4 className="dark:text-gray-100">
                                 Create Button - Create Epic
                               </h4>
-                              <span className="py-2 font-sans text-[12px] font-normal">
+                              <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
                               </span>
                             </div>
@@ -1031,7 +1039,7 @@ const Header = () => {
                   )}
                   {activeTab === "iterations" && (
                     <>
-                      <span className="text-sm font-normal">
+                      <span className="text-sm font-normal dark:text-[#b8b8bd]">
                         Recently Viewed
                       </span>
 
@@ -1050,7 +1058,7 @@ const Header = () => {
                   )}
                   {activeTab === "docs" && (
                     <>
-                      <span className="text-sm font-normal">
+                      <span className="text-sm font-normal dark:text-[#b8b8bd]">
                         Recently Viewed
                       </span>
 
@@ -1084,7 +1092,7 @@ const Header = () => {
                         fill="#666"
                       ></path>
                     </svg>
-                    <span className="font-bold text-sm">
+                    <span className="font-bold text-sm dark:text-[#dddddd]">
                       Operators & Filters
                     </span>
                   </div>
