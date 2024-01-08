@@ -28,8 +28,8 @@ interface ISidebarContext {
   setFilterModalOpen: (collapsed: boolean) => void;
   setIsChangesOpen: (collapsed: boolean) => void;
   setIsBoardOpen: (collapsed: boolean) => void;
-  setFilterDropdownOpen: (collapsed: boolean) => void;
   setHovered: React.Dispatch<React.SetStateAction<boolean>>;
+  setFilterDropdownOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const initialValue: ISidebarContext = {
@@ -91,11 +91,9 @@ const initialValue: ISidebarContext = {
   setIsBoardOpen: function (collapsed: boolean): void {
     throw new Error("Function not implemented.");
   },
-  setFilterDropdownOpen: function (collapsed: boolean): void {
-    throw new Error("Function not implemented.");
-  },
 
   setHovered: () => {},
+  setFilterDropdownOpen: () => {},
 };
 
 const SidebarContext = createContext<ISidebarContext>(initialValue);
