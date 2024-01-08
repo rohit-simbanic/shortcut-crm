@@ -11,6 +11,7 @@ interface ISidebarContext {
   isChangesOpen: boolean;
   isHovered: boolean;
   isBoardOpen: boolean;
+  isFilterDropdownOpen: boolean;
   toggleSidebarcollapse: () => void;
   toggleSidebarOpen: () => void;
   toggleTeamOpen: () => void;
@@ -27,6 +28,7 @@ interface ISidebarContext {
   setFilterModalOpen: (collapsed: boolean) => void;
   setIsChangesOpen: (collapsed: boolean) => void;
   setIsBoardOpen: (collapsed: boolean) => void;
+  setFilterDropdownOpen: (collapsed: boolean) => void;
   setHovered: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
@@ -40,6 +42,7 @@ const initialValue: ISidebarContext = {
   isChangesOpen: false,
   isHovered: false,
   isBoardOpen: false,
+  isFilterDropdownOpen: false,
   toggleSidebarcollapse: function (): void {
     throw new Error("Function not implemented.");
   },
@@ -88,6 +91,9 @@ const initialValue: ISidebarContext = {
   setIsBoardOpen: function (collapsed: boolean): void {
     throw new Error("Function not implemented.");
   },
+  setFilterDropdownOpen: function (collapsed: boolean): void {
+    throw new Error("Function not implemented.");
+  },
 
   setHovered: () => {},
 };
@@ -108,6 +114,7 @@ const SidebarProvider: React.FC<SidebarProviderProps> = ({ children }) => {
   const [isChangesOpen, setIsChangesOpen] = useState(false);
   const [isHovered, setHovered] = useState(false);
   const [isBoardOpen, setIsBoardOpen] = useState(false);
+  const [isFilterDropdownOpen, setFilterDropdownOpen] = useState(false);
 
   const toggleSidebarcollapse = () => {
     setCollapse((prevState) => !prevState);
@@ -262,6 +269,8 @@ const SidebarProvider: React.FC<SidebarProviderProps> = ({ children }) => {
         isBoardOpen,
         toggleBoard,
         setIsBoardOpen,
+        isFilterDropdownOpen,
+        setFilterDropdownOpen,
       }}
     >
       {children}
