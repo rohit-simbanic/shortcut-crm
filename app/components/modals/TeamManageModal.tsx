@@ -54,7 +54,7 @@ const TeamManageModal: React.FC<TeamManageModalProps> = ({
         </div>
         <div className="flex items-center relative mb-3">
           <div className="border-l-[3px] border-[#FF00FF] absolute h-9 -left-2"></div>
-          <div className="space-x-2 bg-[#deeffa] dark:bg-[#485575] flex items-center px-3 rounded-md duration-500 ease-in-out py-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-white dark:hover:text-[#635fc7] dark:text-white w-full">
+          <div className="space-x-2 bg-[#deeffa] dark:bg-[#485575] flex items-center px-3 rounded-md duration-500 ease-in-out py-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-[#161b26] dark:hover:text-[#635fc7] dark:text-white w-full">
             <div className="bg-[#FF00FF] h-[25px] w-[25px] rounded-[50%]">
               <svg
                 viewBox="0 0 20 20"
@@ -78,8 +78,8 @@ const TeamManageModal: React.FC<TeamManageModalProps> = ({
           </div>
         </div>
       </div>
-      <div className="bg-[#f1f3f7] dark:bg-[#2d3545] dark:border-t-[#3f4a5f] border-t-[1px] px-2">
-        <div className="flex items-center w-full space-x-2 px-3 mr-8 rounded-md duration-500 ease-in-out py-2 my-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-white dark:hover:text-[#635fc7] dark:text-white">
+      <div className="bg-[#f1f3f7] dark:bg-[#2d3545] dark:border-t-[#3f4a5f] border-t-[1px] px-2 ">
+        <div className="flex items-center w-full space-x-2 px-3 mr-8 rounded-md duration-500 ease-in-out py-2 my-2 cursor-pointer  hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-[#161b26] dark:hover:text-[#635fc7] dark:text-white">
           <svg
             viewBox="0 0 20 20"
             fill="none"
