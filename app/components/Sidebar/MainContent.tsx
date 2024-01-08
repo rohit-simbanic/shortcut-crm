@@ -9,6 +9,7 @@ import InDevelopmentTable from "../table/InDevelopmentTable";
 import ReviewTable from "../table/ReviewTable";
 import CompleteTable from "../table/CompleteTable";
 import { Tooltip } from "react-tooltip";
+import { SidebarContext } from "@/app/context/sidebarContext";
 
 interface ViewState {
   isTableView: boolean;
@@ -36,7 +37,7 @@ const MainContent = () => {
       [view]: !prevState[view],
     }));
   };
-
+  const { isWorkFlowOpen } = useContext(SidebarContext);
   return (
     <>
       <div
@@ -44,7 +45,11 @@ const MainContent = () => {
         id="mainContent"
       >
         <div className="w-full">
-          <div className="flex items-center max-[657px]:flex-col  justify-between mx-4 sticky left-0 mb-5">
+          <div
+            className={`flex items-center max-[672px]:flex-col  justify-between mx-4 ${
+              isWorkFlowOpen ? "" : "sticky"
+            } left-0 mb-5`}
+          >
             <div className="flex items-center gap-3 flex-wrap">
               <svg
                 height={22}
