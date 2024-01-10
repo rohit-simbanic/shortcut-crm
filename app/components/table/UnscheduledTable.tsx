@@ -55,7 +55,11 @@ const UnscheduledTable: FC<UnscheduledTableComponentProps> = ({
               isTeamManageOpen
                 ? ""
                 : "sticky z-20"
-            } top-0  bg-white dark:bg-[#161b26] max-[595px]:justify-center max-[595px]:items-center flex-wrap`}
+            } top-0  bg-white dark:bg-[#161b26] ${
+              isScheduledView
+                ? ""
+                : "max-[595px]:justify-center max-[595px]:items-center "
+            } flex-wrap`}
           >
             <div
               className={`flex items-center space-x-2 px-3 mr-8 rounded-md duration-500 ease-in-out py-2 cursor-pointer hover:bg-[#e4e8eb] hover:text-[#1f2532] dark:hover:bg-gray-950 dark:hover:text-[#635fc7] dark:text-white ${
