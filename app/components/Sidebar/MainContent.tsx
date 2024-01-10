@@ -193,7 +193,7 @@ const MainContent = () => {
           </div>
         ) : (
           <div
-            className="flex gap-[0 rem] justify-start h-[82.4%] max-[657px]:h-[77.4%] overflow-y-auto overflow-x-auto"
+            className="flex gap-[0 rem] justify-start h-[82.4%] max-[657px]:h-[77.4%] overflow-y-hidden overflow-x-auto"
             id="tableView"
           >
             <div>
