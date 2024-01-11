@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main>
       <Header />
-      <div className="flex">
+      <div className="flex relative">
         <SidebarLeft />
         <SidebarRight />
         <MainContent />

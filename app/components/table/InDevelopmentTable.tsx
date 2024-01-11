@@ -107,7 +107,7 @@ const InDevelopmentTable: FC<InDevelopmenTableComponentProps> = ({
                 In development
               </h2>
             </div>
-            <div className="flex gap-2 py-4 px-5">
+            <div className="flex gap-2 sm:py-4 px-5">
               <div
                 className="flex gap-1 items-center text-[11px] dark:text-[grey]"
                 data-tooltip-id="stories-click3"
