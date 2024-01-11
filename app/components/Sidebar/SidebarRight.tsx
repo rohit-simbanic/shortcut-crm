@@ -38,6 +38,20 @@ function SidebarRight() {
     { name: "Melo Board", id: 2 },
     { name: "Agile Board", id: 3 },
   ];
+  useEffect(() => {
+    const handleResize = () => {
+      setIsOpen(window.innerWidth <= 552);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Set initial state
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <>
@@ -50,7 +64,11 @@ function SidebarRight() {
           isOpen ? "translate-x-0" : "translate-x-[0px]"
         } opacity ${
           isOpen ? "100" : "0"
-        } transition-all duration-300 ease-in-out cubic-bezier(0.175, 0.885, 0.32, 1.1)`}
+        } transition-all duration-300 ease-in-out cubic-bezier(0.175, 0.885, 0.32, 1.1) ${
+          isOpen
+            ? ""
+            : "max-[552px]:absolute max-[552px]:top-0 max-[552px]:left-0 max-[552px]:bottom-0 max-[552px]:z-[2147483646] max-[552px]:bg-white dark:max-[552px]:bg-[#161b26]"
+        } `}
       >
         <div
           className={`${

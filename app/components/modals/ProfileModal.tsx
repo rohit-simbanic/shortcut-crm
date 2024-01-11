@@ -5,7 +5,7 @@ import { BsMoon, BsSun } from "react-icons/bs";
 const ProfiileModal = () => {
   const { theme, toggleTheme } = useTheme();
   return (
-    <div className="bg-black flex flex-col absolute top-16 z-50 right-1 w-[300px] rounded-md p-4 profile-modal">
+    <div className="bg-black flex flex-col absolute top-16 z-[2147483647] right-1 max-[357px]:right-[-5rem] w-[300px] rounded-md p-4 profile-modal">
       <div className="flex justify-between items-center">
         <button
           className="py-3 rounded-[50%] px-3 text-center h-12 w-12 align-middle font-sans text-xs font-bold text-gray-50  transition-all bg-[#ccba45] hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"

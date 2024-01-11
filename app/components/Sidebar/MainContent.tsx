@@ -42,7 +42,15 @@ const MainContent = () => {
   return (
     <>
       <div
-        className="mt-[1.8rem] overflow-x-auto overflow-y-hidden h-[92.7vh] flex-grow"
+        className={`mt-[1.8rem] overflow-x-auto overflow-y-hidden h-[92.7vh] ${
+          viewState.isTableView
+            ? "max-[357px]:h-[79.7vh]"
+            : "max-[357px]:h-[84.7vh]"
+        } ${
+          viewState.isTableView
+            ? "max-[672px]:h-[84.7vh]"
+            : "max-[672px]:h-[92.7vh]"
+        }   flex-grow`}
         id="mainContent"
       >
         <div className="w-full">
@@ -51,7 +59,7 @@ const MainContent = () => {
               isWorkFlowOpen || isTeamOpen || filterModalOpen ? "" : "sticky"
             } left-0 mb-5`}
           >
-            <div className="flex items-center gap-3 flex-wrap">
+            <div className="flex items-center gap-3 flex-wrap max-[513px]:hidden">
               <svg
                 height={22}
                 width={22}
@@ -75,7 +83,7 @@ const MainContent = () => {
               </div>
             </div>
             <div className="flex gap-2 flex-wrap">
-              <div className="flex flex-col items-center gap-1 max-[376px]:hidden">
+              <div className="flex flex-col items-center gap-1 max-[385px]:hidden">
                 <span className="text-[#808080] text-[11px] font-medium">
                   Display
                 </span>
@@ -242,7 +250,11 @@ const MainContent = () => {
                 </div>
               </div>
               <div
-                className="h-[65vh] max-[657px]:h-[61vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3 px-[9px]"
+                className={`${
+                  viewState.isTableView
+                    ? "max-[356px]:h-[65vh]"
+                    : "max-[356px]:h-[53vh]"
+                }  max-[657px]:h-[61vh] h-[65vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3 px-[9px]`}
                 id="mainDragBox"
               >
                 <DndProvider backend={HTML5Backend}>
@@ -296,7 +308,11 @@ const MainContent = () => {
                 </div>
               </div>
               <div
-                className="h-[65vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3 px-[9px]"
+                className={`${
+                  viewState.isTableView
+                    ? "max-[356px]:h-[65vh]"
+                    : "max-[356px]:h-[53vh]"
+                }  max-[657px]:h-[61vh] h-[65vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3 px-[9px]`}
                 id="mainDragBox"
               >
                 <DndProvider backend={HTML5Backend}>
@@ -350,7 +366,11 @@ const MainContent = () => {
                 </div>
               </div>
               <div
-                className="h-[65vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3 px-[9px]"
+                className={`${
+                  viewState.isTableView
+                    ? "max-[356px]:h-[65vh]"
+                    : "max-[356px]:h-[53vh]"
+                }  max-[657px]:h-[61vh] h-[65vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3 px-[9px]`}
                 id="mainDragBox"
               >
                 <DndProvider backend={HTML5Backend}>
@@ -404,7 +424,11 @@ const MainContent = () => {
                 </div>
               </div>
               <div
-                className="h-[65vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3 px-[9px]"
+                className={`${
+                  viewState.isTableView
+                    ? "max-[356px]:h-[65vh]"
+                    : "max-[356px]:h-[53vh]"
+                }  max-[657px]:h-[61vh] h-[65vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3 px-[9px]`}
                 id="mainDragBox"
               >
                 <DndProvider backend={HTML5Backend}>
@@ -458,7 +482,11 @@ const MainContent = () => {
                 </div>
               </div>
               <div
-                className="h-[65vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3 px-[9px]"
+                className={`${
+                  viewState.isTableView
+                    ? "max-[356px]:h-[65vh]"
+                    : "max-[356px]:h-[53vh]"
+                }  max-[657px]:h-[61vh] h-[65vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3 px-[9px]`}
                 id="mainDragBox"
               >
                 <DndProvider backend={HTML5Backend}>
@@ -513,7 +541,11 @@ const MainContent = () => {
               </div>
 
               <div
-                className="h-[65vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3 px-[9px]"
+                className={`${
+                  viewState.isTableView
+                    ? "max-[356px]:h-[65vh]"
+                    : "max-[356px]:h-[53vh]"
+                }  max-[657px]:h-[61vh] h-[65vh] overflow-y-auto overflow-x-hidden flex flex-col gap-3 px-[9px]`}
                 id="mainDragBox"
               >
                 <DndProvider backend={HTML5Backend}>
