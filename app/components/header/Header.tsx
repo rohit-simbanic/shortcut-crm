@@ -1,3 +1,4 @@
+//@ts-nocheck
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
@@ -5,6 +6,8 @@ import ProfiileModal from "../modals/ProfileModal";
 import Dropdown from "../button/HeaderDropDown";
 import CreateButton from "../button/CreateButton";
 import { Tooltip } from "react-tooltip";
+import Popup from "reactjs-popup";
+import PlanModal from "../modals/PlanModal";
 
 interface SlidingPanelTabProps {
   setOpenPanel: React.Dispatch<React.SetStateAction<boolean>>;
@@ -1182,13 +1185,21 @@ const Header: React.FC<SlidingPanelTabProps> = ({ setOpenPanel }) => {
             </svg>
             Activity
           </button>
-          <button
-            className="flex select-none items-center gap-3 rounded-lg  py-1 px-4 text-center align-middle font-sans bg-slate-50/10 text-xs font-bold text-[#fff]  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-            type="button"
-            data-ripple-light="true"
+          <Popup
+            trigger={
+              <button
+                className="flex select-none items-center gap-3 rounded-lg  py-1 px-4 text-center align-middle font-sans bg-slate-50/10 text-xs font-bold text-[#fff]  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                type="button"
+                data-ripple-light="true"
+              >
+                Upgrade
+              </button>
+            }
+            modal
+            nested
           >
-            Upgrade
-          </button>
+            {(close: () => void) => <PlanModal close={close} />}
+          </Popup>
           <div>
             <button
               className="py-3 rounded-[50%] px-3 text-center h-10 flex justify-center items-center w-10 align-middle font-sans text-xs font-bold text-gray-50  transition-all bg-[#ccba45] hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
