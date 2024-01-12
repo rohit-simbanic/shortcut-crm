@@ -6,7 +6,11 @@ import Dropdown from "../button/HeaderDropDown";
 import CreateButton from "../button/CreateButton";
 import { Tooltip } from "react-tooltip";
 
-const Header = () => {
+interface SlidingPanelTabProps {
+  setOpenPanel: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Header: React.FC<SlidingPanelTabProps> = ({ setOpenPanel }) => {
   const [isProfileModalOpen, setIsProfileModalOpen] = useState<boolean>(false);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const [activeTab, setActiveTab] = useState<string>("stories");
@@ -1159,6 +1163,7 @@ const Header = () => {
             className="group hidden lg:flex select-none items-center gap-1 rounded-lg  py-0 px-2 text-center align-middle font-sans text-xs font-bold text-[#b8b8bd]  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             type="button"
             data-ripple-light="true"
+            onClick={() => setOpenPanel(true)}
           >
             <svg
               viewBox="0 0 20 20"
