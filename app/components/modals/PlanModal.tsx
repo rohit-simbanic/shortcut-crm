@@ -25,8 +25,8 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
           </button>
         </div>
       </div>
-      <div className="h-[50vh] overflow-y-scroll" id="filterModal">
-        <div className="flex gap-2 items-center bg-[#eef7fc] rounded-md p-4 lg:mb-20">
+      <div className="h-[50vh] overflow-y-scroll dark:pr-2" id="filterModal">
+        <div className="flex gap-2 items-center bg-[#eef7fc] dark:bg-transparent dark:border-[#3a95c9] dark:border-[1px] rounded-md p-4 lg:mb-20">
           <svg
             viewBox="0 0 20 20"
             height={20}
@@ -41,7 +41,7 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
               fill="#3a95c9"
             ></path>
           </svg>
-          <p className="text-[17px] text-[#1f2532]">
+          <p className="text-[17px] text-[#1f2532] dark:text-white">
             Please{" "}
             <strong className="hover:text-[#3a95c9] hover:cursor-pointer">
               contact an owner
@@ -53,7 +53,7 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
           <div className="border-[1px] border-[#ddd] border-r-[1px] lg:border-r-0 p-4 max-lg:rounded-tr-md max-lg:rounded-br-md rounded-tl-md rounded-bl-md">
             <div className="">
               <div className="flex gap-3 items-center">
-                <h4 className="text-[20px] text-[#333333] font-medium mb-3">
+                <h4 className="text-[20px] text-[#333333] font-medium mb-3 dark:text-white">
                   Free
                 </h4>
                 <svg
@@ -75,13 +75,15 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                 Plan work, ship quickly. For small teams.
               </p>
               <div className="mt-10">
-                <h5 className="text-[27px] text-[#444444]">$0</h5>
-                <p className="text-[12px] text-[#444444]">
+                <h5 className="text-[27px] text-[#444444] dark:text-white">
+                  $0
+                </h5>
+                <p className="text-[12px] text-[#444444] dark:text-gray-300">
                   per user, per month
                 </p>
               </div>
             </div>
-            <button className="bg-[#80808014] border-[1px] border-[#e4e8eb66] w-full my-3 py-2 rounded-md mt-6 text-[#1f253266]">
+            <button className="bg-[#80808014] dark:text-[#f6f6f666] border-[1px] border-[#e4e8eb66] w-full my-3 py-2 rounded-md mt-6 text-[#1f253266]">
               Current Plan
             </button>
             <div className="check-wrapper">
@@ -100,7 +102,9 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                     fill="#13ae47"
                   ></path>
                 </svg>
-                <p>Manage all ongoing work in Stories</p>
+                <p className="dark:text-[#dddddd]">
+                  Manage all ongoing work in Stories
+                </p>
               </div>
               <div className="flex gap-1 items-center my-2">
                 <svg
@@ -117,7 +121,9 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                     fill="#13ae47"
                   ></path>
                 </svg>
-                <p>Manage all ongoing work in Stories</p>
+                <p className="dark:text-[#dddddd]">
+                  Manage all ongoing work in Stories
+                </p>
               </div>
               <div className="flex gap-1 items-center my-2">
                 <svg
@@ -134,14 +140,16 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                     fill="#13ae47"
                   ></path>
                 </svg>
-                <p>Manage all ongoing work in Stories</p>
+                <p className="dark:text-[#dddddd]">
+                  Manage all ongoing work in Stories
+                </p>
               </div>
             </div>
           </div>
           <div className="border-[1px] border-[#ddd] border-r-[1px] lg:border-r-0 p-4 max-lg:rounded-md">
             <div className="">
               <div className="flex gap-3 items-center">
-                <h4 className="text-[20px] text-[#333333] font-medium mb-3">
+                <h4 className="text-[20px] text-[#333333] font-medium mb-3 dark:text-white">
                   Team
                 </h4>
               </div>
@@ -149,8 +157,10 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                 Organize and build collaboratively.
               </p>
               <div className="mt-10">
-                <h5 className="text-[27px] text-[#444444]">$10</h5>
-                <p className="text-[12px] text-[#444444]">
+                <h5 className="text-[27px] text-[#444444] dark:text-white">
+                  $10
+                </h5>
+                <p className="text-[12px] text-[#444444] dark:text-gray-300">
                   per user, per month
                 </p>
               </div>
@@ -174,7 +184,9 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                     fill="#13ae47"
                   ></path>
                 </svg>
-                <p>Manage all ongoing work in Stories</p>
+                <p className="dark:text-[#dddddd]">
+                  Manage all ongoing work in Stories
+                </p>
               </div>
               <div className="flex gap-1 items-center my-2">
                 <svg
@@ -191,7 +203,9 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                     fill="#13ae47"
                   ></path>
                 </svg>
-                <p>Manage all ongoing work in Stories</p>
+                <p className="dark:text-[#dddddd]">
+                  Manage all ongoing work in Stories
+                </p>
               </div>
               <div className="flex gap-1 items-center my-2">
                 <svg
@@ -208,7 +222,9 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                     fill="#13ae47"
                   ></path>
                 </svg>
-                <p>Manage all ongoing work in Stories</p>
+                <p className="dark:text-[#dddddd]">
+                  Manage all ongoing work in Stories
+                </p>
               </div>
             </div>
           </div>
@@ -218,7 +234,7 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                 <span className="text-white text-[12px] ">Most Popular</span>
               </button>
               <div className="flex gap-3 items-center">
-                <h4 className="text-[20px] text-[#333333] font-medium mb-3">
+                <h4 className="text-[20px] text-[#333333] font-medium mb-3 dark:text-white">
                   Business
                 </h4>
               </div>
@@ -226,8 +242,10 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                 Plan, build, and measure at scale.
               </p>
               <div className="mt-10">
-                <h5 className="text-[27px] text-[#444444]">$16</h5>
-                <p className="text-[12px] text-[#444444]">
+                <h5 className="text-[27px] text-[#444444] dark:text-white">
+                  $16
+                </h5>
+                <p className="text-[12px] text-[#444444] dark:text-gray-300">
                   per user, per month
                 </p>
               </div>
@@ -251,7 +269,9 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                     fill="#13ae47"
                   ></path>
                 </svg>
-                <p>Manage all ongoing work in Stories</p>
+                <p className="dark:text-[#dddddd]">
+                  Manage all ongoing work in Stories
+                </p>
               </div>
               <div className="flex gap-1 items-center my-2">
                 <svg
@@ -268,7 +288,9 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                     fill="#13ae47"
                   ></path>
                 </svg>
-                <p>Manage all ongoing work in Stories</p>
+                <p className="dark:text-[#dddddd]">
+                  Manage all ongoing work in Stories
+                </p>
               </div>
               <div className="flex gap-1 items-center my-2">
                 <svg
@@ -285,14 +307,16 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                     fill="#13ae47"
                   ></path>
                 </svg>
-                <p>Manage all ongoing work in Stories</p>
+                <p className="dark:text-[#dddddd]">
+                  Manage all ongoing work in Stories
+                </p>
               </div>
             </div>
           </div>
           <div className="border-[1px] border-[#ddd] lg:border-l-0 p-4 rounded-tr-md rounded-br-md max-lg:rounded-tl-md max-lg:rounded-bl-md">
             <div className="">
               <div className="flex gap-3 items-center">
-                <h4 className="text-[20px] text-[#333333] font-medium mb-3">
+                <h4 className="text-[20px] text-[#333333] font-medium mb-3 dark:text-white">
                   Enterprise
                 </h4>
               </div>
@@ -300,8 +324,10 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                 For mature software organizations.
               </p>
               <div className="mt-10">
-                <h5 className="text-[27px] text-[#444444]">Contact Sales</h5>
-                <p className="text-[12px] text-[#444444]">
+                <h5 className="text-[27px] text-[#444444] dark:text-white">
+                  Contact Sales
+                </h5>
+                <p className="text-[12px] text-[#444444] dark:text-gray-300">
                   per user, per month
                 </p>
               </div>
@@ -325,7 +351,9 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                     fill="#13ae47"
                   ></path>
                 </svg>
-                <p>Predictable pricing with volume discounts</p>
+                <p className="dark:text-[#dddddd]">
+                  Predictable pricing with volume discounts
+                </p>
               </div>
               <div className="flex gap-1 items-center my-2">
                 <svg
@@ -342,7 +370,9 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                     fill="#13ae47"
                   ></path>
                 </svg>
-                <p>Get help w/ onboarding and training</p>
+                <p className="dark:text-[#dddddd]">
+                  Get help w/ onboarding and training
+                </p>
               </div>
               <div className="flex gap-1 items-center my-2">
                 <svg
@@ -359,7 +389,9 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                     fill="#13ae47"
                   ></path>
                 </svg>
-                <p>Priority support for all questions</p>
+                <p className="dark:text-[#dddddd]">
+                  Priority support for all questions
+                </p>
               </div>
               <div className="flex gap-1 items-center my-2">
                 <svg
@@ -376,7 +408,9 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                     fill="#13ae47"
                   ></path>
                 </svg>
-                <p>SSO, SAML, Okta, OneLogin, Azure, and more admin options</p>
+                <p className="dark:text-[#dddddd]">
+                  SSO, SAML, Okta, OneLogin, Azure, and more admin options
+                </p>
               </div>
             </div>
           </div>
