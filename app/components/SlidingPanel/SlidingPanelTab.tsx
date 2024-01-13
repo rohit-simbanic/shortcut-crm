@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import SlidingPanel from "react-sliding-side-panel";
 import "react-sliding-side-panel/lib/index.css";
 import ActivityTab from "../Tabs/activityTab";
 
