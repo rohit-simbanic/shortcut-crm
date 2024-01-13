@@ -12,11 +12,15 @@ import PlanModal from "../modals/PlanModal";
 interface SlidingPanelTabProps {
   setOpenPanel: React.Dispatch<React.SetStateAction<boolean>>;
   setOpenNewsPanel: React.Dispatch<React.SetStateAction<boolean>>;
+  setActivity: React.Dispatch<React.SetStateAction<boolean>>;
+  setNews: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const Header: React.FC<SlidingPanelTabProps> = ({
   setOpenPanel,
   setOpenNewsPanel,
+  setActivity,
+  setNews,
 }) => {
   const [isProfileModalOpen, setIsProfileModalOpen] = useState<boolean>(false);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
@@ -1129,7 +1133,10 @@ const Header: React.FC<SlidingPanelTabProps> = ({
             <button
               className="group middle none center hidden xl:flex items-center justify-center rounded-lg p-2 font-sans text-xs font-bold transition-all hover:bg-slate-50/10  active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
               data-ripple-dark="true"
-              onClick={() => setOpenNewsPanel(true)}
+              onClick={() => {
+                setOpenNewsPanel(true);
+                setNews(true);
+              }}
             >
               <svg
                 fill="none"
@@ -1171,7 +1178,10 @@ const Header: React.FC<SlidingPanelTabProps> = ({
             className="group hidden lg:flex select-none items-center gap-1 rounded-lg  py-0 px-2 text-center align-middle font-sans text-xs font-bold text-[#b8b8bd]  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             type="button"
             data-ripple-light="true"
-            onClick={() => setOpenPanel(true)}
+            onClick={() => {
+              setOpenPanel(true);
+              setActivity(true);
+            }}
           >
             <svg
               viewBox="0 0 20 20"
