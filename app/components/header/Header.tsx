@@ -11,9 +11,13 @@ import PlanModal from "../modals/PlanModal";
 
 interface SlidingPanelTabProps {
   setOpenPanel: React.Dispatch<React.SetStateAction<boolean>>;
+  setOpenNewsPanel: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const Header: React.FC<SlidingPanelTabProps> = ({ setOpenPanel }) => {
+const Header: React.FC<SlidingPanelTabProps> = ({
+  setOpenPanel,
+  setOpenNewsPanel,
+}) => {
   const [isProfileModalOpen, setIsProfileModalOpen] = useState<boolean>(false);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const [activeTab, setActiveTab] = useState<string>("stories");
@@ -1125,6 +1129,7 @@ const Header: React.FC<SlidingPanelTabProps> = ({ setOpenPanel }) => {
             <button
               className="group middle none center hidden xl:flex items-center justify-center rounded-lg p-2 font-sans text-xs font-bold transition-all hover:bg-slate-50/10  active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
               data-ripple-dark="true"
+              onClick={() => setOpenNewsPanel(true)}
             >
               <svg
                 fill="none"
