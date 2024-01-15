@@ -9,10 +9,10 @@ const ProfiileModal = () => {
       <div className="relative">
         <div className="w-6 h-6 bg-[#412767] transform rotate-45 absolute top-[11px] left-[8px] z-0 translate-x-0 transition-transform group-hover:translate-x-[12rem] duration-500 ease-in-out rounded-sm"></div>
 
-        <div className="bg-[#2d3545] flex flex-col absolute top-[1rem] z-[2147483647] right-[.05rem] max-[357px]:right-[-5rem] w-[300px] rounded-md p-4 profile-modal">
+        <div className="bg-[#2d3545] flex flex-col absolute top-[1rem] z-[2147483647] right-[.05rem] max-[357px]:right-[-5rem] w-[259px] rounded-md p-4 profile-modal">
           <div className="flex justify-between items-center">
             <button
-              className="py-3 rounded-[50%] px-3 text-center h-12 w-12 align-middle font-sans text-xs font-bold text-gray-50  transition-all bg-[#ccba45] hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+              className="py-3 flex items-center justify-center rounded-[50%] px-3 text-center h-10 w-10 align-middle font-sans text-xs font-bold text-gray-50  transition-all bg-[#ccba45] hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
               type="button"
               data-ripple-light="true"
             >
@@ -100,7 +100,7 @@ const ProfiileModal = () => {
                 fill="#666"
               ></path>
             </svg>
-            <p className="text-md text-gray-200">Build: 23963-aab6fd48d</p>
+            <p className="text-sm text-gray-200">Build: 23963-aab6fd48d</p>
           </button>
         </div>
       </div>
