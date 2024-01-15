@@ -17,7 +17,7 @@ const NewsTab: React.FC<newsProps> = ({ news }) => {
         id="searchBarScrollBar"
       >
         <div>
-          <p className="text-[12px] text-[#686c73] font-normal p-1 rounded-md bg-[#e6f2fa] mb-[13px] w-[118px]">
+          <p className="text-[12px] text-[#686c73] font-normal p-1 rounded-md bg-[#e6f2fa] dark:bg-[#161515] mb-[13px] w-[118px]">
             December 14, 2023
           </p>
           <h4 className="text-[20px] font-medium text-[#1f2532] dark:text-white">
@@ -35,7 +35,7 @@ const NewsTab: React.FC<newsProps> = ({ news }) => {
             alt="logo"
             className="my-3"
           />
-          <ul className="text-[#333] text-[13px] list-disc pl-5 py-3">
+          <ul className="text-[#333] dark:text-[#f9f9f9] text-[13px] list-disc pl-5 py-3">
             <li className="mb-2">
               <strong>Track Ideal and Actual Remaining</strong> work on a daily
               basis, as well as stories/points that were Added, Removed or
@@ -54,12 +54,12 @@ const NewsTab: React.FC<newsProps> = ({ news }) => {
               shows any recent updates to the iteration
             </li>
           </ul>
-          <p className="text-[#333] text-[13px]">
+          <p className="text-[#333] text-[13px] dark:text-[#f9f9f9]">
             <strong>
               Find the new Burndown Chart on Iteration Detail pages.
             </strong>
           </p>
-          <p className="text-[#333] text-[13px] my-5 leading-5">
+          <p className="text-[#333] text-[13px] my-5 leading-5 dark:text-[#f9f9f9]">
             🌟 With the introduction of a true-to-form Burndown chart, we’ve
             retained the former Burndown and given it a new name to better
             reflect the value it brings — re-introducing:{" "}
@@ -69,18 +69,18 @@ const NewsTab: React.FC<newsProps> = ({ news }) => {
         </div>
         <div className="footer border-t-[1px] border-slate-200 dark:border-[#3f4a5f] flex justify-between py-4 px-4"></div>
         <div>
-          <p className="text-[12px] text-[#686c73] font-normal p-1 rounded-md bg-[#e6f2fa] mb-[13px] w-[125px]">
+          <p className="text-[12px] text-[#686c73] font-normal p-1 rounded-md bg-[#e6f2fa] dark:bg-[#161515] mb-[13px] w-[125px]">
             September 19, 2023
           </p>
           <h4 className="text-[20px] font-medium text-[#1f2532] dark:text-white">
             We're making major improvements to Reports!
           </h4>
-          <p className="text-[#333] text-[14px] my-3">
+          <p className="text-[#333] text-[14px] my-3 dark:text-[#f9f9f9]">
             In the coming months, we'll be transforming Reports to better serve
             user needs. Some updates we've made recently:
           </p>
 
-          <ul className="text-[#333] text-[13px] list-disc pl-5 py-3">
+          <ul className="text-[#333] dark:text-[#f9f9f9] text-[13px] list-disc pl-5 py-3">
             <li className="mb-2">
               <strong>"Group by Iteration"</strong> on the Reports page is
               available for Burndown, Cycle Time and Cumulative Flow (in
@@ -103,7 +103,7 @@ const NewsTab: React.FC<newsProps> = ({ news }) => {
               return to the page
             </li>
           </ul>
-          <p className="text-[#333] text-[13px] leading-6">
+          <p className="text-[#333] text-[13px] leading-6 dark:text-[#f9f9f9]">
             We have a lot more coming – thanks to everyone who participated in
             research to help us learn about your reporting needs!
           </p>

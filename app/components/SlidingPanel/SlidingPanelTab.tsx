@@ -96,7 +96,7 @@ const SlidingPanelTab: React.FC<SlidingPanelTabProps> = ({
           </svg>
         </div>
         {news && (
-          <p className="text-[#333] text-[16px] mb-4 mt-2">
+          <p className="text-[#333] dark:text-[#f9f9f9] text-[16px] mb-4 mt-2">
             Stay up to date with the newest updates and improvements in
             Shortcut. Visit our{" "}
             <a href="#" className="text-[#2D78A4] underline">
