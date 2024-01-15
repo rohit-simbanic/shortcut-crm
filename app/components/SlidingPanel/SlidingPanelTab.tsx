@@ -58,7 +58,7 @@ const SlidingPanelTab: React.FC<SlidingPanelTabProps> = ({
       document.removeEventListener("click", handleProfileModalOutsideClick);
     };
   }, [openNewsPanel]);
-  console.log("OpenPanel", openPanel, openNewsPanel);
+
   return (
     <div
       className={`panel-wrap fixed right-0 h-[97vh] overflow-y-hidden w-[40vw] z-[2147483647] transform hidden lg:block ${

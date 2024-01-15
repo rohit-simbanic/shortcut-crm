@@ -14,6 +14,9 @@ interface SlidingPanelTabProps {
   setOpenNewsPanel: React.Dispatch<React.SetStateAction<boolean>>;
   setActivity: React.Dispatch<React.SetStateAction<boolean>>;
   setNews: React.Dispatch<React.SetStateAction<boolean>>;
+  activity: boolean;
+  news: boolean;
+  setOpenHelpModal: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const Header: React.FC<SlidingPanelTabProps> = ({
@@ -21,6 +24,9 @@ const Header: React.FC<SlidingPanelTabProps> = ({
   setOpenNewsPanel,
   setActivity,
   setNews,
+  activity,
+  news,
+  setOpenHelpModal,
 }) => {
   const [isProfileModalOpen, setIsProfileModalOpen] = useState<boolean>(false);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
@@ -1143,7 +1149,9 @@ const Header: React.FC<SlidingPanelTabProps> = ({
                 xmlns="http://www.w3.org/2000/svg"
                 width={16}
                 height={16}
-                className="text-[#b8b8bd] group-hover:text-white transition duration-300 ease-in-out"
+                className={`${
+                  news ? "text-white" : "text-[#b8b8bd]"
+                } group-hover:text-white transition duration-300 ease-in-out`}
               >
                 <path
                   d="M.5 9.408a4.347 4.347 0 0 1 1.238-3.04 4.188 4.188 0 0 1 2.984-1.262H8.24c.046 0 4.608-.061 8.948-3.77a1.384 1.384 0 0 1 1.5-.202c.243.115.448.299.592.529.144.23.22.497.221.77v13.95a1.44 1.44 0 0 1-.218.77c-.144.23-.35.414-.594.528a1.384 1.384 0 0 1-1.5-.201c-3.332-2.847-6.794-3.545-8.244-3.716v3.146c0 .236-.056.468-.166.676a1.42 1.42 0 0 1-.46.517l-.967.656a1.391 1.391 0 0 1-1.836-.244 1.443 1.443 0 0 1-.31-.601L4.163 13.67a4.205 4.205 0 0 1-2.616-1.431A4.354 4.354 0 0 1 .5 9.408zm6.07 8.158.967-.656v-3.201H5.623l.947 3.857zm-1.848-5.29h2.815V6.54H4.722c-.746 0-1.462.302-1.99.84a2.895 2.895 0 0 0-.825 2.028c0 .76.297 1.49.825 2.027a2.79 2.79 0 0 0 1.99.84z"
@@ -1157,6 +1165,7 @@ const Header: React.FC<SlidingPanelTabProps> = ({
             className="group hidden lg:flex select-none items-center gap-1 rounded-lg  py-0 px-2 text-center align-middle font-sans text-xs font-bold text-[#b8b8bd]  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             type="button"
             data-ripple-light="true"
+            onClick={() => setOpenHelpModal(true)}
           >
             <svg
               viewBox="0 0 20 20"
@@ -1175,7 +1184,9 @@ const Header: React.FC<SlidingPanelTabProps> = ({
           </button>
 
           <button
-            className="group hidden lg:flex select-none items-center gap-1 rounded-lg  py-0 px-2 text-center align-middle font-sans text-xs font-bold text-[#b8b8bd]  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            className={`group hidden lg:flex select-none items-center gap-1 rounded-lg  py-0 px-2 text-center align-middle font-sans text-xs font-bold ${
+              activity ? "text-white" : "text-[#b8b8bd]"
+            }  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none`}
             type="button"
             data-ripple-light="true"
             onClick={() => {
@@ -1189,7 +1200,9 @@ const Header: React.FC<SlidingPanelTabProps> = ({
               height={17}
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="text-[#b8b8bd] group-hover:text-white transition duration-300 ease-in-out"
+              className={` group-hover:text-white ${
+                activity ? "text-white" : "text-[#b8b8bd]"
+              } transition duration-300 ease-in-out`}
             >
               <path
                 fill-rule="evenodd"
