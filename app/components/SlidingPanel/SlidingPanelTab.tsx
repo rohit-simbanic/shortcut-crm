@@ -62,7 +62,7 @@ const SlidingPanelTab: React.FC<SlidingPanelTabProps> = ({
   return (
     <div
       className={`panel-wrap fixed right-0 h-[97vh] overflow-y-hidden w-[40vw] z-[2147483646] transform hidden lg:block ${
-        openPanel ? "translate-x-0" : "translate-x-full"
+        openPanel || openNewsPanel ? "translate-x-0" : "translate-x-full"
       }  transition-transform duration-300 ease-out shadow-[0px_3px_9px_rgba(0,0,0,0.06),0px_1px_10px_rgba(0,0,0,0.11)]`}
     >
       <div className="panel absolute z-[2147483646] top-0 bottom-0 left-0 right-0 overflow-auto p-[1rem] bg-white dark:bg-[#2d3545] text-[#eee]">
