@@ -1,7 +1,5 @@
-//@ts-nocheck
 import Image from "next/image";
 import React, { useEffect } from "react";
-import Typed from "react-typed";
 
 interface HelpModalProps {
   setOpenCtrlModal: React.Dispatch<React.SetStateAction<boolean>>;
@@ -32,7 +30,7 @@ const CtrlModal: React.FC<HelpModalProps> = ({
       id="filterModal"
       className={`absolute modal ${
         openCtrlModal ? "lg:block" : "hidden"
-      } z-[2147483647] right-0 top-0 left-0 bottom-0 mx-auto mt-3 overflow-auto modal bg-white h-[77vh] w-[95vw] lg:w-[40vw] rounded-md shadow-[rgba(10,10,15,0.24)_0px_16px_40px] dark:bg-[#2d3545]`}
+      } z-[2147483647] right-0 top-0 left-0 bottom-0 mx-auto mt-3 overflow-auto modal bg-white h-[75vh] w-[95vw] lg:w-[40vw] rounded-md shadow-[rgba(10,10,15,0.24)_0px_16px_40px] dark:bg-[#2d3545]`}
     >
       <div className="flex gap-0 items-center">
         <div className="flex justify-between dark:bg-[#2d3545] py-[20px] px-5">
@@ -53,23 +51,11 @@ const CtrlModal: React.FC<HelpModalProps> = ({
           </svg>
         </div>
         <div className="pr-5 dark:bg-gradient-conic w-full">
-          <Typed
-            strings={[
-              "Quickly perform your common tasks...",
-              "Search for products",
-              "Search for categories",
-              "Search for brands",
-            ]}
-            typeSpeed={40}
-            backSpeed={50}
-            attr="placeholder"
-            loop
-          >
-            <input
-              type="text"
-              className="w-full text-[17px] h-[48px] text-[#000000d9] bg-white dark:bg-[#2d3545] pr-[64px] pl-[0px] focus:border-[transparent] focus:ring-transparent focus:ring-1 focus:outline-none"
-            />
-          </Typed>
+          <input
+            type="text"
+            placeholder="Quickly perform your common tasks..."
+            className="w-full text-[17px] h-[48px] text-[#000000d9] dark:text-white bg-white dark:bg-[#2d3545] pr-[64px] pl-[0px] focus:border-[transparent] focus:ring-transparent focus:ring-1 focus:outline-none"
+          />
         </div>
       </div>
 
