@@ -17,6 +17,8 @@ interface SlidingPanelTabProps {
   activity: boolean;
   news: boolean;
   setOpenHelpModal: React.Dispatch<React.SetStateAction<boolean>>;
+  setOpenCtrlModal: React.Dispatch<React.SetStateAction<boolean>>;
+  openCtrlModal: boolean;
 }
 
 const Header: React.FC<SlidingPanelTabProps> = ({
@@ -27,6 +29,8 @@ const Header: React.FC<SlidingPanelTabProps> = ({
   activity,
   news,
   setOpenHelpModal,
+  openCtrlModal,
+  setOpenCtrlModal,
 }) => {
   const [isProfileModalOpen, setIsProfileModalOpen] = useState<boolean>(false);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
@@ -1129,6 +1133,7 @@ const Header: React.FC<SlidingPanelTabProps> = ({
               className="hidden lg:flex select-none gap-3 rounded-lg border border-solid border-1 border-[#434452] px-2 py-0 text-center align-middle font-sans text-xs font-bold text-[#b8b8bd]  transition-all hover:bg-slate-50/10 hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none h-10 items-center"
               type="button"
               data-ripple-light="true"
+              onClick={() => setOpenCtrlModal(!openCtrlModal)}
             >
               Ctrl + K
             </button>
