@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { useDropdown } from "../../context/UseDropDown";
 
 const Dropdown = () => {
@@ -14,11 +14,9 @@ const Dropdown = () => {
         (dropdownMenuRef.current &&
           dropdownMenuRef.current.contains(event.target as Node))
       ) {
-        // Click occurred inside the dropdown button or menu, do not close the dropdown
         return;
       }
 
-      // Click occurred outside the dropdown, close the dropdown
       setIsDropdownOpen(false);
     };
 

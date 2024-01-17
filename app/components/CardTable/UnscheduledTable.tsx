@@ -1,6 +1,6 @@
 //@ts-nocheck
 import { SidebarContext } from "@/app/context/sidebarContext";
-import React, { FC, useContext, useRef, useState } from "react";
+import React, { FC, useContext, useState } from "react";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 import Popup from "reactjs-popup";
 import ChangesModal from "../modals/ChangesModal";

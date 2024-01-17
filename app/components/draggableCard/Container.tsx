@@ -4,10 +4,6 @@ import { useCallback, useState } from "react";
 
 import { Card } from "./Card";
 
-const style = {
-  width: 400,
-};
-
 export interface Item {
   id: number;
   text: string;

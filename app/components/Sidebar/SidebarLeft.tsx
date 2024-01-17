@@ -6,11 +6,6 @@ import TeamManageModal from "../modals/TeamManageModal";
 const SidebarLeft = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [isDropdownOpenAlt, setDropdownOpenAlt] = useState(true);
-  const [isDropdownOpenMenu, setDropdownOpenMenu] = useState(false);
-
-  const toggleDropdownMenu = () => {
-    setDropdownOpenMenu(!isDropdownOpenMenu);
-  };
 
   const toggleDropdown = () => {
     setDropdownOpen((prevState) => !prevState);
@@ -22,12 +17,11 @@ const SidebarLeft = () => {
   const {
     isCollapsed,
     toggleSidebarcollapse,
-    setCollapse,
     isTeamManageOpen,
     toggleTeamManageOpen,
     setIsTeamManageOpen,
   } = useContext(SidebarContext);
-  console.log("isCollapsed Left", isCollapsed);
+
   return (
     <div className="border-r border-gray-300 pl-4 pr-0 relative z-10 bg-[#f8f9fb] dark:border-[#283040] dark:bg-[#0B101A] flex-none hidden lg:block">
       <div

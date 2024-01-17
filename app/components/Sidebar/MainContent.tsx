@@ -1,13 +1,13 @@
 "use client";
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
-import { Container } from "../drag/Container";
-import UnscheduledTable from "../table/UnscheduledTable";
-import DevelopmentTable from "../table/DevelopmentTable";
-import InDevelopmentTable from "../table/InDevelopmentTable";
-import ReviewTable from "../table/ReviewTable";
-import CompleteTable from "../table/CompleteTable";
+import { Container } from "../draggableCard/Container";
+import UnscheduledTable from "../CardTable/UnscheduledTable";
+import DevelopmentTable from "../CardTable/DevelopmentTable";
+import InDevelopmentTable from "../CardTable/InDevelopmentTable";
+import ReviewTable from "../CardTable/ReviewTable";
+import CompleteTable from "../CardTable/CompleteTable";
 import { Tooltip } from "react-tooltip";
 import { SidebarContext } from "@/app/context/sidebarContext";
 
