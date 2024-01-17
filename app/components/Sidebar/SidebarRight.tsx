@@ -1,6 +1,6 @@
 "use client";
 import React, { useContext, useEffect, useState } from "react";
-import FilterItems from "../Filter/FilterItems";
+import FilterItems from "./Filter/FilterItems";
 import { SidebarContext } from "@/app/context/sidebarContext";
 import DefaultTeamModal from "../modals/DefaultTeamModal";
 import WorkFlowModal from "../modals/WorkFlowModal";
@@ -14,7 +14,6 @@ function SidebarRight() {
     setIsOpen,
     isTeamOpen,
     toggleTeamOpen,
-    setIsTeamOpen,
     isWorkFlowOpen,
     toggleWorkFlowOpen,
     filterModalOpen,
@@ -24,8 +23,6 @@ function SidebarRight() {
     toggleBoard,
     isFilterDropdownOpen,
   } = useContext(SidebarContext);
-
-  console.log("isOpen", isOpen);
 
   const [isBoardBarOpen, setBoardBarOpen] = useState(false);
 
@@ -45,7 +42,6 @@ function SidebarRight() {
 
     window.addEventListener("resize", handleResize);
 
-    // Set initial state
     handleResize();
 
     return () => {
