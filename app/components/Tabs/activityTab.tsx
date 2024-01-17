@@ -339,7 +339,7 @@ const ActivityTab = () => {
             <hr className="my-2" />
             <ul>
               <li className="px-1 py-3 hover:bg-gray-100 rounded-md font-bold flex items-center justify-between gap-5 dark:hover:bg-[#161b26]">
-                <div className="flex items-center gap-2">
+                <div className="flex items-start gap-2">
                   <button
                     className="py-1 rounded-[50%] px-1 text-center h-[40px] w-[40px] align-middle font-sans flex items-center justify-center shrink-0 text-xs font-bold text-gray-50  transition-all bg-[#3A95C9] hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                     type="button"
@@ -410,7 +410,7 @@ const ActivityTab = () => {
                 </div>
               </li>
               <li className="px-1 py-3 hover:bg-gray-100 rounded-md font-bold flex items-center justify-between gap-5 dark:hover:bg-[#161b26]">
-                <div className="flex items-center gap-2">
+                <div className="flex items-start gap-2">
                   <button
                     className="py-1 rounded-[50%] px-1 text-center h-[40px] w-[40px] align-middle font-sans flex items-center justify-center shrink-0 text-xs font-bold text-gray-50  transition-all bg-[#D66E24] hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                     type="button"
@@ -493,7 +493,7 @@ const ActivityTab = () => {
 
             <ul>
               <li className="px-1 py-3 hover:bg-gray-100 rounded-md font-bold flex items-center justify-between gap-5 dark:hover:bg-[#161b26]">
-                <div className="flex items-center gap-2">
+                <div className="flex items-start gap-2">
                   <button
                     className="py-1 rounded-[50%] px-1 text-center h-[40px] w-[40px] align-middle font-sans flex items-center justify-center shrink-0 text-xs font-bold text-gray-50  transition-all bg-[#D66E24] hover:text-white active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                     type="button"

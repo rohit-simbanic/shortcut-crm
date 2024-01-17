@@ -18,31 +18,31 @@ export const Container: FC = () => {
     const [cards, setCards] = useState([
       {
         id: 1,
-        text: "Write a cool JS library",
+        text: "Application Modernization Service",
       },
       {
         id: 2,
-        text: "Make it generic enough",
+        text: "Cloud Engineering Service",
       },
       {
         id: 3,
-        text: "Write README",
+        text: "Application Stop When Enter 0 Hour and Minute",
       },
       {
         id: 4,
-        text: "Create some examples",
+        text: "Display name after mouse hover",
       },
       {
         id: 5,
-        text: "Spam in Twitter and IRC to promote it (note that this element is taller than the others)",
+        text: "Company Reviews option in Company Menu",
       },
       {
         id: 6,
-        text: "???",
+        text: "Performance Engineering Service",
       },
       {
         id: 7,
-        text: "PROFIT",
+        text: "create contact & about us page & 404 page",
       },
     ]);
 
