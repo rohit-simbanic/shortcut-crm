@@ -62,6 +62,7 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                   xmlns="http://www.w3.org/2000/svg"
                   height={20}
                   width={20}
+                  className=" shrink-0"
                 >
                   <path
                     fill-rule="evenodd"
@@ -94,6 +95,7 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                   xmlns="http://www.w3.org/2000/svg"
                   height={20}
                   width={20}
+                  className=" shrink-0"
                 >
                   <path
                     fill-rule="evenodd"
@@ -102,7 +104,7 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                     fill="#13ae47"
                   ></path>
                 </svg>
-                <p className="dark:text-[#dddddd]">
+                <p className="dark:text-[#dddddd] text-[14px]">
                   Manage all ongoing work in Stories
                 </p>
               </div>
@@ -113,6 +115,7 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                   xmlns="http://www.w3.org/2000/svg"
                   height={20}
                   width={20}
+                  className=" shrink-0"
                 >
                   <path
                     fill-rule="evenodd"
@@ -121,8 +124,8 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                     fill="#13ae47"
                   ></path>
                 </svg>
-                <p className="dark:text-[#dddddd]">
-                  Manage all ongoing work in Stories
+                <p className="dark:text-[#dddddd] text-[14px]">
+                  Create Docs and connect them to your work
                 </p>
               </div>
               <div className="flex gap-1 items-center my-2">
@@ -132,6 +135,7 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                   xmlns="http://www.w3.org/2000/svg"
                   height={20}
                   width={20}
+                  className=" shrink-0"
                 >
                   <path
                     fill-rule="evenodd"
@@ -140,8 +144,8 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                     fill="#13ae47"
                   ></path>
                 </svg>
-                <p className="dark:text-[#dddddd]">
-                  Manage all ongoing work in Stories
+                <p className="dark:text-[#dddddd] text-[14px]">
+                  Plan multiple sprints using Iterations
                 </p>
               </div>
             </div>
@@ -176,6 +180,7 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                   xmlns="http://www.w3.org/2000/svg"
                   height={20}
                   width={20}
+                  className=" shrink-0"
                 >
                   <path
                     fill-rule="evenodd"
@@ -184,8 +189,8 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                     fill="#13ae47"
                   ></path>
                 </svg>
-                <p className="dark:text-[#dddddd]">
-                  Manage all ongoing work in Stories
+                <p className="dark:text-[#dddddd] text-[14px]">
+                  Easily track plans w/ an expanded Roadmap
                 </p>
               </div>
               <div className="flex gap-1 items-center my-2">
@@ -195,6 +200,7 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                   xmlns="http://www.w3.org/2000/svg"
                   height={20}
                   width={20}
+                  className=" shrink-0"
                 >
                   <path
                     fill-rule="evenodd"
@@ -203,8 +209,8 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                     fill="#13ae47"
                   ></path>
                 </svg>
-                <p className="dark:text-[#dddddd]">
-                  Manage all ongoing work in Stories
+                <p className="dark:text-[#dddddd] text-[14px]">
+                  Organize complex projects w/ Milestones
                 </p>
               </div>
               <div className="flex gap-1 items-center my-2">
@@ -214,6 +220,7 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                   xmlns="http://www.w3.org/2000/svg"
                   height={20}
                   width={20}
+                  className=" shrink-0"
                 >
                   <path
                     fill-rule="evenodd"
@@ -222,13 +229,14 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                     fill="#13ae47"
                   ></path>
                 </svg>
-                <p className="dark:text-[#dddddd]">
-                  Manage all ongoing work in Stories
+                <p className="dark:text-[#dddddd] text-[14px]">
+                  Scale your org w/ unlimited everything (well, everything we
+                  offer at least)
                 </p>
               </div>
             </div>
           </div>
-          <div className="border-[1px] border-[#333] p-4 lg:mt-[-40px] max-lg:rounded-br-md max-lg:rounded-bl-md rounded-tl-md rounded-tr-md">
+          <div className="border-[1px] border-[#333] dark:border-[#e4e8eb66] p-4 lg:mt-[-40px] bg-gradient-shimmerge dark:bg-gradient-darkShimmer max-lg:rounded-br-md max-lg:rounded-bl-md rounded-tl-md rounded-tr-md">
             <div className="">
               <button className="bg-[#598fee] px-2 py1 rounded-md mb-4">
                 <span className="text-white text-[12px] ">Most Popular</span>
@@ -261,6 +269,7 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                   xmlns="http://www.w3.org/2000/svg"
                   height={20}
                   width={20}
+                  className=" shrink-0"
                 >
                   <path
                     fill-rule="evenodd"
@@ -269,8 +278,9 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                     fill="#13ae47"
                   ></path>
                 </svg>
-                <p className="dark:text-[#dddddd]">
-                  Manage all ongoing work in Stories
+                <p className="dark:text-[#dddddd] text-[14px]">
+                  Customize multiple Workflows so each team can work the way
+                  they want
                 </p>
               </div>
               <div className="flex gap-1 items-center my-2">
@@ -280,6 +290,7 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                   xmlns="http://www.w3.org/2000/svg"
                   height={20}
                   width={20}
+                  className=" shrink-0"
                 >
                   <path
                     fill-rule="evenodd"
@@ -288,8 +299,8 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                     fill="#13ae47"
                   ></path>
                 </svg>
-                <p className="dark:text-[#dddddd]">
-                  Manage all ongoing work in Stories
+                <p className="dark:text-[#dddddd] text-[14px]">
+                  Organize work by cross-functional teams
                 </p>
               </div>
               <div className="flex gap-1 items-center my-2">
@@ -299,6 +310,7 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                   xmlns="http://www.w3.org/2000/svg"
                   height={20}
                   width={20}
+                  className=" shrink-0"
                 >
                   <path
                     fill-rule="evenodd"
@@ -307,8 +319,9 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                     fill="#13ae47"
                   ></path>
                 </svg>
-                <p className="dark:text-[#dddddd]">
-                  Manage all ongoing work in Stories
+                <p className="dark:text-[#dddddd] text-[14px]">
+                  Leverage advanced integrations to connect Shortcut with other
+                  tools
                 </p>
               </div>
             </div>
@@ -324,7 +337,7 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                 For mature software organizations.
               </p>
               <div className="mt-10">
-                <h5 className="text-[27px] text-[#444444] dark:text-white">
+                <h5 className="text-[26px] text-[#444444] dark:text-white">
                   Contact Sales
                 </h5>
                 <p className="text-[12px] text-[#444444] dark:text-gray-300">
@@ -343,6 +356,7 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                   xmlns="http://www.w3.org/2000/svg"
                   height={20}
                   width={20}
+                  className=" shrink-0"
                 >
                   <path
                     fill-rule="evenodd"
@@ -351,7 +365,7 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                     fill="#13ae47"
                   ></path>
                 </svg>
-                <p className="dark:text-[#dddddd]">
+                <p className="dark:text-[#dddddd] text-[14px]">
                   Predictable pricing with volume discounts
                 </p>
               </div>
@@ -362,6 +376,7 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                   xmlns="http://www.w3.org/2000/svg"
                   height={20}
                   width={20}
+                  className=" shrink-0"
                 >
                   <path
                     fill-rule="evenodd"
@@ -370,7 +385,7 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                     fill="#13ae47"
                   ></path>
                 </svg>
-                <p className="dark:text-[#dddddd]">
+                <p className="dark:text-[#dddddd] text-[14px]">
                   Get help w/ onboarding and training
                 </p>
               </div>
@@ -381,6 +396,7 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                   xmlns="http://www.w3.org/2000/svg"
                   height={20}
                   width={20}
+                  className=" shrink-0"
                 >
                   <path
                     fill-rule="evenodd"
@@ -389,7 +405,7 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                     fill="#13ae47"
                   ></path>
                 </svg>
-                <p className="dark:text-[#dddddd]">
+                <p className="dark:text-[#dddddd] text-[14px]">
                   Priority support for all questions
                 </p>
               </div>
@@ -400,6 +416,7 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                   xmlns="http://www.w3.org/2000/svg"
                   height={20}
                   width={20}
+                  className=" shrink-0"
                 >
                   <path
                     fill-rule="evenodd"
@@ -408,7 +425,7 @@ const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
                     fill="#13ae47"
                   ></path>
                 </svg>
-                <p className="dark:text-[#dddddd]">
+                <p className="dark:text-[#dddddd] text-[14px]">
                   SSO, SAML, Okta, OneLogin, Azure, and more admin options
                 </p>
               </div>
