@@ -13,6 +13,7 @@ import { SidebarContext } from "@/app/context/sidebarContext";
 
 interface ViewState {
   isTableView: boolean;
+  isKanbanView: boolean;
   isScheduledView: boolean;
   isScheduledViewTwo: boolean;
   isScheduledViewThree: boolean;
@@ -24,6 +25,7 @@ const MainContent = () => {
   const dark = true;
   const [viewState, setViewState] = useState<ViewState>({
     isTableView: false,
+    isKanbanView: true,
     isScheduledView: false,
     isScheduledViewTwo: false,
     isScheduledViewThree: false,
@@ -118,17 +120,22 @@ const MainContent = () => {
                 <span className="text-[#808080] text-[11px] font-medium">
                   View
                 </span>
-                <div
-                  className="flex gap-3 items-center justify-between shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-[0.39rem] px-2 rounded-[5px] border-[1px] border-[#dddddd] dark:border-[#283040] hover:bg-[#e4e8eb] dark:hover:bg-[#1f25324d] hover:cursor-pointer w-full"
-                  onClick={() => toggleView("isTableView")}
-                >
-                  <div
+                <div className="flex gap-3 items-center justify-between shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-[0.39rem] px-2 rounded-[5px] border-[1px] border-[#dddddd] dark:border-[#283040] hover:bg-[#e4e8eb] dark:hover:bg-[#1f25324d] hover:cursor-pointer w-full">
+                  <button
                     className={
-                      viewState.isTableView
-                        ? "px-1 rounded-sm"
-                        : "border-[#3a95c9] border-[1px] bg-[#deeffa] px-1 rounded-sm"
+                      viewState.isKanbanView
+                        ? " border-[#3a95c9] border-[1px] bg-[#deeffa] px-1 rounded-sm"
+                        : "px-1 rounded-sm"
                     }
                     data-tooltip-id="kanban-click"
+                    disabled={viewState.isKanbanView}
+                    onClick={() => {
+                      toggleView("isKanbanView");
+                      setViewState((prevState) => ({
+                        ...prevState,
+                        isTableView: false,
+                      }));
+                    }}
                   >
                     <svg
                       height={17}
@@ -145,15 +152,23 @@ const MainContent = () => {
                       ></path>
                       00
                     </svg>
-                  </div>
+                  </button>
 
-                  <div
+                  <button
                     className={
                       viewState.isTableView
                         ? "px-1 border-[#3a95c9] border-[1px] bg-[#deeffa] rounded-sm"
                         : "px-1 rounded-sm"
                     }
                     data-tooltip-id="table-click"
+                    disabled={viewState.isTableView}
+                    onClick={() => {
+                      toggleView("isTableView");
+                      setViewState((prevState) => ({
+                        ...prevState,
+                        isKanbanView: false,
+                      }));
+                    }}
                   >
                     <svg
                       height={17}
@@ -167,13 +182,13 @@ const MainContent = () => {
                         fill="#666"
                       ></path>
                     </svg>
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        {viewState.isTableView ? (
+        {viewState.isTableView && (
           <div
             className="h-[82.6%] overflow-y-auto overflow-x-auto px-6"
             id="tableView"
@@ -199,7 +214,9 @@ const MainContent = () => {
               toggleScheduledTable={() => toggleView("isScheduledViewFive")}
             />
           </div>
-        ) : (
+        )}
+
+        {viewState.isKanbanView && (
           <div
             className="flex gap-[0 rem] justify-start h-[82.4%] max-[657px]:h-[77.4%] overflow-y-hidden overflow-x-auto"
             id="tableView"
