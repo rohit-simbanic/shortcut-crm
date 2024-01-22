@@ -74,7 +74,7 @@ const CtrlModal: React.FC<HelpModalProps> = ({
       </p>
       <div className="h-[46vh] overflow-y-scroll scrollbar-ctrl">
         <div className="border-b border-b-[#0000001a] dark:border-[gray]">
-          <div className="flex justify-between items-center  group hover:bg-[#e4e8eb] py-2 hover:cursor-pointer dark:hover:bg-[#1f2532]">
+          <div className="flex justify-between items-center  group hover:bg-[#e4e8eb] py-2 hover:cursor-pointer dark:hover:bg-darkBgDefault">
             <div className="px-5 flex items-center justify-between w-full">
               <div className=" flex gap-3 items-center">
                 <div className="flex-shrink-0">
@@ -102,7 +102,7 @@ const CtrlModal: React.FC<HelpModalProps> = ({
               </div>
             </div>
           </div>
-          <div className="flex justify-between items-center  group hover:bg-[#e4e8eb] py-2 hover:cursor-pointer dark:hover:bg-[#1f2532]">
+          <div className="flex justify-between items-center  group hover:bg-[#e4e8eb] py-2 hover:cursor-pointer dark:hover:bg-darkBgDefault">
             <div className="px-5 flex items-center justify-between w-full">
               <div className=" flex gap-3 items-center">
                 <div className="flex-shrink-0">
@@ -130,7 +130,7 @@ const CtrlModal: React.FC<HelpModalProps> = ({
               </div>
             </div>
           </div>
-          <div className="flex justify-between items-center  group hover:bg-[#e4e8eb] py-2 hover:cursor-pointer dark:hover:bg-[#1f2532]">
+          <div className="flex justify-between items-center  group hover:bg-[#e4e8eb] py-2 hover:cursor-pointer dark:hover:bg-darkBgDefault">
             <div className="px-5 flex items-center justify-between w-full">
               <div className=" flex gap-3 items-center">
                 <div className="flex-shrink-0">
@@ -163,7 +163,7 @@ const CtrlModal: React.FC<HelpModalProps> = ({
               </div>
             </div>
           </div>
-          <div className="flex justify-between items-center  group hover:bg-[#e4e8eb] py-2 hover:cursor-pointer dark:hover:bg-[#1f2532]">
+          <div className="flex justify-between items-center  group hover:bg-[#e4e8eb] py-2 hover:cursor-pointer dark:hover:bg-darkBgDefault">
             <div className="px-5 flex items-center justify-between w-full">
               <div className=" flex gap-3 items-center">
                 <div className="flex-shrink-0">
@@ -205,7 +205,7 @@ const CtrlModal: React.FC<HelpModalProps> = ({
             </svg>
           </div>
         </div>
-        <div className="flex justify-between items-center  group hover:bg-[#e4e8eb] py-2 hover:cursor-pointer dark:hover:bg-[#1f2532]">
+        <div className="flex justify-between items-center  group hover:bg-[#e4e8eb] py-2 hover:cursor-pointer dark:hover:bg-darkBgDefault">
           <div className="px-5 flex items-center justify-between w-full">
             <div className=" flex gap-3 items-center">
               <div className="flex-shrink-0">
@@ -237,7 +237,7 @@ const CtrlModal: React.FC<HelpModalProps> = ({
             </div>
           </div>
         </div>
-        <div className="flex justify-between items-center  group hover:bg-[#e4e8eb] py-2 hover:cursor-pointer dark:hover:bg-[#1f2532]">
+        <div className="flex justify-between items-center  group hover:bg-[#e4e8eb] py-2 hover:cursor-pointer dark:hover:bg-darkBgDefault">
           <div className="px-5 flex items-center justify-between w-full">
             <div className=" flex gap-3 items-center">
               <div className="flex-shrink-0">
@@ -269,7 +269,7 @@ const CtrlModal: React.FC<HelpModalProps> = ({
             </div>
           </div>
         </div>
-        <div className="flex justify-between items-center  group hover:bg-[#e4e8eb] py-2 hover:cursor-pointer dark:hover:bg-[#1f2532]">
+        <div className="flex justify-between items-center  group hover:bg-[#e4e8eb] py-2 hover:cursor-pointer dark:hover:bg-darkBgDefault">
           <div className="px-5 flex items-center justify-between w-full">
             <div className=" flex gap-3 items-center">
               <div className="flex-shrink-0">
@@ -301,7 +301,7 @@ const CtrlModal: React.FC<HelpModalProps> = ({
             </div>
           </div>
         </div>
-        <div className="flex justify-between items-center  group hover:bg-[#e4e8eb] py-2 hover:cursor-pointer dark:hover:bg-[#1f2532]">
+        <div className="flex justify-between items-center  group hover:bg-[#e4e8eb] py-2 hover:cursor-pointer dark:hover:bg-darkBgDefault">
           <div className="px-5 flex items-center justify-between w-full">
             <div className=" flex gap-3 items-center">
               <div className="flex-shrink-0">
@@ -333,7 +333,7 @@ const CtrlModal: React.FC<HelpModalProps> = ({
             </div>
           </div>
         </div>
-        <div className="flex justify-between items-center  group hover:bg-[#e4e8eb] py-2 hover:cursor-pointer dark:hover:bg-[#1f2532]">
+        <div className="flex justify-between items-center  group hover:bg-[#e4e8eb] py-2 hover:cursor-pointer dark:hover:bg-darkBgDefault">
           <div className="px-5 flex items-center justify-between w-full">
             <div className=" flex gap-3 items-center">
               <div className="flex-shrink-0">

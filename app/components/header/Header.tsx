@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import ProfiileModal from "../modals/ProfileModal";
 import Dropdown from "../dropDown/HeaderDropDown";
-import CreateButton from "../button/CreateStoryButton";
+import CreateButton from "../button/CreateStoryBtn/CreateStoryButton";
 import { Tooltip } from "react-tooltip";
 import Popup from "reactjs-popup";
 import PlanModal from "../modals/PlanModal";

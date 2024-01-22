@@ -18,6 +18,13 @@ const config: Config = {
         "gradient-darkShimmer":
           "linear-gradient(160deg,#3a3750 -2.5%,#202a40 72.18%);",
       },
+      colors: {
+        current: "currentColor",
+        transparent: "transparent",
+        cyanDefault: "#3a95c9",
+        cyanDefaultDark: "#2d78a4",
+        darkBgDefault: "#1f2532",
+      },
     },
   },
   plugins: [],

@@ -5,7 +5,7 @@ interface PlanModalProps {
 
 const PlanModal: React.FC<PlanModalProps> = ({ close }) => {
   return (
-    <div className="dark:bg-[#1f2532] px-6 py-5">
+    <div className="dark:bg-darkBgDefault px-6 py-5">
       <div className="flex justify-between items-start modal-header">
         <h3 className="font-medium text-[1.5rem] text-[#333] dark:text-[#f6f6f6] my-6">
           Update Plan
