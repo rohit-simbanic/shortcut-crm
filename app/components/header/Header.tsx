@@ -194,7 +194,7 @@ const Header: React.FC<SlidingPanelTabProps> = ({
                             </div>
                             <div>
                               <h4 className="dark:text-gray-100">
-                                Create Button - Create Epic
+                                Replace text in search & Help tab for real text
                               </h4>
                               <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
@@ -234,7 +234,7 @@ const Header: React.FC<SlidingPanelTabProps> = ({
                             </div>
                             <div>
                               <h4 className="dark:text-gray-100">
-                                Create Button - Create Epic
+                                Shortcut code review
                               </h4>
                               <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
@@ -274,7 +274,7 @@ const Header: React.FC<SlidingPanelTabProps> = ({
                             </div>
                             <div>
                               <h4 className="dark:text-gray-100">
-                                Create Button - Create Epic
+                                Folder & code clean
                               </h4>
                               <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
@@ -314,7 +314,7 @@ const Header: React.FC<SlidingPanelTabProps> = ({
                             </div>
                             <div>
                               <h4 className="dark:text-gray-100">
-                                Create Button - Create Epic
+                                Create contact & about us page & 404 page
                               </h4>
                               <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
@@ -354,7 +354,7 @@ const Header: React.FC<SlidingPanelTabProps> = ({
                             </div>
                             <div>
                               <h4 className="dark:text-gray-100">
-                                Create Button - Create Epic
+                                Performance Engineering Service
                               </h4>
                               <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
@@ -394,7 +394,7 @@ const Header: React.FC<SlidingPanelTabProps> = ({
                             </div>
                             <div>
                               <h4 className="dark:text-gray-100">
-                                Create Button - Create Epic
+                                Expand News tab
                               </h4>
                               <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
@@ -434,7 +434,7 @@ const Header: React.FC<SlidingPanelTabProps> = ({
                             </div>
                             <div>
                               <h4 className="dark:text-gray-100">
-                                Create Button - Create Epic
+                                Create ctrl+k tab
                               </h4>
                               <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
@@ -474,7 +474,7 @@ const Header: React.FC<SlidingPanelTabProps> = ({
                             </div>
                             <div>
                               <h4 className="dark:text-gray-100">
-                                Create Button - Create Epic
+                                Expand Help tab
                               </h4>
                               <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
@@ -514,7 +514,7 @@ const Header: React.FC<SlidingPanelTabProps> = ({
                             </div>
                             <div>
                               <h4 className="dark:text-gray-100">
-                                Create Button - Create Epic
+                                Add in Profile popup
                               </h4>
                               <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
@@ -554,7 +554,7 @@ const Header: React.FC<SlidingPanelTabProps> = ({
                             </div>
                             <div>
                               <h4 className="dark:text-gray-100">
-                                Create Button - Create Epic
+                                Add two buttons after mouse hovering
                               </h4>
                               <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
@@ -594,7 +594,8 @@ const Header: React.FC<SlidingPanelTabProps> = ({
                             </div>
                             <div>
                               <h4 className="dark:text-gray-100">
-                                Create Button - Create Epic
+                                Create "Display Columns" pop up list with enable
+                                and disable radio buttons
                               </h4>
                               <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
@@ -643,7 +644,8 @@ const Header: React.FC<SlidingPanelTabProps> = ({
                             </div>
                             <div>
                               <h4 className="dark:text-gray-100">
-                                Create Button - Create Epic
+                                Make right sidebar double check for perfection
+                                in all resolution
                               </h4>
                               <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
@@ -683,7 +685,8 @@ const Header: React.FC<SlidingPanelTabProps> = ({
                             </div>
                             <div>
                               <h4 className="dark:text-gray-100">
-                                Create Button - Create Epic
+                                Dark mode search bar should be similar like
+                                shortcut
                               </h4>
                               <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
@@ -723,7 +726,7 @@ const Header: React.FC<SlidingPanelTabProps> = ({
                             </div>
                             <div>
                               <h4 className="dark:text-gray-100">
-                                Create Button - Create Epic
+                                Need some changes
                               </h4>
                               <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
@@ -763,7 +766,7 @@ const Header: React.FC<SlidingPanelTabProps> = ({
                             </div>
                             <div>
                               <h4 className="dark:text-gray-100">
-                                Create Button - Create Epic
+                                overlap issue for team modal
                               </h4>
                               <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
@@ -803,7 +806,7 @@ const Header: React.FC<SlidingPanelTabProps> = ({
                             </div>
                             <div>
                               <h4 className="dark:text-gray-100">
-                                Create Button - Create Epic
+                                Fix tooltip when you scroll down
                               </h4>
                               <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
@@ -843,7 +846,7 @@ const Header: React.FC<SlidingPanelTabProps> = ({
                             </div>
                             <div>
                               <h4 className="dark:text-gray-100">
-                                Create Button - Create Epic
+                                Delete one service box
                               </h4>
                               <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
@@ -883,7 +886,7 @@ const Header: React.FC<SlidingPanelTabProps> = ({
                             </div>
                             <div>
                               <h4 className="dark:text-gray-100">
-                                Create Button - Create Epic
+                                Google captcha should unselect after form submit
                               </h4>
                               <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
@@ -923,7 +926,8 @@ const Header: React.FC<SlidingPanelTabProps> = ({
                             </div>
                             <div>
                               <h4 className="dark:text-gray-100">
-                                Create Button - Create Epic
+                                Need to freeze these columns after scrolling
+                                horizontally
                               </h4>
                               <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
@@ -963,7 +967,7 @@ const Header: React.FC<SlidingPanelTabProps> = ({
                             </div>
                             <div>
                               <h4 className="dark:text-gray-100">
-                                Create Button - Create Epic
+                                Form data to send in email
                               </h4>
                               <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
@@ -1003,7 +1007,7 @@ const Header: React.FC<SlidingPanelTabProps> = ({
                             </div>
                             <div>
                               <h4 className="dark:text-gray-100">
-                                Create Button - Create Epic
+                                Form validation
                               </h4>
                               <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
@@ -1043,7 +1047,7 @@ const Header: React.FC<SlidingPanelTabProps> = ({
                             </div>
                             <div>
                               <h4 className="dark:text-gray-100">
-                                Create Button - Create Epic
+                                Folder & code clean
                               </h4>
                               <span className="py-2 font-sans text-[12px] font-normal dark:text-[#b8b8bd]">
                                 #1417 •Ready For QA •Updated 7 months ago
