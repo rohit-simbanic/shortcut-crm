@@ -70,7 +70,7 @@ const HelpModal: React.FC<HelpModalProps> = ({
       <div className="px-5 bg-gradient-bg mb-2 dark:bg-gradient-conic">
         <input
           type="text"
-          placeholder="What can we helpf you find?"
+          placeholder="What can we help you find?"
           className="w-full text-[16px] h-[48px] text-[#333333] rounded-lg bg-white dark:bg-[#2d3545] border-[1px] border-[#e4e8eb] pr-[64px] pl-[16px] focus:border-[#3a95c9] focus:ring-sky-500 focus:ring-1 focus:outline-none"
         />
       </div>
@@ -125,7 +125,42 @@ const HelpModal: React.FC<HelpModalProps> = ({
           </div>
           <div className="">
             <h5 className="text-[15px] text-[#333333] font-medium dark:text-white">
-              What is a Story?
+              What is the Stories page?
+            </h5>
+            <p className="text-[14px] text-[#666666]">
+              The Stories Page is where most of the magic h....
+            </p>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="16"
+            fill="none"
+            viewBox="0 0 24 24"
+            className="group-hover:block hidden group-hover:text-gray-500"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m9 18 6-6-6-6"
+            ></path>
+          </svg>
+        </div>
+        <div className="flex gap-3 items-center mb-2 group hover:bg-[#e4e8eb] p-3 rounded-md hover:cursor-pointer dark:hover:bg-[#1f2532]">
+          <div className="flex-shrink-0">
+            <Image
+              src={"/assets/icon-board.png"}
+              alt="board ico"
+              width={30}
+              height={30}
+              className=""
+            />
+          </div>
+          <div className="">
+            <h5 className="text-[15px] text-[#333333] font-medium dark:text-white">
+              Importing and Exporting Shortcut Data
             </h5>
             <p className="text-[14px] text-[#666666]">
               Stories are the standard unit of work in Short....
@@ -160,10 +195,10 @@ const HelpModal: React.FC<HelpModalProps> = ({
           </div>
           <div className="">
             <h5 className="text-[15px] text-[#333333] font-medium dark:text-white">
-              What is a Story?
+              Jira Sync Overview
             </h5>
             <p className="text-[14px] text-[#666666]">
-              Stories are the standard unit of work in Short....
+              Try Shortcut with minimal disruption by syncin....
             </p>
           </div>
           <svg
@@ -195,10 +230,10 @@ const HelpModal: React.FC<HelpModalProps> = ({
           </div>
           <div className="">
             <h5 className="text-[15px] text-[#333333] font-medium dark:text-white">
-              What is a Story?
+              Filtering the Stories Page
             </h5>
             <p className="text-[14px] text-[#666666]">
-              Stories are the standard unit of work in Short....
+              There are two main ways to filter the stories o....
             </p>
           </div>
           <svg
@@ -230,42 +265,7 @@ const HelpModal: React.FC<HelpModalProps> = ({
           </div>
           <div className="">
             <h5 className="text-[15px] text-[#333333] font-medium dark:text-white">
-              What is a Story?
-            </h5>
-            <p className="text-[14px] text-[#666666]">
-              Stories are the standard unit of work in Short....
-            </p>
-          </div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="16"
-            fill="none"
-            viewBox="0 0 24 24"
-            className="group-hover:block hidden group-hover:text-gray-500"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="m9 18 6-6-6-6"
-            ></path>
-          </svg>
-        </div>
-        <div className="flex gap-3 items-center mb-2 group hover:bg-[#e4e8eb] p-3 rounded-md hover:cursor-pointer dark:hover:bg-[#1f2532]">
-          <div className="flex-shrink-0">
-            <Image
-              src={"/assets/icon-board.png"}
-              alt="board ico"
-              width={30}
-              height={30}
-              className=""
-            />
-          </div>
-          <div className="">
-            <h5 className="text-[15px] text-[#333333] font-medium dark:text-white">
-              What is a Story?
+              Working with Stories
             </h5>
             <p className="text-[14px] text-[#666666]">
               Stories are the standard unit of work in Short....
