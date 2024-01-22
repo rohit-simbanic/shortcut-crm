@@ -78,7 +78,7 @@ const HelpModal: React.FC<HelpModalProps> = ({
         <p className="text-[#686c73] text-[14px] my-3 dark:text-[#b8b8bd]">
           Recommended
         </p>
-        <div className="flex gap-3 items-center mb-2 group hover:bg-[#e4e8eb] p-3 rounded-md hover:cursor-pointer dark:hover:bg-[#1f2532]">
+        <div className="flex gap-3 items-center mb-2 group hover:bg-[#e4e8eb] p-3 rounded-md hover:cursor-pointer dark:hover:bg-darkBgDefault">
           <div className="flex-shrink-0">
             <Image
               src={"/assets/icon-board.png"}
@@ -113,7 +113,7 @@ const HelpModal: React.FC<HelpModalProps> = ({
             ></path>
           </svg>
         </div>
-        <div className="flex gap-3 items-center mb-2 group hover:bg-[#e4e8eb] p-3 rounded-md hover:cursor-pointer dark:hover:bg-[#1f2532]">
+        <div className="flex gap-3 items-center mb-2 group hover:bg-[#e4e8eb] p-3 rounded-md hover:cursor-pointer dark:hover:bg-darkBgDefault">
           <div className="flex-shrink-0">
             <Image
               src={"/assets/icon-board.png"}
@@ -148,7 +148,7 @@ const HelpModal: React.FC<HelpModalProps> = ({
             ></path>
           </svg>
         </div>
-        <div className="flex gap-3 items-center mb-2 group hover:bg-[#e4e8eb] p-3 rounded-md hover:cursor-pointer dark:hover:bg-[#1f2532]">
+        <div className="flex gap-3 items-center mb-2 group hover:bg-[#e4e8eb] p-3 rounded-md hover:cursor-pointer dark:hover:bg-darkBgDefault">
           <div className="flex-shrink-0">
             <Image
               src={"/assets/icon-board.png"}
@@ -183,7 +183,7 @@ const HelpModal: React.FC<HelpModalProps> = ({
             ></path>
           </svg>
         </div>
-        <div className="flex gap-3 items-center mb-2 group hover:bg-[#e4e8eb] p-3 rounded-md hover:cursor-pointer dark:hover:bg-[#1f2532]">
+        <div className="flex gap-3 items-center mb-2 group hover:bg-[#e4e8eb] p-3 rounded-md hover:cursor-pointer dark:hover:bg-darkBgDefault">
           <div className="flex-shrink-0">
             <Image
               src={"/assets/icon-board.png"}
@@ -218,7 +218,7 @@ const HelpModal: React.FC<HelpModalProps> = ({
             ></path>
           </svg>
         </div>
-        <div className="flex gap-3 items-center mb-2 group hover:bg-[#e4e8eb] p-3 rounded-md hover:cursor-pointer dark:hover:bg-[#1f2532]">
+        <div className="flex gap-3 items-center mb-2 group hover:bg-[#e4e8eb] p-3 rounded-md hover:cursor-pointer dark:hover:bg-darkBgDefault">
           <div className="flex-shrink-0">
             <Image
               src={"/assets/icon-board.png"}
@@ -253,7 +253,7 @@ const HelpModal: React.FC<HelpModalProps> = ({
             ></path>
           </svg>
         </div>
-        <div className="flex gap-3 items-center mb-2 group hover:bg-[#e4e8eb] p-3 rounded-md hover:cursor-pointer dark:hover:bg-[#1f2532]">
+        <div className="flex gap-3 items-center mb-2 group hover:bg-[#e4e8eb] p-3 rounded-md hover:cursor-pointer dark:hover:bg-darkBgDefault">
           <div className="flex-shrink-0">
             <Image
               src={"/assets/icon-board.png"}

@@ -34,7 +34,7 @@ const Dropdown = () => {
       <button
         ref={dropdownButtonRef}
         onClick={toggleDropdown}
-        className="inline-flex justify-center w-full px-3 py-3 text-sm font-medium text-gray-700 bg-[#3a95c9] rounded-r-md shadow-sm focus:outline-none hover:bg-[#2d78a4]"
+        className="inline-flex justify-center w-full px-3 py-3 text-sm font-medium text-gray-700 bg-cyanDefault rounded-r-md shadow-sm focus:outline-none hover:bg-cyanDefaultDark"
       >
         <svg
           fill="#ffffff"

@@ -113,7 +113,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
             <p className="font-light text-xs tracking-tighter my-2 text-[0.70rem] text-[#686c73] dark:text-[#b8b8bd]">
               Quick fix - DV - 1.0
             </p>
-            <button className="bg-transparent w-6 h-6 dark:bg-[#1f2532] opacity-0 group-hover:opacity-100 transition-opacity absolute right-0 top-0 rounded-tr-md z-50">
+            <button className="bg-transparent w-6 h-6 dark:bg-darkBgDefault opacity-0 group-hover:opacity-100 transition-opacity absolute right-0 top-0 rounded-tr-md z-50">
               <input
                 type="checkbox"
                 class="border-gray-300 rounded h-3 w-3 dark:bg-[#161b26]"
@@ -132,7 +132,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
             {(
               close: React.MouseEventHandler<HTMLButtonElement> | undefined
             ) => (
-              <div className="modal dark:bg-[#1f2532]">
+              <div className="modal dark:bg-darkBgDefault">
                 <div className="flex justify-between items-start modal-header px-6">
                   <h1 className="font-bold text-lg text-[#1f2532] dark:text-[#f6f6f6] my-6">
                     Transaction Dashboard
@@ -213,7 +213,7 @@ export const Card: FC<CardProps> = ({ id, text, index, moveCard }) => {
                                     isWrite === 1
                                       ? "bg-white border-t-[1px] border-[#e4e8eb] border-r-[1px] border-l-[1px] font-bold dark:text-[white]"
                                       : "bg-[#f9f9f9] cursor-pointer border-b-[1px]"
-                                  }  dark:bg-[#1f2532] dark:text-[grey]`}
+                                  }  dark:bg-darkBgDefault dark:text-[grey]`}
                                   onClick={() => toggleWrite(1)}
                                 >
                                   Write

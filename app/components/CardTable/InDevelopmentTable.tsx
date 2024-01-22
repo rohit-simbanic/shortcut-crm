@@ -312,7 +312,7 @@ const InDevelopmentTable: FC<InDevelopmenTableComponentProps> = ({
                     return (
                       <tr
                         key={index}
-                        className="text-gray-700 dark:hover:bg-[#1f2532] bg-white dark:bg-[#161b26] hover:bg-[#f8f9fb] hover:cursor-pointer"
+                        className="text-gray-700 dark:hover:bg-darkBgDefault bg-white dark:bg-[#161b26] hover:bg-[#f8f9fb] hover:cursor-pointer"
                       >
                         <td
                           className={`pl-4 bg-inherit   ${
@@ -390,7 +390,7 @@ const InDevelopmentTable: FC<InDevelopmenTableComponentProps> = ({
                               | React.MouseEventHandler<HTMLButtonElement>
                               | undefined
                           ) => (
-                            <div className="modal dark:bg-[#1f2532]">
+                            <div className="modal dark:bg-darkBgDefault">
                               <div className="flex justify-between items-start modal-header px-6">
                                 <h1 className="font-bold text-lg text-[#1f2532] dark:text-[#f6f6f6] my-6">
                                   Transaction Dashboard
@@ -474,7 +474,7 @@ const InDevelopmentTable: FC<InDevelopmenTableComponentProps> = ({
                                                   isWrite === 1
                                                     ? "bg-white border-t-[1px] border-[#e4e8eb] border-r-[1px] border-l-[1px] font-bold dark:text-[white]"
                                                     : "bg-[#f9f9f9] cursor-pointer border-b-[1px]"
-                                                }  dark:bg-[#1f2532] dark:text-[grey]`}
+                                                }  dark:bg-darkBgDefault dark:text-[grey]`}
                                                 onClick={() => toggleWrite(1)}
                                               >
                                                 Write
@@ -1549,7 +1549,7 @@ const InDevelopmentTable: FC<InDevelopmenTableComponentProps> = ({
                     Showing <span className="font-bold">1-34</span> of{" "}
                     <span className="font-bold">34</span> results
                   </p>
-                  <button className="flex gap-3 items-center justify-center shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-1 px-3 rounded-[5px] border-[1px] border-[#e4e8eb] bg-[#fff] hover:bg-[#e4e8eb] dark:text-white dark:border-[#283040] dark:bg-[#161b26] dark:hover:bg-[#1f2532] w-[7%]">
+                  <button className="flex gap-3 items-center justify-center shadow-[rgba(0,0,0,0.1)_0px_1px_0px] py-1 px-3 rounded-[5px] border-[1px] border-[#e4e8eb] bg-[#fff] hover:bg-[#e4e8eb] dark:text-white dark:border-[#283040] dark:bg-[#161b26] dark:hover:bg-darkBgDefault w-[7%]">
                     <p className="text-[#1f2532] font-medium dark:text-[#f6f6f6]">
                       Load more results
                     </p>
